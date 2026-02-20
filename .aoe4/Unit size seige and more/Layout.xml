@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LayoutRoot>
+  <RootPanel Orientation="Horizontal">
+    <LayoutAnchorablePaneGroup Orientation="Horizontal" DockWidth="330" FloatingWidth="300" FloatingHeight="800" FloatingLeft="200" FloatingTop="200">
+      <LayoutAnchorablePane DockHeight="200" FloatingWidth="300" FloatingHeight="800" FloatingLeft="200" FloatingTop="200">
+        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Asset Explorer" IsSelected="True" ContentId="EssenceEditor.AssetExplorer" FloatingLeft="200" FloatingTop="200" FloatingWidth="300" FloatingHeight="800" LastActivationTimeStamp="01/05/2026 19:12:22" PreviousContainerId="1b84d0aa-3fd1-4781-909d-fa3e4b760d6d" PreviousContainerIndex="1" />
+      </LayoutAnchorablePane>
+    </LayoutAnchorablePaneGroup>
+    <LayoutPanel Orientation="Vertical">
+      <LayoutDocumentPane>
+        <LayoutDocument Title="ebps" IsSelected="True" IsLastFocusedDocument="True" ContentId="Category|ebps" LastActivationTimeStamp="02/20/2026 19:18:06" />
+      </LayoutDocumentPane>
+      <LayoutAnchorablePane Id="1b84d0aa-3fd1-4781-909d-fa3e4b760d6d" Name="anchorablesPane" DockHeight="300">
+        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Output" IsSelected="True" ContentId="Output" LastActivationTimeStamp="02/20/2026 19:19:14" />
+        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Error List" ContentId="ErrorList" LastActivationTimeStamp="06/08/2025 17:55:55" />
+        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Object Browser" ContentId="ScenarioEditor.ObjectBrowser" LastActivationTimeStamp="06/08/2025 17:55:54" />
+        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Find References Results 1" ContentId="FindReferencesResults1" LastActivationTimeStamp="06/08/2025 22:28:04" />
+        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Find Results 1" ContentId="FindResults" LastActivationTimeStamp="06/08/2025 22:25:31" />
+      </LayoutAnchorablePane>
+    </LayoutPanel>
+    <LayoutAnchorablePaneGroup Orientation="Vertical" DockWidth="74" DockHeight="200">
+      <LayoutAnchorablePane Id="803a141d-cc1a-4fb2-88ae-2270dd8652b4" DockWidth="74" FloatingWidth="300" FloatingHeight="800" FloatingLeft="200" FloatingTop="200">
+        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Properties" IsSelected="True" ContentId="EssenceEditor.Properties" FloatingLeft="200" FloatingTop="200" FloatingWidth="300" FloatingHeight="800" LastActivationTimeStamp="01/24/2020 11:53:24" PreviousContainerId="1b84d0aa-3fd1-4781-909d-fa3e4b760d6d" PreviousContainerIndex="1" />
+      </LayoutAnchorablePane>
+      <LayoutAnchorablePane Id="78c06263-eb86-40c1-8abf-6d89a3781df0" FloatingWidth="300" FloatingHeight="250" FloatingLeft="200" FloatingTop="200" />
+      <LayoutAnchorablePaneGroup Orientation="Horizontal" DockHeight="0.25*" FloatingWidth="300" FloatingHeight="200" FloatingLeft="200" FloatingTop="200">
+        <LayoutAnchorablePane DockHeight="100" FloatingWidth="300" FloatingHeight="100" FloatingLeft="200" FloatingTop="200">
+          <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Playback" IsSelected="True" ContentId="EssenceEditor.Playback" FloatingLeft="200" FloatingTop="200" FloatingWidth="300" FloatingHeight="100" LastActivationTimeStamp="11/27/2015 11:24:02" PreviousContainerId="1b84d0aa-3fd1-4781-909d-fa3e4b760d6d" PreviousContainerIndex="1" />
+        </LayoutAnchorablePane>
+      </LayoutAnchorablePaneGroup>
+    </LayoutAnchorablePaneGroup>
+  </RootPanel>
+  <TopSide />
+  <RightSide />
+  <LeftSide />
+  <BottomSide />
+  <FloatingWindows />
+  <Hidden>
+    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Transformation" IsSelected="True" ContentId="ScenarioEditor.Transformation" FloatingLeft="200" FloatingTop="200" FloatingWidth="250" FloatingHeight="300" LastActivationTimeStamp="02/20/2026 16:27:44" PreviousContainerId="78c06263-eb86-40c1-8abf-6d89a3781df0" PreviousContainerIndex="0" />
+    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Painter" IsSelected="True" ContentId="ScenarioEditor.Painter" FloatingLeft="200" FloatingTop="200" FloatingWidth="300" FloatingHeight="800" LastActivationTimeStamp="02/20/2026 16:27:44" PreviousContainerId="803a141d-cc1a-4fb2-88ae-2270dd8652b4" PreviousContainerIndex="1" />
+  </Hidden>
+</LayoutRoot>

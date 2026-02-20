@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Essence.Editor.Modding">
+	<DataGenericPath>assets</DataGenericPath>
+	<DataIntermediatePath>cache</DataIntermediatePath>
+	<ID>e2ef01ea-17d7-4b04-9498-57ca0a246ab4</ID>
+	<LocDBPath>locdb\Unit size seige and more.locdb</LocDBPath>
+	<Type>Extension</Type>
+</Mod>

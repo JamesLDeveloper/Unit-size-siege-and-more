@@ -1,0 +1,28 @@
+<DataWarehouse>
+	<!--Mod/-->
+	<DataObject Name="Unit size seige and more" Type="Mod" Id="17499349006477660326" Version="1">
+		<DataProperty Name="m_description" Type="Object">
+			<DataValue Name="util::ReflectLocString">17499349011113662138</DataValue>
+			<!--Mod/util::ReflectLocString/-->
+			<DataObject Name="" Type="util::ReflectLocString" Id="17499349011113662138" OwnerId="17499349006477660326">
+				<DataProperty Name="m_modPart2" Type="UInt32" Value="3394738324"/>
+				<DataProperty Name="m_modPart3" Type="UInt32" Value="3026854922"/>
+				<DataProperty Name="m_modPart0" Type="UInt32" Value="3807314410"/>
+				<DataProperty Name="m_modPart1" Type="UInt32" Value="1258559447"/>
+				<DataProperty Name="m_locStringKey" Type="Int32" Value="2"/>
+			</DataObject>
+		</DataProperty>
+		<DataProperty Name="m_name" Type="Object">
+			<DataValue Name="util::ReflectLocString">17499349009831832246</DataValue>
+			<!--Mod/util::ReflectLocString/-->
+			<DataObject Name="" Type="util::ReflectLocString" Id="17499349009831832246" OwnerId="17499349006477660326">
+				<DataProperty Name="m_modPart2" Type="UInt32" Value="3394738324"/>
+				<DataProperty Name="m_modPart3" Type="UInt32" Value="3026854922"/>
+				<DataProperty Name="m_modPart0" Type="UInt32" Value="3807314410"/>
+				<DataProperty Name="m_modPart1" Type="UInt32" Value="1258559447"/>
+				<DataProperty Name="m_locStringKey" Type="Int32" Value="1"/>
+			</DataObject>
+		</DataProperty>
+	</DataObject>
+</DataWarehouse>
+
