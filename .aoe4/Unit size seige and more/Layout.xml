@@ -8,13 +8,10 @@
     </LayoutAnchorablePaneGroup>
     <LayoutPanel Orientation="Vertical">
       <LayoutDocumentPane>
-        <LayoutDocument Title="ebps" ContentId="Category|ebps" LastActivationTimeStamp="02/20/2026 19:52:43" />
-        <LayoutDocument Title="mod.rdo" ContentId="Reflect|Essence.Editor.ReflectEditor.Controls.DefaultReflectControlActivator|0xF2DA2D34B3AF90A6" LastActivationTimeStamp="02/20/2026 19:53:01" />
-        <LayoutDocument Title="abilities" ContentId="Category|abilities" LastActivationTimeStamp="02/20/2026 19:56:26" />
-        <LayoutDocument Title="army" IsSelected="True" IsLastFocusedDocument="True" ContentId="Category|army" LastActivationTimeStamp="02/20/2026 19:56:36" />
+        <LayoutDocument Title="ebps" IsSelected="True" IsLastFocusedDocument="True" ContentId="Category|ebps" LastActivationTimeStamp="02/20/2026 21:14:25" />
       </LayoutDocumentPane>
       <LayoutAnchorablePane Id="1b84d0aa-3fd1-4781-909d-fa3e4b760d6d" Name="anchorablesPane" DockHeight="300">
-        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Output" IsSelected="True" ContentId="Output" LastActivationTimeStamp="02/20/2026 19:19:14" />
+        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Output" IsSelected="True" ContentId="Output" LastActivationTimeStamp="02/20/2026 21:14:25" />
         <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Error List" ContentId="ErrorList" LastActivationTimeStamp="06/08/2025 17:55:55" />
         <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Object Browser" ContentId="ScenarioEditor.ObjectBrowser" LastActivationTimeStamp="06/08/2025 17:55:54" />
         <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Find References Results 1" ContentId="FindReferencesResults1" LastActivationTimeStamp="06/08/2025 22:28:04" />

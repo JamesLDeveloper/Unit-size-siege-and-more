@@ -1,0 +1,41 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_targeting_ext" List.ItemID="-107581931" List.ParentItemID="-107581931">
+			<bool name="allow_entity_scan_close_enemies" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="2005299329" List.ParentItemID="2005299329">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="1868832800" List.ParentItemID="1868832800">
+					<group name="tier" List.ItemID="1601565728" List.ParentItemID="1601565728">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\tier3_naval_trade_ship_eng" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="228866" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_trade_ship_3" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1283093370" List.ParentItemID="1283093370">
+				<list name="unit_type_list">
+					<enum name="unit_type" value="naval_military" List.ItemID="-1557719651" List.ListAction="Append" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\entity_targeting_ext" List.ItemID="-1587653624" List.ParentItemID="-1587653624">
+				<bool name="allow_entity_scan_close_enemies" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1805972924" List.ParentItemID="1805972924">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="-174089888" List.ParentItemID="-174089888">
+						<group name="tier" List.ItemID="-600127543" List.ParentItemID="-600127543">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\tier3_naval_trade_ship_eng" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="228866" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_trade_ship_3" />
+	</variant>
+</instance>

@@ -1,0 +1,247 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-692747074" List.ParentItemID="-692747074">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_knight_4" overrideParent="True" />
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-494934658" List.ParentItemID="-494934658">
+			<float name="death_seconds" value="19" overrideParent="True" />
+			<float name="hitpoints" value="270" overrideParent="True" />
+			<enum_table name="armor_scaler_by_damage_type">
+				<float name="Melee" value="5" overrideParent="True" />
+				<float name="Ranged" value="5" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\hit_object_ext" List.ItemID="-565163716" List.ParentItemID="-565163716">
+			<instance_reference name="hit_material" value="hit_material\hvyarmour" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-564885560" List.ParentItemID="-564885560">
+			<float name="decorator_height" value="3.75" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1725574308" List.ParentItemID="1725574308">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" overrideParent="True" List.ItemID="-481022695">
+					<group name="tier" List.ItemID="1023577190">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\tier4_cavalry_knight_eng" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="391574528" List.ParentItemID="391574528">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="1303104000" List.ParentItemID="1303104000">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-1944514895" List.ParentItemID="-1944514895">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_knight_4" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_melee_knight_4" overrideParent="True" />
+								<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="192610525" List.ParentItemID="192610525">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_torch_horseman" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_siege_torch" overrideParent="True" />
+								<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="-36236226" List.ParentItemID="-36236226">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_knight_4_charge" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_melee_knight_4_charge" overrideParent="True" />
+								<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="127155" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_knight_3" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1576610009" List.ParentItemID="1576610009">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_knight_4" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-204205713" List.ParentItemID="-204205713">
+				<float name="death_seconds" value="19" overrideParent="True" />
+				<float name="hitpoints" value="280" overrideParent="True" />
+				<enum_table name="armor_scaler_by_damage_type">
+					<float name="Melee" value="5" overrideParent="True" />
+					<float name="Ranged" value="5" overrideParent="True" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\hit_object_ext" List.ItemID="2028713744" List.ParentItemID="2028713744">
+				<instance_reference name="hit_material" value="hit_material\hvyarmour" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-325659083" List.ParentItemID="-325659083">
+				<list name="tier_group_list" overrideParent="True">
+					<list name="tier_group" overrideParent="True" List.ItemID="1180417769">
+						<group name="tier" List.ItemID="-480938330">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\tier4_cavalry_knight_eng" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1884700896" List.ParentItemID="1884700896">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="-660153584" List.ParentItemID="-660153584">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="1634359423" List.ParentItemID="1634359423">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_knight_4" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_melee_knight_4" overrideParent="True" />
+									<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="942660442" List.ParentItemID="942660442">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_torch" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_siege_torch" overrideParent="True" />
+									<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-795027313" List.ParentItemID="-795027313">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_knight_4_charge" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_melee_knight_4_charge" overrideParent="True" />
+									<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="127155" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_knight_3" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1044258249" List.ParentItemID="1044258249">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_knight_4" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-683381694" List.ParentItemID="-683381694">
+				<float name="death_seconds" value="19" overrideParent="True" />
+				<float name="hitpoints" value="270" overrideParent="True" />
+				<enum_table name="armor_scaler_by_damage_type">
+					<float name="Melee" value="5" overrideParent="True" />
+					<float name="Ranged" value="5" overrideParent="True" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\hit_object_ext" List.ItemID="1968414448" List.ParentItemID="1968414448">
+				<instance_reference name="hit_material" value="hit_material\hvyarmour" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-893228142" List.ParentItemID="-893228142">
+				<float name="decorator_height" value="3.75" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="307244130" List.ParentItemID="307244130">
+				<list name="tier_group_list" overrideParent="True">
+					<list name="tier_group" overrideParent="True" List.ItemID="1249905734">
+						<group name="tier" List.ItemID="-1178203520">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\tier4_cavalry_knight_eng" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1365207927" List.ParentItemID="1365207927">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="-151526368" List.ParentItemID="-151526368">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="235431541" List.ParentItemID="235431541">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_knight_4" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_melee_knight_4" overrideParent="True" />
+									<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="1941763602" List.ParentItemID="1941763602">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_torch_horseman" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_siege_torch" overrideParent="True" />
+									<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-837906839" List.ParentItemID="-837906839">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_knight_4_charge" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_melee_knight_4_charge" overrideParent="True" />
+									<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="127155" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_knight_3" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+	</variant>
+</instance>

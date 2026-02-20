@@ -1,0 +1,268 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1356892678" List.ParentItemID="1356892678">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-12513399" List.ParentItemID="-12513399">
+			<list name="action_state_trees" overrideParent="True">
+				<group name="container" List.ItemID="-1339446950">
+					<string name="state_tree" value="unit_action_apply\units\knight" />
+				</group>
+				<group name="container" List.ItemID="137756749">
+					<string name="state_tree" value="unit_action_apply\units\knight\audio\eng\3" />
+				</group>
+				<group name="container" List.ItemID="-1105465288">
+					<string name="state_tree" value="king_action_apply" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-788422057" List.ParentItemID="-788422057">
+			<float name="hitpoints" value="700" overrideParent="True" />
+			<enum_table name="armor_scaler_by_damage_type">
+				<float name="Melee" value="7" overrideParent="True" />
+				<float name="Ranged" value="7" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1786016482" List.ParentItemID="-1786016482">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="military" List.ItemID="-1129230284" />
+				<enum name="unit_type" value="cavalry" List.ItemID="829413329" />
+				<enum name="unit_type" value="armored" List.ItemID="190634561" />
+				<enum name="unit_type" value="knight" List.ItemID="1017603816" />
+				<enum name="unit_type" value="cavalry_armored" List.ItemID="298257587" />
+				<enum name="unit_type" value="human" List.ItemID="1727095887" />
+				<enum name="unit_type" value="horse" List.ItemID="255616085" />
+				<enum name="unit_type" value="melee" List.ItemID="633453187" />
+				<enum name="unit_type" value="formational" List.ItemID="222218883" />
+				<enum name="unit_type" value="leader" List.ItemID="-1977795298" />
+				<enum name="unit_type" value="xbox_support_quick_find" List.ItemID="259345511" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="1680160005" List.ParentItemID="1680160005">
+			<float name="decorator_height" value="3.5" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1078428342" List.ParentItemID="1078428342">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="1862173383" List.ParentItemID="1862173383">
+					<group name="tier" List.ItemID="-403270453" List.ParentItemID="-403270453">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\campaign\cavalry_king_stephen_campaign_eng" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1762200638" List.ParentItemID="1762200638">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="1534383478" List.ParentItemID="1534383478">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-1605222392" List.ParentItemID="-1605222392">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_knight_4" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\english\weapons\wpn_melee_knight_4_eng" overrideParent="True" />
+								<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="-815746252" List.ParentItemID="-815746252">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_torch" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\english\weapons\wpn_siege_torch_eng" overrideParent="True" />
+								<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="1064922397" List.ParentItemID="1064922397">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_knight_4_charge" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\english\weapons\wpn_melee_knight_4_charge_eng" overrideParent="True" />
+								<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="182310" />
+	<instance_reference name="parent_pbg" value="ebps\races\english\units\unit_knight_4_eng" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="1584792540" List.ParentItemID="1584792540">
+				<list name="action_state_trees" overrideParent="True">
+					<group name="container" List.ItemID="1300129142">
+						<string name="state_tree" value="campaignMod_unit_action_apply\units\knight" />
+					</group>
+					<group name="container" List.ItemID="-1559625965">
+						<string name="state_tree" value="campaignMod_unit_action_apply\units\knight\audio\eng\3" />
+					</group>
+					<group name="container" List.ItemID="-1622173640">
+						<string name="state_tree" value="campaignMod_king_action_apply" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="1631100682" List.ParentItemID="1631100682">
+				<float name="hitpoints" value="700" overrideParent="True" />
+				<enum_table name="armor_scaler_by_damage_type">
+					<float name="Melee" value="7" overrideParent="True" />
+					<float name="Ranged" value="7" overrideParent="True" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-690125686" List.ParentItemID="-690125686">
+				<list name="unit_type_list" overrideParent="True">
+					<enum name="unit_type" value="military" List.ItemID="518816133" />
+					<enum name="unit_type" value="cavalry" List.ItemID="-156085765" />
+					<enum name="unit_type" value="armored" List.ItemID="-1326721136" />
+					<enum name="unit_type" value="knight" List.ItemID="-956647436" />
+					<enum name="unit_type" value="cavalry_armored" List.ItemID="-654167850" />
+					<enum name="unit_type" value="human" List.ItemID="741582195" />
+					<enum name="unit_type" value="horse" List.ItemID="485423451" />
+					<enum name="unit_type" value="melee" List.ItemID="1930458350" />
+					<enum name="unit_type" value="formational" List.ItemID="281017047" />
+					<enum name="unit_type" value="leader" List.ItemID="-190983083" />
+					<enum name="unit_type" value="annihilation_condition" List.ItemID="2111312840" />
+					<enum name="unit_type" value="included_by_military_hotkeys" List.ItemID="750367096" />
+					<enum name="unit_type" value="xbox_support_quick_find" List.ItemID="-179745846" />
+					<enum name="unit_type" value="land_military" List.ItemID="900624465" />
+					<enum name="unit_type" value="find_non_siege_land_military" List.ItemID="-886910544" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1789572980" List.ParentItemID="1789572980">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="-1206234576" List.ParentItemID="-1206234576">
+						<group name="tier" List.ItemID="1002355404" List.ParentItemID="1002355404">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\campaign\cavalry_king_stephen_campaign_eng" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1020484362" List.ParentItemID="-1020484362">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="783623762" List.ParentItemID="783623762">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="110810784" List.ParentItemID="110810784">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_knight_4" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\english\weapons\wpn_melee_knight_4_eng" overrideParent="True" />
+									<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="147094962" List.ParentItemID="147094962">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_torch" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\english\weapons\wpn_siege_torch_eng" overrideParent="True" />
+									<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="1581042489" List.ParentItemID="1581042489">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_knight_4_charge" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\english\weapons\wpn_melee_knight_4_charge_eng" overrideParent="True" />
+									<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="182310" />
+		<instance_reference name="parent_pbg" value="ebps\races\english\units\unit_knight_4_eng" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-12513399" List.ParentItemID="-12513399">
+				<list name="action_state_trees" overrideParent="True">
+					<group name="container" List.ItemID="269477659">
+						<string name="state_tree" value="xp3_unit_action_apply\units\knight" />
+					</group>
+					<group name="container" List.ItemID="851036283">
+						<string name="state_tree" value="xp3_unit_action_apply\units\knight\audio\eng\3" />
+					</group>
+					<group name="container" List.ItemID="328505593">
+						<string name="state_tree" value="xp3_king_action_apply" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-788422057" List.ParentItemID="-788422057">
+				<float name="hitpoints" value="700" overrideParent="True" />
+				<enum_table name="armor_scaler_by_damage_type">
+					<float name="Melee" value="7" overrideParent="True" />
+					<float name="Ranged" value="7" overrideParent="True" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1786016482" List.ParentItemID="-1786016482">
+				<list name="unit_type_list" overrideParent="True">
+					<enum name="unit_type" value="military" List.ItemID="-1317295294" />
+					<enum name="unit_type" value="cavalry" List.ItemID="1078378377" />
+					<enum name="unit_type" value="armored" List.ItemID="-1139582699" />
+					<enum name="unit_type" value="knight" List.ItemID="-1772025911" />
+					<enum name="unit_type" value="cavalry_armored" List.ItemID="1246962325" />
+					<enum name="unit_type" value="human" List.ItemID="-658225324" />
+					<enum name="unit_type" value="horse" List.ItemID="1139043027" />
+					<enum name="unit_type" value="melee" List.ItemID="579475278" />
+					<enum name="unit_type" value="formational" List.ItemID="-766856453" />
+					<enum name="unit_type" value="leader" List.ItemID="1603414733" />
+					<enum name="unit_type" value="xbox_support_quick_find" List.ItemID="-2024985053" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="1680160005" List.ParentItemID="1680160005">
+				<float name="decorator_height" value="3.5" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1078428342" List.ParentItemID="1078428342">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="1862173383" List.ParentItemID="1862173383">
+						<group name="tier" List.ItemID="-403270453" List.ParentItemID="-403270453">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\campaign\cavalry_king_stephen_campaign_eng" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1762200638" List.ParentItemID="1762200638">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="1534383478" List.ParentItemID="1534383478">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-1605222392" List.ParentItemID="-1605222392">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_knight_4" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\english\weapons\wpn_melee_knight_4_eng" overrideParent="True" />
+									<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-815746252" List.ParentItemID="-815746252">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_torch" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\english\weapons\wpn_siege_torch_eng" overrideParent="True" />
+									<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="1064922397" List.ParentItemID="1064922397">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_knight_4_charge" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\english\weapons\wpn_melee_knight_4_charge_eng" overrideParent="True" />
+									<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="182310" />
+		<instance_reference name="parent_pbg" value="ebps\races\english\units\unit_knight_4_eng" />
+	</variant>
+</instance>

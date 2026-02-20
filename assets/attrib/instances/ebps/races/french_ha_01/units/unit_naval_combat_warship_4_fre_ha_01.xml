@@ -1,0 +1,40 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1481453663" List.ParentItemID="-1481453663">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="military" List.ItemID="351068175" />
+				<enum name="unit_type" value="ship" List.ItemID="1179031980" />
+				<enum name="unit_type" value="naval_broadside" List.ItemID="1664475074" />
+				<enum name="unit_type" value="naval_warship" List.ItemID="-1619117660" />
+				<enum name="unit_type" value="naval_unit" List.ItemID="1331568325" />
+				<enum name="unit_type" value="ranged" List.ItemID="119710667" />
+				<enum name="unit_type" value="siegeable" List.ItemID="-1747671707" />
+				<enum name="unit_type" value="annihilation_condition" List.ItemID="1525253704" />
+				<enum name="unit_type" value="gunpowder" List.ItemID="1724603825" />
+				<enum name="unit_type" value="naval_western" List.ItemID="-145116217" />
+				<enum name="unit_type" value="massive" List.ItemID="1216950646" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1092792524" List.ParentItemID="1092792524">
+			<list name="hardpoints">
+				<group name="hardpoint" comment="AI Left 1" List.ItemID="1847161327" List.ParentItemID="1847161327">
+				</group>
+				<group name="hardpoint" comment="Right 1" List.ItemID="822147706" List.ParentItemID="822147706">
+				</group>
+				<group name="hardpoint" comment="AI Right 3" List.ItemID="1848079065" List.ParentItemID="1848079065">
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-1265230428" List.ParentItemID="-1265230428">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="86044439" List.ParentItemID="86044439">
+					<group name="tier" List.ItemID="1888019086" List.ParentItemID="1888019086">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\french\units\tier4_naval_combat_warship_fre" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="5768732" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_combat_warship_4" />
+</instance>

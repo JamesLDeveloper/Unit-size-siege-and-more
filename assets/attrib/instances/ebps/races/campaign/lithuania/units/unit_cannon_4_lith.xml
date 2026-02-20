@@ -1,0 +1,49 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="378232643" List.ParentItemID="378232643">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1247090283" List.ParentItemID="1247090283">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="392243222" List.ParentItemID="392243222">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="350673439" List.ParentItemID="350673439">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_cannon_4" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="" overrideParent="True" />
+								<string name="marker_name_parent" value="" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="191472" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_cannon_4" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1304041809" List.ParentItemID="-1304041809">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="-2028002745" List.ParentItemID="-2028002745">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="1981342103" List.ParentItemID="1981342103">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_cannon_4" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="" overrideParent="True" />
+									<string name="marker_name_parent" value="" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="191472" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_cannon_4" />
+	</variant>
+</instance>

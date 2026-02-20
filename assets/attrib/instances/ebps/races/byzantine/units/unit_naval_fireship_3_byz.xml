@@ -1,0 +1,47 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1195952327" List.ParentItemID="1195952327">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-1162500930" List.ParentItemID="-1162500930">
+					<group name="tier" List.ItemID="295461769" List.ParentItemID="295461769">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\byzantine\units\tier3_naval_fireship_byz" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="280087839" List.ParentItemID="280087839">
+			<template_reference name="kill_action_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="on_kill_byz" overrideParent="True" />
+			</template_reference>
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="-435083731" List.ParentItemID="-435083731">
+					<list name="weapon_table" removedIds="-191388661">
+						<group name="weapon" List.ItemID="1538707248" List.ListAction="Append">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="0.5" />
+								<float name="z" value="0" />
+							</group>
+							<enum name="type" value="default" />
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_naval_fireship" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_ebps_template" overrideParent="True" />
+								<string name="marker_name_parent" value="" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="5429287" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_fireship_3" />
+</instance>

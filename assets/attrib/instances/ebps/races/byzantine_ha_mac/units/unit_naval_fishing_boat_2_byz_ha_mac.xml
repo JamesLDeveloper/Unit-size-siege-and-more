@@ -1,0 +1,44 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="53157503" List.ParentItemID="53157503">
+			<state_tree_node name="death_action_tree" value="on_death_byzantine_ha_mac\update_value_to_statemodel" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-92434801" List.ParentItemID="-92434801">
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\byzantine_ha_mac" List.ItemID="836070663" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\resource_gatherer_ext" List.ItemID="-151063231" List.ParentItemID="-151063231">
+			<list name="gather_types">
+				<group name="gather_target" comment="BERRY BUSH" List.ItemID="-993611447" List.ParentItemID="-993611447">
+				</group>
+				<group name="gather_target" comment="DEEP WATER FISH" List.ItemID="784624785" List.ParentItemID="784624785">
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1154132826" List.ParentItemID="1154132826">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-659887307" List.ParentItemID="-659887307">
+					<group name="tier" List.ItemID="2025676610" List.ParentItemID="2025676610">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\byzantine\units\tier2_naval_fishing_boat_byz" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="25224138" List.ParentItemID="25224138">
+			<list name="type_list" overrideParent="True">
+				<group name="type" comment="Repair" List.ItemID="-800288251">
+					<enum name="interaction_type" value="repair" />
+					<int name="prefer_number" value="-1" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="9000980" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_fishing_boat_2" />
+</instance>

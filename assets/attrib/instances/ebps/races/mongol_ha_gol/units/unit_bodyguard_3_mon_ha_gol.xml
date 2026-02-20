@@ -1,0 +1,74 @@
+<instance version="4" description="Mongol castle age khan bodyguard" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="244375606" List.ParentItemID="244375606">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_knight_3" overrideParent="True" />
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="649441978" List.ParentItemID="649441978">
+			<list name="action_state_trees">
+				<group name="container" List.ItemID="1871242338" List.ParentItemID="1871242338">
+					<string name="state_tree" value="unit_action_apply\units\knight\audio\mon\3" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-1238039997" List.ParentItemID="-1238039997">
+			<group name="time_cost">
+				<float name="time_seconds" value="45" overrideParent="True" />
+				<enum_table name="cost">
+					<float name="food" value="75" overrideParent="True" />
+					<float name="stone" value="100" overrideParent="True" />
+				</enum_table>
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-2067549562" List.ParentItemID="-2067549562">
+			<float name="hitpoints" value="260" overrideParent="True" />
+			<enum_table name="armor_scaler_by_damage_type">
+				<float name="Melee" value="4" overrideParent="True" />
+				<float name="Ranged" value="4" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="943611660" List.ParentItemID="943611660">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-1153713293" List.ParentItemID="-1153713293">
+					<group name="tier" List.ItemID="-1063033108" List.ParentItemID="-1063033108">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol_ha_gol\units\tier3_cavalry_bodyguard_mon_ha_gol" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\mongol_ha_gol\unit_bodyguard_3_mon_ha_gol" overrideParent="True" />
+					</group>
+					<group name="tier" List.ItemID="-1809627914" List.ParentItemID="-1809627914">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol_ha_gol\units\tier4_cavalry_bodyguard_mon_ha_gol" overrideParent="True" />
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\imperial_age" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\races\mongol_ha_gol\units\unit_bodyguard_4_mon_ha_gol" mod="e2ef01ea17d74b04949857ca0a246ab4" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\mongol_ha_gol\unit_bodyguard_4_mon_ha_gol" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="793175624" List.ParentItemID="793175624">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="-455366004" List.ParentItemID="-455366004">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-104768736" List.ParentItemID="-104768736">
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\mongol_ha_gol\melee\weapon_bodyguard_3_mon_ha_gol" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol_ha_gol\weapons\wpn_melee_bodyguard_3_mon_ha_gol" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="1351151610" List.ParentItemID="1351151610">
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\mongol_ha_gol\ranged\weapon_torch_bodyguard_mon_ha_gol" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="-1841260822" List.ParentItemID="-1841260822">
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\mongol_ha_gol\melee\weapon_bodyguard_3_charge_mon_ha_gol" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol_ha_gol\weapons\wpn_melee_bodyguard_3_charge_mon_ha_gol" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="9001193" />
+	<instance_reference name="parent_pbg" value="ebps\races\mongol_ha_gol\units\unit_bodyguard_2_mon_ha_gol" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+</instance>

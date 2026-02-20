@@ -1,0 +1,67 @@
+<instance version="4" description="Rogue mode champion archer" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-914024362" List.ParentItemID="-914024362">
+			<float name="entity_scale" value="120" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="729861296" List.ParentItemID="729861296">
+			<list name="action_state_trees" overrideParent="True">
+				<group name="container" List.ItemID="1318382137">
+					<string name="state_tree" value="unit_action_apply\units\archer" overrideParent="True" />
+				</group>
+				<group name="container" List.ItemID="320494070">
+					<string name="state_tree" value="unit_action_apply\units\archer\audio\eng\3" overrideParent="True" />
+				</group>
+				<group name="container" overrideParent="True" List.ItemID="-845221258">
+					<string name="state_tree" value="boss_action_apply_rogue\champion_action_apply\attach_vfx" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-123081057" List.ParentItemID="-123081057">
+			<float name="hitpoints" value="300" overrideParent="True" />
+			<enum_table name="armor_scaler_by_damage_type">
+				<float name="Melee" value="0" overrideParent="True" />
+				<float name="Ranged" value="1" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\population_ext" List.ItemID="1518633321" List.ParentItemID="1518633321">
+			<float name="personnel_pop" value="0" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1786737891" List.ParentItemID="1786737891">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="-1929829615" List.ParentItemID="-1929829615">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-1943484352" List.ParentItemID="-1943484352">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\rogue\weapon_archer_rogue" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\english\weapons\wpn_range_archer_4_eng" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="-319893254" List.ParentItemID="-319893254">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\rogue\weapon_archer_rogue_incendiary" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_siege_archer_incendiary" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-935732769" List.ParentItemID="-935732769">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-1093071696" List.ParentItemID="-1093071696">
+					<group name="tier" List.ItemID="1140679418" List.ParentItemID="1140679418">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\campaign\tier4_willikin_of_weald_eng" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="9002834" />
+	<instance_reference name="parent_pbg" value="ebps\races\english\units\unit_archer_4_eng" />
+</instance>

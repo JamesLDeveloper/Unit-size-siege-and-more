@@ -1,0 +1,316 @@
+<instance version="4" description="Mongol feudal age khan" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1356892678" List.ParentItemID="1356892678">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol_ha_gol\units\unit_khan_2_mon_ha_gol" overrideParent="True" />
+			<bool name="browsable_in_editor" value="False" overrideParent="True" />
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-12513399" List.ParentItemID="-12513399">
+			<list name="action_state_trees">
+				<group name="container" List.ItemID="-1622883091" List.ParentItemID="-1622883091">
+					<string name="state_tree" value="unit_action_apply\units\knight" overrideParent="True" />
+				</group>
+				<group name="container" List.ItemID="2022080988" List.ParentItemID="2022080988">
+					<string name="state_tree" value="khan_action_apply_mon_ha_gol" overrideParent="True" />
+				</group>
+				<group name="container" List.ItemID="-289976116" List.ListAction="Append">
+					<string name="state_tree" value="unit_action_apply\units\cavalry_archer\audio\khan\2" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-919563761" List.ParentItemID="-919563761">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="food" value="0" overrideParent="True" />
+					<float name="wood" value="0" overrideParent="True" />
+					<float name="gold" value="0" overrideParent="True" />
+					<float name="stone" value="140" overrideParent="True" />
+				</enum_table>
+				<float name="time_seconds" value="22.5" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" comment="Horse and rider entities require identical health_ext values. Keep them in sync." overrideParent="True" List.ItemID="-788422057" List.ParentItemID="-788422057">
+			<float name="hitpoints" value="190" overrideParent="True" />
+			<float name="regeneration" value="0" overrideParent="True" />
+			<bool name="regeneration_disabled" value="True" overrideParent="True" />
+			<enum_table name="armor_scaler_by_damage_type">
+				<float name="Ranged" value="3" overrideParent="True" />
+				<float name="True Damage" value="0" />
+				<float name="Melee" value="3" />
+				<float name="Fire" value="0" />
+			</enum_table>
+			<state_tree_node name="death_action_tree" value="" overrideParent="True" />
+			<bool name="can_repair" value="False" />
+			<bool name="cuttable" value="False" />
+			<string name="death_event_name" value="Death" />
+			<float name="death_seconds" value="19" />
+			<bool name="delete_when_dead" value="True" />
+			<bool name="force_attacker_memory" value="False" />
+			<bool name="is_invincible" value="False" />
+			<bool name="is_salvagable_wreck" value="False" />
+			<instance_reference name="rebuilt_entity" value="" />
+			<instance_reference name="rebuilt_squad" value="" />
+			<bool name="rebuilt_use_wreck_owner" value="False" />
+			<bool name="receive_weapon_cover_modifiers" value="True" />
+			<bool name="remove_from_pathfinding_on_death" value="True" />
+			<bool name="reveal_to_all_on_death" value="False" />
+			<bool name="ui_can_scuttle" value="True" />
+			<float name="target_size" value="1" />
+			<float name="weapon_priority" value="100" />
+			<template_reference name="wreck_entity_option" value="options\none">
+			</template_reference>
+			<enum name="armor_type" value="None" />
+			<template_reference name="armor_layout_option" value="options\ebpextensions\healthext\armor_layouts\armor_layout_uniform">
+				<float name="armor" value="1" />
+			</template_reference>
+			<enum name="allegiance_override" value="none" />
+			<bool name="not_default_attackable" value="False" />
+			<bool name="can_be_damaged_by_ally" value="False" />
+			<template_reference name="self_destruct_action_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="" />
+				<bool name="start_suspended" value="False" />
+			</template_reference>
+			<template_reference name="rebuilt_entity_action_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="" />
+				<bool name="start_suspended" value="False" />
+			</template_reference>
+			<template_reference name="on_received_damage_action_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="" overrideParent="True" />
+				<bool name="start_suspended" value="False" />
+			</template_reference>
+			<state_tree_node name="on_reach_invulnerable_min_cap_entity_state_tree_ref" value="" />
+			<state_tree_node name="on_reach_max_health_entity_state_tree_ref" value="" />
+			<enum_table name="percentage_reduction_armor_by_damage_type">
+				<float name="True Damage" value="0" />
+				<float name="Melee" value="0" />
+				<float name="Ranged" value="0" />
+				<float name="Fire" value="0" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\hit_object_ext" overrideParent="True" List.ItemID="1198490334" List.ParentItemID="1198490334">
+			<instance_reference name="hit_material" value="hit_material\hvyarmour" />
+			<template_reference name="projectile_reflect_option" value="options\none">
+			</template_reference>
+			<enum name="projectile_collision_check_type" value="main_simbox_only" />
+			<float name="hit_chance" value="1" />
+			<group name="shot_collision">
+				<enum_table name="pass_through_relation">
+					<bool name="undefined" value="False" />
+					<bool name="enemy" value="True" />
+					<bool name="ally" value="True" />
+					<bool name="neutral" value="False" />
+				</enum_table>
+				<enum_table name="pass_through_projectile">
+					<bool name="tp_artillery" value="True" />
+					<bool name="tp_collide" value="False" />
+					<bool name="tp_vehicle_collide" value="True" />
+					<bool name="tp_piercing_blockers_only" value="True" />
+				</enum_table>
+				<bool name="pass_through_weapon_ranged_non_projectile" value="False" />
+				<bool name="collide_with_missed_ranged_weapon_shots" value="False" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\population_ext" List.ItemID="-1038753850" List.ParentItemID="-1038753850">
+			<float name="personnel_pop" value="1" overrideParent="True" />
+			<float name="vehicle_pop" value="0" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="209652795" List.ParentItemID="209652795">
+			<bool name="extended_sight" value="False" overrideParent="True" />
+			<float name="extended_sight_radius" value="0" overrideParent="True" />
+			<group name="sight_package">
+				<float name="inner_height" value="10" overrideParent="True" />
+				<float name="inner_radius" value="4" overrideParent="True" />
+				<float name="outer_radius" value="28" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1786016482" List.ParentItemID="-1786016482">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\mongol_ha_gol" overrideParent="True" List.ItemID="1843649648" />
+			</list>
+			<list name="unit_type_list" removedIds="-90441891">
+				<enum name="unit_type" value="xbox_support_quick_find" List.ItemID="-970918004" List.ListAction="Append" />
+				<enum name="unit_type" value="khan" List.ItemID="-1492641017" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="1680160005" List.ParentItemID="1680160005">
+			<enum name="decorator_visibility" value="mouse_over" overrideParent="True" />
+			<bool name="is_armoured" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="-662784220" List.ParentItemID="-662784220">
+			<enum_table name="speed_scaling_table">
+				<float name="default_speed" value="6.5" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\speech_ext" List.ItemID="1327234703" List.ParentItemID="1327234703">
+			<string name="speaker_code" value="khan" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="1078428342" List.ParentItemID="1078428342">
+			<list name="tier_group_list">
+				<list name="tier_group" overrideParent="True" List.ItemID="1950436582">
+					<group name="tier" overrideParent="True" List.ItemID="-1157489102">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol_ha_gol\units\tier2_cavalry_khan_mon_ha_gol" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+					<group name="tier" List.ItemID="1655715382">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol_ha_gol\units\tier3_cavalry_khan_mon_ha_gol" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\castle_age" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\races\mongol_ha_gol\units\unit_khan_3_mon_ha_gol" mod="e2ef01ea17d74b04949857ca0a246ab4" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\mongol_ha_gol\unit_khan_3_mon_ha_gol" overrideParent="True" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+					<group name="tier" List.ItemID="-1695029850">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol_ha_gol\units\tier4_cavalry_khan_mon_ha_gol" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\imperial_age" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\races\mongol_ha_gol\units\unit_khan_4_mon_ha_gol" mod="e2ef01ea17d74b04949857ca0a246ab4" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\mongol_ha_gol\unit_khan_4_mon_ha_gol" overrideParent="True" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="1083066112" List.ParentItemID="1083066112">
+			<instance_reference name="schema" value="statemodel_schema\units\civilizations\mongols_ha_gol\khan_mon_ha_gol" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1762200638" List.ParentItemID="1762200638">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="1534383478" List.ParentItemID="1534383478">
+					<list name="weapon_table" overrideParent="True">
+						<group name="weapon" List.ItemID="-1429248292" List.ParentItemID="-1605222392">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\mongol_ha_gol\melee\weapon_khan_2_mon_ha_gol" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol_ha_gol\weapons\wpn_melee_khan_2_mon_ha_gol" overrideParent="True" />
+								<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+							</template_reference>
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="0" />
+							</group>
+							<enum name="type" value="default" />
+						</group>
+						<group name="weapon" List.ItemID="-633703631" List.ParentItemID="-815746252">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\mongol\ranged\weapon_torch_lancer_mon" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol\weapons\wpn_siege_torch_mon" overrideParent="True" />
+								<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+							</template_reference>
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="0.5" />
+								<float name="z" value="-0.5" />
+							</group>
+							<enum name="type" value="default" />
+						</group>
+						<group name="weapon" List.ItemID="-1430771864" List.ParentItemID="1064922397">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\mongol_ha_gol\melee\weapon_khan_2_charge_mon_ha_gol" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol_ha_gol\weapons\wpn_melee_khan_2_charge_mon_ha_gol" overrideParent="True" />
+								<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+							</template_reference>
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="0.5" />
+								<float name="z" value="0" />
+							</group>
+							<enum name="type" value="default_override_when_idle" />
+						</group>
+						<group name="weapon" List.ItemID="-607119662">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin" overrideParent="True">
+								<float name="x" value="0" />
+								<float name="y" value="3" />
+								<float name="z" value="1" />
+							</group>
+							<enum name="type" value="default" />
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\mongol_ha_gol\ranged\weapon_khan_debuff_2_mon_ha_gol" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol\weapons\wpn_range_horsearcher_2_mon" />
+								<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-1119473788" List.ListAction="Append">
+			<bool name="must_be_in_supply" value="False" />
+			<float name="number_of_standard_slots" value="-1" />
+			<list name="standard_upgrades">
+			</list>
+			<int name="max_queue_size_override" value="-1" />
+			<state_tree_node name="production_item_completed_openingbranch" value="" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="4606411" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_knight_2" />
+</instance>

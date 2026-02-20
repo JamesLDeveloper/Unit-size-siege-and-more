@@ -1,0 +1,48 @@
+<instance version="6" description="Castle Age Siege Tower" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1324899961" List.ParentItemID="-1324899961">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign\lithuania" List.ItemID="-532684196" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="1985133745" List.ParentItemID="1985133745">
+			<bool name="construction_site_erase_inactive" value="False" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\hold_ext" List.ItemID="-267383916" List.ParentItemID="-267383916">
+			<bool name="move_on_remove_hold" value="False" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\burn_ext" List.ItemID="-77715203" List.ListAction="Append">
+			<float name="on_fire_damage_per_sec" value="2" />
+			<float name="on_fire_decay_amount_per_sec" value="-0.05" />
+			<float name="on_fire_threshold" value="375" />
+			<float name="max_fire_damage_per_second" value="10000" />
+			<float name="on_fire_health_percentage" value="-1" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="183012" />
+	<instance_reference name="parent_pbg" value="ebps\races\hre\units\unit_siege_tower_3_hre" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1966059254" List.ParentItemID="-1966059254">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign\lithuania" List.ItemID="1052309805" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="1837617587" List.ParentItemID="1837617587">
+				<bool name="construction_site_erase_inactive" value="False" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\hold_ext" List.ItemID="-2073365520" List.ParentItemID="-2073365520">
+				<bool name="move_on_remove_hold" value="False" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\burn_ext" List.ItemID="314389658" List.ListAction="Append">
+				<float name="on_fire_damage_per_sec" value="2" />
+				<float name="on_fire_decay_amount_per_sec" value="-0.05" />
+				<float name="on_fire_threshold" value="375" />
+				<float name="max_fire_damage_per_second" value="10000" />
+				<float name="on_fire_health_percentage" value="-1" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="183012" />
+		<instance_reference name="parent_pbg" value="ebps\races\hre\units\unit_siege_tower_3_hre" />
+	</variant>
+</instance>

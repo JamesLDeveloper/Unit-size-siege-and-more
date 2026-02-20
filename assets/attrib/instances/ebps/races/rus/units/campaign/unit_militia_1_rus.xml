@@ -1,0 +1,125 @@
+<instance version="6" description="Rus Militia" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="847857005" List.ParentItemID="847857005">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="440395020" List.ParentItemID="440395020">
+			<float name="hitpoints" value="20" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="125879439" List.ParentItemID="125879439">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="villager" List.ItemID="-147241585" />
+				<enum name="unit_type" value="builder" List.ItemID="1153451477" />
+				<enum name="unit_type" value="human" List.ItemID="-1363044178" />
+				<enum name="unit_type" value="formational" List.ItemID="869604461" />
+				<enum name="unit_type" value="worker" List.ItemID="1076879923" />
+				<enum name="unit_type" value="torch_thrower" List.ItemID="1239734901" />
+				<enum name="unit_type" value="militia" List.ItemID="1529710647" />
+				<enum name="unit_type" value="annihilation_condition" List.ItemID="-104577033" />
+				<enum name="unit_type" value="infantry" List.ItemID="1310336645" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="666654805" List.ParentItemID="666654805">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="-1967166760" List.ParentItemID="-1967166760">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="1996562483" List.ParentItemID="1996562483">
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\rus\melee\campaign\weapon_shield_villager_cmp_axe_rus" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\english\weapons\campaign\wpn_melee_shieldwall_hastings_cmp_eng" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="585730452" List.ParentItemID="585730452">
+			<list name="tier_group_list">
+				<list name="tier_group" overrideParent="True" List.ItemID="-1988215495" List.ParentItemID="-1988215495">
+					<group name="tier" List.ItemID="153173796">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\rus\units\campaign\tier1_shield_villager_cmp_rus" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="default" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2035987" />
+	<instance_reference name="parent_pbg" value="ebps\races\rus\units\unit_villager_1_rus" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-904489017" List.ParentItemID="-904489017">
+				<float name="hitpoints" value="20" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="804994421" List.ParentItemID="804994421">
+				<list name="unit_type_list" overrideParent="True">
+					<enum name="unit_type" value="villager" List.ItemID="-1354437699" />
+					<enum name="unit_type" value="builder" List.ItemID="2120555626" />
+					<enum name="unit_type" value="human" List.ItemID="477780687" />
+					<enum name="unit_type" value="formational" List.ItemID="-1604606353" />
+					<enum name="unit_type" value="worker" List.ItemID="-1348948205" />
+					<enum name="unit_type" value="militia" List.ItemID="-1687536915" />
+					<enum name="unit_type" value="annihilation_condition" List.ItemID="-1092064456" />
+					<enum name="unit_type" value="infantry" List.ItemID="-326664926" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="105106156" List.ParentItemID="105106156">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="-934490158" List.ParentItemID="-934490158">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="733746628" List.ParentItemID="733746628">
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\rus\melee\campaign\weapon_shield_villager_cmp_axe_rus" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\english\weapons\campaign\wpn_melee_shieldwall_hastings_cmp_eng" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="527807623" List.ParentItemID="527807623">
+				<list name="tier_group_list">
+					<list name="tier_group" overrideParent="True" List.ItemID="191312182" List.ParentItemID="191312182">
+						<group name="tier" List.ItemID="-1653298488">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\rus\units\campaign\tier1_shield_villager_cmp_rus" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_tier_unit_exposure_dca" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2035987" />
+		<instance_reference name="parent_pbg" value="ebps\races\rus\units\unit_villager_1_rus" />
+	</variant>
+</instance>

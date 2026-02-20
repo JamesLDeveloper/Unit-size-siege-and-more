@@ -1,0 +1,54 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1410792167" List.ParentItemID="-1410792167">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="1004494232" List.ParentItemID="1004494232">
+			<group name="time_cost">
+				<float name="time_seconds" value="35" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-487450359" List.ParentItemID="-487450359">
+			<enum_table name="armor_scaler_by_damage_type">
+				<float name="Ranged" value="0" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1903432945" List.ParentItemID="-1903432945">
+			<list name="unit_type_list">
+				<enum name="unit_type" value="workshop_ram" List.ItemID="97063663" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="517696132" List.ParentItemID="517696132">
+			<string name="sound" value="" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="-37156415" List.ParentItemID="-37156415">
+			<list name="requirement_table" removedIds="487091217">
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2118868" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units_buildable\unit_ram_3" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="1004494232" List.ParentItemID="1004494232">
+				<group name="time_cost">
+					<float name="time_seconds" value="40" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1903432945" List.ParentItemID="-1903432945">
+				<list name="unit_type_list">
+					<enum name="unit_type" value="workshop_ram" List.ItemID="-1773069134" List.ListAction="Append" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="517696132" List.ParentItemID="517696132">
+				<string name="sound" value="" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="-37156415" List.ParentItemID="-37156415">
+				<list name="requirement_table" overrideParent="True">
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2118868" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units_buildable\unit_ram_3" />
+	</variant>
+</instance>

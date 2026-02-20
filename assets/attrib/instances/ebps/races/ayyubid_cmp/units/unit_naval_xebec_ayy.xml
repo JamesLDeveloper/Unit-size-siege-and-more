@@ -1,0 +1,60 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-638368952" List.ParentItemID="-638368952">
+			<bool name="browsable_in_editor" value="False" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1481453663" List.ParentItemID="-1481453663">
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="-1383829793" List.ParentItemID="-1383829793" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1092792524" List.ParentItemID="1092792524">
+			<list name="hardpoints">
+				<group name="hardpoint" comment="Left 4" List.ItemID="822147706" List.ParentItemID="822147706">
+				</group>
+				<group name="hardpoint" comment="Left 5" List.ItemID="-1159284020" List.ParentItemID="-1159284020">
+				</group>
+				<group name="hardpoint" comment="AI Right 1" List.ItemID="1848079065" List.ParentItemID="1848079065">
+				</group>
+			</list>
+			<group name="attack_move">
+				<float name="attack_move_targeting_range" value="40" overrideParent="True" />
+			</group>
+			<group name="idle_targeting">
+				<float name="idle_targeting_range" value="30" overrideParent="True" />
+			</group>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2103396" />
+	<instance_reference name="parent_pbg" value="ebps\races\abbasid\units\unit_naval_combat_warship_4_abb" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-638368952" List.ParentItemID="-638368952">
+				<bool name="browsable_in_editor" value="False" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1481453663" List.ParentItemID="-1481453663">
+				<list name="race_type_list">
+					<instance_reference name="race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="-1383829793" List.ParentItemID="-1383829793" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1092792524" List.ParentItemID="1092792524">
+				<list name="hardpoints">
+					<group name="hardpoint" comment="Left 4" List.ItemID="822147706" List.ParentItemID="822147706">
+					</group>
+					<group name="hardpoint" comment="Left 5" List.ItemID="-1159284020" List.ParentItemID="-1159284020">
+					</group>
+					<group name="hardpoint" comment="AI Right 1" List.ItemID="1848079065" List.ParentItemID="1848079065">
+					</group>
+				</list>
+				<group name="attack_move">
+					<float name="attack_move_targeting_range" value="40" overrideParent="True" />
+				</group>
+				<group name="idle_targeting">
+					<float name="idle_targeting_range" value="30" overrideParent="True" />
+				</group>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2103396" />
+		<instance_reference name="parent_pbg" value="ebps\races\abbasid\units\unit_naval_combat_warship_4_abb" />
+	</variant>
+</instance>

@@ -1,0 +1,104 @@
+<instance version="6" description="Dark Age Scout" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="2040641520" List.ParentItemID="2040641520">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1277457277" List.ParentItemID="-1277457277">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign\lithuania" List.ItemID="240101440" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="67217717" List.ParentItemID="67217717">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="1358168723" List.ParentItemID="1358168723">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="2077874932" List.ParentItemID="2077874932">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_scout_1" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\hre\weapons\wpn_melee_scout_1_hre" overrideParent="True" />
+								<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="-1636064517" List.ParentItemID="-1636064517">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_scout_hunt_ranged_1" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_range_scout_hunt_1" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="-1791072794" List.ParentItemID="-1791072794">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_torch_weak" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_siege_torch_weak" overrideParent="True" />
+								<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="183010" />
+	<instance_reference name="parent_pbg" value="ebps\races\hre\units\unit_scout_1_hre" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-129103077" List.ParentItemID="-129103077">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign\lithuania" List.ItemID="-2121362163" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1018883665" List.ParentItemID="1018883665">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="-143493340" List.ParentItemID="-143493340">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-1148276727" List.ParentItemID="-1148276727">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_dummy_horse_melee_hack" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="" overrideParent="True" />
+									<string name="marker_name_parent" value="" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-763249587" List.ParentItemID="-763249587">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_scout_1" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\hre\weapons\wpn_melee_scout_1_hre" overrideParent="True" />
+									<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="1690857181" List.ParentItemID="1690857181">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_scout_hunt_ranged_1" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_range_scout_hunt_1" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-366801166" List.ParentItemID="-366801166">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_torch_weak" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_siege_torch_weak" overrideParent="True" />
+									<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="183010" />
+		<instance_reference name="parent_pbg" value="ebps\races\hre\units\unit_scout_1_hre" />
+	</variant>
+</instance>

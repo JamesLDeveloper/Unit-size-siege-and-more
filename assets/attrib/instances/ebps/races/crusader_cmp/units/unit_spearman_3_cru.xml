@@ -1,0 +1,299 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="803033353" List.ParentItemID="803033353">
+			<bool name="browsable_in_editor" value="False" overrideParent="True" />
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1344262557" List.ParentItemID="1344262557">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" List.ItemID="1388110231" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="113064770" List.ParentItemID="113064770">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="1772179079" List.ParentItemID="1772179079">
+					<list name="weapon_table" overrideParent="True">
+						<group name="weapon" List.ItemID="-175610925">
+							<template_reference name="weapon_entity_attachment" value="">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_spearman_3" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\french\weapons\wpn_melee_spearman_3_fre" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" />
+							</template_reference>
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="1.5" />
+								<float name="z" value="0" />
+							</group>
+							<enum name="type" value="default" />
+						</group>
+						<group name="weapon" List.ItemID="444860476">
+							<template_reference name="weapon_entity_attachment" value="">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_dummy" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" />
+							</template_reference>
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="1.5" />
+								<float name="z" value="0" />
+							</group>
+							<enum name="type" value="default" />
+						</group>
+						<group name="weapon" List.ItemID="-684739033">
+							<template_reference name="weapon_entity_attachment" value="">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_torch" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\french\weapons\wpn_siege_torch_fre" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" />
+							</template_reference>
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="0.5" />
+								<float name="z" value="-0.5" />
+							</group>
+							<enum name="type" value="default" />
+						</group>
+						<group name="weapon" List.ItemID="-1378476935">
+							<template_reference name="weapon_entity_attachment" value="">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_spearwall_3" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\french\weapons\wpn_melee_spearwall_3_fre" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" />
+							</template_reference>
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="0.5" />
+								<float name="z" value="0" />
+							</group>
+							<enum name="type" value="default" />
+						</group>
+						<group name="weapon" List.ItemID="-1073787355">
+							<template_reference name="weapon_entity_attachment" value="">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_spearman_3_charge" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\french\weapons\wpn_melee_spearman_3_charge_fre" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" />
+							</template_reference>
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="0.5" />
+								<float name="z" value="0" />
+							</group>
+							<enum name="type" value="default" />
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="-1520618848" List.ParentItemID="-1520618848">
+			<enum_table name="speed_levels" overrideParent="True">
+				<float name="speed_level_0" value="1" />
+				<float name="speed_level_1" value="2.5" overrideParent="True" />
+				<float name="speed_level_2" value="4" />
+				<float name="speed_level_3" value="5" />
+				<float name="speed_level_4" value="5" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-910122931" List.ParentItemID="-910122931">
+			<instance_reference name="schema" value="statemodel_schema\units\civilizations\crusader_cmp\spearman_cru" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-191072472" List.ParentItemID="-191072472">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="1741274399" List.ParentItemID="1741274399">
+					<group name="tier" List.ItemID="1671974499" List.ParentItemID="1671974499">
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\races\crusader_cmp\units\unit_spearman_4_cru" mod="e2ef01ea17d74b04949857ca0a246ab4" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\crusader_cmp\unit_spearman_4_cru" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2089086" />
+	<instance_reference name="parent_pbg" value="ebps\races\french\units\unit_spearman_3_fre" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="803033353" List.ParentItemID="803033353">
+				<bool name="browsable_in_editor" value="False" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1344262557" List.ParentItemID="1344262557">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" List.ItemID="-1997819553" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="113064770" List.ParentItemID="113064770">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="1772179079" List.ParentItemID="1772179079">
+						<list name="weapon_table" overrideParent="True">
+							<group name="weapon" List.ItemID="-923991772">
+								<template_reference name="weapon_entity_attachment" value="">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_spearman_3" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\french\weapons\wpn_melee_spearman_3_fre" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" />
+								</template_reference>
+								<group name="heading">
+									<float name="x" value="0" />
+									<float name="y" value="0" />
+									<float name="z" value="1" />
+								</group>
+								<float name="length" value="0" />
+								<group name="origin">
+									<float name="x" value="0" />
+									<float name="y" value="1.5" />
+									<float name="z" value="0" />
+								</group>
+								<enum name="type" value="default" />
+							</group>
+							<group name="weapon" List.ItemID="-200064164">
+								<template_reference name="weapon_entity_attachment" value="">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_dummy" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" />
+								</template_reference>
+								<group name="heading">
+									<float name="x" value="0" />
+									<float name="y" value="0" />
+									<float name="z" value="1" />
+								</group>
+								<float name="length" value="0" />
+								<group name="origin">
+									<float name="x" value="0" />
+									<float name="y" value="1.5" />
+									<float name="z" value="0" />
+								</group>
+								<enum name="type" value="default" />
+							</group>
+							<group name="weapon" List.ItemID="1820020771">
+								<template_reference name="weapon_entity_attachment" value="">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_torch" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\french\weapons\wpn_siege_torch_fre" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" />
+								</template_reference>
+								<group name="heading">
+									<float name="x" value="0" />
+									<float name="y" value="0" />
+									<float name="z" value="1" />
+								</group>
+								<float name="length" value="0" />
+								<group name="origin">
+									<float name="x" value="0" />
+									<float name="y" value="0.5" />
+									<float name="z" value="-0.5" />
+								</group>
+								<enum name="type" value="default" />
+							</group>
+							<group name="weapon" List.ItemID="739298100">
+								<template_reference name="weapon_entity_attachment" value="">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_spearwall_3" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\french\weapons\wpn_melee_spearwall_3_fre" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" />
+								</template_reference>
+								<group name="heading">
+									<float name="x" value="0" />
+									<float name="y" value="0" />
+									<float name="z" value="1" />
+								</group>
+								<float name="length" value="0" />
+								<group name="origin">
+									<float name="x" value="0" />
+									<float name="y" value="0.5" />
+									<float name="z" value="0" />
+								</group>
+								<enum name="type" value="default" />
+							</group>
+							<group name="weapon" List.ItemID="141396566">
+								<template_reference name="weapon_entity_attachment" value="">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_spearman_3_charge" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\french\weapons\wpn_melee_spearman_3_charge_fre" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" />
+								</template_reference>
+								<group name="heading">
+									<float name="x" value="0" />
+									<float name="y" value="0" />
+									<float name="z" value="1" />
+								</group>
+								<float name="length" value="0" />
+								<group name="origin">
+									<float name="x" value="0" />
+									<float name="y" value="0.5" />
+									<float name="z" value="0" />
+								</group>
+								<enum name="type" value="default" />
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="-1520618848" List.ParentItemID="-1520618848">
+				<enum_table name="speed_levels" overrideParent="True">
+					<float name="speed_level_0" value="1" />
+					<float name="speed_level_1" value="2.5" overrideParent="True" />
+					<float name="speed_level_2" value="4" />
+					<float name="speed_level_3" value="5" />
+					<float name="speed_level_4" value="5" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-910122931" List.ParentItemID="-910122931">
+				<instance_reference name="schema" value="statemodel_schema\units\civilizations\crusader_cmp\spearman_cru" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-191072472" List.ParentItemID="-191072472">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="1741274399" List.ParentItemID="1741274399">
+						<group name="tier" List.ItemID="1671974499" List.ParentItemID="1671974499">
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\races\crusader_cmp\units\unit_spearman_4_cru" mod="e2ef01ea17d74b04949857ca0a246ab4" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\crusader_cmp\unit_spearman_4_cru" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2089086" />
+		<instance_reference name="parent_pbg" value="ebps\races\french\units\unit_spearman_3_fre" />
+	</variant>
+</instance>

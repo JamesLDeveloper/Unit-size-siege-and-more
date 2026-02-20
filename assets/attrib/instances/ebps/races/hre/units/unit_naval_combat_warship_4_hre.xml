@@ -1,0 +1,89 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="1734868903" List.ParentItemID="1734868903">
+			<enum_table name="armor_scaler_by_damage_type">
+				<float name="Ranged" value="5" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="-791983380" List.ParentItemID="-791983380">
+			<group name="sight_package">
+				<float name="inner_radius" value="24" overrideParent="True" />
+				<float name="outer_radius" value="48" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1481453663" List.ParentItemID="-1481453663">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="military" List.ItemID="716098385" />
+				<enum name="unit_type" value="ship" List.ItemID="52211054" />
+				<enum name="unit_type" value="naval_broadside" List.ItemID="2082654239" />
+				<enum name="unit_type" value="naval_warship" List.ItemID="1557613159" />
+				<enum name="unit_type" value="naval_unit" List.ItemID="1752144165" />
+				<enum name="unit_type" value="ranged" List.ItemID="-1204904217" />
+				<enum name="unit_type" value="siegeable" List.ItemID="-1626196141" />
+				<enum name="unit_type" value="annihilation_condition" List.ItemID="1584898388" />
+				<enum name="unit_type" value="gunpowder" List.ItemID="419496711" />
+				<enum name="unit_type" value="naval_western" List.ItemID="1429677575" />
+				<enum name="unit_type" value="naval_military" overrideParent="True" List.ItemID="-2124848456" List.ParentItemID="-2059902898" />
+				<enum name="unit_type" value="massive" List.ItemID="-1218154335" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1092792524" List.ParentItemID="1092792524">
+			<list name="hardpoints">
+				<group name="hardpoint" comment="AI Left 1" List.ItemID="1847161327" List.ParentItemID="1847161327">
+				</group>
+				<group name="hardpoint" comment="Right 1" List.ItemID="822147706" List.ParentItemID="822147706">
+				</group>
+				<group name="hardpoint" comment="AI Right 3" List.ItemID="1848079065" List.ParentItemID="1848079065">
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-1265230428" List.ParentItemID="-1265230428">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="86044439" List.ParentItemID="86044439">
+					<group name="tier" List.ItemID="1888019086" List.ParentItemID="1888019086">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\hre\units\tier4_naval_combat_warship_hre" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="-785356034" List.ParentItemID="-785356034">
+			<list name="type_list" overrideParent="True">
+				<group name="type" comment="Repair" List.ItemID="-1875069947">
+					<enum name="interaction_type" value="repair" />
+					<int name="prefer_number" value="-1" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+				<group name="type" overrideParent="True" List.ItemID="-475870972">
+					<enum name="interaction_type" value="inspire_hre" />
+					<int name="prefer_number" value="1" />
+					<int name="max_number" value="1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="193090" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_combat_warship_4" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1562115440" List.ParentItemID="1562115440">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="1473829252" List.ParentItemID="1473829252">
+						<group name="tier" List.ItemID="1040271146" List.ParentItemID="1040271146">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\hre\units\tier4_naval_combat_warship_hre" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="193090" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_combat_warship_4" />
+	</variant>
+</instance>

@@ -1,0 +1,20 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1356892678" List.ParentItemID="1356892678">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-788422057" List.ParentItemID="-788422057">
+			<float name="hitpoints" value="270" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="9002173" />
+	<instance_reference name="parent_pbg" value="ebps\races\french\units\campaign\unit_king_louis_cavalry_cmp_fre" />
+	<variant name="campaign">
+		<uniqueid name="pbgid" value="9002173" />
+		<instance_reference name="parent_pbg" value="ebps\races\french\units\campaign\unit_king_louis_cavalry_cmp_fre" />
+	</variant>
+	<variant name="xp3">
+		<uniqueid name="pbgid" value="9002173" />
+		<instance_reference name="parent_pbg" value="ebps\races\french\units\campaign\unit_king_louis_cavalry_cmp_fre" />
+	</variant>
+</instance>

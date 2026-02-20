@@ -1,0 +1,515 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1571357040" List.ParentItemID="1571357040">
+			<int name="precise_size" value="3" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="1754625343" List.ParentItemID="1754625343">
+			<list name="action_state_trees" overrideParent="True">
+				<group name="container" List.ItemID="-663804506">
+					<string name="state_tree" value="unit_action_apply\units\naval_broadside" overrideParent="True" />
+				</group>
+				<group name="container" List.ItemID="-1684462052">
+					<string name="state_tree" value="upgrade_entity_naval\upgrade_naval_role_combatship_rus" overrideParent="True" />
+				</group>
+				<group name="container" List.ItemID="649584250">
+					<string name="state_tree" value="combat_ship_action_apply" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-347826796" List.ParentItemID="-347826796">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="military" List.ItemID="729416677" />
+				<enum name="unit_type" value="ship_medium_sail" List.ItemID="-334814640" />
+				<enum name="unit_type" value="medium_ship" List.ItemID="860994521" />
+				<enum name="unit_type" value="annihilation_condition" List.ItemID="226305535" />
+				<enum name="unit_type" value="naval_broadside" List.ItemID="-1705472956" />
+				<enum name="unit_type" value="naval_general_ship" List.ItemID="-155587604" />
+				<enum name="unit_type" value="naval_unit" List.ItemID="1498555054" />
+				<enum name="unit_type" value="ship" List.ItemID="929976366" />
+				<enum name="unit_type" value="ranged" List.ItemID="-1943950399" />
+				<enum name="unit_type" value="siegeable" List.ItemID="-1490442575" />
+				<enum name="unit_type" value="springald_ship" List.ItemID="-979498651" />
+				<enum name="unit_type" value="lodya_ship" List.ItemID="-1064189111" />
+				<enum name="unit_type" value="lodya_combat_ship" List.ItemID="-1833209286" />
+				<enum name="unit_type" value="naval_military" List.ItemID="-103921830" List.ParentItemID="-2059902898" />
+				<enum name="unit_type" value="massive" List.ItemID="1387680710" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="6978733" List.ParentItemID="6978733">
+			<instance_reference name="navigation_agent_info" value="navigation\agent_info\naval\oar\naval_oar_medium_agent_info" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="962330722" List.ParentItemID="962330722">
+			<list name="standard_upgrades" overrideParent="True">
+				<instance_reference name="upgrade" value="upgrade\races\rus\research\naval\upgrade_naval_role_lodya_combatship_to_fireship_rus" overrideParent="True" List.ItemID="1213110635" />
+				<instance_reference name="upgrade" value="upgrade\races\rus\research\naval\upgrade_naval_role_lodya_combatship_to_fishingship_rus" overrideParent="True" List.ItemID="1276053573" />
+				<instance_reference name="upgrade" value="upgrade\races\rus\research\naval\upgrade_naval_role_lodya_combatship_to_galley_rus" overrideParent="True" List.ItemID="-1160434221" />
+				<instance_reference name="upgrade" value="upgrade\races\rus\research\naval\upgrade_naval_role_lodya_combatship_to_tradeship_rus" overrideParent="True" List.ItemID="1055076249" />
+				<instance_reference name="upgrade" value="upgrade\races\rus\research\naval\upgrade_naval_role_lodya_combatship_to_transportship_rus" overrideParent="True" List.ItemID="957211572" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-564826070" List.ParentItemID="-564826070">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="628638250" List.ParentItemID="628638250">
+					<group name="tier" List.ItemID="1812081355" List.ParentItemID="1812081355">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\rus\units\tier3_naval_combat_ship_rus" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+						</template_reference>
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="193094" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_combat_ship_2" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="175959572" List.ParentItemID="175959572">
+				<int name="precise_size" value="3" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-2107844937" List.ParentItemID="-2107844937">
+				<list name="action_state_trees" overrideParent="True">
+					<group name="container" List.ItemID="815943495">
+						<string name="state_tree" value="campaignMod_unit_action_apply\units\naval_generic" />
+					</group>
+					<group name="container" List.ItemID="950185097">
+						<string name="state_tree" value="campaignMod_upgrade_entity_naval\uprage_naval_role_combatship_rus" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-551598370" List.ParentItemID="-551598370">
+				<group name="time_cost">
+					<enum_table name="cost">
+						<float name="wood" value="350" overrideParent="True" />
+						<float name="gold" value="50" overrideParent="True" />
+					</enum_table>
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="1941644057" List.ParentItemID="1941644057">
+				<float name="hitpoints" value="400" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="321147874" List.ParentItemID="321147874">
+				<list name="unit_type_list" overrideParent="True">
+					<enum name="unit_type" value="military" List.ItemID="-1184041390" />
+					<enum name="unit_type" value="ship_medium_sail" List.ItemID="-815806305" />
+					<enum name="unit_type" value="medium_ship" List.ItemID="1346186742" />
+					<enum name="unit_type" value="naval_general_ship" List.ItemID="2120988186" />
+					<enum name="unit_type" value="naval_unit" List.ItemID="49645954" />
+					<enum name="unit_type" value="ship" List.ItemID="-363320489" />
+					<enum name="unit_type" value="ranged" List.ItemID="-538928129" />
+					<enum name="unit_type" value="siegeable" List.ItemID="849659710" />
+					<enum name="unit_type" value="annihilation_condition" List.ItemID="2054823262" />
+					<enum name="unit_type" value="included_by_military_hotkeys" List.ItemID="-1135058137" />
+					<enum name="unit_type" value="naval_military" List.ItemID="1243443678" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1085207674" List.ParentItemID="-1085207674">
+				<list name="hardpoints" overrideParent="True">
+					<group name="hardpoint" List.ItemID="688385863">
+						<float name="parent_hardpoint" value="-1" />
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="1774284775">
+								<group name="heading">
+									<float name="x" value="-1" />
+									<float name="y" value="0" />
+									<float name="z" value="0" />
+								</group>
+								<float name="length" value="0" />
+								<group name="origin">
+									<float name="x" value="-1" />
+									<float name="y" value="4" />
+									<float name="z" value="0" />
+								</group>
+								<enum name="type" value="default" />
+								<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+										<template_reference name="attach_data" value="attachments\attach_data">
+											<string name="marker_name_parent" value="mrk_weapon_port_02" />
+											<string name="parent_rigidbody_target_name" value="" />
+											<enum name="game_object_attachment_type" value="scenegraph" />
+										</template_reference>
+										<instance_reference name="ebp" value="ebps\races\rus\weapons\wpn_range_naval_lodya_arrow_vis_rus" overrideParent="True" />
+										<group name="attachment_flags">
+											<bool name="sim_only" value="False" />
+											<bool name="no_pathfinding" value="False" />
+											<bool name="not_snappable" value="False" />
+											<bool name="restore_snap_to_ground_on_detach" value="False" />
+											<bool name="no_sim_update" value="False" />
+											<bool name="join_parent_squad" value="False" />
+											<bool name="redirect_damage_to_parent_entity" value="True" />
+											<bool name="assign_as_attachment_combat_leader" value="False" />
+											<bool name="assign_as_attachment_movement_leader" value="False" />
+											<bool name="receive_parent_animations" value="False" />
+											<bool name="receive_parent_death" value="False" />
+										</group>
+									</template_reference>
+									<list name="possible_blueprint_updates">
+									</list>
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="">
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-1110241293">
+								<group name="heading">
+									<float name="x" value="-1" />
+									<float name="y" value="0" />
+									<float name="z" value="0" />
+								</group>
+								<float name="length" value="0" />
+								<group name="origin">
+									<float name="x" value="-1" />
+									<float name="y" value="4" />
+									<float name="z" value="0" />
+								</group>
+								<enum name="type" value="default" />
+								<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+										<template_reference name="attach_data" value="attachments\attach_data">
+											<string name="marker_name_parent" value="mrk_weapon_port_02" />
+											<string name="parent_rigidbody_target_name" value="" />
+											<enum name="game_object_attachment_type" value="scenegraph" />
+										</template_reference>
+										<instance_reference name="ebp" value="ebps\races\rus\weapons\wpn_range_naval_lodya_arrow_incendiary_vis_rus" overrideParent="True" />
+										<group name="attachment_flags">
+											<bool name="sim_only" value="False" />
+											<bool name="no_pathfinding" value="False" />
+											<bool name="not_snappable" value="False" />
+											<bool name="restore_snap_to_ground_on_detach" value="False" />
+											<bool name="no_sim_update" value="False" />
+											<bool name="join_parent_squad" value="False" />
+											<bool name="redirect_damage_to_parent_entity" value="True" />
+											<bool name="assign_as_attachment_combat_leader" value="False" />
+											<bool name="assign_as_attachment_movement_leader" value="False" />
+											<bool name="receive_parent_animations" value="False" />
+											<bool name="receive_parent_death" value="False" />
+										</group>
+									</template_reference>
+									<list name="possible_blueprint_updates">
+									</list>
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="">
+								</template_reference>
+							</group>
+						</list>
+						<bool name="receives_attack_commands" value="True" />
+						<string name="base_marker" value="" />
+						<list name="preferred_inventory_item_categories">
+						</list>
+						<list name="firing_offset_markers">
+						</list>
+						<bool name="initialize_weapons_on_creation" value="True" />
+						<string name="offhand_marker" value="" />
+					</group>
+					<group name="hardpoint" List.ItemID="-1579889703">
+						<float name="parent_hardpoint" value="-1" />
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-1419986249">
+								<group name="heading">
+									<float name="x" value="1" />
+									<float name="y" value="0" />
+									<float name="z" value="0" />
+								</group>
+								<float name="length" value="0" />
+								<group name="origin">
+									<float name="x" value="1" />
+									<float name="y" value="4" />
+									<float name="z" value="0" />
+								</group>
+								<enum name="type" value="default" />
+								<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+										<template_reference name="attach_data" value="attachments\attach_data">
+											<string name="marker_name_parent" value="mrk_weapon_starboard_02" />
+											<string name="parent_rigidbody_target_name" value="" />
+											<enum name="game_object_attachment_type" value="scenegraph" />
+										</template_reference>
+										<instance_reference name="ebp" value="ebps\races\rus\weapons\wpn_range_naval_lodya_arrow_rus" overrideParent="True" />
+										<group name="attachment_flags">
+											<bool name="sim_only" value="False" />
+											<bool name="no_pathfinding" value="False" />
+											<bool name="not_snappable" value="False" />
+											<bool name="restore_snap_to_ground_on_detach" value="False" />
+											<bool name="no_sim_update" value="False" />
+											<bool name="join_parent_squad" value="False" />
+											<bool name="redirect_damage_to_parent_entity" value="True" />
+											<bool name="assign_as_attachment_combat_leader" value="False" />
+											<bool name="assign_as_attachment_movement_leader" value="False" />
+											<bool name="receive_parent_animations" value="False" />
+											<bool name="receive_parent_death" value="False" />
+										</group>
+									</template_reference>
+									<list name="possible_blueprint_updates">
+									</list>
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="">
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-507495399">
+								<group name="heading">
+									<float name="x" value="1" />
+									<float name="y" value="0" />
+									<float name="z" value="0" />
+								</group>
+								<float name="length" value="0" />
+								<group name="origin">
+									<float name="x" value="1" />
+									<float name="y" value="4" />
+									<float name="z" value="0" />
+								</group>
+								<enum name="type" value="default" />
+								<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+										<template_reference name="attach_data" value="attachments\attach_data">
+											<string name="marker_name_parent" value="mrk_weapon_starboard_02" />
+											<string name="parent_rigidbody_target_name" value="" />
+											<enum name="game_object_attachment_type" value="scenegraph" />
+										</template_reference>
+										<instance_reference name="ebp" value="ebps\races\rus\weapons\wpn_range_naval_lodya_arrow_incendiary_rus" overrideParent="True" />
+										<group name="attachment_flags">
+											<bool name="sim_only" value="False" />
+											<bool name="no_pathfinding" value="False" />
+											<bool name="not_snappable" value="False" />
+											<bool name="restore_snap_to_ground_on_detach" value="False" />
+											<bool name="no_sim_update" value="False" />
+											<bool name="join_parent_squad" value="False" />
+											<bool name="redirect_damage_to_parent_entity" value="True" />
+											<bool name="assign_as_attachment_combat_leader" value="False" />
+											<bool name="assign_as_attachment_movement_leader" value="False" />
+											<bool name="receive_parent_animations" value="False" />
+											<bool name="receive_parent_death" value="False" />
+										</group>
+									</template_reference>
+									<list name="possible_blueprint_updates">
+									</list>
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="">
+								</template_reference>
+							</group>
+						</list>
+						<bool name="receives_attack_commands" value="True" />
+						<string name="base_marker" value="" />
+						<list name="preferred_inventory_item_categories">
+						</list>
+						<list name="firing_offset_markers">
+						</list>
+						<bool name="initialize_weapons_on_creation" value="True" />
+						<string name="offhand_marker" value="" />
+					</group>
+					<group name="hardpoint" List.ItemID="1350703970">
+						<float name="parent_hardpoint" value="-1" />
+						<list name="weapon_table" overrideParent="True">
+							<group name="weapon" List.ItemID="-1007468977">
+								<group name="heading">
+									<float name="x" value="1" />
+									<float name="y" value="0" />
+									<float name="z" value="0" />
+								</group>
+								<float name="length" value="0" />
+								<group name="origin">
+									<float name="x" value="1" />
+									<float name="y" value="4" />
+									<float name="z" value="0" />
+								</group>
+								<enum name="type" value="default" />
+								<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+										<template_reference name="attach_data" value="attachments\attach_data">
+											<string name="marker_name_parent" value="mrk_weapon_port_01" />
+											<string name="parent_rigidbody_target_name" value="" />
+											<enum name="game_object_attachment_type" value="scenegraph" />
+										</template_reference>
+										<instance_reference name="ebp" value="ebps\races\rus\weapons\wpn_range_naval_lodya_arrow_rus" overrideParent="True" />
+										<group name="attachment_flags">
+											<bool name="sim_only" value="False" />
+											<bool name="no_pathfinding" value="False" />
+											<bool name="not_snappable" value="False" />
+											<bool name="restore_snap_to_ground_on_detach" value="False" />
+											<bool name="no_sim_update" value="False" />
+											<bool name="join_parent_squad" value="False" />
+											<bool name="redirect_damage_to_parent_entity" value="True" />
+											<bool name="assign_as_attachment_combat_leader" value="False" />
+											<bool name="assign_as_attachment_movement_leader" value="False" />
+											<bool name="receive_parent_animations" value="False" />
+											<bool name="receive_parent_death" value="False" />
+										</group>
+									</template_reference>
+									<list name="possible_blueprint_updates">
+									</list>
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="">
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-140080616">
+								<group name="heading">
+									<float name="x" value="1" />
+									<float name="y" value="0" />
+									<float name="z" value="0" />
+								</group>
+								<float name="length" value="0" />
+								<group name="origin">
+									<float name="x" value="1" />
+									<float name="y" value="4" />
+									<float name="z" value="0" />
+								</group>
+								<enum name="type" value="default" />
+								<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+										<template_reference name="attach_data" value="attachments\attach_data">
+											<string name="marker_name_parent" value="mrk_weapon_port_01" />
+											<string name="parent_rigidbody_target_name" value="" />
+											<enum name="game_object_attachment_type" value="scenegraph" />
+										</template_reference>
+										<instance_reference name="ebp" value="ebps\races\rus\weapons\wpn_range_naval_lodya_arrow_incendiary_rus" overrideParent="True" />
+										<group name="attachment_flags">
+											<bool name="sim_only" value="False" />
+											<bool name="no_pathfinding" value="False" />
+											<bool name="not_snappable" value="False" />
+											<bool name="restore_snap_to_ground_on_detach" value="False" />
+											<bool name="no_sim_update" value="False" />
+											<bool name="join_parent_squad" value="False" />
+											<bool name="redirect_damage_to_parent_entity" value="True" />
+											<bool name="assign_as_attachment_combat_leader" value="False" />
+											<bool name="assign_as_attachment_movement_leader" value="False" />
+											<bool name="receive_parent_animations" value="False" />
+											<bool name="receive_parent_death" value="False" />
+										</group>
+									</template_reference>
+									<list name="possible_blueprint_updates">
+									</list>
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="">
+								</template_reference>
+							</group>
+						</list>
+						<bool name="receives_attack_commands" value="True" />
+						<string name="base_marker" value="" />
+						<list name="preferred_inventory_item_categories">
+						</list>
+						<list name="firing_offset_markers">
+						</list>
+						<bool name="initialize_weapons_on_creation" value="False" />
+						<string name="offhand_marker" value="" />
+					</group>
+					<group name="hardpoint" List.ItemID="935913958">
+						<float name="parent_hardpoint" value="-1" />
+						<list name="weapon_table" overrideParent="True">
+							<group name="weapon" List.ItemID="225180217">
+								<group name="heading">
+									<float name="x" value="1" />
+									<float name="y" value="0" />
+									<float name="z" value="0" />
+								</group>
+								<float name="length" value="0" />
+								<group name="origin">
+									<float name="x" value="1" />
+									<float name="y" value="4" />
+									<float name="z" value="0" />
+								</group>
+								<enum name="type" value="default" />
+								<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+										<template_reference name="attach_data" value="attachments\attach_data">
+											<string name="marker_name_parent" value="mrk_weapon_starboard_01" />
+											<string name="parent_rigidbody_target_name" value="" />
+											<enum name="game_object_attachment_type" value="scenegraph" />
+										</template_reference>
+										<instance_reference name="ebp" value="ebps\races\rus\weapons\wpn_range_naval_lodya_arrow_rus" overrideParent="True" />
+										<group name="attachment_flags">
+											<bool name="sim_only" value="False" />
+											<bool name="no_pathfinding" value="False" />
+											<bool name="not_snappable" value="False" />
+											<bool name="restore_snap_to_ground_on_detach" value="False" />
+											<bool name="no_sim_update" value="False" />
+											<bool name="join_parent_squad" value="False" />
+											<bool name="redirect_damage_to_parent_entity" value="True" />
+											<bool name="assign_as_attachment_combat_leader" value="False" />
+											<bool name="assign_as_attachment_movement_leader" value="False" />
+											<bool name="receive_parent_animations" value="False" />
+											<bool name="receive_parent_death" value="False" />
+										</group>
+									</template_reference>
+									<list name="possible_blueprint_updates">
+									</list>
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="">
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-239067593">
+								<group name="heading">
+									<float name="x" value="1" />
+									<float name="y" value="0" />
+									<float name="z" value="0" />
+								</group>
+								<float name="length" value="0" />
+								<group name="origin">
+									<float name="x" value="1" />
+									<float name="y" value="4" />
+									<float name="z" value="0" />
+								</group>
+								<enum name="type" value="default" />
+								<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+										<template_reference name="attach_data" value="attachments\attach_data">
+											<string name="marker_name_parent" value="mrk_weapon_starboard_01" />
+											<string name="parent_rigidbody_target_name" value="" />
+											<enum name="game_object_attachment_type" value="scenegraph" />
+										</template_reference>
+										<instance_reference name="ebp" value="ebps\races\rus\weapons\wpn_range_naval_lodya_arrow_incendiary_rus" overrideParent="True" />
+										<group name="attachment_flags">
+											<bool name="sim_only" value="False" />
+											<bool name="no_pathfinding" value="False" />
+											<bool name="not_snappable" value="False" />
+											<bool name="restore_snap_to_ground_on_detach" value="False" />
+											<bool name="no_sim_update" value="False" />
+											<bool name="join_parent_squad" value="False" />
+											<bool name="redirect_damage_to_parent_entity" value="True" />
+											<bool name="assign_as_attachment_combat_leader" value="False" />
+											<bool name="assign_as_attachment_movement_leader" value="False" />
+											<bool name="receive_parent_animations" value="False" />
+											<bool name="receive_parent_death" value="False" />
+										</group>
+									</template_reference>
+									<list name="possible_blueprint_updates">
+									</list>
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="">
+								</template_reference>
+							</group>
+						</list>
+						<bool name="receives_attack_commands" value="True" />
+						<string name="base_marker" value="" />
+						<list name="preferred_inventory_item_categories">
+						</list>
+						<list name="firing_offset_markers">
+						</list>
+						<bool name="initialize_weapons_on_creation" value="False" />
+						<string name="offhand_marker" value="" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="321902516" List.ParentItemID="321902516">
+				<instance_reference name="navigation_agent_info" value="navigation\agent_info\naval\oar\naval_oar_medium_agent_info" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="1915441712" List.ParentItemID="1915441712">
+				<list name="standard_upgrades" overrideParent="True">
+					<instance_reference name="upgrade" value="upgrade\races\rus\research\naval\upgrade_naval_role_lodya_fireship_rus" List.ItemID="-495104057" />
+					<instance_reference name="upgrade" value="upgrade\races\rus\research\naval\upgrade_naval_role_lodya_fishingship_rus" List.ItemID="1476094226" />
+					<instance_reference name="upgrade" value="upgrade\races\rus\research\naval\upgrade_naval_role_lodya_tradeship_rus" List.ItemID="-2045559767" />
+					<instance_reference name="upgrade" value="upgrade\races\rus\research\naval\upgrade_naval_role_lodya_transport_rus" List.ItemID="81123841" />
+					<instance_reference name="upgrade" value="upgrade\races\rus\research\naval\upgrade_naval_role_lodya_scoutship_rus" List.ItemID="1887012882" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="399410727" List.ParentItemID="399410727">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="-1182815474" List.ParentItemID="-1182815474">
+						<group name="tier" List.ItemID="591891212" List.ParentItemID="591891212">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\rus\units\tier3_naval_combat_ship_rus" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="193094" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_combat_ship_2" />
+	</variant>
+</instance>

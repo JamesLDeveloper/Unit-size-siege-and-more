@@ -1,0 +1,117 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-2078854337" List.ParentItemID="-2078854337">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\animation_action_tree_ext" List.ItemID="1488554568" List.ParentItemID="1488554568">
+			<state_tree_node name="ActionTree_OpeningBranch" value="nis_infantry" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="2057589443" List.ParentItemID="2057589443">
+			<enum_table name="speed_scaling_table">
+				<float name="default_speed" value="0.6" overrideParent="True" />
+			</enum_table>
+			<enum_table name="speed_levels">
+				<float name="speed_level_0" value="1" overrideParent="True" />
+				<float name="speed_level_2" value="4" overrideParent="True" />
+				<float name="speed_level_3" value="5" overrideParent="True" />
+				<float name="speed_level_4" value="5" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-433665015" List.ParentItemID="-433665015">
+			<list name="unit_type_list" removedIds="-1970086740, -1866420207">
+				<enum name="unit_type" value="french_king_in_chains" overrideParent="True" List.ItemID="-529717533" List.ListAction="Append" />
+			</list>
+			<list name="race_type_list" removedIds="168767408">
+				<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" overrideParent="True" List.ItemID="2009898903" List.ListAction="Append" />
+			</list>
+			<list name="attack_target_restriction_on_victim" removedIds="387404986">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="2012791313" List.ParentItemID="2012791313">
+			<instance_reference name="schema" value="statemodel_schema\units\civilizations\crusader_cmp\manatarms_cru" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="345046804" List.ParentItemID="345046804">
+			<float name="decorator_height" value="2.75" overrideParent="True" />
+			<bool name="is_armoured" value="True" overrideParent="True" />
+			<float name="selection_scale" value="2" overrideParent="True" />
+			<enum name="selection_method" value="obb_size" overrideParent="True" />
+			<group name="selection_obb_size">
+				<float name="x" value="3" overrideParent="True" />
+				<float name="y" value="2" overrideParent="True" />
+				<float name="z" value="3" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="623546179" List.ParentItemID="623546179">
+			<list name="hardpoints" removedIds="1941302851">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="2081103240" List.ParentItemID="2081103240">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-1937759202" List.ParentItemID="-1937759202">
+					<group name="tier" List.ItemID="-1144010367" List.ParentItemID="-1144010367">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\crusader_cmp\units\tier1_leader_french_cru" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2139662" />
+	<instance_reference name="parent_pbg" value="ebps\races\french\units\unit_king_1_fre" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\animation_action_tree_ext" List.ItemID="1488554568" List.ParentItemID="1488554568">
+				<state_tree_node name="ActionTree_OpeningBranch" value="xp3_nis_infantry" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="2057589443" List.ParentItemID="2057589443">
+				<enum_table name="speed_scaling_table">
+					<float name="default_speed" value="0.6" overrideParent="True" />
+				</enum_table>
+				<enum_table name="speed_levels">
+					<float name="speed_level_0" value="1" overrideParent="True" />
+					<float name="speed_level_2" value="4" overrideParent="True" />
+					<float name="speed_level_3" value="5" overrideParent="True" />
+					<float name="speed_level_4" value="5" overrideParent="True" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-433665015" List.ParentItemID="-433665015">
+				<list name="unit_type_list" removedIds="-1970086740, -1866420207, -13486029">
+					<enum name="unit_type" value="french_king_in_chains" overrideParent="True" List.ItemID="-1754126274" List.ListAction="Append" />
+				</list>
+				<list name="race_type_list" removedIds="168767408">
+					<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" overrideParent="True" List.ItemID="-716781530" List.ListAction="Append" />
+				</list>
+				<list name="attack_target_restriction_on_victim" removedIds="387404986, -1358462624, 234407990">
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="2012791313" List.ParentItemID="2012791313">
+				<instance_reference name="schema" value="statemodel_schema\units\civilizations\crusader_cmp\manatarms_cru" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="345046804" List.ParentItemID="345046804">
+				<float name="decorator_height" value="2.75" overrideParent="True" />
+				<bool name="is_armoured" value="True" overrideParent="True" />
+				<float name="selection_scale" value="2" overrideParent="True" />
+				<enum name="selection_method" value="obb_size" overrideParent="True" />
+				<group name="selection_obb_size">
+					<float name="x" value="3" overrideParent="True" />
+					<float name="y" value="2" overrideParent="True" />
+					<float name="z" value="3" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="623546179" List.ParentItemID="623546179">
+				<list name="hardpoints" removedIds="1941302851">
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="2081103240" List.ParentItemID="2081103240">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="-1937759202" List.ParentItemID="-1937759202">
+						<group name="tier" List.ItemID="-1144010367" List.ParentItemID="-1144010367">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\crusader_cmp\units\tier1_leader_french_cru" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2139662" />
+		<instance_reference name="parent_pbg" value="ebps\races\french\units\unit_king_1_fre" />
+	</variant>
+</instance>

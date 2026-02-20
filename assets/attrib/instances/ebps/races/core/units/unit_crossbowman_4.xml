@@ -1,0 +1,182 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1856314193" List.ParentItemID="1856314193">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_crossbowman_4" overrideParent="True" />
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-1905780774" List.ParentItemID="-1905780774">
+			<float name="death_seconds" value="19" overrideParent="True" />
+			<float name="hitpoints" value="95" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\hit_object_ext" List.ItemID="-1930687699" List.ParentItemID="-1930687699">
+			<instance_reference name="hit_material" value="hit_material\armour" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-698929178" List.ParentItemID="-698929178">
+			<list name="unit_type_list">
+				<enum name="unit_type" value="crossbow_incendiary_4" overrideParent="True" List.ItemID="1699338293" List.ParentItemID="1699338293" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-1993876472" List.ParentItemID="-1993876472">
+			<float name="decorator_height" value="2.75" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1007671354" List.ParentItemID="1007671354">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="-820460831" List.ParentItemID="-820460831">
+					<list name="weapon_table" comment="Elite Crossbowmen use a different crossbow from tier 3 Crossbowmen, and thus requires the arbalest_animate unit_type to run the correct animation.">
+						<group name="weapon" List.ItemID="-1145493718" List.ParentItemID="-1145493718">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_crossbow_4" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_range_crossbow_4" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="1785165014" List.ParentItemID="1785165014">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_crossbow_incendiary_4" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_siege_crossbow_incendiary_4" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="428387225" List.ParentItemID="428387225">
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_siege_crossbow_incendiary_4" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="-1415291511" List.ParentItemID="-1415291511">
+			<list name="tier_group_list">
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="127147" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_crossbowman_3" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1301875098" List.ParentItemID="-1301875098">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_crossbowman_4" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-1231820262" List.ParentItemID="-1231820262">
+				<float name="death_seconds" value="19" overrideParent="True" />
+				<float name="hitpoints" value="120" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\hit_object_ext" List.ItemID="-1808125202" List.ParentItemID="-1808125202">
+				<instance_reference name="hit_material" value="hit_material\armour" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1765597283" List.ParentItemID="1765597283">
+				<list name="unit_type_list" overrideParent="True">
+					<enum name="unit_type" value="military" List.ItemID="-1212401245" />
+					<enum name="unit_type" value="crossbowman" List.ItemID="1983334438" />
+					<enum name="unit_type" value="human" List.ItemID="1163264775" />
+					<enum name="unit_type" value="infantry" List.ItemID="-1418727911" />
+					<enum name="unit_type" value="ranged" List.ItemID="-17911242" />
+					<enum name="unit_type" value="formational" List.ItemID="-684288050" />
+					<enum name="unit_type" value="arbalest" List.ItemID="194592905" />
+					<enum name="unit_type" value="annihilation_condition" List.ItemID="-1312491901" />
+					<enum name="unit_type" value="included_by_military_hotkeys" List.ItemID="825040100" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-871313262" List.ParentItemID="-871313262">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="2110182485" List.ParentItemID="2110182485">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-292279466" List.ParentItemID="-292279466">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_crossbow_4" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_range_crossbow_4" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="1889934794" List.ParentItemID="1889934794">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_crossbow_4_melee" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_melee_crossbow_3_melee" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="51121810" List.ParentItemID="51121810">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_crossbow_incendiary" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_siege_crossbow_incendiary" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="1324088376" List.ParentItemID="1324088376">
+				<list name="tier_group_list">
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="127147" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_crossbowman_3" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1343361099" List.ParentItemID="1343361099">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_crossbowman_4" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-2047718007" List.ParentItemID="-2047718007">
+				<float name="death_seconds" value="19" overrideParent="True" />
+				<float name="hitpoints" value="95" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\hit_object_ext" List.ItemID="2091350168" List.ParentItemID="2091350168">
+				<instance_reference name="hit_material" value="hit_material\armour" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1368744637" List.ParentItemID="1368744637">
+				<list name="unit_type_list">
+					<enum name="unit_type" value="crossbow_incendiary_4" overrideParent="True" List.ItemID="-1114972864" List.ParentItemID="-1114972864" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-1665870316" List.ParentItemID="-1665870316">
+				<float name="decorator_height" value="2.75" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="44391102" List.ParentItemID="44391102">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="62752353" List.ParentItemID="62752353">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="1683316871" List.ParentItemID="1683316871">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_crossbow_4" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_range_crossbow_4" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-786344582" List.ParentItemID="-786344582">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_crossbow_incendiary_4" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_siege_crossbow_incendiary" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="-962102574" List.ParentItemID="-962102574">
+				<list name="tier_group_list">
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="127147" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_crossbowman_3" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+	</variant>
+</instance>

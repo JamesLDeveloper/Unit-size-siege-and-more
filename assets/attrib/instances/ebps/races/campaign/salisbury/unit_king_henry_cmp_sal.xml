@@ -1,0 +1,97 @@
+<instance version="4" description="EBPS King Henry Salisbury Campaign Tutorial Mission" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1356892678" List.ParentItemID="1356892678">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-788422057" List.ParentItemID="-788422057">
+			<float name="hitpoints" value="450" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1786016482" List.ParentItemID="-1786016482">
+			<list name="unit_type_list">
+				<enum name="unit_type" value="xbox_support_quick_find" List.ItemID="84597671" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1078428342" List.ParentItemID="1078428342">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="1862173383" List.ParentItemID="1862173383">
+					<group name="tier" List.ItemID="-403270453" List.ParentItemID="-403270453">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\campaign\salisbury\unit_king_henry_cmp_sal" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1762200638" List.ParentItemID="1762200638">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="1534383478" List.ParentItemID="1534383478">
+					<list name="weapon_table" overrideParent="True">
+						<group name="weapon" List.ItemID="781765383">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="0" />
+							</group>
+							<enum name="type" value="default" />
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_knight_3" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_melee_knight_3" overrideParent="True" />
+								<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="-13505834">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="0.5" />
+								<float name="z" value="0" />
+							</group>
+							<enum name="type" value="default" />
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_torch_horseman" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_siege_torch" overrideParent="True" />
+								<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="691254855">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="0.5" />
+								<float name="z" value="0" />
+							</group>
+							<enum name="type" value="default_override_when_idle" />
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_knight_3" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_melee_knight_3" overrideParent="True" />
+								<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2104218" />
+	<instance_reference name="parent_pbg" value="ebps\races\english\units\unit_knight_4_eng" />
+</instance>

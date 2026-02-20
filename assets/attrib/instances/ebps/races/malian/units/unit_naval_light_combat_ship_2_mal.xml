@@ -1,0 +1,189 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1488394558" List.ParentItemID="-1488394558">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_naval_combat_ship" overrideParent="True" />
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1381839832" List.ParentItemID="-1381839832">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="military" List.ItemID="-1845246931" />
+				<enum name="unit_type" value="naval_war_galley" List.ItemID="661206343" />
+				<enum name="unit_type" value="naval_unit" List.ItemID="837470490" />
+				<enum name="unit_type" value="ship" List.ItemID="-679048778" />
+				<enum name="unit_type" value="ranged" List.ItemID="-184966277" />
+				<enum name="unit_type" value="siegeable" List.ItemID="905104157" />
+				<enum name="unit_type" value="annihilation_condition" List.ItemID="-115272766" />
+				<enum name="unit_type" value="archer_ship" List.ItemID="1206266417" />
+				<enum name="unit_type" value="medium_ship" List.ItemID="-1859764817" />
+				<enum name="unit_type" value="naval_military" List.ItemID="308531242" List.ParentItemID="-2059902898" />
+			</list>
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\malian" overrideParent="True" List.ItemID="-1152285508" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-727728466" List.ParentItemID="-727728466">
+			<list name="hardpoints" overrideParent="True">
+				<group name="hardpoint" List.ItemID="1888273422">
+					<float name="parent_hardpoint" value="-1" />
+					<list name="weapon_table" overrideParent="True">
+						<group name="weapon" List.ItemID="2023803819">
+							<group name="heading">
+								<float name="x" value="0" overrideParent="True" />
+								<float name="y" value="0" />
+								<float name="z" value="1.5" overrideParent="True" />
+							</group>
+							<float name="length" value="2" overrideParent="True" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="2" overrideParent="True" />
+								<float name="z" value="3.2" overrideParent="True" />
+							</group>
+							<enum name="type" value="default" />
+							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<template_reference name="attach_data" value="attachments\attach_data">
+										<string name="marker_name_parent" value="fx_marker_muz_fishing" />
+										<string name="parent_rigidbody_target_name" value="" />
+										<enum name="game_object_attachment_type" value="scenegraph" />
+									</template_reference>
+									<instance_reference name="ebp" value="ebps\races\core\weapons\ranged\wpn_ranged_naval_arrow" />
+									<group name="attachment_flags">
+										<bool name="sim_only" value="False" />
+										<bool name="no_pathfinding" value="False" />
+										<bool name="not_snappable" value="False" />
+										<bool name="restore_snap_to_ground_on_detach" value="False" />
+										<bool name="no_sim_update" value="False" />
+										<bool name="join_parent_squad" value="False" />
+										<bool name="redirect_damage_to_parent_entity" value="True" />
+										<bool name="assign_as_attachment_combat_leader" value="False" />
+										<bool name="assign_as_attachment_movement_leader" value="False" />
+										<bool name="receive_parent_animations" value="False" />
+										<bool name="receive_parent_death" value="False" />
+									</group>
+								</template_reference>
+								<list name="possible_blueprint_updates">
+								</list>
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="">
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="77673836">
+							<group name="heading">
+								<float name="x" value="0" overrideParent="True" />
+								<float name="y" value="0" />
+								<float name="z" value="1.5" overrideParent="True" />
+							</group>
+							<float name="length" value="2" overrideParent="True" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="2" overrideParent="True" />
+								<float name="z" value="3.2" overrideParent="True" />
+							</group>
+							<enum name="type" value="default" />
+							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<template_reference name="attach_data" value="attachments\attach_data">
+										<string name="marker_name_parent" value="fx_marker_muz_fishing" />
+										<string name="parent_rigidbody_target_name" value="" />
+										<enum name="game_object_attachment_type" value="scenegraph" />
+									</template_reference>
+									<instance_reference name="ebp" value="ebps\races\core\weapons\wpn_range_naval_arrow_incendiary" overrideParent="True" />
+									<group name="attachment_flags">
+										<bool name="sim_only" value="False" />
+										<bool name="no_pathfinding" value="False" />
+										<bool name="not_snappable" value="False" />
+										<bool name="restore_snap_to_ground_on_detach" value="False" />
+										<bool name="no_sim_update" value="False" />
+										<bool name="join_parent_squad" value="False" />
+										<bool name="redirect_damage_to_parent_entity" value="True" />
+										<bool name="assign_as_attachment_combat_leader" value="False" />
+										<bool name="assign_as_attachment_movement_leader" value="False" />
+										<bool name="receive_parent_animations" value="False" />
+										<bool name="receive_parent_death" value="False" />
+									</group>
+								</template_reference>
+								<list name="possible_blueprint_updates">
+								</list>
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="">
+							</template_reference>
+						</group>
+					</list>
+					<bool name="receives_attack_commands" value="True" />
+					<string name="base_marker" value="fx_marker_muz_fishing" />
+					<list name="preferred_inventory_item_categories">
+					</list>
+					<list name="firing_offset_markers">
+					</list>
+					<bool name="initialize_weapons_on_creation" value="True" />
+					<string name="offhand_marker" value="" />
+				</group>
+				<group name="hardpoint" overrideParent="True" List.ItemID="-245025542">
+					<float name="parent_hardpoint" value="-1" />
+					<list name="weapon_table">
+						<group name="weapon" comment="Javelin" List.ItemID="-1149361199">
+							<group name="heading">
+								<float name="x" value="0" overrideParent="True" />
+								<float name="y" value="0" />
+								<float name="z" value="1.5" overrideParent="True" />
+							</group>
+							<float name="length" value="2" overrideParent="True" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="2" overrideParent="True" />
+								<float name="z" value="3.2" overrideParent="True" />
+							</group>
+							<enum name="type" value="default" />
+							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment" overrideParent="True">
+								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<template_reference name="attach_data" value="attachments\attach_data">
+										<string name="marker_name_parent" value="mrk_weapon_port_01" overrideParent="True" />
+										<string name="parent_rigidbody_target_name" value="" />
+										<enum name="game_object_attachment_type" value="scenegraph" />
+									</template_reference>
+									<instance_reference name="ebp" value="ebps\races\core\weapons\wpn_range_naval_javelin_burst" overrideParent="True" />
+									<group name="attachment_flags">
+										<bool name="sim_only" value="False" />
+										<bool name="no_pathfinding" value="False" />
+										<bool name="not_snappable" value="False" />
+										<bool name="restore_snap_to_ground_on_detach" value="False" />
+										<bool name="no_sim_update" value="False" />
+										<bool name="join_parent_squad" value="False" />
+										<bool name="redirect_damage_to_parent_entity" value="True" />
+										<bool name="assign_as_attachment_combat_leader" value="False" />
+										<bool name="assign_as_attachment_movement_leader" value="False" />
+										<bool name="receive_parent_animations" value="False" />
+										<bool name="receive_parent_death" value="False" />
+									</group>
+								</template_reference>
+								<list name="possible_blueprint_updates">
+								</list>
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="">
+							</template_reference>
+						</group>
+					</list>
+					<bool name="receives_attack_commands" value="True" />
+					<string name="base_marker" value="" />
+					<list name="preferred_inventory_item_categories">
+					</list>
+					<list name="firing_offset_markers">
+					</list>
+					<string name="offhand_marker" value="" />
+					<bool name="initialize_weapons_on_creation" value="False" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="617548696" List.ParentItemID="617548696">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-474741001" List.ParentItemID="-474741001">
+					<group name="tier" List.ItemID="1389814532" List.ParentItemID="1389814532">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\malian\units\tier3_naval_galleass_mal" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2071544" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_light_combat_ship_2" />
+</instance>

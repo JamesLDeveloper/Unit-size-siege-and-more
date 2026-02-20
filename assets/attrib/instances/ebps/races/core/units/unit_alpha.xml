@@ -1,0 +1,12 @@
+<instance version="6" description="Progenitor unit to simplify applying resource reduction costs to all units." template="ebps">
+	<list name="extensions">
+	</list>
+	<uniqueid name="pbgid" value="2135697" />
+	<instance_reference name="parent_pbg" value="" />
+	<variant name="xp3">
+		<list name="extensions">
+		</list>
+		<uniqueid name="pbgid" value="2135697" />
+		<instance_reference name="parent_pbg" value="" />
+	</variant>
+</instance>

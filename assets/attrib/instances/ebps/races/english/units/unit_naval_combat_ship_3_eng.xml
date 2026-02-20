@@ -1,0 +1,147 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-2021965485" List.ParentItemID="-2021965485">
+			<list name="hardpoints">
+				<group name="hardpoint" comment="Left Primary" List.ItemID="-653934340" List.ParentItemID="-653934340">
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\entity_targeting_ext" List.ItemID="-1510811873" List.ParentItemID="-1510811873">
+			<bool name="allow_entity_scan_close_enemies" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-564826070" List.ParentItemID="-564826070">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="628638250" List.ParentItemID="628638250">
+					<group name="tier" List.ItemID="1812081355" List.ParentItemID="1812081355">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\tier3_naval_combat_ship_eng" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="193078" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_combat_ship_2" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="321147874" List.ParentItemID="321147874">
+				<list name="unit_type_list">
+					<enum name="unit_type" value="naval_military" List.ItemID="-2009396406" List.ListAction="Append" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1085207674" List.ParentItemID="-1085207674">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="493601363" List.ParentItemID="493601363">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-1356970070" List.ParentItemID="-1356970070">
+								<group name="origin">
+									<float name="x" value="-1.197" overrideParent="True" />
+									<float name="y" value="2.492" overrideParent="True" />
+								</group>
+							</group>
+							<group name="weapon" List.ItemID="-245557542" List.ParentItemID="-245557542">
+								<group name="origin">
+									<float name="x" value="-1.197" overrideParent="True" />
+									<float name="y" value="2.492" overrideParent="True" />
+								</group>
+							</group>
+						</list>
+					</group>
+					<group name="hardpoint" List.ItemID="281280290" List.ParentItemID="281280290">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="1397012351" List.ParentItemID="1397012351">
+								<group name="origin">
+									<float name="x" value="1.197" overrideParent="True" />
+									<float name="y" value="2.492" overrideParent="True" />
+								</group>
+							</group>
+							<group name="weapon" List.ItemID="2008958466" List.ParentItemID="2008958466">
+								<group name="origin">
+									<float name="x" value="1.197" overrideParent="True" />
+									<float name="y" value="2.492" overrideParent="True" />
+									<float name="z" value="-3.737" overrideParent="True" />
+								</group>
+							</group>
+						</list>
+					</group>
+					<group name="hardpoint" List.ItemID="-306547975" List.ParentItemID="-306547975">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-1415835842" List.ParentItemID="-1415835842">
+								<group name="origin">
+									<float name="x" value="-0.734" overrideParent="True" />
+									<float name="y" value="1.744" overrideParent="True" />
+									<float name="z" value="3.718" overrideParent="True" />
+								</group>
+							</group>
+							<group name="weapon" List.ItemID="1989376444" List.ParentItemID="1989376444">
+								<group name="heading">
+									<float name="y" value="0" overrideParent="True" />
+								</group>
+								<group name="origin">
+									<float name="x" value="-0.734" overrideParent="True" />
+									<float name="y" value="1.744" overrideParent="True" />
+									<float name="z" value="3.718" overrideParent="True" />
+								</group>
+							</group>
+						</list>
+					</group>
+					<group name="hardpoint" List.ItemID="1733090904" List.ParentItemID="1733090904">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-1122328352" List.ParentItemID="-1122328352">
+								<group name="origin">
+									<float name="x" value="0.738" overrideParent="True" />
+									<float name="y" value="1.774" overrideParent="True" />
+									<float name="z" value="3.718" overrideParent="True" />
+								</group>
+							</group>
+							<group name="weapon" List.ItemID="1873628027" List.ParentItemID="1873628027">
+								<group name="origin">
+									<float name="x" value="0.738" overrideParent="True" />
+									<float name="y" value="1.774" overrideParent="True" />
+									<float name="z" value="3.718" overrideParent="True" />
+								</group>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\entity_targeting_ext" List.ItemID="-1730879467" List.ParentItemID="-1730879467">
+				<bool name="allow_entity_scan_close_enemies" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="399410727" List.ParentItemID="399410727">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="-1182815474" List.ParentItemID="-1182815474">
+						<group name="tier" List.ItemID="591891212" List.ParentItemID="591891212">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\tier3_naval_combat_ship_eng" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="193078" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_combat_ship_2" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-2021965485" List.ParentItemID="-2021965485">
+				<list name="hardpoints">
+					<group name="hardpoint" comment="Left Primary" List.ItemID="-653934340" List.ParentItemID="-653934340">
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\entity_targeting_ext" List.ItemID="-1510811873" List.ParentItemID="-1510811873">
+				<bool name="allow_entity_scan_close_enemies" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-564826070" List.ParentItemID="-564826070">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="628638250" List.ParentItemID="628638250">
+						<group name="tier" List.ItemID="1812081355" List.ParentItemID="1812081355">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\tier3_naval_combat_ship_eng" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="193078" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_combat_ship_2" />
+	</variant>
+</instance>

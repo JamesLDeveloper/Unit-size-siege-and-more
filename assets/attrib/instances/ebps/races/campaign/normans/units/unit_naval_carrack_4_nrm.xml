@@ -1,0 +1,105 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-1265230428" List.ParentItemID="-1265230428">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="86044439" List.ParentItemID="86044439">
+					<group name="tier" List.ItemID="1888019086" List.ParentItemID="1888019086">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\tier4_naval_carrack_eng" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="228862" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_combat_warship_4" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-437980955" List.ParentItemID="-437980955">
+				<list name="unit_type_list">
+					<enum name="unit_type" value="naval_military" List.ItemID="-1209280602" List.ListAction="Append" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1731014631" List.ParentItemID="-1731014631">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="-395035288" List.ParentItemID="-395035288">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-700183795" List.ParentItemID="-700183795">
+								<group name="origin">
+									<float name="x" value="-2.308" overrideParent="True" />
+									<float name="y" value="1.003" overrideParent="True" />
+									<float name="z" value="0.31" overrideParent="True" />
+								</group>
+							</group>
+						</list>
+					</group>
+					<group name="hardpoint" List.ItemID="-348784328" List.ParentItemID="-348784328">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="1542238193" List.ParentItemID="1542238193">
+								<group name="origin">
+									<float name="x" value="-2.163" overrideParent="True" />
+									<float name="y" value="1.039" overrideParent="True" />
+									<float name="z" value="-2.252" overrideParent="True" />
+								</group>
+							</group>
+						</list>
+					</group>
+					<group name="hardpoint" List.ItemID="1337387433" List.ParentItemID="1337387433">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="1012267695" List.ParentItemID="1012267695">
+								<group name="origin">
+									<float name="x" value="-2.271" overrideParent="True" />
+									<float name="y" value="1.218" overrideParent="True" />
+									<float name="z" value="2.104" overrideParent="True" />
+								</group>
+							</group>
+						</list>
+					</group>
+					<group name="hardpoint" List.ItemID="179093548" List.ParentItemID="179093548">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="2141094165" List.ParentItemID="2141094165">
+								<group name="origin">
+									<float name="x" value="2.152" overrideParent="True" />
+									<float name="y" value="1.039" overrideParent="True" />
+									<float name="z" value="-2.252" overrideParent="True" />
+								</group>
+							</group>
+						</list>
+					</group>
+					<group name="hardpoint" List.ItemID="-1702536805" List.ParentItemID="-1702536805">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-582659490" List.ParentItemID="-582659490">
+								<group name="origin">
+									<float name="x" value="2.39" overrideParent="True" />
+									<float name="y" value="1.003" overrideParent="True" />
+									<float name="z" value="0.31" overrideParent="True" />
+								</group>
+							</group>
+						</list>
+					</group>
+					<group name="hardpoint" List.ItemID="352261721" List.ParentItemID="352261721">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-411043565" List.ParentItemID="-411043565">
+								<group name="origin">
+									<float name="x" value="2.39" overrideParent="True" />
+									<float name="y" value="1.218" overrideParent="True" />
+									<float name="z" value="2.104" overrideParent="True" />
+								</group>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1562115440" List.ParentItemID="1562115440">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="1473829252" List.ParentItemID="1473829252">
+						<group name="tier" List.ItemID="1040271146" List.ParentItemID="1040271146">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\tier4_naval_carrack_eng" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="228862" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_combat_warship_4" />
+	</variant>
+</instance>

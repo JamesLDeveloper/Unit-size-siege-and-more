@@ -1,0 +1,287 @@
+<instance version="6" description="Castle Age Crossbowman" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1979743353" List.ParentItemID="-1979743353">
+			<bool name="browsable_in_editor" value="False" overrideParent="True" />
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="1385082189" List.ParentItemID="1385082189">
+			<list name="abilities" overrideParent="True">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="1380317016" List.ParentItemID="1380317016">
+			<list name="action_state_trees">
+				<group name="container" List.ItemID="32706407" List.ParentItemID="32706407">
+					<string name="state_tree" value="unit_action_apply\units\crossbowman\audio\abb\3" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="231008259" List.ParentItemID="231008259">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\abbasid" List.ItemID="1650469190" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1381607687" List.ParentItemID="-1381607687">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="751434855" List.ParentItemID="751434855">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-1071856729" List.ParentItemID="-1071856729">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_crossbow_3" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\abbasid\weapons\wpn_range_crossbow_3_abb" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="-1178936770" List.ParentItemID="-1178936770">
+			<list name="tier_group_list">
+				<list name="tier_group" overrideParent="True" List.ItemID="1240160375">
+					<group name="tier" List.ItemID="1126654968">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\abbasid\units\tier3_crossbowman_abb" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" overrideParent="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+					<group name="tier" List.ItemID="463150820">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\abbasid\units\tier4_crossbowman_abb" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\races\common\units\upgrade_unit_crossbowman_4" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\races\abbasid\units\unit_crossbowman_4_abb" mod="e2ef01ea17d74b04949857ca0a246ab4" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\abbasid\unit_crossbowman_4_abb" overrideParent="True" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" overrideParent="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="199656" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_crossbowman_3" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1658121368" List.ParentItemID="-1658121368">
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="138108337" List.ParentItemID="138108337">
+				<list name="abilities" overrideParent="True">
+					<instance_reference name="ability" value="abilities\always_on_abilities\abbasid\immune_to_conversion_abb" List.ItemID="-924596618" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="982774076" List.ParentItemID="982774076">
+				<list name="action_state_trees">
+					<group name="container" List.ItemID="377043874" List.ParentItemID="377043874">
+						<string name="state_tree" value="campaignMod_unit_action_apply\units\crossbowman\audio\abb\3" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-91122215" List.ParentItemID="-91122215">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\abbasid" List.ItemID="-1917732422" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1533566098" List.ParentItemID="-1533566098">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="-1270003520" List.ParentItemID="-1270003520">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-143112236" List.ParentItemID="-143112236">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_crossbow_3" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\abbasid\weapons\wpn_range_crossbow_3_abb" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-1028271217" List.ParentItemID="-1028271217">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_crossbow_3_melee" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\abbasid\weapons\wpn_melee_crossbow_3_melee_abb" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="2130432404" List.ParentItemID="2130432404">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_crossbow_incendiary" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\abbasid\weapons\wpn_siege_crossbow_incendiary_abb" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="1645427230" List.ParentItemID="1645427230">
+				<list name="tier_group_list">
+					<list name="tier_group" overrideParent="True" List.ItemID="1220876099">
+						<group name="tier" List.ItemID="-1180056435">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\abbasid\units\tier3_crossbowman_abb" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_tier_unit_exposure_dca" overrideParent="True" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+						<group name="tier" List.ItemID="-1539226135">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\abbasid\units\tier4_crossbowman_abb" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_tier_unit_exposure_dca" overrideParent="True" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\races\common\units\upgrade_unit_crossbowman_4" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\races\abbasid\units\unit_crossbowman_4_abb" mod="e2ef01ea17d74b04949857ca0a246ab4" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\abbasid\unit_crossbowman_4_abb" overrideParent="True" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="199656" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_crossbowman_3" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1979743353" List.ParentItemID="-1979743353">
+				<bool name="browsable_in_editor" value="False" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="1385082189" List.ParentItemID="1385082189">
+				<list name="abilities" overrideParent="True">
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="1380317016" List.ParentItemID="1380317016">
+				<list name="action_state_trees">
+					<group name="container" List.ItemID="32706407" List.ParentItemID="32706407">
+						<string name="state_tree" value="xp3_unit_action_apply\units\crossbowman\audio\abb\3" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="231008259" List.ParentItemID="231008259">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\abbasid" List.ItemID="-700014732" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1381607687" List.ParentItemID="-1381607687">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="751434855" List.ParentItemID="751434855">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-1071856729" List.ParentItemID="-1071856729">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_crossbow_3" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\abbasid\weapons\wpn_range_crossbow_3_abb" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-485040964" List.ParentItemID="-485040964">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_crossbow_incendiary" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\abbasid\weapons\wpn_siege_crossbow_incendiary_abb" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="-1178936770" List.ParentItemID="-1178936770">
+				<list name="tier_group_list">
+					<list name="tier_group" overrideParent="True" List.ItemID="1482910801">
+						<group name="tier" List.ItemID="944579362">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\abbasid\units\tier3_crossbowman_abb" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="xp3_tier_unit_exposure_dca" overrideParent="True" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" overrideParent="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+						<group name="tier" List.ItemID="1800556733">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\abbasid\units\tier4_crossbowman_abb" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="xp3_tier_unit_exposure_dca" overrideParent="True" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\races\common\units\upgrade_unit_crossbowman_4" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\races\abbasid\units\unit_crossbowman_4_abb" mod="e2ef01ea17d74b04949857ca0a246ab4" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\abbasid\unit_crossbowman_4_abb" overrideParent="True" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" overrideParent="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="199656" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_crossbowman_3" />
+	</variant>
+</instance>

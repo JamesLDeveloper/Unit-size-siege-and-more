@@ -1,0 +1,223 @@
+<instance version="6" description="Castle Age Man-at-arms" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-765163162" List.ParentItemID="-765163162">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-782585427" List.ParentItemID="-782585427">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign\lithuania" List.ItemID="-2026339867" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1697644820" List.ParentItemID="1697644820">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="1781403471" List.ParentItemID="1781403471">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-374285575" List.ParentItemID="-374285575">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_manatarms_3" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\hre\weapons\wpn_melee_manatarms_3_hre" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="-1909435919" List.ParentItemID="-1909435919">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\hre\melee\weapon_manatarms_3_1handmace_hre" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\hre\weapons\wpn_melee_manatarms_3_1handmace_hre" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="-741370908" List.ParentItemID="-741370908">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\hre\melee\weapon_manatarms_3_2handaxe_hre" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\hre\weapons\wpn_melee_manatarms_3_2handaxe_hre" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" comment="Two Handed Axe" List.ItemID="1992221913" List.ParentItemID="1992221913">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\hre\melee\weapon_manatarms_3_2handmace_hre" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\hre\weapons\wpn_melee_manatarms_3_2handmace_hre" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="-238805122" List.ParentItemID="-238805122">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_torch" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_siege_torch" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="681557175" List.ParentItemID="681557175">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\hre\melee\weapon_manatarms_3_charge_hre" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\hre\weapons\wpn_melee_manatarms_3_charge_hre" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="-642926274" List.ParentItemID="-642926274">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\hre\melee\weapon_manatarms_3_1handmace_charge_hre" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_melee_manatarms_3_charge" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="1026314390" List.ParentItemID="1026314390">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\hre\melee\weapon_manatarms_3_2handaxe_charge_hre" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\hre\weapons\wpn_melee_manatarms_3_2handaxe_hre" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" comment="Two Handed Axe (Charge)" List.ItemID="1201613584" List.ParentItemID="1201613584">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\hre\melee\weapon_manatarms_3_2handmace_charge_hre" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_melee_manatarms_3_charge" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1590686263" List.ParentItemID="1590686263">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-1041724251" List.ParentItemID="-1041724251">
+					<group name="tier" List.ItemID="-855387983" List.ParentItemID="-855387983">
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\races\campaign\lithuania\units\unit_manatarms_4_lith" mod="e2ef01ea17d74b04949857ca0a246ab4" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\campaign\lithuania\unit_manatarms_4_lith" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="183002" />
+	<instance_reference name="parent_pbg" value="ebps\races\hre\units\unit_manatarms_3_hre" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1104798827" List.ParentItemID="1104798827">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign\lithuania" List.ItemID="-1704095553" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="288926342" List.ParentItemID="288926342">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="-1042324492" List.ParentItemID="-1042324492">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-1640259055" List.ParentItemID="-1640259055">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_manatarms_3" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\hre\weapons\wpn_melee_manatarms_3_hre" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="2114888767" List.ParentItemID="2114888767">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_torch" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_siege_torch" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-68965255" List.ParentItemID="-68965255">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\hre\melee\weapon_manatarms_3_charge_hre" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\hre\weapons\wpn_melee_manatarms_3_charge_hre" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="1083772961" List.ParentItemID="1083772961">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\hre\melee\weapon_manatarms_3_1handmace_hre" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\hre\weapons\wpn_melee_manatarms_3_1handmace_hre" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-1632183676" List.ParentItemID="-1632183676">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\hre\melee\weapon_manatarms_3_1handmace_charge_hre" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_melee_manatarms_3_charge" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-65743073" List.ParentItemID="-65743073">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\hre\melee\weapon_manatarms_3_2handaxe_hre" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\hre\weapons\wpn_melee_manatarms_3_2handaxe_hre" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="1062173596" List.ParentItemID="1062173596">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\hre\melee\weapon_manatarms_3_2handaxe_charge_hre" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\hre\weapons\wpn_melee_manatarms_3_2handaxe_hre" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" comment="Two Handed Axe" List.ItemID="-318483066" List.ParentItemID="-318483066">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\hre\melee\weapon_manatarms_3_2handmace_hre" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\hre\weapons\wpn_melee_manatarms_3_2handmace_hre" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" comment="Two Handed Axe (Charge)" List.ItemID="-1948767029" List.ParentItemID="-1948767029">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\hre\melee\weapon_manatarms_3_2handmace_charge_hre" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_melee_manatarms_3_charge" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="202880116" List.ParentItemID="202880116">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="-1829312531" List.ParentItemID="-1829312531">
+						<group name="tier" List.ItemID="227726243" List.ParentItemID="227726243">
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\races\campaign\lithuania\units\unit_manatarms_4_lith" mod="e2ef01ea17d74b04949857ca0a246ab4" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\campaign\lithuania\unit_manatarms_4_lith" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="183002" />
+		<instance_reference name="parent_pbg" value="ebps\races\hre\units\unit_manatarms_3_hre" />
+	</variant>
+</instance>

@@ -1,0 +1,127 @@
+<instance version="6" description="Castle Age Monk" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-276819776" List.ParentItemID="-276819776">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-226814690" List.ParentItemID="-226814690">
+			<list name="action_state_trees" overrideParent="True">
+				<group name="container" List.ItemID="1084377884">
+					<string name="state_tree" value="unit_action_apply\units\cavalry_combined" />
+				</group>
+				<group name="container" List.ItemID="1659795604">
+					<string name="state_tree" value="unit_action_apply\units\monk\audio\rus" />
+				</group>
+				<group name="container" List.ItemID="-848867115">
+					<string name="state_tree" value="unit_action_apply\units\monk\holy_site_capture" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-293080404" List.ParentItemID="-293080404">
+			<float name="hitpoints" value="30" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1376601539" List.ParentItemID="1376601539">
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\campaign\novgorod" overrideParent="True" List.ItemID="-313124656" List.ParentItemID="-313124656" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="29027590" List.ParentItemID="29027590">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="-1876708879" List.ParentItemID="-1876708879">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-1493685087" List.ParentItemID="-1493685087">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\rus\melee\weapon_monk_3_rus" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_melee_horseman_2" overrideParent="True" />
+								<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="-1366299701" List.ParentItemID="-1366299701">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\rus\ranged\weapon_torch_rus" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\rus\weapons\wpn_siege_torch_rus" overrideParent="True" />
+								<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="-1523525532" List.ParentItemID="-1523525532">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\rus\melee\weapon_monk_3_charge_rus" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\rus\weapons\wpn_melee_monk_3_charge_rus" overrideParent="True" />
+								<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="187929" />
+	<instance_reference name="parent_pbg" value="ebps\races\rus\units\unit_monk_3_rus" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-647855899" List.ParentItemID="-647855899">
+				<list name="action_state_trees" overrideParent="True">
+					<group name="container" List.ItemID="-480900880">
+						<string name="state_tree" value="campaignMod_unit_action_apply\units\cavalry_combined" />
+					</group>
+					<group name="container" List.ItemID="1115451537">
+						<string name="state_tree" value="campaignMod_unit_action_apply\units\monk\audio\rus" />
+					</group>
+					<group name="container" List.ItemID="890297635">
+						<string name="state_tree" value="campaignMod_unit_action_apply\units\monk\holy_site_capture" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="1966050621" List.ParentItemID="1966050621">
+				<float name="hitpoints" value="30" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="250262573" List.ParentItemID="250262573">
+				<list name="race_type_list">
+					<instance_reference name="race_type" value="racebps\campaign\novgorod" overrideParent="True" List.ItemID="-2116392027" List.ParentItemID="-2116392027" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1160834665" List.ParentItemID="1160834665">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="-210743532" List.ParentItemID="-210743532">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="2063740813" List.ParentItemID="2063740813">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\rus\melee\weapon_monk_3_rus" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_melee_horseman_2" overrideParent="True" />
+									<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-677119054" List.ParentItemID="-677119054">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\rus\ranged\weapon_torch_rus" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\rus\weapons\wpn_siege_torch_rus" overrideParent="True" />
+									<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="1770534364" List.ParentItemID="1770534364">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\rus\melee\weapon_monk_3_charge_rus" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\rus\weapons\wpn_melee_monk_3_charge_rus" overrideParent="True" />
+									<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="187929" />
+		<instance_reference name="parent_pbg" value="ebps\races\rus\units\unit_monk_3_rus" />
+	</variant>
+</instance>

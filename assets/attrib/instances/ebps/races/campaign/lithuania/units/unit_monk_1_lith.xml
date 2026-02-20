@@ -1,0 +1,25 @@
+<instance version="6" description="Dark Age Monk" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-276819776" List.ParentItemID="-276819776">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1376601539" List.ParentItemID="1376601539">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign\lithuania" List.ItemID="-1419502632" />
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="183005" />
+	<instance_reference name="parent_pbg" value="ebps\races\hre\units\unit_monk_1_hre" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1329771098" List.ParentItemID="1329771098">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign\lithuania" List.ItemID="-932912665" />
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="183005" />
+		<instance_reference name="parent_pbg" value="ebps\races\hre\units\unit_monk_1_hre" />
+	</variant>
+</instance>

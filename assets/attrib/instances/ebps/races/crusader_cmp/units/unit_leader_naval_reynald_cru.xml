@@ -1,0 +1,114 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1571357040" List.ParentItemID="1571357040">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_naval_combat_warship" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-1117275471" List.ParentItemID="-1117275471">
+			<float name="hitpoints" value="2000" overrideParent="True" />
+			<template_reference name="armor_layout_option" value="options\ebpextensions\healthext\armor_layouts\armor_layout_front_rear_side" overrideParent="True">
+				<float name="front_armor" value="3" overrideParent="True" />
+				<float name="rear_armor" value="1" overrideParent="True" />
+				<float name="side_armor" value="2" overrideParent="True" />
+				<float name="rear_damage_multiplier" value="2" overrideParent="True" />
+				<float name="side_damage_multiplier" value="1.5" overrideParent="True" />
+			</template_reference>
+			<enum_table name="armor_scaler_by_damage_type">
+				<float name="Ranged" value="3" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-2021965485" List.ParentItemID="-2021965485">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="-653934340" List.ParentItemID="-653934340">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-2042765210" List.ParentItemID="-2042765210">
+							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<instance_reference name="ebp" value="ebps\races\crusader_cmp\weapons\ranged\wpn_range_naval_springald_left_cru" overrideParent="True" />
+								</template_reference>
+							</template_reference>
+						</group>
+					</list>
+				</group>
+				<group name="hardpoint" List.ItemID="1627678101" List.ParentItemID="1627678101">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-1315296552" List.ParentItemID="-1315296552">
+							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<instance_reference name="ebp" value="ebps\races\crusader_cmp\weapons\ranged\wpn_range_naval_springald_right_cru" overrideParent="True" />
+								</template_reference>
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-564826070" List.ParentItemID="-564826070">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="628638250" List.ParentItemID="628638250">
+					<group name="tier" List.ItemID="1812081355" List.ParentItemID="1812081355">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\crusader_cmp\units\tier4_naval_carrack_cru" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2101661" />
+	<instance_reference name="parent_pbg" value="ebps\races\crusader_cmp\units\unit_naval_hulk_cru" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1571357040" List.ParentItemID="1571357040">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_naval_combat_warship" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-1117275471" List.ParentItemID="-1117275471">
+				<float name="hitpoints" value="2000" overrideParent="True" />
+				<template_reference name="armor_layout_option" value="options\ebpextensions\healthext\armor_layouts\armor_layout_front_rear_side" overrideParent="True">
+					<float name="front_armor" value="3" overrideParent="True" />
+					<float name="rear_armor" value="1" overrideParent="True" />
+					<float name="side_armor" value="2" overrideParent="True" />
+					<float name="rear_damage_multiplier" value="2" overrideParent="True" />
+					<float name="side_damage_multiplier" value="1.5" overrideParent="True" />
+				</template_reference>
+				<enum_table name="armor_scaler_by_damage_type">
+					<float name="Ranged" value="3" overrideParent="True" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-2021965485" List.ParentItemID="-2021965485">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="-653934340" List.ParentItemID="-653934340">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-2042765210" List.ParentItemID="-2042765210">
+								<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+										<instance_reference name="ebp" value="ebps\races\crusader_cmp\weapons\ranged\wpn_range_naval_springald_left_cru" overrideParent="True" />
+									</template_reference>
+								</template_reference>
+							</group>
+						</list>
+					</group>
+					<group name="hardpoint" List.ItemID="1627678101" List.ParentItemID="1627678101">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-1315296552" List.ParentItemID="-1315296552">
+								<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+										<instance_reference name="ebp" value="ebps\races\crusader_cmp\weapons\ranged\wpn_range_naval_springald_right_cru" overrideParent="True" />
+									</template_reference>
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-564826070" List.ParentItemID="-564826070">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="628638250" List.ParentItemID="628638250">
+						<group name="tier" List.ItemID="1812081355" List.ParentItemID="1812081355">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\crusader_cmp\units\tier4_naval_carrack_cru" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2101661" />
+		<instance_reference name="parent_pbg" value="ebps\races\crusader_cmp\units\unit_naval_hulk_cru" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+	</variant>
+</instance>

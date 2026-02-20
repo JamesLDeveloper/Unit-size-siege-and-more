@@ -1,0 +1,24 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1571357040" List.ParentItemID="1571357040">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_naval_medium_lateen" overrideParent="True" />
+			<bool name="browsable_in_editor" value="False" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-347826796" List.ParentItemID="-347826796">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\abbasid_ha_01" overrideParent="True" List.ItemID="1464021014" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-564826070" List.ParentItemID="-564826070">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="628638250" List.ParentItemID="628638250">
+					<group name="tier" List.ItemID="1812081355" List.ParentItemID="1812081355">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\abbasid\units\tier3_naval_combat_ship_abb" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="3278449" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_combat_ship_2" />
+</instance>

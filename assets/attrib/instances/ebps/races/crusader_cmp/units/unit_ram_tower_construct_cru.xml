@@ -1,0 +1,103 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1015139908" List.ParentItemID="1015139908">
+			<bool name="browsable_in_editor" value="False" overrideParent="True" />
+			<int name="precise_size" value="5" overrideParent="True" />
+			<float name="animator_scale" value="100" overrideParent="True" />
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\abbasid_ha_01\units\ram_tower_abbasid_ha_01" overrideParent="True" />
+			<file name="alternate_sua" value="art\civilizations\abbasids_ha_01\team_weapons\abb_super_ram\abb_super_ram" overrideParent="True" />
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="1963360005" List.ParentItemID="1963360005">
+			<group name="time_cost">
+				<float name="time_seconds" value="360" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1324899961" List.ParentItemID="-1324899961">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" List.ItemID="124933302" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="1985133745" List.ParentItemID="1985133745">
+			<instance_reference name="on_construction_squad" value="" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-1328762053" List.ListAction="Append">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" overrideParent="True" List.ItemID="611663326">
+					<group name="tier" List.ItemID="-1965580568">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\abbasid_ha_01\units\ram_tower_abbasid_ha_01" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2138583" />
+	<instance_reference name="parent_pbg" value="ebps\races\french\units\unit_siege_tower_3_fre" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1015139908" List.ParentItemID="1015139908">
+				<bool name="browsable_in_editor" value="False" overrideParent="True" />
+				<int name="precise_size" value="5" overrideParent="True" />
+				<float name="animator_scale" value="100" overrideParent="True" />
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\abbasid_ha_01\units\ram_tower_abbasid_ha_01" overrideParent="True" />
+				<file name="alternate_sua" value="art\civilizations\abbasids_ha_01\team_weapons\abb_super_ram\abb_super_ram" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="1963360005" List.ParentItemID="1963360005">
+				<group name="time_cost">
+					<float name="time_seconds" value="360" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1324899961" List.ParentItemID="-1324899961">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" List.ItemID="905925778" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="1985133745" List.ParentItemID="1985133745">
+				<instance_reference name="on_construction_squad" value="" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-494191890" List.ListAction="Append">
+				<list name="tier_group_list" overrideParent="True">
+					<list name="tier_group" overrideParent="True" List.ItemID="-334825165">
+						<group name="tier" List.ItemID="-249724094">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\abbasid_ha_01\units\ram_tower_abbasid_ha_01" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" overrideParent="True" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2138583" />
+		<instance_reference name="parent_pbg" value="ebps\races\french\units\unit_siege_tower_3_fre" />
+	</variant>
+</instance>

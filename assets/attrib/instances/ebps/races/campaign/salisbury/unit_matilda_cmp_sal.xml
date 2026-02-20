@@ -1,0 +1,34 @@
+<instance version="4" description="EBPS Matilda Salisbury Campaign Tutorial Mission" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1356892678" List.ParentItemID="1356892678">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-788422057" List.ParentItemID="-788422057">
+			<float name="hitpoints" value="450" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1786016482" List.ParentItemID="-1786016482">
+			<list name="unit_type_list">
+				<enum name="unit_type" value="xbox_support_quick_find" List.ItemID="2053115382" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1078428342" List.ParentItemID="1078428342">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-1446117106" List.ParentItemID="-1446117106">
+					<group name="tier" List.ItemID="1378609698" List.ParentItemID="1378609698">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\campaign\salisbury\unit_matilda_cmp_sal" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1762200638" List.ParentItemID="1762200638">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="1534383478" List.ParentItemID="1534383478">
+					<list name="weapon_table" overrideParent="True">
+					</list>
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2104216" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_knight_4" />
+</instance>

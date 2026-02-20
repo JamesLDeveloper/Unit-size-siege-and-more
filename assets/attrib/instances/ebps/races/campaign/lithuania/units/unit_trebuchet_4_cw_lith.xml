@@ -1,0 +1,33 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-422500858" List.ParentItemID="-422500858">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="987752469" List.ParentItemID="987752469">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign\lithuania" List.ItemID="-1183770186" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="670545336" List.ParentItemID="670545336">
+			<list name="target_scanning_priority_override" overrideParent="True">
+				<group name="override" List.ItemID="-1749295081">
+					<enum name="target_type" value="building" overrideParent="True" />
+					<float name="priority_value" value="110" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="183018" />
+	<instance_reference name="parent_pbg" value="ebps\races\hre\units\unit_trebuchet_4_cw_hre" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-226541799" List.ParentItemID="-226541799">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign\lithuania" List.ItemID="-1172224444" />
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="183018" />
+		<instance_reference name="parent_pbg" value="ebps\races\hre\units\unit_trebuchet_4_cw_hre" />
+	</variant>
+</instance>

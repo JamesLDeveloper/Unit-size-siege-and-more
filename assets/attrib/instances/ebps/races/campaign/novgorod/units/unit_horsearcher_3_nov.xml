@@ -1,0 +1,92 @@
+<instance version="6" description="nov castle age horse archer" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1491559579" List.ParentItemID="1491559579">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="584609974" List.ParentItemID="584609974">
+			<float name="hitpoints" value="40" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-2085794998" List.ParentItemID="-2085794998">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign\novgorod" List.ItemID="-988899271" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="698418421" List.ParentItemID="698418421">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="627415271" List.ParentItemID="627415271">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="156392194" List.ParentItemID="156392194">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\rus\ranged\weapon_horsearcher_3_rus" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\rus\weapons\wpn_range_horsearcher_3_rus" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="-1392982238" List.ParentItemID="-1392982238">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_archer_incendiary" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\rus\weapons\wpn_range_horsearcher_3_rus" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="187894" />
+	<instance_reference name="parent_pbg" value="ebps\races\rus\units\unit_horsearcher_3_rus" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-649347914" List.ParentItemID="-649347914">
+				<float name="hitpoints" value="40" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1596751641" List.ParentItemID="1596751641">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign\novgorod" List.ItemID="59622564" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-673122763" List.ParentItemID="-673122763">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="1381665964" List.ParentItemID="1381665964">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="1041827184" List.ParentItemID="1041827184">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\rus\ranged\weapon_horsearcher_3_rus" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\rus\weapons\wpn_range_horsearcher_3_rus" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-557720924" List.ParentItemID="-557720924">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_archer_incendiary" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\rus\weapons\wpn_range_horsearcher_3_rus" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-2132964605" List.ParentItemID="-2132964605">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\mongol\melee\weapon_horsearcher_melee_rus" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\rus\weapons\wpn_melee_horsearcher_melee_rus" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="187894" />
+		<instance_reference name="parent_pbg" value="ebps\races\rus\units\unit_horsearcher_3_rus" />
+	</variant>
+</instance>

@@ -1,0 +1,318 @@
+<instance version="6" description="Mongol castle age archer" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-914024362" List.ParentItemID="-914024362">
+			<bool name="browsable_in_editor" value="False" overrideParent="True" />
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="729861296" List.ParentItemID="729861296">
+			<list name="action_state_trees">
+				<group name="container" List.ItemID="727788669" List.ParentItemID="727788669">
+					<string name="state_tree" value="unit_action_apply\units\archer\audio\mon\4" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1451740830" List.ParentItemID="-1451740830">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="military" List.ItemID="-629887597" />
+				<enum name="unit_type" value="archer" List.ItemID="-532936659" />
+				<enum name="unit_type" value="human" List.ItemID="94131866" />
+				<enum name="unit_type" value="infantry" List.ItemID="-1591778052" />
+				<enum name="unit_type" value="ranged" List.ItemID="1424388464" />
+				<enum name="unit_type" value="formational" List.ItemID="1281970573" />
+				<enum name="unit_type" value="annihilation_condition" List.ItemID="1679591030" />
+				<enum name="unit_type" value="archer_incendiary_age_4" List.ItemID="71476757" />
+				<enum name="unit_type" value="included_by_military_hotkeys" List.ItemID="2112304987" />
+				<enum name="unit_type" value="ranged_infantry" List.ItemID="712908819" />
+				<enum name="unit_type" value="find_non_siege_land_military" overrideParent="True" List.ItemID="1090375687" />
+				<enum name="unit_type" value="land_military" overrideParent="True" List.ItemID="-1916775930" />
+			</list>
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\mongol" List.ItemID="-1729475720" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1786737891" List.ParentItemID="1786737891">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="-1929829615" List.ParentItemID="-1929829615">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-144865546" List.ParentItemID="-144865546">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\mongol\ranged\weapon_archer_4_mon" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol\weapons\wpn_range_archer_4_mon" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="-395659085" List.ParentItemID="-395659085">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_archer_incendiary_4" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol\weapons\wpn_range_archer_4_mon" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-935732769" List.ParentItemID="-935732769">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" overrideParent="True" List.ItemID="-171949488">
+					<group name="tier" List.ItemID="-1750884312">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol\units\tier4_archer_mon" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\mongol\unit_archer_4_mon" overrideParent="True" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="960907187" List.ListAction="Append">
+			<bool name="must_be_in_supply" value="False" />
+			<float name="number_of_standard_slots" value="-1" />
+			<list name="standard_upgrades">
+			</list>
+			<int name="max_queue_size_override" value="-1" />
+			<state_tree_node name="production_item_completed_openingbranch" value="" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="136269" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_archer_4" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1810010982" List.ParentItemID="1810010982">
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="1937672526" List.ParentItemID="1937672526">
+				<list name="action_state_trees">
+					<group name="container" List.ItemID="-665121300" List.ParentItemID="-665121300">
+						<string name="state_tree" value="campaignMod_unit_action_apply\units\archer\audio\mon\4" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-258696617" List.ParentItemID="-258696617">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\mongol" List.ItemID="1884211431" />
+				</list>
+				<list name="unit_type_list">
+					<enum name="unit_type" value="land_military" List.ItemID="-1975434076" List.ListAction="Append" />
+					<enum name="unit_type" value="find_non_siege_land_military" List.ItemID="-1202918363" List.ListAction="Append" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1385472446" List.ParentItemID="1385472446">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="-141977044" List.ParentItemID="-141977044">
+						<list name="weapon_table" overrideParent="True">
+							<group name="weapon" List.ItemID="-1885157886">
+								<group name="heading">
+									<float name="x" value="0" />
+									<float name="y" value="0" />
+									<float name="z" value="0" />
+								</group>
+								<float name="length" value="0" />
+								<group name="origin">
+									<float name="x" value="0" />
+									<float name="y" value="1.75" />
+									<float name="z" value="1" />
+								</group>
+								<enum name="type" value="default" />
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\mongol\ranged\weapon_archer_4_mon" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol\weapons\wpn_range_archer_4_mon" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-768266067">
+								<group name="heading">
+									<float name="x" value="0" />
+									<float name="y" value="0" />
+									<float name="z" value="0" />
+								</group>
+								<float name="length" value="0" />
+								<group name="origin">
+									<float name="x" value="0.5" />
+									<float name="y" value="1.5" />
+									<float name="z" value="0" />
+								</group>
+								<enum name="type" value="default" />
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_archer_4_melee" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol\weapons\wpn_melee_archer_2_melee_mon" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="2036147998">
+								<group name="heading">
+									<float name="x" value="0" />
+									<float name="y" value="0" />
+									<float name="z" value="0" />
+								</group>
+								<float name="length" value="0" />
+								<group name="origin">
+									<float name="x" value="0" />
+									<float name="y" value="1.75" />
+									<float name="z" value="1" />
+								</group>
+								<enum name="type" value="default" />
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\mongol\ranged\weapon_archer_incendiary_mon" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol\weapons\wpn_range_archer_4_mon" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-931796507" List.ParentItemID="-931796507">
+				<list name="tier_group_list" overrideParent="True">
+					<list name="tier_group" overrideParent="True" List.ItemID="-1353384657">
+						<group name="tier" List.ItemID="-1464678309">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol\units\tier4_archer_mon" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_tier_unit_exposure_dca" overrideParent="True" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\mongol\unit_archer_4_mon" overrideParent="True" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="1243929992" List.ListAction="Append">
+				<bool name="must_be_in_supply" value="False" />
+				<float name="number_of_standard_slots" value="-1" />
+				<list name="standard_upgrades">
+				</list>
+				<int name="max_queue_size_override" value="-1" />
+				<state_tree_node name="production_item_completed_openingbranch" value="" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="136269" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_archer_4" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-914024362" List.ParentItemID="-914024362">
+				<bool name="browsable_in_editor" value="False" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="729861296" List.ParentItemID="729861296">
+				<list name="action_state_trees">
+					<group name="container" List.ItemID="727788669" List.ParentItemID="727788669">
+						<string name="state_tree" value="xp3_unit_action_apply\units\archer\audio\mon\4" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1451740830" List.ParentItemID="-1451740830">
+				<list name="unit_type_list" overrideParent="True">
+					<enum name="unit_type" value="military" List.ItemID="-1824988987" />
+					<enum name="unit_type" value="archer" List.ItemID="1324629559" />
+					<enum name="unit_type" value="human" List.ItemID="1180264113" />
+					<enum name="unit_type" value="infantry" List.ItemID="-1333752899" />
+					<enum name="unit_type" value="ranged" List.ItemID="-675188545" />
+					<enum name="unit_type" value="formational" List.ItemID="-371877808" />
+					<enum name="unit_type" value="annihilation_condition" List.ItemID="-608866148" />
+					<enum name="unit_type" value="archer_incendiary_age_4" List.ItemID="-168974289" />
+					<enum name="unit_type" value="included_by_military_hotkeys" List.ItemID="875445666" />
+					<enum name="unit_type" value="ranged_infantry" List.ItemID="-1480241177" />
+					<enum name="unit_type" value="find_non_siege_land_military" overrideParent="True" List.ItemID="-1116167341" />
+					<enum name="unit_type" value="land_military" overrideParent="True" List.ItemID="-1647842602" />
+				</list>
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\mongol" List.ItemID="1697093276" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1786737891" List.ParentItemID="1786737891">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="-1929829615" List.ParentItemID="-1929829615">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-144865546" List.ParentItemID="-144865546">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\mongol\ranged\weapon_archer_4_mon" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol\weapons\wpn_range_archer_4_mon" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-395659085" List.ParentItemID="-395659085">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_archer_incendiary_4" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol\weapons\wpn_range_archer_4_mon" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-935732769" List.ParentItemID="-935732769">
+				<list name="tier_group_list" overrideParent="True">
+					<list name="tier_group" overrideParent="True" List.ItemID="-1904033176">
+						<group name="tier" List.ItemID="-1634476193">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol\units\tier4_archer_mon" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="xp3_tier_unit_exposure_dca" overrideParent="True" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\mongol\unit_archer_4_mon" overrideParent="True" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="1369894384" List.ListAction="Append">
+				<bool name="must_be_in_supply" value="False" />
+				<float name="number_of_standard_slots" value="-1" />
+				<list name="standard_upgrades">
+				</list>
+				<int name="max_queue_size_override" value="-1" />
+				<state_tree_node name="production_item_completed_openingbranch" value="" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="136269" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_archer_4" />
+	</variant>
+</instance>

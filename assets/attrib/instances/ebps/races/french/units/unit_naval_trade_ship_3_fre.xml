@@ -1,0 +1,117 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-592124023" List.ParentItemID="-592124023">
+			<list name="abilities" overrideParent="True">
+				<instance_reference name="ability" value="abilities\modal_abilities\core\trade_restart" List.ItemID="-1040236504" />
+				<instance_reference name="ability" value="abilities\toggle_abilities\french\toggle_trade_resource_food_fre" overrideParent="True" List.ItemID="1404334863" />
+				<instance_reference name="ability" value="abilities\toggle_abilities\french\toggle_trade_resource_wood_fre" overrideParent="True" List.ItemID="694012993" />
+				<instance_reference name="ability" value="abilities\toggle_abilities\french\trade_resource_modifiers_fre" List.ItemID="1166261736" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\french\passives\market_passive_gold_generation_fre" List.ItemID="-1308540287" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="1168735287" List.ParentItemID="1168735287">
+			<list name="action_state_trees" overrideParent="True">
+				<group name="container" List.ItemID="1993480304">
+					<string name="state_tree" value="unit_action_apply\units\naval_generic" overrideParent="True" />
+				</group>
+				<group name="container" List.ItemID="-1854631672">
+					<string name="state_tree" value="naval_trader_modifiers" overrideParent="True" />
+				</group>
+				<group name="container" List.ItemID="39217007">
+					<string name="state_tree" value="combat_ship_action_apply" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\entity_targeting_ext" List.ItemID="-107581931" List.ParentItemID="-107581931">
+			<bool name="allow_entity_scan_close_enemies" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="2005299329" List.ParentItemID="2005299329">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="1868832800" List.ParentItemID="1868832800">
+					<group name="tier" List.ItemID="1601565728" List.ParentItemID="1601565728">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\french\units\tier3_naval_trade_ship_fre" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="196675" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_trade_ship_3" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="700261060" List.ParentItemID="700261060">
+				<list name="abilities" overrideParent="True">
+					<instance_reference name="ability" value="abilities\modal_abilities\core\trade_restart" List.ItemID="-1520812794" />
+					<instance_reference name="ability" value="abilities\toggle_abilities\french\toggle_trade_resource_food_fre" overrideParent="True" List.ItemID="393507247" />
+					<instance_reference name="ability" value="abilities\toggle_abilities\french\toggle_trade_resource_wood_fre" overrideParent="True" List.ItemID="-1241029087" />
+					<instance_reference name="ability" value="abilities\toggle_abilities\french\toggle_trade_resource_gold_fre" List.ItemID="-977025008" />
+					<instance_reference name="ability" value="abilities\toggle_abilities\french\toggle_trade_resource_stone_fre" overrideParent="True" List.ItemID="-1041417619" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="1253426328" List.ParentItemID="1253426328">
+				<list name="action_state_trees" overrideParent="True">
+					<group name="container" List.ItemID="1853273509">
+						<string name="state_tree" value="campaignMod_unit_action_apply\units\naval_generic" />
+					</group>
+					<group name="container" List.ItemID="-174399179">
+						<string name="state_tree" value="campaignMod_trade_cart_resource_modifiers_fre" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\entity_targeting_ext" List.ItemID="-1587653624" List.ParentItemID="-1587653624">
+				<bool name="allow_entity_scan_close_enemies" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1805972924" List.ParentItemID="1805972924">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="-174089888" List.ParentItemID="-174089888">
+						<group name="tier" List.ItemID="-600127543" List.ParentItemID="-600127543">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\french\units\tier3_naval_trade_ship_fre" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="196675" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_trade_ship_3" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-592124023" List.ParentItemID="-592124023">
+				<list name="abilities" overrideParent="True">
+					<instance_reference name="ability" value="abilities\modal_abilities\core\trade_restart" List.ItemID="1393829190" />
+					<instance_reference name="ability" value="abilities\toggle_abilities\french\toggle_trade_resource_food_fre" overrideParent="True" List.ItemID="950865737" />
+					<instance_reference name="ability" value="abilities\toggle_abilities\french\toggle_trade_resource_wood_fre" overrideParent="True" List.ItemID="2088753818" />
+					<instance_reference name="ability" value="abilities\toggle_abilities\french\trade_resource_modifiers_fre" List.ItemID="2046884143" />
+					<instance_reference name="ability" value="abilities\always_on_abilities\french\passives\market_passive_gold_generation_fre" List.ItemID="-886157344" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="1168735287" List.ParentItemID="1168735287">
+				<list name="action_state_trees" overrideParent="True">
+					<group name="container" List.ItemID="1406877934">
+						<string name="state_tree" value="xp3_unit_action_apply\units\naval_generic" overrideParent="True" />
+					</group>
+					<group name="container" List.ItemID="-1678109209">
+						<string name="state_tree" value="xp3_naval_trader_modifiers" overrideParent="True" />
+					</group>
+					<group name="container" List.ItemID="941977294">
+						<string name="state_tree" value="xp3_combat_ship_action_apply" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\entity_targeting_ext" List.ItemID="-107581931" List.ParentItemID="-107581931">
+				<bool name="allow_entity_scan_close_enemies" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="2005299329" List.ParentItemID="2005299329">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="1868832800" List.ParentItemID="1868832800">
+						<group name="tier" List.ItemID="1601565728" List.ParentItemID="1601565728">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\french\units\tier3_naval_trade_ship_fre" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="196675" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_trade_ship_3" />
+	</variant>
+</instance>

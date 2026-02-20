@@ -1,0 +1,248 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1142448452" List.ParentItemID="-1142448452">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_archer_3" overrideParent="True" />
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="849566369" List.ParentItemID="849566369">
+			<float name="death_seconds" value="19" overrideParent="True" />
+			<float name="hitpoints" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\hit_object_ext" List.ItemID="-617063894" List.ParentItemID="-617063894">
+			<instance_reference name="hit_material" value="hit_material\leather" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1506434247" List.ParentItemID="1506434247">
+			<list name="unit_type_list">
+				<enum name="unit_type" value="archer_incendiary_age_3" overrideParent="True" List.ItemID="-2031989318" List.ParentItemID="-2031989318" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="112941201" List.ParentItemID="112941201">
+			<float name="decorator_height" value="2.75" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1718741337" List.ParentItemID="-1718741337">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="-2100217846" List.ParentItemID="-2100217846">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="317553590" List.ParentItemID="317553590">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_archer_3" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_range_archer_3" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="722858928" List.ParentItemID="722858928">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_archer_incendiary_3" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_siege_archer_incendiary" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" overrideParent="True" List.ItemID="1952836141" List.ParentItemID="1952836141">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="0" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="1.75" />
+								<float name="z" value="1" />
+							</group>
+							<enum name="type" value="default" />
+							<template_reference name="weapon_entity_attachment" value="">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_archer_incendiary_building_fire" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_siege_archer_incendiary" />
+								<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="-346790096" List.ParentItemID="-346790096">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-2099397665">
+					<group name="tier" List.ItemID="-1324641867">
+						<instance_reference name="attachments" value="" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="124966" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_archer_2" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1938398512" List.ParentItemID="1938398512">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_archer_3" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-655642156" List.ParentItemID="-655642156">
+				<float name="death_seconds" value="19" overrideParent="True" />
+				<float name="hitpoints" value="100" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\hit_object_ext" List.ItemID="686186545" List.ParentItemID="686186545">
+				<instance_reference name="hit_material" value="hit_material\leather" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-386216040" List.ParentItemID="-386216040">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="2070275143" List.ParentItemID="2070275143">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-193205598" List.ParentItemID="-193205598">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_archer_3" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_range_archer_3" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="383579017" List.ParentItemID="383579017">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_archer_3_melee" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_melee_archer_2_melee" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="472886941" List.ParentItemID="472886941">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_archer_incendiary" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_siege_archer_incendiary" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="1976890261" List.ParentItemID="1976890261">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="1227607480">
+						<group name="tier" List.ItemID="1091966795">
+							<instance_reference name="attachments" value="" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="124966" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_archer_2" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1962855634" List.ParentItemID="1962855634">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_archer_3" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="1737975215" List.ParentItemID="1737975215">
+				<float name="death_seconds" value="19" overrideParent="True" />
+				<float name="hitpoints" value="80" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\hit_object_ext" List.ItemID="883777518" List.ParentItemID="883777518">
+				<instance_reference name="hit_material" value="hit_material\leather" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1363426391" List.ParentItemID="-1363426391">
+				<list name="unit_type_list">
+					<enum name="unit_type" value="archer_incendiary_age_3" overrideParent="True" List.ItemID="-2099082388" List.ParentItemID="-2099082388" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-484396651" List.ParentItemID="-484396651">
+				<float name="decorator_height" value="2.75" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="665886067" List.ParentItemID="665886067">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="362832045" List.ParentItemID="362832045">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-420164033" List.ParentItemID="-420164033">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_archer_3" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_range_archer_3" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-1947232251" List.ParentItemID="-1947232251">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_archer_incendiary_3" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_siege_archer_incendiary" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="-1098288192" List.ParentItemID="-1098288192">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="396702523">
+						<group name="tier" List.ItemID="-145759707">
+							<instance_reference name="attachments" value="" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="124966" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_archer_2" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+	</variant>
+</instance>

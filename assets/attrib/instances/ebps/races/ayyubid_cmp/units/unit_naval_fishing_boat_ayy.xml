@@ -1,0 +1,28 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="267168923" List.ParentItemID="267168923">
+			<bool name="browsable_in_editor" value="False" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-92434801" List.ParentItemID="-92434801">
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="1954092878" List.ParentItemID="1954092878" />
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2103393" />
+	<instance_reference name="parent_pbg" value="ebps\races\abbasid\units\unit_naval_fishing_boat_2_abb" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="267168923" List.ParentItemID="267168923">
+				<bool name="browsable_in_editor" value="False" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-92434801" List.ParentItemID="-92434801">
+				<list name="race_type_list">
+					<instance_reference name="race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="1954092878" List.ParentItemID="1954092878" />
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2103393" />
+		<instance_reference name="parent_pbg" value="ebps\races\abbasid\units\unit_naval_fishing_boat_2_abb" />
+	</variant>
+</instance>

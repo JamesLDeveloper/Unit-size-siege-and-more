@@ -1,0 +1,137 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="803033353" List.ParentItemID="803033353">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-2112301127" List.ParentItemID="-2112301127">
+			<float name="hitpoints" value="40" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1344262557" List.ParentItemID="1344262557">
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\campaign\novgorod" overrideParent="True" List.ItemID="644921493" List.ParentItemID="644921493" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="113064770" List.ParentItemID="113064770">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="1772179079" List.ParentItemID="1772179079">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="1188114953" List.ParentItemID="1188114953">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\campaign\novgorod\melee\weapon_spearman_3_nov" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_melee_spearman_3" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="1383023241" List.ParentItemID="1383023241">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\rus\ranged\weapon_torch_rus" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\rus\weapons\wpn_siege_torch_rus" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="-1078216168" List.ParentItemID="-1078216168">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\campaign\novgorod\melee\weapon_spearwall_3_nov" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_melee_spearwall_3" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="-1768759685" List.ParentItemID="-1768759685">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\campaign\novgorod\melee\weapon_spearman_3_charge_nov" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_melee_spearman_3_charge" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-887479370" List.ParentItemID="-887479370">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="912703135" List.ParentItemID="912703135">
+					<group name="tier" List.ItemID="2035615680" List.ParentItemID="2035615680">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\rus\units\tier1_spearman_rus" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="187939" />
+	<instance_reference name="parent_pbg" value="ebps\races\rus\units\unit_spearman_3_rus" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="2029202222" List.ParentItemID="2029202222">
+				<float name="hitpoints" value="40" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1387589378" List.ParentItemID="1387589378">
+				<list name="race_type_list">
+					<instance_reference name="race_type" value="racebps\campaign\novgorod" overrideParent="True" List.ItemID="-1137235362" List.ParentItemID="-1137235362" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1113780834" List.ParentItemID="1113780834">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="-413681929" List.ParentItemID="-413681929">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-430843969" List.ParentItemID="-430843969">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\campaign\novgorod\melee\weapon_spearman_3_nov" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_melee_spearman_3" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="1246530323" List.ParentItemID="1246530323">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\rus\ranged\weapon_torch_rus" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\rus\weapons\wpn_siege_torch_rus" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-1995677568" List.ParentItemID="-1995677568">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\campaign\novgorod\melee\weapon_spearwall_3_nov" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_melee_spearwall_3" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="91405434" List.ParentItemID="91405434">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\campaign\novgorod\melee\weapon_spearman_3_charge_nov" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_melee_spearman_3_charge" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-1690483533" List.ParentItemID="-1690483533">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="1517928084" List.ParentItemID="1517928084">
+						<group name="tier" List.ItemID="-867081944" List.ParentItemID="-867081944">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\rus\units\tier1_spearman_rus" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="187939" />
+		<instance_reference name="parent_pbg" value="ebps\races\rus\units\unit_spearman_3_rus" />
+	</variant>
+</instance>

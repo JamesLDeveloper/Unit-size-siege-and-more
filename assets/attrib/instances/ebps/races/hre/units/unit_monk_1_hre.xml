@@ -1,0 +1,438 @@
+<instance version="6" description="HRE Dark Age Monk" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-276819776" List.ParentItemID="-276819776">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-496305047" List.ParentItemID="-496305047">
+			<list name="abilities" overrideParent="True">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-226814690" List.ParentItemID="-226814690">
+			<list name="action_state_trees">
+				<group name="container" List.ItemID="322626763" List.ParentItemID="322626763">
+					<string name="state_tree" value="unit_action_apply\units\monk\audio\hre" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-287598437" List.ParentItemID="-287598437">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="gold" value="100" overrideParent="True" />
+				</enum_table>
+				<float name="time_seconds" value="20" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\population_ext" List.ItemID="429434060" List.ParentItemID="429434060">
+			<float name="vehicle_pop" value="1" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1376601539" List.ParentItemID="1376601539">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\hre" List.ItemID="2015300696" />
+			</list>
+			<list name="unit_type_list">
+				<enum name="unit_type" value="can_inspire" List.ItemID="-129660966" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="56597229" List.ParentItemID="56597229">
+			<enum_table name="speed_levels">
+				<float name="speed_level_0" value="1" overrideParent="True" />
+				<float name="speed_level_1" value="2.5" overrideParent="True" />
+				<float name="speed_level_2" value="4" overrideParent="True" />
+				<float name="speed_level_3" value="5" overrideParent="True" />
+				<float name="speed_level_4" value="5" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="2077240538" List.ListAction="Append">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" overrideParent="True" List.ItemID="-1353562727">
+					<group name="tier" List.ItemID="-776574230">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\hre\units\tier1_monk_hre" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+					<group name="tier" List.ItemID="1527940011">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\hre\units\tier2_monk_hre" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\feudal_age" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" overrideParent="True" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+					<group name="tier" List.ItemID="163066739">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\hre\units\tier3_monk_hre" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\castle_age" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" overrideParent="True" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+					<group name="tier" List.ItemID="197570666">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\hre\units\tier4_monk_hre" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\imperial_age" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" overrideParent="True" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="-1312924429" List.ListAction="Append">
+			<list name="type_list" overrideParent="True">
+				<group name="type" List.ItemID="1803762495">
+					<enum name="interaction_type" value="inspire_hre" overrideParent="True" />
+					<int name="prefer_number" value="1" overrideParent="True" />
+					<int name="max_number" value="1" overrideParent="True" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none" overrideParent="True">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="136916" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_monk_3" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1694445094" List.ParentItemID="1694445094">
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-25784948" List.ParentItemID="-25784948">
+				<list name="abilities" overrideParent="True">
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="554740619" List.ParentItemID="554740619">
+				<list name="action_state_trees">
+					<group name="container" List.ItemID="308100852" List.ParentItemID="308100852">
+						<string name="state_tree" value="campaignMod_unit_action_apply\units\monk\audio\hre" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="1342100216" List.ParentItemID="1342100216">
+				<group name="time_cost">
+					<enum_table name="cost">
+						<float name="gold" value="100" overrideParent="True" />
+					</enum_table>
+					<float name="time_seconds" value="60" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-544246182" List.ParentItemID="-544246182">
+				<float name="hitpoints" value="45" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1329771098" List.ParentItemID="1329771098">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\hre" List.ItemID="-1515278710" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="234054901" List.ParentItemID="234054901">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="881767104" List.ParentItemID="881767104">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="2124960124" List.ParentItemID="2124960124">
+								<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+										<instance_reference name="ebp" value="ebps\races\core\weapons\wpn_range_dummy" overrideParent="True" />
+									</template_reference>
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="294905397" List.ListAction="Append">
+				<list name="tier_group_list" overrideParent="True">
+					<list name="tier_group" overrideParent="True" List.ItemID="-612659697">
+						<group name="tier" List.ItemID="-1444076803">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\hre\units\tier1_monk_hre" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_tier_unit_exposure_dca" overrideParent="True" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+						<group name="tier" List.ItemID="842135770">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\hre\units\tier2_monk_hre" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_tier_unit_exposure_dca" overrideParent="True" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\feudal_age" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" overrideParent="True" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+						<group name="tier" List.ItemID="27051488">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\hre\units\tier3_monk_hre" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_tier_unit_exposure_dca" overrideParent="True" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\castle_age" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" overrideParent="True" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+						<group name="tier" List.ItemID="970780431">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\hre\units\tier4_monk_hre" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_tier_unit_exposure_dca" overrideParent="True" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\imperial_age" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" overrideParent="True" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="136916" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_monk_3" />
+	</variant>
+	<variant name="hre_brawl">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-276819776" List.ParentItemID="-276819776">
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-496305047" List.ParentItemID="-496305047">
+				<list name="abilities" overrideParent="True">
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-226814690" List.ParentItemID="-226814690">
+				<list name="action_state_trees">
+					<group name="container" List.ItemID="322626763" List.ParentItemID="322626763">
+						<string name="state_tree" value="unit_action_apply\units\monk\audio\hre" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-287598437" List.ParentItemID="-287598437">
+				<group name="time_cost">
+					<enum_table name="cost">
+						<float name="gold" value="10" overrideParent="True" />
+					</enum_table>
+					<float name="time_seconds" value="1" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-293080404" List.ParentItemID="-293080404">
+				<float name="hitpoints" value="80" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\population_ext" List.ItemID="429434060" List.ParentItemID="429434060">
+				<float name="vehicle_pop" value="0" overrideParent="True" />
+				<float name="personnel_pop" value="0" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="-1346521447" List.ParentItemID="-1346521447">
+				<group name="sight_package">
+					<float name="inner_radius" value="36" overrideParent="True" />
+					<float name="outer_radius" value="36" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1376601539" List.ParentItemID="1376601539">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\hre" List.ItemID="-1887935880" />
+				</list>
+				<list name="unit_type_list">
+					<enum name="unit_type" value="can_inspire" List.ItemID="1103522369" List.ListAction="Append" />
+					<enum name="unit_type" value="light_melee_infantry" List.ItemID="479567922" List.ListAction="Append" />
+					<enum name="unit_type" value="included_by_military_hotkeys" List.ItemID="94496609" List.ListAction="Append" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="1376017635" List.ParentItemID="1376017635">
+				<enum name="selection_type" value="squad_select" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="56597229" List.ParentItemID="56597229">
+				<enum_table name="speed_levels">
+					<float name="speed_level_0" value="1" overrideParent="True" />
+					<float name="speed_level_1" value="2.5" overrideParent="True" />
+					<float name="speed_level_2" value="4" overrideParent="True" />
+					<float name="speed_level_3" value="5" overrideParent="True" />
+					<float name="speed_level_4" value="5" overrideParent="True" />
+				</enum_table>
+				<enum_table name="speed_scaling_table">
+					<float name="default_speed" value="5" overrideParent="True" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="506956011" List.ListAction="Append">
+				<list name="tier_group_list" overrideParent="True">
+					<list name="tier_group" overrideParent="True" List.ItemID="-1923287183">
+						<group name="tier" List.ItemID="-1828240430">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\hre\units\tier1_monk_hre" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+						<group name="tier" List.ItemID="1907719717">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\hre\units\tier2_monk_hre" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\feudal_age" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" overrideParent="True" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+						<group name="tier" List.ItemID="1139025133">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\hre\units\tier3_monk_hre" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\castle_age" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" overrideParent="True" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+						<group name="tier" List.ItemID="1457934940">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\hre\units\tier4_monk_hre" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\imperial_age" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" overrideParent="True" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="609511686" List.ListAction="Append">
+				<list name="type_list" overrideParent="True">
+					<group name="type" List.ItemID="-1427901293">
+						<enum name="interaction_type" value="inspire_hre" overrideParent="True" />
+						<int name="prefer_number" value="1" overrideParent="True" />
+						<int name="max_number" value="1" overrideParent="True" />
+						<enum name="interaction_target_type" value="entity" />
+						<template_reference name="node_list_option" value="options\none" overrideParent="True">
+						</template_reference>
+						<bool name="block_pathing_when_interacted" value="False" />
+					</group>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="136916" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_monk_3" />
+	</variant>
+</instance>

@@ -1,0 +1,59 @@
+<instance version="6" description="Castle Age Springald" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="811590333" List.ParentItemID="811590333">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1224301896" List.ParentItemID="1224301896">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign\lithuania" List.ItemID="-326838823" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-587241534" List.ParentItemID="-587241534">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="-1624532552" List.ParentItemID="-1624532552">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-746170489" List.ParentItemID="-746170489">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_springald_3" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\hre\weapons\wpn_siege_springald_3_hre" overrideParent="True" />
+								<string name="marker_name_parent" value="" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="183015" />
+	<instance_reference name="parent_pbg" value="ebps\races\hre\units\unit_springald_3_hre" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-471278123" List.ParentItemID="-471278123">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign\lithuania" List.ItemID="47278215" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1730969157" List.ParentItemID="1730969157">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="1847527288" List.ParentItemID="1847527288">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-1605132192" List.ParentItemID="-1605132192">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_springald_3" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\hre\weapons\wpn_siege_springald_3_hre" overrideParent="True" />
+									<string name="marker_name_parent" value="" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="183015" />
+		<instance_reference name="parent_pbg" value="ebps\races\hre\units\unit_springald_3_hre" />
+	</variant>
+</instance>

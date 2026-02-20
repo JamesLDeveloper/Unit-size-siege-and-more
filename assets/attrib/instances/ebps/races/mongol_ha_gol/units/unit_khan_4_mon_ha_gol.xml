@@ -1,0 +1,92 @@
+<instance version="4" description="Mongol imperial age khan" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1356892678" List.ParentItemID="1356892678">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol_ha_gol\units\unit_khan_4_mon_ha_gol" overrideParent="True" />
+			<bool name="browsable_in_editor" value="False" overrideParent="True" />
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-12513399" List.ParentItemID="-12513399">
+			<list name="action_state_trees">
+				<group name="container" List.ItemID="2022080988" List.ParentItemID="2022080988">
+					<string name="state_tree" value="khan_action_apply_mon_ha_gol" overrideParent="True" />
+				</group>
+				<group name="container" List.ItemID="-289976116" List.ParentItemID="-289976116">
+					<string name="state_tree" value="unit_action_apply\units\cavalry_archer\audio\khan\4" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-788422057" List.ParentItemID="-788422057">
+			<float name="hitpoints" value="575" overrideParent="True" />
+			<enum_table name="armor_scaler_by_damage_type">
+				<float name="Melee" value="5" overrideParent="True" />
+				<float name="Ranged" value="5" overrideParent="True" />
+			</enum_table>
+			<template_reference name="on_received_damage_action_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="" overrideParent="True" />
+			</template_reference>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\population_ext" List.ItemID="-1038753850" List.ParentItemID="-1038753850">
+			<float name="personnel_pop" value="1" overrideParent="True" />
+			<float name="vehicle_pop" value="0" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="209652795" List.ParentItemID="209652795">
+			<bool name="extended_sight" value="False" overrideParent="True" />
+			<float name="extended_sight_radius" value="0" overrideParent="True" />
+			<group name="sight_package">
+				<float name="inner_height" value="10" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1786016482" List.ParentItemID="-1786016482">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\mongol_ha_gol" overrideParent="True" List.ItemID="864464827" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="1078428342" List.ParentItemID="1078428342">
+			<list name="tier_group_list">
+				<list name="tier_group" overrideParent="True" List.ItemID="-315606389">
+					<group name="tier" List.ItemID="1513428729">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol_ha_gol\units\tier4_cavalry_khan_mon_ha_gol" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1762200638" List.ParentItemID="1762200638">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="1534383478" List.ParentItemID="1534383478">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-1943322821" List.ParentItemID="-1943322821">
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\mongol_ha_gol\melee\weapon_khan_4_mon_ha_gol" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol_ha_gol\weapons\wpn_melee_khan_4_mon_ha_gol" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="-534987242" List.ParentItemID="-534987242">
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\mongol_ha_gol\melee\weapon_khan_4_charge_mon_ha_gol" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol_ha_gol\weapons\wpn_melee_khan_4_charge_mon_ha_gol" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="8612967" />
+	<instance_reference name="parent_pbg" value="ebps\races\mongol_ha_gol\units\unit_khan_3_mon_ha_gol" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+</instance>

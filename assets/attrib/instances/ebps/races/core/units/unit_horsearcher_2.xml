@@ -1,0 +1,223 @@
+<instance version="6" description="Feudal age horse archer" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-2062153116" List.ParentItemID="-2062153116">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_horsearcher_2" overrideParent="True" />
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-1818646324" List.ParentItemID="-1818646324">
+			<float name="hitpoints" value="115" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="919249663" List.ParentItemID="919249663">
+			<float name="decorator_height" value="3.5" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-1942757682" List.ParentItemID="-1942757682">
+			<list name="tier_group_list">
+				<list name="tier_group" overrideParent="True" List.ItemID="1692473437" List.ParentItemID="1692473437">
+					<group name="tier" List.ItemID="1498536719">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol\units\tier2_cavalry_horsearcher_mon" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1408183810" List.ParentItemID="-1408183810">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="-1276405530" List.ParentItemID="-1276405530">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="1760811654" List.ParentItemID="1760811654">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\mongol\ranged\weapon_horsearcher_2_mon" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol\weapons\wpn_range_horsearcher_2_mon" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="1943687385" List.ParentItemID="1943687385">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_archer_incendiary" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_siege_archer_incendiary" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="-286879323" List.ParentItemID="-286879323">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\mongol\melee\weapon_horsearcher_melee_rus" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\rus\weapons\wpn_melee_horsearcher_melee_rus" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="129653" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_horsearcher_1" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="21246329" List.ParentItemID="21246329">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_horsearcher_2" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-89790856" List.ParentItemID="-89790856">
+				<float name="hitpoints" value="140" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-996686626" List.ParentItemID="-996686626">
+				<list name="tier_group_list">
+					<list name="tier_group" overrideParent="True" List.ItemID="-711761867" List.ParentItemID="-711761867">
+						<group name="tier" List.ItemID="-2117593726">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol\units\tier2_cavalry_horsearcher_mon" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1692487267" List.ParentItemID="-1692487267">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="294669620" List.ParentItemID="294669620">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-414216875" List.ParentItemID="-414216875">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\mongol\ranged\weapon_horsearcher_2_mon" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol\weapons\wpn_range_horsearcher_2_mon" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="1433409049" List.ParentItemID="1433409049">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_archer_incendiary" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_siege_archer_incendiary" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="1680485329" List.ParentItemID="1680485329">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\mongol\melee\weapon_horsearcher_melee_rus" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\rus\weapons\wpn_melee_horsearcher_melee_rus" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="129653" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_horsearcher_1" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1121144998" List.ParentItemID="-1121144998">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_horsearcher_2" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="2052091231" List.ParentItemID="2052091231">
+				<float name="hitpoints" value="115" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-1962932124" List.ParentItemID="-1962932124">
+				<float name="decorator_height" value="3.5" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-1340430988" List.ParentItemID="-1340430988">
+				<list name="tier_group_list">
+					<list name="tier_group" overrideParent="True" List.ItemID="-2018460791" List.ParentItemID="-2018460791">
+						<group name="tier" List.ItemID="-191823850">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol\units\tier2_cavalry_horsearcher_mon" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1275779412" List.ParentItemID="-1275779412">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="-1016752296" List.ParentItemID="-1016752296">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="430659662" List.ParentItemID="430659662">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\mongol\ranged\weapon_horsearcher_2_mon" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol\weapons\wpn_range_horsearcher_2_mon" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="1383405907" List.ParentItemID="1383405907">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_archer_incendiary" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_siege_archer_incendiary" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="1026787069" List.ParentItemID="1026787069">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\mongol\melee\weapon_horsearcher_melee_rus" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\rus\weapons\wpn_melee_horsearcher_melee_rus" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="129653" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_horsearcher_1" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+	</variant>
+</instance>

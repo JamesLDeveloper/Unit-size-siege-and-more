@@ -1,0 +1,178 @@
+<instance version="6" description="" template="ebps">
+	<uniqueid name="pbgid" value="2129662" />
+	<instance_reference name="parent_pbg" value="ebps\races\ayyubid_cmp\units\unit_naval_xebec_ayy" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-638368952" List.ParentItemID="-638368952">
+			<bool name="browsable_in_editor" value="False" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="1734868903" List.ParentItemID="1734868903">
+			<float name="hitpoints" value="800" overrideParent="True" />
+			<template_reference name="armor_layout_option" value="options\ebpextensions\healthext\armor_layouts\armor_layout_uniform">
+				<float name="armor" value="1" overrideParent="True" />
+			</template_reference>
+			<enum_table name="armor_scaler_by_damage_type">
+				<float name="Ranged" value="6" overrideParent="True" />
+				<float name="Fire" value="0" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1092792524" List.ParentItemID="1092792524">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="1847161327" List.ParentItemID="1847161327">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="48484763" List.ParentItemID="48484763">
+							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<instance_reference name="ebp" value="ebps\races\ayyubid_cmp\weapons\wpn_range_naval_warship_springald_left_ai_ayy" overrideParent="True" />
+								</template_reference>
+							</template_reference>
+						</group>
+					</list>
+				</group>
+				<group name="hardpoint" List.ItemID="-1417575735" List.ParentItemID="-1417575735">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="95307603" List.ParentItemID="95307603">
+							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<instance_reference name="ebp" value="ebps\races\ayyubid_cmp\weapons\wpn_range_naval_warship_springald_left_ayy" overrideParent="True" />
+								</template_reference>
+							</template_reference>
+						</group>
+					</list>
+				</group>
+				<group name="hardpoint" List.ItemID="-1373081142" List.ParentItemID="-1373081142">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="403349670" List.ParentItemID="403349670">
+							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<instance_reference name="ebp" value="ebps\races\ayyubid_cmp\weapons\wpn_range_naval_warship_springald_left_ayy" overrideParent="True" />
+								</template_reference>
+							</template_reference>
+						</group>
+					</list>
+				</group>
+				<group name="hardpoint" List.ItemID="822147706" List.ParentItemID="822147706">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="89707258" List.ParentItemID="89707258">
+							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<instance_reference name="ebp" value="ebps\races\ayyubid_cmp\weapons\wpn_range_naval_warship_springald_right_ai_ayy" overrideParent="True" />
+								</template_reference>
+							</template_reference>
+						</group>
+					</list>
+				</group>
+				<group name="hardpoint" List.ItemID="-1159284020" List.ParentItemID="-1159284020">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-516039285" List.ParentItemID="-516039285">
+							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<instance_reference name="ebp" value="ebps\races\ayyubid_cmp\weapons\wpn_range_naval_warship_springald_right_ayy" overrideParent="True" />
+								</template_reference>
+							</template_reference>
+						</group>
+					</list>
+				</group>
+				<group name="hardpoint" List.ItemID="1848079065" List.ParentItemID="1848079065">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-907429533" List.ParentItemID="-907429533">
+							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<instance_reference name="ebp" value="ebps\races\ayyubid_cmp\weapons\wpn_range_naval_warship_springald_right_ayy" overrideParent="True" />
+								</template_reference>
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<variant name="xp3">
+		<uniqueid name="pbgid" value="2129662" />
+		<instance_reference name="parent_pbg" value="ebps\races\ayyubid_cmp\units\unit_naval_xebec_ayy" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-638368952" List.ParentItemID="-638368952">
+				<bool name="browsable_in_editor" value="False" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="1734868903" List.ParentItemID="1734868903">
+				<float name="hitpoints" value="800" overrideParent="True" />
+				<template_reference name="armor_layout_option" value="options\ebpextensions\healthext\armor_layouts\armor_layout_uniform">
+					<float name="armor" value="1" overrideParent="True" />
+				</template_reference>
+				<enum_table name="armor_scaler_by_damage_type">
+					<float name="Ranged" value="6" overrideParent="True" />
+					<float name="Fire" value="0" overrideParent="True" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1092792524" List.ParentItemID="1092792524">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="1847161327" List.ParentItemID="1847161327">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="48484763" List.ParentItemID="48484763">
+								<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+										<instance_reference name="ebp" value="ebps\races\ayyubid_cmp\weapons\wpn_range_naval_warship_springald_left_ai_ayy" overrideParent="True" />
+									</template_reference>
+								</template_reference>
+							</group>
+						</list>
+					</group>
+					<group name="hardpoint" List.ItemID="-1417575735" List.ParentItemID="-1417575735">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="95307603" List.ParentItemID="95307603">
+								<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+										<instance_reference name="ebp" value="ebps\races\ayyubid_cmp\weapons\wpn_range_naval_warship_springald_left_ayy" overrideParent="True" />
+									</template_reference>
+								</template_reference>
+							</group>
+						</list>
+					</group>
+					<group name="hardpoint" List.ItemID="-1373081142" List.ParentItemID="-1373081142">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="403349670" List.ParentItemID="403349670">
+								<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+										<instance_reference name="ebp" value="ebps\races\ayyubid_cmp\weapons\wpn_range_naval_warship_springald_left_ayy" overrideParent="True" />
+									</template_reference>
+								</template_reference>
+							</group>
+						</list>
+					</group>
+					<group name="hardpoint" List.ItemID="822147706" List.ParentItemID="822147706">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="89707258" List.ParentItemID="89707258">
+								<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+										<instance_reference name="ebp" value="ebps\races\ayyubid_cmp\weapons\wpn_range_naval_warship_springald_right_ai_ayy" overrideParent="True" />
+									</template_reference>
+								</template_reference>
+							</group>
+						</list>
+					</group>
+					<group name="hardpoint" List.ItemID="-1159284020" List.ParentItemID="-1159284020">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-516039285" List.ParentItemID="-516039285">
+								<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+										<instance_reference name="ebp" value="ebps\races\ayyubid_cmp\weapons\wpn_range_naval_warship_springald_right_ayy" overrideParent="True" />
+									</template_reference>
+								</template_reference>
+							</group>
+						</list>
+					</group>
+					<group name="hardpoint" List.ItemID="1848079065" List.ParentItemID="1848079065">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-907429533" List.ParentItemID="-907429533">
+								<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+										<instance_reference name="ebp" value="ebps\races\ayyubid_cmp\weapons\wpn_range_naval_warship_springald_right_ayy" overrideParent="True" />
+									</template_reference>
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+		</list>
+	</variant>
+</instance>

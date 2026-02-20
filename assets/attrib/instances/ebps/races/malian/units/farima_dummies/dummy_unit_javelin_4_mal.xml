@@ -1,0 +1,47 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions" overrideParent="True">
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-1630302990">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="action" value="0" />
+					<float name="popcap" value="0" />
+					<float name="command" value="0" />
+					<float name="food" value="0" overrideParent="True" />
+					<float name="wood" value="0" overrideParent="True" />
+					<float name="stone" value="0" />
+					<float name="gold" value="540" overrideParent="True" />
+					<float name="militia_hre" value="0" />
+					<float name="merc_byz" value="0" />
+				</enum_table>
+				<float name="time_seconds" value="22.5" overrideParent="True" />
+				<int name="time_turns" value="0" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\population_ext" List.ItemID="1260396375">
+			<float name="medic_pop" value="0" />
+			<float name="personnel_pop" value="1" />
+			<float name="vehicle_pop" value="0" />
+			<enum_table name="upkeep_per_pop_per_minute_override">
+				<float name="action" value="0" />
+				<float name="command" value="0" />
+				<float name="popcap" value="0" />
+				<float name="food" value="0" />
+				<float name="wood" value="0" />
+				<float name="stone" value="0" />
+				<float name="gold" value="0" />
+				<float name="militia_hre" value="0" />
+				<float name="merc_byz" value="0" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\animation_action_tree_ext" List.ItemID="934270266">
+			<state_tree_node name="ActionTree_OpeningBranch" value="" overrideParent="True" />
+			<bool name="use_root_motion" value="True" />
+			<bool name="start_suspended" value="False" />
+			<enum name="entity_statetree_sort_tag" value="Default" />
+			<float name="speed_scale_threshold" value="100" />
+			<string name="default_animation" value="" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2103300" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_javelin_4" />
+</instance>

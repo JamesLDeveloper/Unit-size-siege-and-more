@@ -1,0 +1,28 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="378232643" List.ParentItemID="378232643">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-262051082" List.ParentItemID="-262051082">
+			<list name="deferred_action_state_trees">
+				<group name="container" List.ItemID="2044868450" List.ListAction="Append">
+					<string name="state_tree" value="royal_cannon_damage_byz_ha_mac" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-112040889" List.ParentItemID="-112040889">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="wood" value="0" overrideParent="True" />
+					<float name="gold" value="0" overrideParent="True" />
+					<float name="merc_byz" value="900" overrideParent="True" />
+				</enum_table>
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="886055158" List.ParentItemID="886055158">
+			<state_tree_node name="death_action_tree" value="on_death_byzantine_ha_mac\update_value_to_statemodel" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="9003229" />
+	<instance_reference name="parent_pbg" value="ebps\races\french\units\royal_artillery\unit_cannon_4_royal_fre" />
+</instance>

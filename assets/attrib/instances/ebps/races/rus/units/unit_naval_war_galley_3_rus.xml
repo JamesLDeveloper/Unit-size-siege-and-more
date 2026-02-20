@@ -1,0 +1,65 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1488394558" List.ParentItemID="-1488394558">
+			<int name="precise_size" value="3" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-2033525654" List.ParentItemID="-2033525654">
+			<list name="action_state_trees" overrideParent="True">
+				<group name="container" List.ItemID="-216709801">
+					<string name="state_tree" value="unit_action_apply\units\naval_generic" />
+				</group>
+				<group name="container" List.ItemID="-1152009739">
+					<string name="state_tree" value="upgrade_entity_naval\upgrade_naval_role_galley_rus" overrideParent="True" />
+				</group>
+				<group name="container" List.ItemID="-1275312711">
+					<string name="state_tree" value="combat_ship_action_apply" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1381839832" List.ParentItemID="-1381839832">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="military" List.ItemID="-1659445755" />
+				<enum name="unit_type" value="ship_medium_sail" List.ItemID="1116711716" />
+				<enum name="unit_type" value="medium_ship" List.ItemID="-1813768523" />
+				<enum name="unit_type" value="naval_general_ship" List.ItemID="-1525035552" />
+				<enum name="unit_type" value="naval_unit" List.ItemID="1165286856" />
+				<enum name="unit_type" value="ship" List.ItemID="-743248425" />
+				<enum name="unit_type" value="ranged" List.ItemID="-1591410732" />
+				<enum name="unit_type" value="siegeable" List.ItemID="603500808" />
+				<enum name="unit_type" value="lodya_combat_ship" List.ItemID="-1807168141" />
+				<enum name="unit_type" value="annihilation_condition" List.ItemID="-402062084" />
+				<enum name="unit_type" value="archer_ship" List.ItemID="-669497801" />
+				<enum name="unit_type" value="lodya_ship" List.ItemID="1670326423" />
+				<enum name="unit_type" value="naval_military" List.ItemID="-496257623" List.ParentItemID="-2059902898" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="795422691" List.ParentItemID="795422691">
+			<instance_reference name="navigation_agent_info" value="navigation\agent_info\naval\oar\naval_oar_medium_agent_info" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-682345334" List.ParentItemID="-682345334">
+			<list name="standard_upgrades" overrideParent="True">
+				<instance_reference name="upgrade" value="upgrade\races\rus\research\naval\upgrade_naval_role_lodya_galley_to_combatship_rus" overrideParent="True" List.ItemID="-2007286117" />
+				<instance_reference name="upgrade" value="upgrade\races\rus\research\naval\upgrade_naval_role_lodya_galley_to_fireship_rus" overrideParent="True" List.ItemID="794995709" />
+				<instance_reference name="upgrade" value="upgrade\races\rus\research\naval\upgrade_naval_role_lodya_galley_to_fishingship_rus" overrideParent="True" List.ItemID="295302477" />
+				<instance_reference name="upgrade" value="upgrade\races\rus\research\naval\upgrade_naval_role_lodya_galley_to_tradeship_rus" overrideParent="True" List.ItemID="-1873049766" />
+				<instance_reference name="upgrade" value="upgrade\races\rus\research\naval\upgrade_naval_role_lodya_galley_to_transportship_rus" overrideParent="True" List.ItemID="1254057712" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="617548696" List.ParentItemID="617548696">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-474741001" List.ParentItemID="-474741001">
+					<group name="tier" List.ItemID="1389814532" List.ParentItemID="1389814532">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\rus\units\tier2_naval_war_galley_rus" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+						</template_reference>
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2102828" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_war_galley_3" />
+</instance>

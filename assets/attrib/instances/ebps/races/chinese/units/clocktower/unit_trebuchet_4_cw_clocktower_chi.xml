@@ -1,0 +1,22 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-422500858" List.ParentItemID="-422500858">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="987752469" List.ParentItemID="987752469">
+			<list name="unit_type_list">
+				<enum name="unit_type" value="elite" List.ItemID="-1108504144" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="670545336" List.ParentItemID="670545336">
+			<list name="target_scanning_priority_override" overrideParent="True">
+				<group name="override" List.ItemID="-567164544">
+					<enum name="target_type" value="building" overrideParent="True" />
+					<float name="priority_value" value="110" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2034341" />
+	<instance_reference name="parent_pbg" value="ebps\races\chinese\units\unit_trebuchet_4_cw_chi" />
+</instance>

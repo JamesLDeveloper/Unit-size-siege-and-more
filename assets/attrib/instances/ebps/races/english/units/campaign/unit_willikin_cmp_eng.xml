@@ -1,0 +1,359 @@
+<instance version="6" description="Willikin of the Weald" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-914024362" List.ParentItemID="-914024362">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="729861296" List.ParentItemID="729861296">
+			<list name="action_state_trees" overrideParent="True">
+				<group name="container" List.ItemID="491926671">
+					<string name="state_tree" value="unit_action_apply\units\archer" overrideParent="True" />
+				</group>
+				<group name="container" List.ItemID="889572386">
+					<string name="state_tree" value="king_action_apply" />
+				</group>
+				<group name="container" List.ItemID="1962314357">
+					<string name="state_tree" value="unit_action_apply\units\archer\audio\eng\3" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-123081057" List.ParentItemID="-123081057">
+			<float name="hitpoints" value="450" overrideParent="True" />
+			<enum_table name="armor_scaler_by_damage_type">
+				<float name="Melee" value="2" overrideParent="True" />
+				<float name="Ranged" value="2" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="-561587137" List.ParentItemID="-561587137">
+			<group name="sight_package" overrideParent="True">
+				<float name="inner_height" value="501" />
+				<float name="inner_radius" value="12" />
+				<float name="outer_height" value="-15" />
+				<float name="outer_radius" value="45" />
+				<float name="cone_angle" value="360" />
+				<float name="cone_start_radius" value="0" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1451740830" List.ParentItemID="-1451740830">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="military" List.ItemID="-756156053" />
+				<enum name="unit_type" value="archer" List.ItemID="-580674411" />
+				<enum name="unit_type" value="human" List.ItemID="2123125593" />
+				<enum name="unit_type" value="infantry" List.ItemID="-876343780" />
+				<enum name="unit_type" value="longbow" List.ItemID="-738891826" />
+				<enum name="unit_type" value="ranged" List.ItemID="-767087867" />
+				<enum name="unit_type" value="formational" List.ItemID="-497650327" />
+				<enum name="unit_type" value="leader" List.ItemID="1425026443" />
+				<enum name="unit_type" value="hero" List.ItemID="871009382" />
+				<enum name="unit_type" value="scout" List.ItemID="-1950008643" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-702932878" List.ParentItemID="-702932878">
+			<float name="decorator_height" value="2.75" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1786737891" List.ParentItemID="1786737891">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="-1929829615" List.ParentItemID="-1929829615">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-1943484352" List.ParentItemID="-1943484352">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\campaign\english\ranged\weapon_willikin_eng" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\english\weapons\wpn_range_archer_4_eng" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="-319893254" List.ParentItemID="-319893254">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\campaign\english\ranged\weapon_willikin_incendiary" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_siege_archer_incendiary" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\hit_react_tree_ext" List.ItemID="-2081117069" List.ParentItemID="-2081117069">
+			<state_tree_node name="ActionTree_OpeningBranch" value="hit_tree_biped_revive" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-935732769" List.ParentItemID="-935732769">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-1093071696" List.ParentItemID="-1093071696">
+					<group name="tier" List.ItemID="1140679418" List.ParentItemID="1140679418">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\campaign\tier4_willikin_of_weald_eng" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="1239744591" List.ParentItemID="1239744591">
+			<instance_reference name="schema" value="statemodel_schema\units\archer_leader" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\modifier_apply_ext" List.ItemID="1361634676" List.ListAction="Append">
+			<list name="modifiers" overrideParent="True">
+				<template_reference name="modifier" value="modifiers\entity_modifier" List.ItemID="-1641012013">
+					<enum name="type" value="extended_sight_enable" />
+					<enum name="application_type" value="apply_to_entity" />
+					<enum name="usage_type" value="enable" />
+					<float name="value" value="0" />
+					<instance_reference name="tooltip" value="" />
+					<bool name="exclusive" value="False" />
+					<string name="modifier_id" value="" />
+					<instance_reference name="target_type_name" value="" />
+					<instance_reference name="description_pbg" value="" />
+					<enum name="description_storage_index" value="" />
+				</template_reference>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="183114" />
+	<instance_reference name="parent_pbg" value="ebps\races\english\units\unit_archer_4_eng" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="1937672526" List.ParentItemID="1937672526">
+				<list name="action_state_trees" overrideParent="True">
+					<group name="container" List.ItemID="1165743330">
+						<string name="state_tree" value="campaignMod_unit_action_apply\units\archer" overrideParent="True" />
+					</group>
+					<group name="container" List.ItemID="-2102431327">
+						<string name="state_tree" value="campaignMod_king_action_apply" />
+					</group>
+					<group name="container" List.ItemID="-951991506">
+						<string name="state_tree" value="campaignMod_unit_action_apply\units\archer\audio\eng\3" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="111949147" List.ParentItemID="111949147">
+				<float name="hitpoints" value="450" overrideParent="True" />
+				<enum_table name="armor_scaler_by_damage_type">
+					<float name="Melee" value="2" overrideParent="True" />
+					<float name="Ranged" value="2" overrideParent="True" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="688589594" List.ParentItemID="688589594">
+				<group name="sight_package">
+					<float name="inner_height" value="501" overrideParent="True" />
+					<float name="inner_radius" value="12" overrideParent="True" />
+					<float name="outer_radius" value="45" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-258696617" List.ParentItemID="-258696617">
+				<list name="unit_type_list" overrideParent="True">
+					<enum name="unit_type" value="military" List.ItemID="1973646177" />
+					<enum name="unit_type" value="archer" List.ItemID="149642894" />
+					<enum name="unit_type" value="human" List.ItemID="576722450" />
+					<enum name="unit_type" value="infantry" List.ItemID="-800237840" />
+					<enum name="unit_type" value="longbow" List.ItemID="-1707087004" />
+					<enum name="unit_type" value="ranged" List.ItemID="-1013522920" />
+					<enum name="unit_type" value="formational" List.ItemID="1574396942" />
+					<enum name="unit_type" value="leader" List.ItemID="1690288335" />
+					<enum name="unit_type" value="hero" List.ItemID="1725787881" />
+					<enum name="unit_type" value="scout" List.ItemID="-47209347" />
+					<enum name="unit_type" value="annihilation_condition" List.ItemID="1286108204" />
+					<enum name="unit_type" value="included_by_military_hotkeys" List.ItemID="-759450196" />
+					<enum name="unit_type" value="land_military" List.ItemID="-2023592608" />
+					<enum name="unit_type" value="find_non_siege_land_military" List.ItemID="456045600" />
+					<enum name="unit_type" value="melee_infantry" List.ItemID="1416151169" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1385472446" List.ParentItemID="1385472446">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="-141977044" List.ParentItemID="-141977044">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="1155206031" List.ParentItemID="1155206031">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\campaign\english\ranged\weapon_willikin_eng" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\english\weapons\wpn_range_archer_4_eng" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="1412536515" List.ParentItemID="1412536515">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_knight_3" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_melee_knight_3" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-1695836434" List.ParentItemID="-1695836434">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\campaign\english\ranged\weapon_willikin_incendiary" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_siege_archer_incendiary" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-1808327058" List.ParentItemID="-1808327058">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\english\melee\weapon_archer_spear_4_eng" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_melee_spearman_2" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-275907656" List.ParentItemID="-275907656">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\english\ranged\weapon_archer_incendiary_camp_4_eng" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\english\weapons\wpn_range_archer_4_eng" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\modifier_apply_ext" List.ItemID="-1690545625" List.ParentItemID="-1690545625">
+				<list name="modifiers" overrideParent="True">
+					<template_reference name="modifier" value="modifiers\entity_modifier" List.ItemID="-315188122">
+						<enum name="type" value="extended_sight_enable" />
+						<enum name="application_type" value="apply_to_entity" />
+						<enum name="usage_type" value="enable" />
+						<float name="value" value="0" />
+						<instance_reference name="tooltip" value="" />
+						<bool name="exclusive" value="False" />
+						<string name="modifier_id" value="" />
+						<instance_reference name="target_type_name" value="" />
+						<instance_reference name="description_pbg" value="" />
+						<enum name="description_storage_index" value="" />
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\hit_react_tree_ext" List.ItemID="-1022332568" List.ParentItemID="-1022332568">
+				<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_hit_tree_biped_revive" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-931796507" List.ParentItemID="-931796507">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="1511306717" List.ParentItemID="1511306717">
+						<group name="tier" List.ItemID="1840461677" List.ParentItemID="1840461677">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\campaign\tier4_willikin_of_weald_eng" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="805577588" List.ParentItemID="805577588">
+				<instance_reference name="schema" value="statemodel_schema\units\archer_leader" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="183114" />
+		<instance_reference name="parent_pbg" value="ebps\races\english\units\unit_archer_4_eng" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="729861296" List.ParentItemID="729861296">
+				<list name="action_state_trees" overrideParent="True">
+					<group name="container" List.ItemID="-581654882">
+						<string name="state_tree" value="xp3_unit_action_apply\units\archer" overrideParent="True" />
+					</group>
+					<group name="container" List.ItemID="-152516928">
+						<string name="state_tree" value="xp3_king_action_apply" />
+					</group>
+					<group name="container" List.ItemID="1563025248">
+						<string name="state_tree" value="xp3_unit_action_apply\units\archer\audio\eng\3" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-123081057" List.ParentItemID="-123081057">
+				<float name="hitpoints" value="450" overrideParent="True" />
+				<enum_table name="armor_scaler_by_damage_type">
+					<float name="Melee" value="2" overrideParent="True" />
+					<float name="Ranged" value="2" overrideParent="True" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="-561587137" List.ParentItemID="-561587137">
+				<group name="sight_package" overrideParent="True">
+					<float name="inner_height" value="501" />
+					<float name="inner_radius" value="12" />
+					<float name="outer_height" value="-15" />
+					<float name="outer_radius" value="45" />
+					<float name="cone_angle" value="360" />
+					<float name="cone_start_radius" value="0" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1451740830" List.ParentItemID="-1451740830">
+				<list name="unit_type_list" overrideParent="True">
+					<enum name="unit_type" value="military" List.ItemID="-1039680909" />
+					<enum name="unit_type" value="archer" List.ItemID="-1037389455" />
+					<enum name="unit_type" value="human" List.ItemID="799348877" />
+					<enum name="unit_type" value="infantry" List.ItemID="-692141724" />
+					<enum name="unit_type" value="longbow" List.ItemID="261619350" />
+					<enum name="unit_type" value="ranged" List.ItemID="-1536772640" />
+					<enum name="unit_type" value="formational" List.ItemID="1760286207" />
+					<enum name="unit_type" value="leader" List.ItemID="908359183" />
+					<enum name="unit_type" value="hero" List.ItemID="572101881" />
+					<enum name="unit_type" value="scout" List.ItemID="1483312614" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-702932878" List.ParentItemID="-702932878">
+				<float name="decorator_height" value="2.75" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1786737891" List.ParentItemID="1786737891">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="-1929829615" List.ParentItemID="-1929829615">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-1943484352" List.ParentItemID="-1943484352">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\campaign\english\ranged\weapon_willikin_eng" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\english\weapons\wpn_range_archer_4_eng" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-319893254" List.ParentItemID="-319893254">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\campaign\english\ranged\weapon_willikin_incendiary" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_siege_archer_incendiary" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\hit_react_tree_ext" List.ItemID="-2081117069" List.ParentItemID="-2081117069">
+				<state_tree_node name="ActionTree_OpeningBranch" value="xp3_hit_tree_biped_revive" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-935732769" List.ParentItemID="-935732769">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="-1093071696" List.ParentItemID="-1093071696">
+						<group name="tier" List.ItemID="1140679418" List.ParentItemID="1140679418">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\campaign\tier4_willikin_of_weald_eng" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="1239744591" List.ParentItemID="1239744591">
+				<instance_reference name="schema" value="statemodel_schema\units\archer_leader" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\modifier_apply_ext" List.ItemID="486728700" List.ListAction="Append">
+				<list name="modifiers" overrideParent="True">
+					<template_reference name="modifier" value="modifiers\entity_modifier" List.ItemID="-1291840448">
+						<enum name="type" value="extended_sight_enable" />
+						<enum name="application_type" value="apply_to_entity" />
+						<enum name="usage_type" value="enable" />
+						<float name="value" value="0" />
+						<instance_reference name="tooltip" value="" />
+						<bool name="exclusive" value="False" />
+						<string name="modifier_id" value="" />
+						<instance_reference name="target_type_name" value="" />
+						<instance_reference name="description_pbg" value="" />
+						<enum name="description_storage_index" value="" />
+					</template_reference>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="183114" />
+		<instance_reference name="parent_pbg" value="ebps\races\english\units\unit_archer_4_eng" />
+	</variant>
+</instance>

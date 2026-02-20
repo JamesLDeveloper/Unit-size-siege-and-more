@@ -1,0 +1,59 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions" removedIds="962330722">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1571357040" List.ParentItemID="1571357040">
+			<int name="precise_size" value="3" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="1754625343" List.ParentItemID="1754625343">
+			<list name="action_state_trees" overrideParent="True">
+				<group name="container" List.ItemID="-1516905669">
+					<string name="state_tree" value="unit_action_apply\units\naval_broadside" overrideParent="True" />
+				</group>
+				<group name="container" List.ItemID="-198216865">
+					<string name="state_tree" value="upgrade_entity_naval\upgrade_naval_role_combatship_rus" overrideParent="True" />
+				</group>
+				<group name="container" List.ItemID="1989789505">
+					<string name="state_tree" value="combat_ship_action_apply" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-1117275471" List.ParentItemID="-1117275471">
+			<state_tree_node name="death_action_tree" value="on_death_byzantine_ha_mac\update_value_to_statemodel" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-347826796" List.ParentItemID="-347826796">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="military" List.ItemID="651264727" />
+				<enum name="unit_type" value="ship_medium_sail" List.ItemID="27243010" />
+				<enum name="unit_type" value="medium_ship" List.ItemID="830436400" />
+				<enum name="unit_type" value="annihilation_condition" List.ItemID="-670320376" />
+				<enum name="unit_type" value="naval_broadside" List.ItemID="-1557406980" />
+				<enum name="unit_type" value="naval_general_ship" List.ItemID="-1360031740" />
+				<enum name="unit_type" value="naval_unit" List.ItemID="-240162198" />
+				<enum name="unit_type" value="ship" List.ItemID="-1323721980" />
+				<enum name="unit_type" value="ranged" List.ItemID="737897646" />
+				<enum name="unit_type" value="siegeable" List.ItemID="-213466336" />
+				<enum name="unit_type" value="springald_ship" List.ItemID="1587370485" />
+				<enum name="unit_type" value="lodya_ship" List.ItemID="-1725926203" />
+				<enum name="unit_type" value="lodya_combat_ship" List.ItemID="-1019424063" />
+				<enum name="unit_type" value="naval_military" List.ItemID="-1956354139" List.ParentItemID="-2059902898" />
+				<enum name="unit_type" value="massive" List.ItemID="497493132" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="6978733" List.ParentItemID="6978733">
+			<instance_reference name="navigation_agent_info" value="navigation\agent_info\naval\oar\naval_oar_medium_agent_info" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-564826070" List.ParentItemID="-564826070">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="628638250" List.ParentItemID="628638250">
+					<group name="tier" List.ItemID="1812081355" List.ParentItemID="1812081355">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\rus\units\tier3_naval_combat_ship_rus" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+						</template_reference>
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="9004105" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_combat_ship_2" />
+</instance>

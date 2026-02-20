@@ -1,0 +1,101 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-115838231" List.ParentItemID="-115838231">
+			<bool name="browsable_in_editor" value="False" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-251205622" List.ParentItemID="-251205622">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\abbasid" List.ItemID="-736105750" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\speech_ext" List.ItemID="162330326" List.ParentItemID="162330326">
+			<string name="speaker_code" value="fireShip" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1195952327" List.ParentItemID="1195952327">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-1162500930" List.ParentItemID="-1162500930">
+					<group name="tier" List.ItemID="295461769" List.ParentItemID="295461769">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\abbasid\units\tier3_naval_fireship_abb" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="199677" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_fireship_3" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-337908419" List.ParentItemID="-337908419">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\abbasid" List.ItemID="1772793488" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\speech_ext" List.ItemID="-1042474409" List.ParentItemID="-1042474409">
+				<string name="speaker_code" value="fireShip" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-335369023" List.ParentItemID="-335369023">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="-397683211" List.ParentItemID="-397683211">
+						<group name="tier" List.ItemID="-1185267714" List.ParentItemID="-1185267714">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\abbasid\units\tier3_naval_fireship_abb" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="182036312" List.ParentItemID="182036312">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="1653020981" List.ParentItemID="1653020981">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-1101079347" List.ParentItemID="-1101079347">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_naval_fireship" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_ebps_template" overrideParent="True" />
+									<string name="marker_name_parent" value="" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-1254591667" List.ParentItemID="-1254591667">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_naval_fireship_explosive" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_ebps_template" overrideParent="True" />
+									<string name="marker_name_parent" value="" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="199677" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_fireship_3" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-115838231" List.ParentItemID="-115838231">
+				<bool name="browsable_in_editor" value="False" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-251205622" List.ParentItemID="-251205622">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\abbasid" List.ItemID="1300210702" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\speech_ext" List.ItemID="162330326" List.ParentItemID="162330326">
+				<string name="speaker_code" value="fireShip" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1195952327" List.ParentItemID="1195952327">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="-1162500930" List.ParentItemID="-1162500930">
+						<group name="tier" List.ItemID="295461769" List.ParentItemID="295461769">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\abbasid\units\tier3_naval_fireship_abb" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="199677" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_fireship_3" />
+	</variant>
+</instance>

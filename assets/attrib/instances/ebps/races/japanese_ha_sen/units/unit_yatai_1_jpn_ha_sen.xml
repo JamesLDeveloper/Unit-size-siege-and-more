@@ -1,0 +1,122 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions" removedIds="-780527790, 1982550370, -2033544253, -1301307975, -37156415">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1410792167" List.ParentItemID="-1410792167">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\japanese_ha_sen\units\unit_yatai_1_jpn_ha_sen" overrideParent="True" />
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			<enum name="subclass_type" value="MongolBuilding" overrideParent="True" />
+			<file name="alternate_sua" value="art\civilizations\japanese_ha_sen\team_weapons\sen_festival_cart\sen_festival_cart" overrideParent="True" />
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-2139230993" List.ParentItemID="-2139230993">
+			<list name="abilities">
+				<instance_reference name="ability" value="abilities\always_on_abilities\japanese_ha_sen\yatai_preservation_aura_jpn_ha_sen" List.ItemID="1035744559" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-1693329341" List.ParentItemID="-1693329341">
+			<list name="action_state_trees" removedIds="-1443224235">
+				<group name="container" List.ItemID="1859911632" List.ListAction="Append">
+					<string name="state_tree" value="unit_action_apply\units\yatai" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="1004494232" List.ParentItemID="1004494232">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="wood" value="125" overrideParent="True" />
+				</enum_table>
+				<float name="time_seconds" value="15" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-487450359" List.ParentItemID="-487450359">
+			<enum_table name="percentage_reduction_armor_by_damage_type">
+				<float name="Ranged" value="0" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1903432945" List.ParentItemID="-1903432945">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\japanese_ha_sen" List.ItemID="419111900" />
+			</list>
+			<list name="unit_type_list" removedIds="281055950, -258036721, -571546328, 326942809, -162650548, 1342055919, -524426531, 954416944">
+				<enum name="unit_type" value="mobile_building" List.ItemID="1675961215" List.ListAction="Append" />
+				<enum name="unit_type" value="packable_building" List.ItemID="1939805584" List.ListAction="Append" />
+				<enum name="unit_type" value="yatai" List.ItemID="362697866" List.ListAction="Append" />
+				<enum name="unit_type" value="human" List.ItemID="1272809236" List.ListAction="Append" />
+			</list>
+			<enum_table name="weapon_category_targeting_filter">
+				<bool name="2ranged" value="True" overrideParent="True" />
+				<bool name="3siege" value="True" overrideParent="True" />
+				<bool name="4charge" value="True" overrideParent="True" />
+			</enum_table>
+			<list name="attack_target_restriction_on_attacker">
+				<enum name="unit_type" value="ram" List.ItemID="-406494362" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="517696132" List.ParentItemID="517696132">
+			<float name="decorator_height" value="4" overrideParent="True" />
+			<file name="icon_name" value="" overrideParent="True" />
+			<int name="global_unit_control_row" value="1" overrideParent="True" />
+			<enum name="selection_method" value="obb" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="1862066662" List.ParentItemID="1862066662">
+			<template_reference name="pathfinding_option" value="options\ebpextensions\movingext\pathfinding_option">
+				<bool name="can_path_through_allies" value="True" overrideParent="True" />
+			</template_reference>
+			<enum_table name="speed_scaling_table">
+				<float name="default_speed" value="3.5" overrideParent="True" />
+			</enum_table>
+			<bool name="orient_to_terrain" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\speech_ext" List.ItemID="655187019" List.ParentItemID="655187019">
+			<string name="speaker_code" value="villagerMale" overrideParent="True" />
+			<group name="speech_parameters">
+				<string name="name_code" value="" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\holdable_ext" List.ItemID="1628864614" List.ParentItemID="1628864614">
+			<enum name="holdable" value="hold_siege" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_tree_ext" List.ItemID="1064459060" List.ParentItemID="1064459060">
+			<state_tree_node name="ActionTree_OpeningBranch" value="unit_entity" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\animation_action_tree_ext" List.ItemID="25365046" List.ParentItemID="25365046">
+			<state_tree_node name="ActionTree_OpeningBranch" value="building" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="190341173" List.ParentItemID="190341173">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" overrideParent="True" List.ItemID="-1527558031">
+					<group name="tier" List.ItemID="1118169273">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\japanese_ha_sen\units\tier1_yatai_jpn_ha_sen" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="1161182516" List.ParentItemID="1161182516">
+			<list name="type_list" removedIds="-547487423, 1095398246">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-559472318" List.ParentItemID="-559472318">
+			<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\japanese_ha_sen\yatai_matsuri_jpn_ha_sen" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\population_ext" List.ItemID="-740053457" List.ParentItemID="-740053457">
+			<float name="personnel_pop" value="0" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="9001315" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units_buildable\unit_ram_3" />
+</instance>

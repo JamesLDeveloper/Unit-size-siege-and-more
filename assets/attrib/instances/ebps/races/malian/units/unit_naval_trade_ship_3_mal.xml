@@ -1,0 +1,27 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1087697983" List.ParentItemID="-1087697983">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_naval_trade_ship" overrideParent="True" />
+			<float name="entity_scale" value="70" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1446489815" List.ParentItemID="1446489815">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\malian" overrideParent="True" List.ItemID="370637985" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="947438318" List.ParentItemID="947438318">
+			<instance_reference name="schema" value="statemodel_schema\units\civilizations\malian\trade_ship_mal" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="2005299329" List.ParentItemID="2005299329">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="1868832800" List.ParentItemID="1868832800">
+					<group name="tier" List.ItemID="1601565728" List.ParentItemID="1601565728">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\malian\units\tier3_naval_trade_ship_mal" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2995253" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_trade_ship_3" />
+</instance>

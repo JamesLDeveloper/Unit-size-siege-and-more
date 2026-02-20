@@ -1,0 +1,106 @@
+<instance version="6" description="Castle Age Archer" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-914024362" List.ParentItemID="-914024362">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1451740830" List.ParentItemID="-1451740830">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign\lithuania" List.ItemID="-1152784119" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1786737891" List.ParentItemID="1786737891">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="-1929829615" List.ParentItemID="-1929829615">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-144865546" List.ParentItemID="-144865546">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_archer_3" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\hre\weapons\wpn_range_archer_3_hre" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="-395659085" List.ParentItemID="-395659085">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_archer_incendiary" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\hre\weapons\wpn_range_archer_3_hre" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-935732769" List.ParentItemID="-935732769">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="1479765343" List.ParentItemID="1479765343">
+					<group name="tier" List.ItemID="-2019424471" List.ParentItemID="-2019424471">
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\races\campaign\lithuania\units\unit_archer_4_lith" mod="e2ef01ea17d74b04949857ca0a246ab4" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\campaign\lithuania\unit_archer_4_lith" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="182986" />
+	<instance_reference name="parent_pbg" value="ebps\races\hre\units\unit_archer_3_hre" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-258696617" List.ParentItemID="-258696617">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign\lithuania" List.ItemID="1594430464" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1385472446" List.ParentItemID="1385472446">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="-141977044" List.ParentItemID="-141977044">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="387109421" List.ParentItemID="387109421">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_archer_3" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\hre\weapons\wpn_range_archer_3_hre" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-399741385" List.ParentItemID="-399741385">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_archer_3_melee" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_melee_archer_2_melee" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-1863391335" List.ParentItemID="-1863391335">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_archer_incendiary" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\hre\weapons\wpn_range_archer_3_hre" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-931796507" List.ParentItemID="-931796507">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="-1568758242" List.ParentItemID="-1568758242">
+						<group name="tier" List.ItemID="-872733634" List.ParentItemID="-872733634">
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\races\campaign\lithuania\units\unit_archer_4_lith" mod="e2ef01ea17d74b04949857ca0a246ab4" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\campaign\lithuania\unit_archer_4_lith" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="182986" />
+		<instance_reference name="parent_pbg" value="ebps\races\hre\units\unit_archer_3_hre" />
+	</variant>
+</instance>

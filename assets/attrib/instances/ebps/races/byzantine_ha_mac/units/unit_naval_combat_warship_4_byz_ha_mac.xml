@@ -1,0 +1,36 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="1734868903" List.ParentItemID="1734868903">
+			<state_tree_node name="death_action_tree" value="on_death_byzantine_ha_mac\update_value_to_statemodel" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1481453663" List.ParentItemID="-1481453663">
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\byzantine_ha_mac" List.ItemID="-277123050" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1092792524" List.ParentItemID="1092792524">
+			<list name="hardpoints">
+				<group name="hardpoint" comment="AI Left 1" List.ItemID="1847161327" List.ParentItemID="1847161327">
+				</group>
+				<group name="hardpoint" comment="Right 1" List.ItemID="822147706" List.ParentItemID="822147706">
+				</group>
+				<group name="hardpoint" comment="AI Right 3" List.ItemID="1848079065" List.ParentItemID="1848079065">
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\speech_ext" List.ItemID="-181506045" List.ParentItemID="-181506045">
+			<string name="speaker_code" value="ship" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-1265230428" List.ParentItemID="-1265230428">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="86044439" List.ParentItemID="86044439">
+					<group name="tier" List.ItemID="1888019086" List.ParentItemID="1888019086">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\byzantine\units\tier4_naval_combat_warship_byz" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="9000978" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_combat_warship_4" />
+</instance>

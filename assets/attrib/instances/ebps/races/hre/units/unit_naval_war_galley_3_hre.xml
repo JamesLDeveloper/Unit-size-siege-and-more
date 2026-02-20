@@ -1,0 +1,55 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="617548696" List.ParentItemID="617548696">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-474741001" List.ParentItemID="-474741001">
+					<group name="tier" List.ItemID="1389814532" List.ParentItemID="1389814532">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\hre\units\tier2_naval_war_galley_hre" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="-626828007" List.ParentItemID="-626828007">
+			<list name="type_list" overrideParent="True">
+				<group name="type" comment="Repair" List.ItemID="-2001249182">
+					<enum name="interaction_type" value="repair" />
+					<int name="prefer_number" value="-1" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+				<group name="type" overrideParent="True" List.ItemID="132496319">
+					<enum name="interaction_type" value="inspire_hre" />
+					<int name="prefer_number" value="1" />
+					<int name="max_number" value="1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="193925" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_war_galley_3" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-979393051" List.ParentItemID="-979393051">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="1125879778" List.ParentItemID="1125879778">
+						<group name="tier" List.ItemID="621522043" List.ParentItemID="621522043">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\hre\units\tier2_naval_war_galley_hre" overrideParent="True" />
+						</group>
+						<group name="tier" List.ItemID="191819392" List.ParentItemID="191819392">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\hre\units\tier2_naval_war_galley_bombard_hre" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="193925" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_war_galley_3" />
+	</variant>
+</instance>

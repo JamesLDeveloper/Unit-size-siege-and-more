@@ -1,0 +1,257 @@
+<instance version="4" description="English Imperial Age Man-at-arms" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-765163162" List.ParentItemID="-765163162">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\lancaster\unit_earlsguard_lan" overrideParent="True" />
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-1466211397" List.ParentItemID="-1466211397">
+			<list name="action_state_trees">
+				<group name="container" List.ItemID="230139408" List.ParentItemID="230139408">
+					<string name="state_tree" value="unit_action_apply\units\manatarms\audio\eng\4" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="1978222223" List.ParentItemID="1978222223">
+			<group name="time_cost">
+				<float name="time_seconds" value="22.5" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="118682988" List.ParentItemID="118682988">
+			<float name="hitpoints" value="180" overrideParent="True" />
+			<enum_table name="armor_scaler_by_damage_type">
+				<float name="Melee" value="5" overrideParent="True" />
+				<float name="Ranged" value="5" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\hit_object_ext" List.ItemID="292027156" List.ParentItemID="292027156">
+			<instance_reference name="hit_material" value="hit_material\hvyarmour" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-782585427" List.ParentItemID="-782585427">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\lancaster" overrideParent="True" List.ItemID="-584890087" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1697644820" List.ParentItemID="1697644820">
+			<list name="hardpoints" overrideParent="True">
+				<group name="hardpoint" List.ItemID="-1027685966">
+					<float name="parent_hardpoint" value="-1" />
+					<list name="weapon_table" overrideParent="True">
+						<group name="weapon" comment="HAMMER" List.ItemID="550168728">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="1.5" />
+								<float name="z" value="0" />
+							</group>
+							<enum name="type" value="default" />
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\lancaster\melee\weapon_champion_4_lan" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\lancaster\wpn_warhammer_lan" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" comment="torch" List.ItemID="1536003322">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="0.5" />
+								<float name="z" value="0" />
+							</group>
+							<enum name="type" value="default" />
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_torch" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\malian\weapons\wpn_siege_torch_mal" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" comment="DAGGER Throw *** IMPORTANT *** If Donso's are given any other Ranged weapon that is capable of reaching the anims_spearshield\Ranged\Fire\fire_matrix node, it is imperative we distinguish the new weapon from this weapon.&#xD;&#xA;&#xD;&#xA;The cooldown of this weapon is managed in the anims_spearshield\Ranged\Fire\fire_matrix\SetCooldown node with the assumption we cannot reach that state by any other means. - Rylan K" overrideParent="True" List.ItemID="1647298361">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0.5" overrideParent="True" />
+								<float name="y" value="2" overrideParent="True" />
+								<float name="z" value="1" overrideParent="True" />
+							</group>
+							<enum name="type" value="default" />
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\lancaster\ranged\weapon_champion_throw_4_lan" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\lancaster\wpn_dagger_held_lan" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" comment="UPGRADED DAGGER Throw *** IMPORTANT *** If Donso's are given any other Ranged weapon that is capable of reaching the anims_spearshield\Ranged\Fire\fire_matrix node, it is imperative we distinguish the new weapon from this weapon.&#xD;&#xA;&#xD;&#xA;The cooldown of this weapon is managed in the anims_spearshield\Ranged\Fire\fire_matrix\SetCooldown node with the assumption we cannot reach that state by any other means. - Rylan K" overrideParent="True" List.ItemID="-1200602002">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0.5" overrideParent="True" />
+								<float name="y" value="2" overrideParent="True" />
+								<float name="z" value="1" overrideParent="True" />
+							</group>
+							<enum name="type" value="default" />
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\lancaster\ranged\weapon_earlsguard_francisca_throw_4_lan" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\lancaster\wpn_dagger_held_lan" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" comment="HAMMER charge" List.ItemID="1145482767">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="1.5" />
+								<float name="z" value="0" />
+							</group>
+							<enum name="type" value="default" />
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\lancaster\melee\weapon_champion_4_charge_lan" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\lancaster\wpn_warhammer_lan" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+					<bool name="receives_attack_commands" value="True" />
+					<string name="base_marker" value="" />
+					<list name="preferred_inventory_item_categories">
+					</list>
+					<list name="firing_offset_markers">
+					</list>
+					<bool name="initialize_weapons_on_creation" value="True" />
+					<string name="offhand_marker" value="" />
+				</group>
+			</list>
+			<group name="idle_targeting">
+				<float name="idle_targeting_range" value="25" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="-559269079" List.ParentItemID="-559269079">
+			<float name="deceleration" value="10" overrideParent="True" />
+			<enum_table name="speed_scaling_table">
+				<float name="default_speed" value="5" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="1590686263" List.ParentItemID="1590686263">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" overrideParent="True" List.ItemID="-1338167182">
+					<group name="tier" List.ItemID="446590695">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\lancaster\units\earlsguard_4_lan" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="francisca_weapon_swap_reapply" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\stimulus_perception_ext" List.ItemID="-311307811" List.ParentItemID="-311307811">
+			<enum_table name="stimulus_perception_info" overrideParent="True">
+				<group name="charge">
+					<bool name="enable_perception" value="True" />
+					<template_reference name="perception_requirement" value="stimulus_perception_requirement">
+						<group name="facing_requirement">
+							<float name="facing_angle_range" value="180" />
+						</group>
+						<group name="alliance_requirement">
+							<bool name="ally" value="False" />
+							<bool name="enemy" value="True" />
+							<bool name="neutral" value="False" />
+						</group>
+					</template_reference>
+				</group>
+				<group name="herding_interest">
+					<bool name="enable_perception" value="False" />
+					<template_reference name="perception_requirement" value="">
+					</template_reference>
+				</group>
+				<group name="tense">
+					<bool name="enable_perception" value="False" />
+					<template_reference name="perception_requirement" value="">
+					</template_reference>
+				</group>
+				<group name="shock">
+					<bool name="enable_perception" value="False" />
+					<template_reference name="perception_requirement" value="">
+					</template_reference>
+				</group>
+				<group name="evacuate_area">
+					<bool name="enable_perception" value="False" />
+					<template_reference name="perception_requirement" value="">
+					</template_reference>
+				</group>
+				<group name="dropoff_resource">
+					<bool name="enable_perception" value="False" />
+					<template_reference name="perception_requirement" value="">
+					</template_reference>
+				</group>
+				<group name="group_retaliation">
+					<bool name="enable_perception" value="True" />
+					<template_reference name="perception_requirement" value="stimulus_perception_requirement">
+						<group name="facing_requirement">
+							<float name="facing_angle_range" value="360" />
+						</group>
+						<group name="alliance_requirement">
+							<bool name="ally" value="True" />
+							<bool name="enemy" value="False" />
+							<bool name="neutral" value="False" />
+						</group>
+					</template_reference>
+				</group>
+				<group name="hunting_cabin_destroyed">
+					<bool name="enable_perception" value="False" />
+					<template_reference name="perception_requirement" value="">
+					</template_reference>
+				</group>
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="1874334521" List.ParentItemID="1874334521">
+			<instance_reference name="schema" value="statemodel_schema\units\civilizations\malian\donso_mal" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="5000083" />
+	<instance_reference name="parent_pbg" value="ebps\races\lancaster\units\unit_earlsguard_3_lan" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+</instance>

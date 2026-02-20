@@ -1,0 +1,129 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions" comment="this 'generic' variant of the abbasid manatarms resets all it's stats back to the core manatarms, while still preserving the abbasid aesthetics. it is used in the Advanced Combat Art of War mission">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-765163162" List.ParentItemID="-765163162">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-1466211397" List.ParentItemID="-1466211397">
+			<list name="action_state_trees">
+				<group name="container" List.ItemID="230139408" List.ParentItemID="230139408">
+					<string name="state_tree" value="unit_action_apply\units\manatarms\audio\abb\3" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-782585427" List.ParentItemID="-782585427">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\abbasid" overrideParent="True" List.ItemID="17271223" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1697644820" List.ParentItemID="1697644820">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="1781403471" List.ParentItemID="1781403471">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-955194656" List.ParentItemID="-955194656">
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\abbasid\melee\weapon_manatarms_3_generic_abb" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\abbasid\weapons\wpn_melee_manatarms_3_abb" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="667584923" List.ParentItemID="667584923">
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\abbasid\melee\weapon_manatarms_3_charge_generic_abb" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\abbasid\weapons\wpn_melee_manatarms_3_charge_abb" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1590686263" List.ParentItemID="1590686263">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" overrideParent="True" List.ItemID="-1357165516">
+					<group name="tier" List.ItemID="-1162341056">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\abbasid\units\tier3_manatarms_abb" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2146610" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_manatarms_3" />
+	<variant name="xp3">
+		<list name="extensions" comment="this 'generic' variant of the abbasid manatarms resets all it's stats back to the core manatarms, while still preserving the abbasid aesthetics. it is used in the Advanced Combat Art of War mission">
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-1466211397" List.ParentItemID="-1466211397">
+				<list name="action_state_trees">
+					<group name="container" List.ItemID="230139408" List.ParentItemID="230139408">
+						<string name="state_tree" value="xp3_unit_action_apply\units\manatarms\audio\abb\3" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-782585427" List.ParentItemID="-782585427">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\abbasid" overrideParent="True" List.ItemID="-573782995" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1697644820" List.ParentItemID="1697644820">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="1781403471" List.ParentItemID="1781403471">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-955194656" List.ParentItemID="-955194656">
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\abbasid\melee\weapon_manatarms_3_generic_abb" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\abbasid\weapons\wpn_melee_manatarms_3_abb" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="667584923" List.ParentItemID="667584923">
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\abbasid\melee\weapon_manatarms_3_charge_generic_abb" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\abbasid\weapons\wpn_melee_manatarms_3_charge_abb" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1590686263" List.ParentItemID="1590686263">
+				<list name="tier_group_list" overrideParent="True">
+					<list name="tier_group" overrideParent="True" List.ItemID="-231355872">
+						<group name="tier" List.ItemID="1032049227">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\abbasid\units\tier3_manatarms_abb" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="xp3_tier_unit_exposure_dca" overrideParent="True" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2146610" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_manatarms_3" />
+	</variant>
+</instance>

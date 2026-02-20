@@ -1,0 +1,85 @@
+<instance version="6" description="For NISs - a corpse that never despawns" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1356892678" List.ParentItemID="1356892678">
+			<bool name="browsable_in_editor" value="False" overrideParent="True" />
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-788422057" List.ParentItemID="-788422057">
+			<float name="death_seconds" value="-1" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1786016482" List.ParentItemID="-1786016482">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" List.ItemID="1460232543" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1078428342" List.ParentItemID="1078428342">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-105678731" List.ParentItemID="-105678731">
+					<group name="tier" List.ItemID="-1543516974" List.ParentItemID="-1543516974">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\crusader_cmp\units\tier2_cavalry_knight_cru" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\crusader_cmp\unit_knight_2_cru" overrideParent="True" />
+					</group>
+					<group name="tier" List.ItemID="-435692999" List.ParentItemID="-435692999">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\crusader_cmp\units\tier3_cavalry_knight_cru" overrideParent="True" />
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\races\crusader_cmp\units\upgrade_unit_knight_3_cru" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\races\crusader_cmp\units\unit_knight_3_cru" mod="e2ef01ea17d74b04949857ca0a246ab4" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\crusader_cmp\unit_knight_3_cru" overrideParent="True" />
+					</group>
+					<group name="tier" List.ItemID="500567280" List.ParentItemID="500567280">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\crusader_cmp\units\tier4_cavalry_knight_cru" overrideParent="True" />
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\races\crusader_cmp\units\upgrade_unit_knight_4_cru" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\races\crusader_cmp\units\unit_knight_4_cru" mod="e2ef01ea17d74b04949857ca0a246ab4" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\crusader_cmp\unit_knight_4_cru" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="1083066112" List.ParentItemID="1083066112">
+			<instance_reference name="schema" value="statemodel_schema\units\civilizations\crusader_cmp\knight_cru" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2140224" />
+	<instance_reference name="parent_pbg" value="ebps\races\french\units\unit_knight_2_fre" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1356892678" List.ParentItemID="1356892678">
+				<bool name="browsable_in_editor" value="False" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-788422057" List.ParentItemID="-788422057">
+				<float name="death_seconds" value="-1" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1786016482" List.ParentItemID="-1786016482">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" List.ItemID="914365516" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1078428342" List.ParentItemID="1078428342">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="-105678731" List.ParentItemID="-105678731">
+						<group name="tier" List.ItemID="-1543516974" List.ParentItemID="-1543516974">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\crusader_cmp\units\tier2_cavalry_knight_cru" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\crusader_cmp\unit_knight_2_cru" overrideParent="True" />
+						</group>
+						<group name="tier" List.ItemID="-435692999" List.ParentItemID="-435692999">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\crusader_cmp\units\tier3_cavalry_knight_cru" overrideParent="True" />
+							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\races\crusader_cmp\units\upgrade_unit_knight_3_cru" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\races\crusader_cmp\units\unit_knight_3_cru" mod="e2ef01ea17d74b04949857ca0a246ab4" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\crusader_cmp\unit_knight_3_cru" overrideParent="True" />
+						</group>
+						<group name="tier" List.ItemID="500567280" List.ParentItemID="500567280">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\crusader_cmp\units\tier4_cavalry_knight_cru" overrideParent="True" />
+							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\races\crusader_cmp\units\upgrade_unit_knight_4_cru" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\races\crusader_cmp\units\unit_knight_4_cru" mod="e2ef01ea17d74b04949857ca0a246ab4" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\crusader_cmp\unit_knight_4_cru" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="1083066112" List.ParentItemID="1083066112">
+				<instance_reference name="schema" value="statemodel_schema\units\civilizations\crusader_cmp\knight_cru" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2140224" />
+		<instance_reference name="parent_pbg" value="ebps\races\french\units\unit_knight_2_fre" />
+	</variant>
+</instance>

@@ -1,0 +1,17 @@
+<instance version="6" description="" template="ebps">
+	<uniqueid name="pbgid" value="9002175" />
+	<instance_reference name="parent_pbg" value="ebps\races\french\units\campaign\unit_jean_de_beaumanoir_cmp_fre" />
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1356892678" List.ParentItemID="1356892678">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+	</list>
+	<variant name="campaign">
+		<uniqueid name="pbgid" value="9002175" />
+		<instance_reference name="parent_pbg" value="ebps\races\french\units\campaign\unit_jean_de_beaumanoir_cmp_fre" />
+	</variant>
+	<variant name="xp3">
+		<uniqueid name="pbgid" value="9002175" />
+		<instance_reference name="parent_pbg" value="ebps\races\french\units\campaign\unit_jean_de_beaumanoir_cmp_fre" />
+	</variant>
+</instance>

@@ -1,0 +1,289 @@
+<instance version="4" description="Worker Elephant" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="2015716676" List.ParentItemID="2015716676">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" overrideParent="True" List.ItemID="811322766">
+					<group name="tier" List.ItemID="-1045811971">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate_ha_tug\units\tier2_worker_elephant_sul_ha_tug" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-2009320517" List.ParentItemID="-2009320517">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-12445432" List.ParentItemID="-12445432">
+			<list name="action_state_trees_run_once">
+				<group name="container" List.ItemID="-598449342" List.ListAction="Append">
+					<string name="state_tree" value="worker_elephant_spawn_behavior" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-638902394" List.ParentItemID="-638902394">
+			<group name="time_cost" comment="This must be updated along with the resource cost in the worker_elephant_production ability">
+				<enum_table name="cost">
+					<float name="food" value="25" overrideParent="True" />
+					<float name="gold" value="0" overrideParent="True" />
+					<float name="wood" value="50" overrideParent="True" />
+				</enum_table>
+				<float name="time_seconds" value="0" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-1860277336" List.ParentItemID="-1860277336">
+			<float name="hitpoints" value="500" overrideParent="True" />
+			<enum_table name="armor_scaler_by_damage_type">
+				<float name="Melee" value="0" overrideParent="True" />
+				<float name="Ranged" value="0" overrideParent="True" />
+				<float name="Fire" value="0" overrideParent="True" />
+			</enum_table>
+			<float name="weapon_priority" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\population_ext" List.ItemID="-2140039910" List.ParentItemID="-2140039910">
+			<float name="personnel_pop" value="0" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="1621966410" List.ParentItemID="1621966410">
+			<group name="sight_package">
+				<float name="inner_radius" value="12" overrideParent="True" />
+				<float name="outer_radius" value="12" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1316572367" List.ParentItemID="-1316572367">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="formational" List.ItemID="-449005414" />
+				<enum name="unit_type" value="dynamic_root_war_elephant" List.ItemID="1515692844" />
+				<enum name="unit_type" value="heavy" List.ItemID="371013025" />
+				<enum name="unit_type" value="annihilation_condition" List.ItemID="-1668835659" />
+				<enum name="unit_type" value="worker_elephant" List.ItemID="1134419999" />
+				<enum name="unit_type" value="economy_building" List.ItemID="574343778" List.ParentItemID="-758368168" />
+				<enum name="unit_type" value="resource_drop_off" List.ItemID="-1208864972" List.ParentItemID="-2119315288" />
+				<enum name="unit_type" value="emits_herding_interest" List.ItemID="-1576617780" />
+			</list>
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\sultanate_ha_tug" overrideParent="True" List.ItemID="1403924999" List.ParentItemID="1403924999" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-2019497169" List.ParentItemID="-2019497169">
+			<float name="decorator_height" value="5" overrideParent="True" />
+			<enum name="selection_method" value="bone_obb" overrideParent="True" />
+			<enum name="targeting_and_bandbox_selection_priority" value="highest" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1189022316" List.ParentItemID="-1189022316">
+			<list name="hardpoints" removedIds="610239617">
+				<group name="hardpoint" List.ItemID="2121939228" List.ListAction="Append">
+					<float name="parent_hardpoint" value="-1" />
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="1532784749">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="0.5" />
+								<float name="z" value="0" />
+							</group>
+							<enum name="type" value="default" />
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\sultanate_ha_tug\melee\weapon_dummy_elephant_worker" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="" />
+								<string name="marker_name_parent" value="" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="-1226044013">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="0.5" />
+								<float name="z" value="0" />
+							</group>
+							<enum name="type" value="default" />
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\sultanate_ha_tug\melee\weapon_dummy_melee_elephant_worker" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="" />
+								<string name="marker_name_parent" value="" />
+							</template_reference>
+						</group>
+					</list>
+					<bool name="receives_attack_commands" value="False" />
+					<string name="base_marker" value="" />
+					<list name="preferred_inventory_item_categories">
+					</list>
+					<list name="firing_offset_markers">
+					</list>
+					<string name="offhand_marker" value="" />
+					<bool name="initialize_weapons_on_creation" value="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="-867415763" List.ParentItemID="-867415763">
+			<enum_table name="speed_scaling_table">
+				<float name="default_speed" value="4.5" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_tree_ext" List.ItemID="1887272483" List.ParentItemID="1887272483">
+			<state_tree_node name="ActionTree_OpeningBranch" value="unit_entity" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\stimulus_emission_ext" List.ItemID="-97316648" List.ParentItemID="-97316648">
+			<list name="emittable_stimulus_types" removedIds="387690709">
+				<enum name="stimulus_type" value="herding_interest" overrideParent="True" List.ItemID="-731620937" List.ParentItemID="-731620937" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-202132373" List.ParentItemID="-202132373">
+			<instance_reference name="schema" value="statemodel_schema\units\civilizations\sultanate_ha_tug\worker_elephant" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\resource_drop_off_ext" List.ItemID="-1993223481" List.ListAction="Append">
+			<enum_table name="accepted_resources">
+				<bool name="action" value="False" />
+				<bool name="command" value="False" />
+				<bool name="popcap" value="False" />
+				<bool name="food" value="True" overrideParent="True" />
+				<bool name="wood" value="True" overrideParent="True" />
+				<bool name="stone" value="True" overrideParent="True" />
+				<bool name="gold" value="True" overrideParent="True" />
+				<bool name="militia_hre" value="False" />
+				<bool name="merc_byz" value="False" />
+			</enum_table>
+			<enum_table name="drop_off_time_seconds">
+				<float name="action" value="1" />
+				<float name="command" value="1" />
+				<float name="popcap" value="1" />
+				<float name="food" value="0" overrideParent="True" />
+				<float name="wood" value="0" overrideParent="True" />
+				<float name="stone" value="0" overrideParent="True" />
+				<float name="gold" value="0" overrideParent="True" />
+				<float name="militia_hre" value="1" />
+				<float name="merc_byz" value="1" />
+			</enum_table>
+			<bool name="allow_any_resource_after_construct" value="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="1412183042" List.ListAction="Append">
+			<bool name="must_be_in_supply" value="False" />
+			<float name="number_of_standard_slots" value="-1" overrideParent="True" />
+			<list name="standard_upgrades">
+				<instance_reference name="upgrade" value="upgrade\races\sultanate_ha_tug\research\economy\upgrade_econ_resource_harvest_dropoff_2_sul_ha_tug" List.ItemID="635708448" />
+				<instance_reference name="upgrade" value="upgrade\races\sultanate_ha_tug\research\economy\upgrade_econ_resource_harvest_dropoff_3_sul_ha_tug" List.ItemID="1240110265" />
+				<instance_reference name="upgrade" value="upgrade\races\sultanate_ha_tug\research\economy\upgrade_econ_resource_harvest_dropoff_4_sul_ha_tug" List.ItemID="1052426284" />
+				<instance_reference name="upgrade" value="upgrade\races\sultanate_ha_tug\research\unit\upgrade_unit_town_center_wheelbarrow_1_sul_ha_tug" List.ItemID="1083216744" />
+				<instance_reference name="upgrade" value="upgrade\races\sultanate_ha_tug\research\upgrade_scout_forester_sul_ha_tug" List.ItemID="957720966" />
+				<instance_reference name="upgrade" value="upgrade\races\sultanate_ha_tug\research\economy\upgrade_econ_villager_hunting_gear_1_sul_ha_tug" List.ItemID="859222892" />
+				<instance_reference name="upgrade" value="upgrade\races\sultanate_ha_tug\research\economy\upgrade_econ_resource_wood_fell_rate_1_sul_ha_tug" List.ItemID="322771079" />
+				<instance_reference name="upgrade" value="upgrade\races\sultanate_ha_tug\research\upgrade_siege_supplies_sul_ha_tug" List.ItemID="-879878051" />
+			</list>
+			<int name="max_queue_size_override" value="-1" />
+			<state_tree_node name="production_item_completed_openingbranch" value="" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\resource_gatherer_ext" List.ItemID="-1439069782" List.ListAction="Append">
+			<list name="gather_types" overrideParent="True">
+				<group name="gather_target" comment="TREE" List.ItemID="-75399627" List.ParentItemID="2049892217">
+					<float name="gather_rate" value="0.75" />
+					<instance_reference name="resource_sub_type" value="resource_sub_type\tree" />
+					<float name="search_radius" value="20" comment="This is not the Auto-Gather after construction completion radius (that value is in tuning -&gt; resource -&gt; gathering -&gt; local_deposit_search_range)" />
+					<float name="resource_carry_capacity" value="10" />
+					<bool name="prioritize_drop_off_pos_over_entity_pos" value="False" />
+					<bool name="allow_auto_gather" value="True" />
+					<enum name="resource_gather_job" value="gather_wood" />
+					<bool name="allow_auto_work_to_enable" value="True" />
+				</group>
+				<group name="gather_target" comment="HUNTABLE - Deer-like" List.ItemID="-1335138969" List.ParentItemID="-1518368386">
+					<float name="gather_rate" value="0.825" />
+					<instance_reference name="resource_sub_type" value="resource_sub_type\hunted_animal_flee" />
+					<float name="search_radius" value="30" overrideParent="True" />
+					<float name="resource_carry_capacity" value="25" />
+					<bool name="prioritize_drop_off_pos_over_entity_pos" value="False" />
+					<bool name="allow_auto_gather" value="True" />
+					<enum name="resource_gather_job" value="gather_huntable" />
+					<bool name="allow_auto_work_to_enable" value="True" overrideParent="True" />
+				</group>
+				<group name="gather_target" comment="METEORITE" List.ItemID="-1320063286" List.ParentItemID="23923265">
+					<float name="gather_rate" value="0.75" />
+					<instance_reference name="resource_sub_type" value="resource_sub_type\civs\rogue\meteorite" />
+					<float name="search_radius" value="10" />
+					<float name="resource_carry_capacity" value="10" />
+					<bool name="prioritize_drop_off_pos_over_entity_pos" value="False" />
+					<bool name="allow_auto_gather" value="True" />
+					<enum name="resource_gather_job" value="gather_meteorite" />
+					<bool name="allow_auto_work_to_enable" value="True" />
+				</group>
+				<group name="gather_target" comment="STONE" List.ItemID="-1489519647" List.ParentItemID="-859779424">
+					<float name="gather_rate" value="0.75" />
+					<instance_reference name="resource_sub_type" value="resource_sub_type\stone" />
+					<float name="search_radius" value="15" />
+					<float name="resource_carry_capacity" value="10" />
+					<bool name="prioritize_drop_off_pos_over_entity_pos" value="False" />
+					<bool name="allow_auto_gather" value="True" />
+					<enum name="resource_gather_job" value="gather_stone" />
+					<bool name="allow_auto_work_to_enable" value="True" />
+				</group>
+				<group name="gather_target" comment="GOLD" List.ItemID="-783458557" List.ParentItemID="-746852428">
+					<float name="gather_rate" value="0.75" />
+					<instance_reference name="resource_sub_type" value="resource_sub_type\gold" />
+					<float name="search_radius" value="15" />
+					<float name="resource_carry_capacity" value="10" />
+					<bool name="prioritize_drop_off_pos_over_entity_pos" value="False" />
+					<bool name="allow_auto_gather" value="True" />
+					<enum name="resource_gather_job" value="gather_gold" />
+					<bool name="allow_auto_work_to_enable" value="True" />
+				</group>
+				<group name="gather_target" comment="SHORE FISH" List.ItemID="1223471853" List.ParentItemID="285750548">
+					<float name="gather_rate" value="1" />
+					<instance_reference name="resource_sub_type" value="resource_sub_type\fish" />
+					<float name="search_radius" value="30" />
+					<float name="resource_carry_capacity" value="10" />
+					<bool name="prioritize_drop_off_pos_over_entity_pos" value="False" />
+					<bool name="allow_auto_gather" value="True" />
+					<enum name="resource_gather_job" value="gather_shore_fish" />
+					<bool name="allow_auto_work_to_enable" value="True" />
+				</group>
+				<group name="gather_target" comment="BERRY BUSH" List.ItemID="1419541668" List.ParentItemID="529123602">
+					<float name="gather_rate" value="0.858" overrideParent="True" />
+					<float name="resource_carry_capacity" value="13" overrideParent="True" />
+					<instance_reference name="resource_sub_type" value="resource_sub_type\forage_bush" />
+					<float name="search_radius" value="15" />
+					<bool name="prioritize_drop_off_pos_over_entity_pos" value="False" />
+					<bool name="allow_auto_gather" value="True" />
+					<enum name="resource_gather_job" value="gather_berries" />
+					<bool name="allow_auto_work_to_enable" value="True" />
+				</group>
+				<group name="gather_target" comment="HERDABLE" List.ItemID="1568181974" List.ParentItemID="-1922234524">
+					<float name="gather_rate" value="0.75" />
+					<instance_reference name="resource_sub_type" value="resource_sub_type\herded_animal" />
+					<float name="search_radius" value="20" />
+					<float name="resource_carry_capacity" value="10" />
+					<bool name="prioritize_drop_off_pos_over_entity_pos" value="False" />
+					<bool name="allow_auto_gather" value="True" />
+					<enum name="resource_gather_job" value="gather_herdable" />
+					<bool name="allow_auto_work_to_enable" value="True" />
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="9001125" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_war_elephant" />
+</instance>

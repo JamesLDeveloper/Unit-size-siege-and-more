@@ -1,0 +1,41 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_targeting_ext" List.ItemID="843964751" List.ParentItemID="843964751">
+			<bool name="allow_entity_scan_close_enemies" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1800188115" List.ParentItemID="1800188115">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-1852483390" List.ParentItemID="-1852483390">
+					<group name="tier" List.ItemID="-1329591915" List.ParentItemID="-1329591915">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\tier2_naval_transport_ship_eng" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="228867" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_transport_ship_2" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1142916432" List.ParentItemID="-1142916432">
+				<list name="unit_type_list">
+					<enum name="unit_type" value="naval_military" List.ItemID="513489203" List.ListAction="Append" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\entity_targeting_ext" List.ItemID="559724571" List.ParentItemID="559724571">
+				<bool name="allow_entity_scan_close_enemies" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-1590767681" List.ParentItemID="-1590767681">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="-1065483443" List.ParentItemID="-1065483443">
+						<group name="tier" List.ItemID="774931739" List.ParentItemID="774931739">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\tier2_naval_transport_ship_eng" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="228867" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_transport_ship_2" />
+	</variant>
+</instance>

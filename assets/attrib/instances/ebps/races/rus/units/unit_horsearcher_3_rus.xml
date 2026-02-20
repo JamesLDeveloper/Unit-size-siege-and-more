@@ -1,0 +1,267 @@
+<instance version="6" description="Rus castle age horse archer" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1491559579" List.ParentItemID="1491559579">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="17356376" List.ParentItemID="17356376">
+			<list name="action_state_trees">
+				<group name="container" List.ItemID="-1844281038" List.ParentItemID="-1844281038">
+					<string name="state_tree" value="unit_action_apply\units\cavalry_archer\audio\rus\3" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="1012099503" List.ParentItemID="1012099503">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="food" value="80" overrideParent="True" />
+					<float name="wood" value="40" overrideParent="True" />
+					<float name="gold" value="0" overrideParent="True" />
+				</enum_table>
+				<float name="time_seconds" value="22.5" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" comment="Horse and rider entities require identical health_ext values. Keep them in sync." List.ItemID="584609974" List.ParentItemID="584609974">
+			<float name="hitpoints" value="85" overrideParent="True" />
+			<bool name="regeneration_disabled" value="False" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-2085794998" List.ParentItemID="-2085794998">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="military" List.ItemID="1007272335" />
+				<enum name="unit_type" value="cavalry" List.ItemID="997316655" />
+				<enum name="unit_type" value="cavalry_archer" List.ItemID="-387278934" />
+				<enum name="unit_type" value="human" List.ItemID="1644392043" />
+				<enum name="unit_type" value="horse" List.ItemID="1978179014" />
+				<enum name="unit_type" value="druzhina" List.ItemID="-831643855" />
+				<enum name="unit_type" value="formational" List.ItemID="-191025011" />
+				<enum name="unit_type" value="ranged" List.ItemID="330643715" />
+				<enum name="unit_type" value="archer" List.ItemID="40071128" />
+				<enum name="unit_type" value="annihilation_condition" List.ItemID="173365268" />
+				<enum name="unit_type" value="included_by_military_hotkeys" List.ItemID="-539205828" />
+				<enum name="unit_type" value="find_non_siege_land_military" List.ItemID="1310289302" />
+				<enum name="unit_type" value="land_military" List.ItemID="1500745840" />
+				<enum name="unit_type" value="military_cavalry" List.ItemID="-2132251163" List.ParentItemID="2080081970" />
+			</list>
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\rus" List.ItemID="359831872" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="181591875" List.ParentItemID="181591875">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" overrideParent="True" List.ItemID="-1598322065">
+					<group name="tier" List.ItemID="-406103376">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\rus\units\tier3_cavalry_horsearcher_rus" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+					<group name="tier" List.ItemID="1335824202">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\rus\units\tier4_cavalry_horsearcher_rus" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\races\rus\units\upgrade_unit_horsearcher_4_rus" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\races\rus\units\unit_horsearcher_4_rus" mod="e2ef01ea17d74b04949857ca0a246ab4" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\rus\unit_horsearcher_4_rus" overrideParent="True" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="698418421" List.ParentItemID="698418421">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="627415271" List.ParentItemID="627415271">
+					<list name="weapon_table" removedIds="1502713306">
+						<group name="weapon" List.ItemID="156392194" List.ParentItemID="156392194">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\rus\ranged\weapon_horsearcher_3_rus" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\rus\weapons\wpn_range_horsearcher_3_rus" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="-1392982238" List.ParentItemID="-1392982238">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\rus\ranged\weapon_horsearcher_incendiary_rus" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\rus\weapons\wpn_range_horsearcher_3_rus" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" comment="Incendiary Arrow" List.ItemID="1631960771" List.ListAction="Append">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\rus\ranged\weapon_horsearcher_incendiary_building_fire_rus" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\rus\weapons\wpn_range_horsearcher_3_rus" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+							</template_reference>
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="3" />
+								<float name="z" value="1" />
+							</group>
+							<enum name="type" value="default" />
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="133330" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_horsearcher_3" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1967411096" List.ParentItemID="1967411096">
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="1687616318" List.ParentItemID="1687616318">
+				<list name="action_state_trees">
+					<group name="container" List.ItemID="-1828876219" List.ParentItemID="-1828876219">
+						<string name="state_tree" value="campaignMod_unit_action_apply\units\cavalry_archer\audio\rus\3" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="326405879" List.ParentItemID="326405879">
+				<group name="time_cost">
+					<enum_table name="cost">
+						<float name="food" value="190" overrideParent="True" />
+					</enum_table>
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" comment="Horse and rider entities require identical health_ext values. Keep them in sync." List.ItemID="-649347914" List.ParentItemID="-649347914">
+				<bool name="regeneration_disabled" value="False" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1596751641" List.ParentItemID="1596751641">
+				<list name="unit_type_list" overrideParent="True">
+					<enum name="unit_type" value="military" List.ItemID="-546457052" />
+					<enum name="unit_type" value="cavalry" List.ItemID="-2054305705" />
+					<enum name="unit_type" value="cavalry_archer" List.ItemID="-1981843048" />
+					<enum name="unit_type" value="human" List.ItemID="1456460050" />
+					<enum name="unit_type" value="horse" List.ItemID="-1508571835" />
+					<enum name="unit_type" value="druzhina" List.ItemID="824422289" />
+					<enum name="unit_type" value="formational" List.ItemID="409274951" />
+					<enum name="unit_type" value="ranged" List.ItemID="-2127607683" />
+					<enum name="unit_type" value="annihilation_condition" List.ItemID="-1485481322" />
+					<enum name="unit_type" value="included_by_military_hotkeys" List.ItemID="-461919852" />
+					<enum name="unit_type" value="land_military" List.ItemID="-893771850" />
+					<enum name="unit_type" value="find_non_siege_land_military" List.ItemID="362743523" />
+				</list>
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\rus" List.ItemID="1976514954" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="1187489659" List.ParentItemID="1187489659">
+				<list name="tier_group_list" overrideParent="True">
+					<list name="tier_group" overrideParent="True" List.ItemID="280299628">
+						<group name="tier" List.ItemID="-750414440">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\rus\units\tier3_cavalry_horsearcher_rus" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_tier_unit_exposure_dca" overrideParent="True" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+						<group name="tier" List.ItemID="868013228">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\rus\units\tier4_cavalry_horsearcher_rus" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_tier_unit_exposure_dca" overrideParent="True" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\races\rus\units\upgrade_unit_horsearcher_4_rus" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\races\rus\units\unit_horsearcher_4_rus" mod="e2ef01ea17d74b04949857ca0a246ab4" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\rus\unit_horsearcher_4_rus" overrideParent="True" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-673122763" List.ParentItemID="-673122763">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="1381665964" List.ParentItemID="1381665964">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="1041827184" List.ParentItemID="1041827184">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\rus\ranged\weapon_horsearcher_3_rus" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\rus\weapons\wpn_range_horsearcher_3_rus" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-557720924" List.ParentItemID="-557720924">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_archer_incendiary" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\rus\weapons\wpn_range_horsearcher_3_rus" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-2132964605" List.ParentItemID="-2132964605">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\mongol\melee\weapon_horsearcher_melee_rus" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\rus\weapons\wpn_melee_horsearcher_melee_rus" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="133330" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_horsearcher_3" />
+	</variant>
+</instance>

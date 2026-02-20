@@ -1,0 +1,89 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="2040641520" List.ParentItemID="2040641520">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="895803462" List.ParentItemID="895803462">
+			<group name="sight_package">
+				<float name="inner_height" value="10" comment="500 is the height of a stealth forest (allows for vision inside forest)" overrideParent="True" />
+			</group>
+			<group name="stealth_detection">
+				<float name="radius" value="16" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="476541859" List.ParentItemID="476541859">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-241071284" List.ParentItemID="-241071284">
+					<group name="tier" List.ItemID="-1644337259" List.ParentItemID="-1644337259">
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" overrideParent="True" />
+						</template_reference>
+					</group>
+					<group name="tier" List.ItemID="-1099171294" List.ParentItemID="-1099171294">
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" overrideParent="True" />
+						</template_reference>
+					</group>
+					<group name="tier" List.ItemID="1268988339" List.ParentItemID="1268988339">
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" overrideParent="True" />
+						</template_reference>
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="67217717" List.ParentItemID="67217717">
+			<group name="attack_move">
+				<float name="attack_move_targeting_range" value="16" overrideParent="True" />
+			</group>
+			<group name="idle_targeting">
+				<float name="idle_targeting_range" value="16" overrideParent="True" />
+			</group>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2121135" />
+	<instance_reference name="parent_pbg" value="ebps\races\crusader_cmp\units\unit_scout_cru" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="895803462" List.ParentItemID="895803462">
+				<group name="sight_package">
+					<float name="inner_height" value="10" comment="500 is the height of a stealth forest (allows for vision inside forest)" overrideParent="True" />
+				</group>
+				<group name="stealth_detection">
+					<float name="radius" value="16" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="476541859" List.ParentItemID="476541859">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="-241071284" List.ParentItemID="-241071284">
+						<group name="tier" List.ItemID="-1644337259" List.ParentItemID="-1644337259">
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="tier" List.ItemID="-1099171294" List.ParentItemID="-1099171294">
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="tier" List.ItemID="1268988339" List.ParentItemID="1268988339">
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="67217717" List.ParentItemID="67217717">
+				<group name="attack_move">
+					<float name="attack_move_targeting_range" value="16" overrideParent="True" />
+				</group>
+				<group name="idle_targeting">
+					<float name="idle_targeting_range" value="16" overrideParent="True" />
+				</group>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2121135" />
+		<instance_reference name="parent_pbg" value="ebps\races\crusader_cmp\units\unit_scout_cru" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+	</variant>
+</instance>

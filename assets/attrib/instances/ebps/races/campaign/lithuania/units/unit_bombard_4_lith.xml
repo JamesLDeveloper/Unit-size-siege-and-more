@@ -1,0 +1,54 @@
+<instance version="6" description="HRE Imperial Age Bombard" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1628535093" List.ParentItemID="-1628535093">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1400691319" List.ParentItemID="-1400691319">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="952848739" List.ParentItemID="952848739">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-1837376761" List.ParentItemID="-1837376761">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_bombard_4" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="" overrideParent="True" />
+								<string name="marker_name_parent" value="" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="191470" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_bombard_4" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-128203647" List.ParentItemID="-128203647">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="751394650" List.ParentItemID="751394650">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="227609575" List.ParentItemID="227609575">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_bombard_4" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="" overrideParent="True" />
+									<string name="marker_name_parent" value="" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+				<list name="target_scanning_priority_override">
+					<group name="override" List.ItemID="-1705232949" List.ParentItemID="-1705232949">
+						<float name="priority_value" value="90" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="191470" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_bombard_4" />
+	</variant>
+</instance>

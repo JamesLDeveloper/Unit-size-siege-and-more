@@ -1,0 +1,155 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-765163162" List.ParentItemID="-765163162">
+			<bool name="browsable_in_editor" value="False" overrideParent="True" />
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-1466211397" List.ParentItemID="-1466211397">
+			<list name="action_state_trees" overrideParent="True">
+				<group name="container" List.ItemID="-1887713731">
+					<string name="state_tree" value="unit_action_apply\units\manatarms" />
+				</group>
+				<group name="container" List.ItemID="563873535">
+					<string name="state_tree" value="unit_action_apply\units\manatarms\audio\eng\4" />
+				</group>
+				<group name="container" overrideParent="True" List.ItemID="414372059">
+					<string name="state_tree" value="king_action_apply" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="1978222223" List.ParentItemID="1978222223">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="food" value="450" overrideParent="True" />
+					<float name="gold" value="450" overrideParent="True" />
+				</enum_table>
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="118682988" List.ParentItemID="118682988">
+			<float name="hitpoints" value="850" overrideParent="True" />
+			<enum_table name="armor_scaler_by_damage_type">
+				<float name="Melee" value="7" overrideParent="True" />
+				<float name="Ranged" value="7" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-782585427" List.ParentItemID="-782585427">
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" overrideParent="True" List.ItemID="-1472517975" List.ParentItemID="-1472517975" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1697644820" List.ParentItemID="1697644820">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="1781403471" List.ParentItemID="1781403471">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-955194656" List.ParentItemID="-955194656">
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\crusader_cmp\weapon_holy_order_teuton_master_cru" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="667584923" List.ParentItemID="667584923">
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\crusader_cmp\weapon_holy_order_teuton_master_charge_cru" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="-559269079" List.ParentItemID="-559269079">
+			<enum_table name="speed_scaling_table">
+				<float name="default_speed" value="5.5" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1590686263" List.ParentItemID="1590686263">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-258728879" List.ParentItemID="-258728879">
+					<group name="tier" List.ItemID="-188186770" List.ParentItemID="-188186770">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\crusader_cmp\units\tier1_teuton_master_cru" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="1874334521" List.ParentItemID="1874334521">
+			<instance_reference name="schema" value="statemodel_schema\units\civilizations\crusader_cmp\manatarms_cru" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2089254" />
+	<instance_reference name="parent_pbg" value="ebps\races\english\units\unit_manatarms_4_eng" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-765163162" List.ParentItemID="-765163162">
+				<bool name="browsable_in_editor" value="False" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-1466211397" List.ParentItemID="-1466211397">
+				<list name="action_state_trees" overrideParent="True">
+					<group name="container" List.ItemID="-1651707961">
+						<string name="state_tree" value="xp3_unit_action_apply\units\manatarms" />
+					</group>
+					<group name="container" List.ItemID="-1196717279">
+						<string name="state_tree" value="xp3_unit_action_apply\units\manatarms\audio\eng\4" />
+					</group>
+					<group name="container" overrideParent="True" List.ItemID="661742586">
+						<string name="state_tree" value="xp3_king_action_apply" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="1978222223" List.ParentItemID="1978222223">
+				<group name="time_cost">
+					<enum_table name="cost">
+						<float name="food" value="450" overrideParent="True" />
+						<float name="gold" value="450" overrideParent="True" />
+					</enum_table>
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="118682988" List.ParentItemID="118682988">
+				<float name="hitpoints" value="850" overrideParent="True" />
+				<enum_table name="armor_scaler_by_damage_type">
+					<float name="Melee" value="7" overrideParent="True" />
+					<float name="Ranged" value="7" overrideParent="True" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-782585427" List.ParentItemID="-782585427">
+				<list name="race_type_list">
+					<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" overrideParent="True" List.ItemID="-1472517975" List.ParentItemID="-1472517975" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1697644820" List.ParentItemID="1697644820">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="1781403471" List.ParentItemID="1781403471">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-955194656" List.ParentItemID="-955194656">
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\crusader_cmp\weapon_holy_order_teuton_master_cru" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="667584923" List.ParentItemID="667584923">
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\crusader_cmp\weapon_holy_order_teuton_master_charge_cru" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="-559269079" List.ParentItemID="-559269079">
+				<enum_table name="speed_scaling_table">
+					<float name="default_speed" value="5.5" overrideParent="True" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1590686263" List.ParentItemID="1590686263">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="-258728879" List.ParentItemID="-258728879">
+						<group name="tier" List.ItemID="-188186770" List.ParentItemID="-188186770">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\crusader_cmp\units\tier1_teuton_master_cru" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="1874334521" List.ParentItemID="1874334521">
+				<instance_reference name="schema" value="statemodel_schema\units\civilizations\crusader_cmp\manatarms_cru" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2089254" />
+		<instance_reference name="parent_pbg" value="ebps\races\english\units\unit_manatarms_4_eng" />
+	</variant>
+</instance>

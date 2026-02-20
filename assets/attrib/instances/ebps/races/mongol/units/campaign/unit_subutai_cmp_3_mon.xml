@@ -1,0 +1,263 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1117396992" List.ParentItemID="1117396992">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol\units\unit_khan_3_mon" overrideParent="True" />
+			<bool name="browsable_in_editor" value="False" overrideParent="True" />
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="1948403926" List.ParentItemID="1948403926">
+			<list name="abilities" overrideParent="True">
+				<instance_reference name="ability" value="abilities\always_on_abilities\campaign\khan_arrow_cooldown_reduction_mon" List.ItemID="35159209" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="43246497" List.ParentItemID="43246497">
+			<list name="action_state_trees" overrideParent="True">
+				<group name="container" List.ItemID="-1399583586">
+					<string name="state_tree" value="unit_action_apply\units\cavalry_archer" />
+				</group>
+				<group name="container" List.ItemID="-1287764424">
+					<string name="state_tree" value="khan_action_apply_mon" />
+				</group>
+				<group name="container" List.ItemID="-1733676683">
+					<string name="state_tree" value="unit_action_apply\units\cavalry_archer\audio\khan\3" />
+				</group>
+				<group name="container" List.ItemID="-588625891">
+					<string name="state_tree" value="king_action_apply" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-975825396" List.ParentItemID="-975825396">
+			<float name="hitpoints" value="450" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\population_ext" List.ItemID="963392386" List.ParentItemID="963392386">
+			<float name="personnel_pop" value="1" overrideParent="True" />
+			<float name="vehicle_pop" value="0" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="-428713458" List.ParentItemID="-428713458">
+			<bool name="extended_sight" value="True" overrideParent="True" />
+			<float name="extended_sight_radius" value="40" overrideParent="True" />
+			<group name="sight_package">
+				<float name="outer_radius" value="50" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-809868374" List.ParentItemID="-809868374">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="military" List.ItemID="-990720762" />
+				<enum name="unit_type" value="cavalry" List.ItemID="-507679114" />
+				<enum name="unit_type" value="khan" List.ItemID="-1796268675" />
+				<enum name="unit_type" value="cavalry_archer" List.ItemID="1338214202" />
+				<enum name="unit_type" value="human" List.ItemID="682320288" />
+				<enum name="unit_type" value="horse" List.ItemID="534471851" />
+				<enum name="unit_type" value="ranged" List.ItemID="1220139615" />
+				<enum name="unit_type" value="formational" List.ItemID="-859158792" />
+				<enum name="unit_type" value="leader" List.ItemID="-653482652" />
+				<enum name="unit_type" value="annihilation_condition" List.ItemID="1653415694" />
+			</list>
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\mongol" List.ItemID="-440089201" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-1378112711" List.ParentItemID="-1378112711">
+			<float name="decorator_height" value="3.5" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1065738823" List.ParentItemID="1065738823">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="-1753816310" List.ParentItemID="-1753816310">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="273149289" List.ParentItemID="273149289">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\mongol\ranged\weapon_khan_3_mon" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol\weapons\wpn_range_horsearcher_4_mon" overrideParent="True" />
+								<string name="marker_name_parent" value="metarig_larmpalmsocket" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+			<group name="idle_targeting">
+				<float name="idle_targeting_range" value="1" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="-14762799" List.ParentItemID="-14762799">
+			<list name="tier_group_list">
+				<list name="tier_group" overrideParent="True" List.ItemID="415911609">
+					<group name="tier" List.ItemID="-179148351">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol\units\campaign\cavalry_subutai_cmp_3_mon" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\hit_react_tree_ext" List.ItemID="453249278" List.ParentItemID="453249278">
+			<state_tree_node name="ActionTree_OpeningBranch" value="hit_tree_cavalry_revive" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="190920" />
+	<instance_reference name="parent_pbg" value="ebps\races\mongol\units\unit_khan_3_mon" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="889847913" List.ParentItemID="889847913">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol\units\unit_khan_3_mon" overrideParent="True" />
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-645582935" List.ParentItemID="-645582935">
+				<list name="abilities" overrideParent="True">
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-1992152891" List.ParentItemID="-1992152891">
+				<list name="action_state_trees" overrideParent="True">
+					<group name="container" List.ItemID="750813375">
+						<string name="state_tree" value="campaignMod_unit_action_apply\units\cavalry_archer" />
+					</group>
+					<group name="container" List.ItemID="-1080918075">
+						<string name="state_tree" value="campaignMod_khan_action_apply_mon" />
+					</group>
+					<group name="container" List.ItemID="-2090005648">
+						<string name="state_tree" value="campaignMod_unit_action_apply\units\cavalry_archer\audio\khan\3" />
+					</group>
+					<group name="container" List.ItemID="268801428">
+						<string name="state_tree" value="campaignMod_king_action_apply" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-1401547390" List.ParentItemID="-1401547390">
+				<float name="hitpoints" value="450" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\population_ext" List.ItemID="-248035037" List.ParentItemID="-248035037">
+				<float name="personnel_pop" value="1" overrideParent="True" />
+				<float name="vehicle_pop" value="0" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="-1262623932" List.ParentItemID="-1262623932">
+				<bool name="extended_sight" value="True" overrideParent="True" />
+				<float name="extended_sight_radius" value="50" overrideParent="True" />
+				<group name="sight_package">
+					<float name="outer_radius" value="55" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1900085639" List.ParentItemID="-1900085639">
+				<list name="unit_type_list" overrideParent="True">
+					<enum name="unit_type" value="military" List.ItemID="693257612" />
+					<enum name="unit_type" value="cavalry" List.ItemID="2022155588" />
+					<enum name="unit_type" value="khan" List.ItemID="312540917" />
+					<enum name="unit_type" value="cavalry_archer" List.ItemID="-1050884852" />
+					<enum name="unit_type" value="human" List.ItemID="-601174019" />
+					<enum name="unit_type" value="horse" List.ItemID="1865192419" />
+					<enum name="unit_type" value="ranged" List.ItemID="540807741" />
+					<enum name="unit_type" value="formational" List.ItemID="-811589880" />
+					<enum name="unit_type" value="leader" List.ItemID="-95865984" />
+					<enum name="unit_type" value="annihilation_condition" List.ItemID="763121041" />
+					<enum name="unit_type" value="included_by_military_hotkeys" List.ItemID="539282389" />
+					<enum name="unit_type" value="xbox_support_quick_find" List.ItemID="2076549516" />
+					<enum name="unit_type" value="land_military" List.ItemID="453216391" />
+					<enum name="unit_type" value="find_non_siege_land_military" List.ItemID="1810723175" />
+				</list>
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\mongol" List.ItemID="-1592757747" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1854963976" List.ParentItemID="1854963976">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="909769484" List.ParentItemID="909769484">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-2016101911" List.ParentItemID="-2016101911">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\mongol\ranged\weapon_khan_3_mon" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol\weapons\wpn_range_horsearcher_4_mon" overrideParent="True" />
+									<string name="marker_name_parent" value="metarig_larmpalmsocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-913184981" List.ParentItemID="-913184981">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\mongol\melee\weapon_horsearcher_melee_mon" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol\weapons\wpn_melee_horsearcher_melee_mon" overrideParent="True" />
+									<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-98600498" List.ParentItemID="-98600498">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\mongol\ranged\weapon_torch_khan_no_burn_mon" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol\weapons\wpn_siege_torch_horseman_no_burn_mon" overrideParent="True" />
+									<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-327556165" List.ParentItemID="-327556165">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\mongol\ranged\weapon_torch_khan_mon" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol\weapons\wpn_siege_torch_horseman_mon" overrideParent="True" />
+									<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="1427877172" List.ParentItemID="1427877172">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\mongol\ranged\weapon_archer_incendiary_mon" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol\weapons\wpn_range_horsearcher_4_mon" overrideParent="True" />
+									<string name="marker_name_parent" value="metarig_larmpalmsocket" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+				<group name="idle_targeting">
+					<float name="idle_targeting_range" value="1" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="543926008" List.ParentItemID="543926008">
+				<list name="tier_group_list">
+					<list name="tier_group" overrideParent="True" List.ItemID="696843529">
+						<group name="tier" List.ItemID="1176267114">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol\units\campaign\cavalry_subutai_cmp_3_mon" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_tier_unit_exposure_dca" overrideParent="True" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\hit_react_tree_ext" List.ItemID="1270795030" List.ParentItemID="1270795030">
+				<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_hit_tree_cavalry_revive" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="190920" />
+		<instance_reference name="parent_pbg" value="ebps\races\mongol\units\unit_khan_3_mon" />
+	</variant>
+</instance>

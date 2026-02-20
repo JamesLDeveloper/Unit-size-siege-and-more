@@ -1,0 +1,181 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-180104071" List.ParentItemID="-180104071">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_javelin_3" overrideParent="True" />
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-296122516" List.ParentItemID="-296122516">
+			<list name="action_state_trees">
+				<group name="container" List.ItemID="885660311" List.ParentItemID="885660311">
+					<string name="state_tree" value="unit_action_apply\units\crossbowman\audio" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="686729195" List.ParentItemID="686729195">
+			<float name="hitpoints" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="315468595" List.ParentItemID="315468595">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="212773448" List.ParentItemID="212773448">
+					<list name="weapon_table" overrideParent="True">
+						<group name="weapon" List.ItemID="1650569370">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="0" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="1.7" />
+								<float name="z" value="0" />
+							</group>
+							<enum name="type" value="default" />
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_javelin_3" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_range_javelin_3" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="-2062669718">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="0.5" />
+								<float name="z" value="0" />
+							</group>
+							<enum name="type" value="default" />
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_javelin_3_melee" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_melee_javelin_2_melee" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="2113342511">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="1.7" />
+								<float name="z" value="0" />
+							</group>
+							<enum name="type" value="default" />
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_torch" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_siege_torch" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2062087" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_javelin_2" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="2086355228" List.ParentItemID="2086355228">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_javelin_3" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-541224171" List.ParentItemID="-541224171">
+				<list name="action_state_trees">
+					<group name="container" List.ItemID="-754264261" List.ParentItemID="-754264261">
+						<string name="state_tree" value="xp3_unit_action_apply\units\crossbowman\audio" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-2137863973" List.ParentItemID="-2137863973">
+				<float name="hitpoints" value="80" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1663045915" List.ParentItemID="-1663045915">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="225090773" List.ParentItemID="225090773">
+						<list name="weapon_table" overrideParent="True">
+							<group name="weapon" List.ItemID="-1753517559">
+								<group name="heading">
+									<float name="x" value="0" />
+									<float name="y" value="0" />
+									<float name="z" value="0" />
+								</group>
+								<float name="length" value="0" />
+								<group name="origin">
+									<float name="x" value="0" />
+									<float name="y" value="1.7" />
+									<float name="z" value="0" />
+								</group>
+								<enum name="type" value="default" />
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_javelin_3" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_range_javelin_3" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="226293346">
+								<group name="heading">
+									<float name="x" value="0" />
+									<float name="y" value="0" />
+									<float name="z" value="1" />
+								</group>
+								<float name="length" value="0" />
+								<group name="origin">
+									<float name="x" value="0" />
+									<float name="y" value="0.5" />
+									<float name="z" value="0" />
+								</group>
+								<enum name="type" value="default" />
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_javelin_3_melee" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_melee_javelin_2_melee" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-1431611316">
+								<group name="heading">
+									<float name="x" value="0" />
+									<float name="y" value="0" />
+									<float name="z" value="1" />
+								</group>
+								<float name="length" value="0" />
+								<group name="origin">
+									<float name="x" value="0" />
+									<float name="y" value="1.7" />
+									<float name="z" value="0" />
+								</group>
+								<enum name="type" value="default" />
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_torch" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_siege_torch" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2062087" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_javelin_2" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+	</variant>
+</instance>

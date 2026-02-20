@@ -1,0 +1,26 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1356892678" List.ParentItemID="1356892678">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-788422057" List.ParentItemID="-788422057">
+			<float name="weapon_priority" value="100" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2044900" />
+	<instance_reference name="parent_pbg" value="ebps\races\campaign\normans\units\unit_duke_william_cmp_eng_1" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="1631100682" List.ParentItemID="1631100682">
+				<float name="weapon_priority" value="100" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-690125686" List.ParentItemID="-690125686">
+				<list name="unit_type_list">
+					<enum name="unit_type" value="find_non_siege_land_military" overrideParent="True" List.ItemID="-1062093919" List.ParentItemID="-1062093919" />
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2044900" />
+		<instance_reference name="parent_pbg" value="ebps\races\campaign\normans\units\unit_duke_william_cmp_eng_1" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+	</variant>
+</instance>

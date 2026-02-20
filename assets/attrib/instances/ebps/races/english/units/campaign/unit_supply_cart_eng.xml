@@ -1,0 +1,36 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1291264015" List.ParentItemID="-1291264015">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-26664171" List.ParentItemID="-26664171">
+			<list name="unit_type_list">
+				<enum name="unit_type" value="supply_cart" List.ItemID="-1214570402" List.ListAction="Append" />
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2033361" />
+	<instance_reference name="parent_pbg" value="ebps\races\english\units\unit_trade_cart_eng" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1008858871" List.ParentItemID="1008858871">
+				<list name="unit_type_list">
+					<enum name="unit_type" value="supply_cart" overrideParent="True" List.ItemID="-2072083039" List.ListAction="Append" />
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2033361" />
+		<instance_reference name="parent_pbg" value="ebps\races\english\units\unit_trade_cart_eng" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-26664171" List.ParentItemID="-26664171">
+				<list name="unit_type_list">
+					<enum name="unit_type" value="supply_cart" List.ItemID="-1172879009" List.ListAction="Append" />
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2033361" />
+		<instance_reference name="parent_pbg" value="ebps\races\english\units\unit_trade_cart_eng" />
+	</variant>
+</instance>

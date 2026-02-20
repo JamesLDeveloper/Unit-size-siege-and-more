@@ -1,0 +1,117 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="2005299329" List.ParentItemID="2005299329">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="1868832800" List.ParentItemID="1868832800">
+					<group name="tier" List.ItemID="1601565728" List.ParentItemID="1601565728">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\hre\units\tier3_naval_trade_ship_hre" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="-141769852" List.ParentItemID="-141769852">
+			<list name="type_list" overrideParent="True">
+				<group name="type" comment="Repair" List.ItemID="-810450986">
+					<enum name="interaction_type" value="repair" />
+					<int name="prefer_number" value="-1" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+				<group name="type" overrideParent="True" List.ItemID="2028737198">
+					<enum name="interaction_type" value="inspire_hre" />
+					<int name="prefer_number" value="1" />
+					<int name="max_number" value="1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="196676" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_trade_ship_3" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1805972924" List.ParentItemID="1805972924">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="-174089888" List.ParentItemID="-174089888">
+						<group name="tier" List.ItemID="-600127543" List.ParentItemID="-600127543">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\hre\units\tier3_naval_trade_ship_hre" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="196676" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_trade_ship_3" />
+	</variant>
+	<variant name="hre_brawl">
+		<list name="extensions" removedIds="1121495583">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1087697983" List.ParentItemID="-1087697983">
+				<float name="animator_scale" value="150" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-711034006" List.ParentItemID="-711034006">
+				<bool name="is_invincible" value="False" overrideParent="True" />
+				<float name="hitpoints" value="350" overrideParent="True" />
+				<enum_table name="armor_scaler_by_damage_type">
+					<float name="Ranged" value="0" overrideParent="True" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="518823696" List.ParentItemID="518823696">
+				<group name="sight_package">
+					<float name="inner_radius" value="36" overrideParent="True" />
+					<float name="outer_radius" value="36" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-902442408" List.ParentItemID="-902442408">
+				<enum name="selection_type" value="single_squad_select" overrideParent="True" />
+				<file name="minimap_icon" value="common\orders\trade" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="362162080" List.ParentItemID="362162080">
+				<enum_table name="speed_scaling_table">
+					<float name="default_speed" value="4" overrideParent="True" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\animation_action_tree_ext" List.ItemID="672961397" List.ParentItemID="672961397">
+				<state_tree_node name="ActionTree_OpeningBranch" value="naval" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="2005299329" List.ParentItemID="2005299329">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="1868832800" List.ParentItemID="1868832800">
+						<group name="tier" List.ItemID="1601565728" List.ParentItemID="1601565728">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\hre\units\tier3_naval_trade_ship_hre" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="-141769852" List.ParentItemID="-141769852">
+				<list name="type_list" overrideParent="True">
+					<group name="type" comment="Repair" List.ItemID="1946574616">
+						<enum name="interaction_type" value="repair" />
+						<int name="prefer_number" value="-1" />
+						<int name="max_number" value="-1" />
+						<enum name="interaction_target_type" value="entity" />
+						<template_reference name="node_list_option" value="options\none">
+						</template_reference>
+						<bool name="block_pathing_when_interacted" value="False" />
+					</group>
+					<group name="type" overrideParent="True" List.ItemID="1102882083">
+						<enum name="interaction_type" value="inspire_hre" />
+						<int name="prefer_number" value="1" />
+						<int name="max_number" value="1" />
+						<enum name="interaction_target_type" value="entity" />
+						<template_reference name="node_list_option" value="options\none">
+						</template_reference>
+						<bool name="block_pathing_when_interacted" value="False" />
+					</group>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="196676" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_trade_ship_3" />
+	</variant>
+</instance>

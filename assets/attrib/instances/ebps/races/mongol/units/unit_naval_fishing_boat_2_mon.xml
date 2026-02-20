@@ -1,0 +1,84 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="267168923" List.ParentItemID="267168923">
+			<bool name="browsable_in_editor" value="False" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="-2826050" List.ParentItemID="-2826050">
+			<enum name="snap_to_surface_type" value="Water" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\resource_gatherer_ext" List.ItemID="-151063231" List.ParentItemID="-151063231">
+			<list name="gather_types">
+				<group name="gather_target" comment="BERRY BUSH" List.ItemID="-993611447" List.ParentItemID="-993611447">
+				</group>
+				<group name="gather_target" comment="DEEP WATER FISH" List.ItemID="784624785" List.ParentItemID="784624785">
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1154132826" List.ParentItemID="1154132826">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-659887307" List.ParentItemID="-659887307">
+					<group name="tier" List.ItemID="2025676610" List.ParentItemID="2025676610">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol\units\tier2_naval_fishing_boat_mon" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="193101" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_fishing_boat_2" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="-350542102" List.ParentItemID="-350542102">
+				<enum name="snap_to_surface_type" value="Water" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\resource_gatherer_ext" List.ItemID="1705072036" List.ParentItemID="1705072036">
+				<list name="gather_types">
+					<group name="gather_target" comment="BERRY BUSH" List.ItemID="-1047605151" List.ParentItemID="-1047605151">
+					</group>
+					<group name="gather_target" comment="DEEP WATER FISH" List.ItemID="-490294311" List.ParentItemID="-490294311">
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-1317018997" List.ParentItemID="-1317018997">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="1483136581" List.ParentItemID="1483136581">
+						<group name="tier" List.ItemID="2050983625" List.ParentItemID="2050983625">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol\units\tier2_naval_fishing_boat_mon" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="193101" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_fishing_boat_2" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="267168923" List.ParentItemID="267168923">
+				<bool name="browsable_in_editor" value="False" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="-2826050" List.ParentItemID="-2826050">
+				<enum name="snap_to_surface_type" value="Water" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\resource_gatherer_ext" List.ItemID="-151063231" List.ParentItemID="-151063231">
+				<list name="gather_types">
+					<group name="gather_target" comment="BERRY BUSH" List.ItemID="-993611447" List.ParentItemID="-993611447">
+					</group>
+					<group name="gather_target" comment="DEEP WATER FISH" List.ItemID="784624785" List.ParentItemID="784624785">
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1154132826" List.ParentItemID="1154132826">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="-659887307" List.ParentItemID="-659887307">
+						<group name="tier" List.ItemID="2025676610" List.ParentItemID="2025676610">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol\units\tier2_naval_fishing_boat_mon" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="193101" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_fishing_boat_2" />
+	</variant>
+</instance>

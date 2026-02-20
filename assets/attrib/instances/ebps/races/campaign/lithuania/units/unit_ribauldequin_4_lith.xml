@@ -1,0 +1,59 @@
+<instance version="6" description="Imperial Age Ribauldequin&#xD;&#xA;" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-164298849" List.ParentItemID="-164298849">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="223061918" List.ParentItemID="223061918">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign\lithuania" List.ItemID="1539478842" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1258960924" List.ParentItemID="-1258960924">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="-1376879454" List.ParentItemID="-1376879454">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-542612263" List.ParentItemID="-542612263">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_ribauldequin_4" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_siege_ribauldequin_4" overrideParent="True" />
+								<string name="marker_name_parent" value="" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="183009" />
+	<instance_reference name="parent_pbg" value="ebps\races\hre\units\unit_ribauldequin_4_hre" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-484103816" List.ParentItemID="-484103816">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign\lithuania" List.ItemID="368255253" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1921063205" List.ParentItemID="1921063205">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="-921517123" List.ParentItemID="-921517123">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="40342433" List.ParentItemID="40342433">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_ribauldequin_4" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_siege_ribauldequin_4" overrideParent="True" />
+									<string name="marker_name_parent" value="" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="183009" />
+		<instance_reference name="parent_pbg" value="ebps\races\hre\units\unit_ribauldequin_4_hre" />
+	</variant>
+</instance>

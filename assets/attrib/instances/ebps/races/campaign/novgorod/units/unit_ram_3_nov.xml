@@ -1,0 +1,71 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1410792167" List.ParentItemID="-1410792167">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-487450359" List.ParentItemID="-487450359">
+			<float name="hitpoints" value="400" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1903432945" List.ParentItemID="-1903432945">
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\campaign\novgorod" overrideParent="True" List.ItemID="791354553" List.ParentItemID="791354553" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-780527790" List.ParentItemID="-780527790">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="1886312333" List.ParentItemID="1886312333">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="827192862" List.ParentItemID="827192862">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\campaign\novgorod\melee\weapon_ram_3_nov" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="" overrideParent="True" />
+								<string name="marker_name_parent" value="" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="1982550370" List.ParentItemID="1982550370">
+			<instance_reference name="on_construction_squad" value="sbps\races\campaign\novgorod\unit_ram_3_nov" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="187954" />
+	<instance_reference name="parent_pbg" value="ebps\races\rus\units\unit_ram_3_rus" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-502690074" List.ParentItemID="-502690074">
+				<float name="hitpoints" value="400" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-40249880" List.ParentItemID="-40249880">
+				<list name="race_type_list">
+					<instance_reference name="race_type" value="racebps\campaign\novgorod" overrideParent="True" List.ItemID="-2088933930" List.ParentItemID="-2088933930" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-820610331" List.ParentItemID="-820610331">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="-398526751" List.ParentItemID="-398526751">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-979469173" List.ParentItemID="-979469173">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\campaign\novgorod\melee\weapon_ram_3_nov" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="" overrideParent="True" />
+									<string name="marker_name_parent" value="" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="-1628240518" List.ParentItemID="-1628240518">
+				<instance_reference name="on_construction_squad" value="sbps\races\campaign\novgorod\unit_ram_3_nov" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="187954" />
+		<instance_reference name="parent_pbg" value="ebps\races\rus\units\unit_ram_3_rus" />
+	</variant>
+</instance>

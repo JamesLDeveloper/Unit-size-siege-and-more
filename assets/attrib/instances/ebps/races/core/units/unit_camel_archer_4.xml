@@ -1,0 +1,150 @@
+<instance version="6" description="Imperial Age Camel Archer" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="40390591" List.ParentItemID="40390591">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-1550359505" List.ParentItemID="-1550359505">
+			<float name="hitpoints" value="200" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="1971537130" List.ParentItemID="1971537130">
+			<float name="decorator_height" value="4.5" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-897663410" List.ParentItemID="-897663410">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="-852857636" List.ParentItemID="-852857636">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-1814652223" List.ParentItemID="-1814652223">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\abbasid\ranged\weapon_camel_archer_4_abb" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\abbasid\weapons\wpn_range_camel_archer_4_abb" overrideParent="True" />
+								<string name="marker_name_parent" value="metarig_larmpalmsocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="-229307317" List.ParentItemID="-229307317">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\abbasid\ranged\weapon_archer_4_improved_abb" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\abbasid\weapons\wpn_range_camel_archer_4_abb" overrideParent="True" />
+								<string name="marker_name_parent" value="metarig_larmpalmsocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="-739147177" List.ParentItemID="-739147177">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\mongol\ranged\weapon_archer_incendiary_mon" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol\weapons\wpn_range_horsearcher_4_mon" overrideParent="True" />
+								<string name="marker_name_parent" value="metarig_larmpalmsocket" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="202624" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_camel_archer_3" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="143183674" List.ParentItemID="143183674">
+				<float name="hitpoints" value="180" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="824335577" List.ParentItemID="824335577">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="584254947" List.ParentItemID="584254947">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-33049286" List.ParentItemID="-33049286">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\abbasid\ranged\weapon_camel_archer_4_abb" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\abbasid\weapons\wpn_range_camel_archer_4_abb" overrideParent="True" />
+									<string name="marker_name_parent" value="metarig_larmpalmsocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-1761052424" List.ParentItemID="-1761052424">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\abbasid\ranged\weapon_camel_archer_4_improved_abb" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\abbasid\weapons\wpn_range_camel_archer_4_abb" overrideParent="True" />
+									<string name="marker_name_parent" value="metarig_larmpalmsocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-1549624807" List.ParentItemID="-1549624807">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\abbasid\melee\weapon_camel_archer_melee_abb" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\abbasid\weapons\wpn_melee_camel_archer_melee_abb" overrideParent="True" />
+									<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-997592577" List.ParentItemID="-997592577">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\mongol\ranged\weapon_archer_incendiary_mon" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol\weapons\wpn_range_horsearcher_4_mon" overrideParent="True" />
+									<string name="marker_name_parent" value="metarig_larmpalmsocket" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="202624" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_camel_archer_3" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="1852111188" List.ParentItemID="1852111188">
+				<float name="hitpoints" value="200" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="1122762128" List.ParentItemID="1122762128">
+				<float name="decorator_height" value="4.5" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="440351934" List.ParentItemID="440351934">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="40234793" List.ParentItemID="40234793">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-947890297" List.ParentItemID="-947890297">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\abbasid\ranged\weapon_camel_archer_4_abb" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\abbasid\weapons\wpn_range_camel_archer_4_abb" overrideParent="True" />
+									<string name="marker_name_parent" value="metarig_larmpalmsocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-751572452" List.ParentItemID="-751572452">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\abbasid\ranged\weapon_archer_4_improved_abb" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\abbasid\weapons\wpn_range_camel_archer_4_abb" overrideParent="True" />
+									<string name="marker_name_parent" value="metarig_larmpalmsocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-1663045304" List.ParentItemID="-1663045304">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\mongol\ranged\weapon_archer_incendiary_mon" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol\weapons\wpn_range_horsearcher_4_mon" overrideParent="True" />
+									<string name="marker_name_parent" value="metarig_larmpalmsocket" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="202624" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_camel_archer_3" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+	</variant>
+</instance>

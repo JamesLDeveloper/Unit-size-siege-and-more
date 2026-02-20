@@ -1,0 +1,31 @@
+<instance version="6" description="Trade Cart" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1291264015" List.ParentItemID="-1291264015">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-26664171" List.ParentItemID="-26664171">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign\lithuania" List.ItemID="-1075533699" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\animation_action_tree_ext" List.ItemID="-1775621726" List.ParentItemID="-1775621726">
+			<state_tree_node name="ActionTree_OpeningBranch" value="cavalry" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="183016" />
+	<instance_reference name="parent_pbg" value="ebps\races\hre\units\unit_trade_cart_hre" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1008858871" List.ParentItemID="1008858871">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign\lithuania" List.ItemID="176810781" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\animation_action_tree_ext" List.ItemID="-1469216572" List.ParentItemID="-1469216572">
+				<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_cavalry" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="183016" />
+		<instance_reference name="parent_pbg" value="ebps\races\hre\units\unit_trade_cart_hre" />
+	</variant>
+</instance>

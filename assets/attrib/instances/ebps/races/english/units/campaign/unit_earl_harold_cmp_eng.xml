@@ -1,0 +1,48 @@
+<instance version="6" description="" template="ebps">
+	<uniqueid name="pbgid" value="2140260" />
+	<instance_reference name="parent_pbg" value="ebps\races\english\units\campaign\unit_manatarms_king_harold_cmp_eng" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-765163162" List.ParentItemID="-765163162">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1590686263" List.ParentItemID="1590686263">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-277148650" List.ParentItemID="-277148650">
+					<group name="tier" List.ItemID="1220963272" List.ParentItemID="1220963272">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\campaign\unit_earl_harold_cmp_eng" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<variant name="campaign">
+		<uniqueid name="pbgid" value="2140260" />
+		<instance_reference name="parent_pbg" value="ebps\races\english\units\campaign\unit_manatarms_king_harold_cmp_eng" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="202880116" List.ParentItemID="202880116">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="-705031946" List.ParentItemID="-705031946">
+						<group name="tier" List.ItemID="-869399447" List.ParentItemID="-869399447">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\campaign\unit_earl_harold_cmp_eng" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+	</variant>
+	<variant name="xp3">
+		<uniqueid name="pbgid" value="2140260" />
+		<instance_reference name="parent_pbg" value="ebps\races\english\units\campaign\unit_manatarms_king_harold_cmp_eng" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1590686263" List.ParentItemID="1590686263">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="1586153628" List.ParentItemID="1586153628">
+						<group name="tier" List.ItemID="-1795132143" List.ParentItemID="-1795132143">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\campaign\unit_earl_harold_cmp_eng" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+	</variant>
+</instance>

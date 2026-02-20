@@ -1,0 +1,4 @@
+<instance version="4" description="" template="ebps">
+	<uniqueid name="pbgid" value="9001269" />
+	<instance_reference name="parent_pbg" value="ebps\races\rogue\units\unit_militia_rogue" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+</instance>

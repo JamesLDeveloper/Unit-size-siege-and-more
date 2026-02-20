@@ -1,0 +1,111 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1356892678" List.ParentItemID="1356892678">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="979295898" List.ParentItemID="979295898">
+			<list name="abilities" removedIds="1362107683">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-919563761" List.ParentItemID="-919563761">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="food" value="140" overrideParent="True" />
+					<float name="gold" value="100" overrideParent="True" />
+				</enum_table>
+				<float name="time_seconds" value="35" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-788422057" List.ParentItemID="-788422057">
+			<float name="hitpoints" value="230" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1078428342" List.ParentItemID="1078428342">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-491582519" List.ParentItemID="-491582519">
+					<group name="tier" List.ItemID="1526433868" List.ParentItemID="1526433868">
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\mongol\campaign\unit_knight_3_cmp_mon" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1762200638" List.ParentItemID="1762200638">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="1534383478" List.ParentItemID="1534383478">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-1605222392" List.ParentItemID="-1605222392">
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\mongol\campaign\weapon_lancer_3_cmp_mon" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="-815746252" List.ParentItemID="-815746252">
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\mongol\ranged\weapon_torch_mon" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="1064922397" List.ParentItemID="1064922397">
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\mongol\campaign\weapon_lancer_3_charge_cmp_mon" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2141019" />
+	<instance_reference name="parent_pbg" value="ebps\races\mongol\units\unit_knight_3_mon" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="979295898" List.ParentItemID="979295898">
+				<list name="abilities" removedIds="1362107683">
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-919563761" List.ParentItemID="-919563761">
+				<group name="time_cost">
+					<enum_table name="cost">
+						<float name="food" value="140" overrideParent="True" />
+						<float name="gold" value="100" overrideParent="True" />
+					</enum_table>
+					<float name="time_seconds" value="35" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-788422057" List.ParentItemID="-788422057">
+				<float name="hitpoints" value="230" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1078428342" List.ParentItemID="1078428342">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="-491582519" List.ParentItemID="-491582519">
+						<group name="tier" List.ItemID="1526433868" List.ParentItemID="1526433868">
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\mongol\campaign\unit_knight_3_cmp_mon" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1762200638" List.ParentItemID="1762200638">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="1534383478" List.ParentItemID="1534383478">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-1605222392" List.ParentItemID="-1605222392">
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\mongol\campaign\weapon_lancer_3_cmp_mon" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-815746252" List.ParentItemID="-815746252">
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\mongol\ranged\weapon_torch_mon" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="1064922397" List.ParentItemID="1064922397">
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\mongol\campaign\weapon_lancer_3_charge_cmp_mon" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2141019" />
+		<instance_reference name="parent_pbg" value="ebps\races\mongol\units\unit_knight_3_mon" />
+	</variant>
+</instance>

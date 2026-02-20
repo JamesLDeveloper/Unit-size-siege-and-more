@@ -1,0 +1,28 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1291264015" List.ParentItemID="-1291264015">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-26664171" List.ParentItemID="-26664171">
+			<list name="unit_type_list">
+				<enum name="unit_type" value="supply_cart" List.ItemID="2091809887" List.ListAction="Append" />
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2031079" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_trade_cart" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-1847751539" List.ParentItemID="-1847751539">
+				<float name="weapon_priority" value="100" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1008858871" List.ParentItemID="1008858871">
+				<list name="unit_type_list">
+					<enum name="unit_type" value="supply_cart" List.ItemID="227006976" List.ListAction="Append" />
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2031079" />
+		<instance_reference name="parent_pbg" value="ebps\races\chinese\units\unit_trade_cart_chi" />
+	</variant>
+</instance>

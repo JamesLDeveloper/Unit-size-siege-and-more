@@ -1,0 +1,77 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1152503433" List.ParentItemID="-1152503433">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1843239910" List.ParentItemID="1843239910">
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\campaign\novgorod" overrideParent="True" List.ItemID="-1732635237" List.ParentItemID="-1732635237" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1819031405" List.ParentItemID="-1819031405">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="713460248" List.ParentItemID="713460248">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="237902918" List.ParentItemID="237902918">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\campaign\novgorod\ranged\weapon_mangonel_3_nov" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="" overrideParent="True" />
+								<string name="marker_name_parent" value="" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="2082400903" List.ParentItemID="2082400903">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\campaign\novgorod\ranged\weapon_mangonel_3_incendiary_nov" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="" overrideParent="True" />
+								<string name="marker_name_parent" value="" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="187947" />
+	<instance_reference name="parent_pbg" value="ebps\races\rus\units\unit_mangonel_3_rus" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1271795324" List.ParentItemID="-1271795324">
+				<list name="race_type_list">
+					<instance_reference name="race_type" value="racebps\campaign\novgorod" overrideParent="True" List.ItemID="1561214181" List.ParentItemID="1561214181" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="408663890" List.ParentItemID="408663890">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="-2041976921" List.ParentItemID="-2041976921">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="365797077" List.ParentItemID="365797077">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\campaign\novgorod\ranged\weapon_mangonel_3_nov" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="" overrideParent="True" />
+									<string name="marker_name_parent" value="" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="1162477718" List.ParentItemID="1162477718">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\campaign\novgorod\ranged\weapon_mangonel_3_incendiary_nov" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="" overrideParent="True" />
+									<string name="marker_name_parent" value="" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="187947" />
+		<instance_reference name="parent_pbg" value="ebps\races\rus\units\unit_mangonel_3_rus" />
+	</variant>
+</instance>

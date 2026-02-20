@@ -1,0 +1,58 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-2021965485" List.ParentItemID="-2021965485">
+			<list name="hardpoints" removedIds="-1596902895">
+				<group name="hardpoint" comment="Left Primary" List.ItemID="-653934340" List.ParentItemID="-653934340">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-2042765210" List.ParentItemID="-2042765210">
+							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<instance_reference name="ebp" value="ebps\races\french\weapons\wpn_range_naval_springald_left_fre" overrideParent="True" />
+								</template_reference>
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="113057482" List.ParentItemID="113057482">
+							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<instance_reference name="ebp" value="ebps\races\templar\weapons\wpn_range_naval_springald_left_flame_tem" overrideParent="True" />
+								</template_reference>
+							</template_reference>
+						</group>
+					</list>
+				</group>
+				<group name="hardpoint" comment="Right Primary" List.ItemID="1627678101" List.ParentItemID="1627678101">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-1315296552" List.ParentItemID="-1315296552">
+							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<instance_reference name="ebp" value="ebps\races\french\weapons\wpn_range_naval_springald_right_fre" overrideParent="True" />
+								</template_reference>
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="-1598587575" List.ParentItemID="-1598587575">
+							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<instance_reference name="ebp" value="ebps\races\templar\weapons\wpn_range_naval_springald_right_flame_tem" overrideParent="True" />
+								</template_reference>
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\entity_targeting_ext" List.ItemID="-1510811873" List.ParentItemID="-1510811873">
+			<bool name="allow_entity_scan_close_enemies" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-564826070" List.ParentItemID="-564826070">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="628638250" List.ParentItemID="628638250">
+					<group name="tier" List.ItemID="1812081355" List.ParentItemID="1812081355">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\templar\units\naval\tier3_naval_combat_ship_tem" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="8999970" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_combat_ship_2" />
+</instance>

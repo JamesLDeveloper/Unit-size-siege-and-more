@@ -1,0 +1,339 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1291264015" List.ParentItemID="-1291264015">
+			<bool name="browsable_in_editor" value="False" overrideParent="True" />
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_trade_cart_camel" overrideParent="True" />
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-685505201" List.ParentItemID="-685505201">
+			<list name="abilities" overrideParent="True">
+				<instance_reference name="ability" value="abilities\modal_abilities\core\trade_restart" List.ItemID="21123269" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\abbasid\mamluke_anti_cavalry_aura_abb" List.ItemID="-151172956" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="257961566" List.ParentItemID="257961566">
+			<list name="action_state_trees" overrideParent="True">
+				<group name="container" List.ItemID="-1641281894">
+					<string name="state_tree" value="unit_action_apply\units\trade_cart" />
+				</group>
+				<group name="container" List.ItemID="371655802">
+					<string name="state_tree" value="unit_action_apply\units\trade_cart\audio" />
+				</group>
+				<group name="container" overrideParent="True" List.ItemID="-1604710286">
+					<string name="state_tree" value="trader_resource_modifiers_abb" />
+				</group>
+				<group name="container" List.ItemID="830313940" List.ParentItemID="602201810">
+					<string name="state_tree" value="unit_action_apply\units\camel\audio\abb\camel_heavy" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-195927456" List.ParentItemID="-195927456">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="wood" value="40" overrideParent="True" />
+					<float name="gold" value="40" overrideParent="True" />
+				</enum_table>
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="1104871875" List.ParentItemID="1104871875">
+			<float name="hitpoints" value="60" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-26664171" List.ParentItemID="-26664171">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\abbasid" List.ItemID="-1703817925" />
+			</list>
+			<list name="unit_type_list">
+				<enum name="unit_type" value="trade_camel" List.ItemID="-1285395822" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="-1290137626" List.ParentItemID="-1290137626">
+			<enum_table name="speed_levels">
+				<float name="speed_level_1" value="4" overrideParent="True" />
+				<float name="speed_level_2" value="5" overrideParent="True" />
+				<float name="speed_level_3" value="5.4" overrideParent="True" />
+				<float name="speed_level_4" value="8" overrideParent="True" />
+			</enum_table>
+			<enum_table name="speed_scaling_table">
+				<float name="default_speed" value="6.25" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\animation_action_tree_ext" List.ItemID="-1775621726" List.ParentItemID="-1775621726">
+			<string name="default_animation" value="calm_idle\idle_calm_02_checkers_a" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="-1178329849" List.ParentItemID="-1178329849">
+			<list name="tier_group_list">
+				<list name="tier_group" overrideParent="True" List.ItemID="1961604268">
+					<group name="tier" List.ItemID="-490725707">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ayyubid_cmp\units\tier2_trade_cart_camel_ayy" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" overrideParent="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+					<group name="tier" List.ItemID="1925676744">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ayyubid_cmp\units\tier3_trade_cart_camel_ayy" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\castle_age" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" overrideParent="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+					<group name="tier" List.ItemID="1726882064">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ayyubid_cmp\units\tier4_trade_cart_camel_ayy" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\imperial_age" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" overrideParent="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\hit_react_tree_ext" List.ItemID="-1743383531" List.ParentItemID="-1743383531">
+			<state_tree_node name="ActionTree_OpeningBranch" value="hit_tree_camel" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="199693" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_trade_cart" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-697586642" List.ParentItemID="-697586642">
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="1453824596" List.ParentItemID="1453824596">
+				<list name="abilities" overrideParent="True">
+					<instance_reference name="ability" value="abilities\modal_abilities\core\trade_restart" List.ItemID="-556753673" />
+					<instance_reference name="ability" value="abilities\always_on_abilities\abbasid\immune_to_conversion_abb" List.ItemID="1224014183" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="2119325581" List.ParentItemID="2119325581">
+				<list name="action_state_trees" overrideParent="True">
+					<group name="container" List.ItemID="-1105790499">
+						<string name="state_tree" value="campaignMod_unit_action_apply\units\trade_cart" />
+					</group>
+					<group name="container" List.ItemID="-1483016358">
+						<string name="state_tree" value="campaignMod_unit_action_apply\units\trade_cart\audio" />
+					</group>
+					<group name="container" overrideParent="True" List.ItemID="-1676782621">
+						<string name="state_tree" value="campaignMod_trader_resource_modifiers_abb" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="1063075949" List.ParentItemID="1063075949">
+				<group name="time_cost">
+					<enum_table name="cost">
+						<float name="wood" value="50" overrideParent="True" />
+						<float name="gold" value="50" overrideParent="True" />
+					</enum_table>
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1008858871" List.ParentItemID="1008858871">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\abbasid" List.ItemID="-1150557219" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="-401309955" List.ParentItemID="-401309955">
+				<list name="tier_group_list">
+					<list name="tier_group" overrideParent="True" List.ItemID="1234691051">
+						<group name="tier" List.ItemID="1444429582">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\abbasid\units\tier2_trade_cart_abb" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_tier_unit_exposure_dca" overrideParent="True" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+						<group name="tier" List.ItemID="-1174645550">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\abbasid\units\tier3_trade_cart_abb" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_tier_unit_exposure_dca" overrideParent="True" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\castle_age" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+						<group name="tier" List.ItemID="1655975580">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\abbasid\units\tier4_trade_cart_abb" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_tier_unit_exposure_dca" overrideParent="True" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\imperial_age" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="199693" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_trade_cart" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1291264015" List.ParentItemID="-1291264015">
+				<bool name="browsable_in_editor" value="False" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-685505201" List.ParentItemID="-685505201">
+				<list name="abilities" overrideParent="True">
+					<instance_reference name="ability" value="abilities\modal_abilities\core\trade_restart" List.ItemID="826777143" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="257961566" List.ParentItemID="257961566">
+				<list name="action_state_trees" overrideParent="True">
+					<group name="container" List.ItemID="-244044010">
+						<string name="state_tree" value="xp3_unit_action_apply\units\trade_cart" />
+					</group>
+					<group name="container" List.ItemID="1627856509">
+						<string name="state_tree" value="xp3_unit_action_apply\units\trade_cart\audio" />
+					</group>
+					<group name="container" overrideParent="True" List.ItemID="1343180322">
+						<string name="state_tree" value="xp3_trader_resource_modifiers_abb" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-195927456" List.ParentItemID="-195927456">
+				<group name="time_cost">
+					<enum_table name="cost">
+						<float name="wood" value="40" overrideParent="True" />
+						<float name="gold" value="40" overrideParent="True" />
+					</enum_table>
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-26664171" List.ParentItemID="-26664171">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\abbasid" List.ItemID="2016853125" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="-1178329849" List.ParentItemID="-1178329849">
+				<list name="tier_group_list">
+					<list name="tier_group" overrideParent="True" List.ItemID="-367426818">
+						<group name="tier" List.ItemID="-1628001379">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\abbasid\units\tier2_trade_cart_abb" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="xp3_tier_unit_exposure_dca" overrideParent="True" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" overrideParent="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+						<group name="tier" List.ItemID="-949942701">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\abbasid\units\tier3_trade_cart_abb" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="xp3_tier_unit_exposure_dca" overrideParent="True" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\castle_age" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" overrideParent="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+						<group name="tier" List.ItemID="1296302270">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\abbasid\units\tier4_trade_cart_abb" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="xp3_tier_unit_exposure_dca" overrideParent="True" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\imperial_age" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" overrideParent="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="199693" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_trade_cart" />
+	</variant>
+</instance>

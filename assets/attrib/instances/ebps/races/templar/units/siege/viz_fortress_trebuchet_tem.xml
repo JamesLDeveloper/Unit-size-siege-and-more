@@ -1,0 +1,64 @@
+<instance version="4" description="This is the trebuchet which spawns ontop of the templar fortress when the appropriate upgrade is purchased." template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-422500858" List.ParentItemID="-422500858">
+			<float name="entity_scale" value="50" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="1634545178" List.ParentItemID="1634545178">
+			<list name="action_state_trees">
+				<group name="container" List.ItemID="1852669194" List.ParentItemID="1852669194">
+					<string name="state_tree" value="unit_action_apply\units\siege\viz_trebuchet_cw" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-1417257205" List.ParentItemID="-1417257205">
+			<file name="icon_name" value="races\templar\upgrades\trebuchet_emplacement" overrideParent="True" />
+			<bool name="minimap_enable" value="False" overrideParent="True" />
+			<float name="decorator_height" value="7" overrideParent="True" />
+			<string name="extra_text_deprecated" value="" overrideParent="True" />
+			<bool name="ghost_enable" value="True" overrideParent="True" />
+			<string name="decorator_data_template" value="" overrideParent="True" />
+			<bool name="is_unique_to_race" value="True" overrideParent="True" />
+			<float name="kicker_offset" value="0" overrideParent="True" />
+			<enum name="decorator" value="" overrideParent="True" />
+			<string name="sound" value="sfx_ui_produce_unit_click" overrideParent="True" />
+			<float name="kicker_offset_world" value="0" overrideParent="True" />
+			<bool name="selection_obb_size_align_to_terrain" value="False" overrideParent="True" />
+			<bool name="reticule_override_enabled" value="True" overrideParent="True" />
+			<float name="reticule_override_size" value="19" overrideParent="True" />
+			<bool name="static_selection_bounds" value="True" overrideParent="True" />
+			<enum name="targeting_and_bandbox_selection_priority" value="lowest" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="670545336" List.ParentItemID="670545336">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="1221726239" List.ParentItemID="1221726239">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-1906305902" List.ParentItemID="-1906305902">
+							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<instance_reference name="ebp" value="ebps\races\templar\units\siege\wpn_siege_trebuchet_4_tem" mod="e2ef01ea17d74b04949857ca0a246ab4" overrideParent="True" />
+								</template_reference>
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_tree_ext" List.ItemID="1325802273" List.ParentItemID="1325802273">
+			<state_tree_node name="ActionTree_OpeningBranch" value="unit_viz_trebuchet" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\animation_action_tree_ext" List.ItemID="1698103246" List.ParentItemID="1698103246">
+			<state_tree_node name="ActionTree_OpeningBranch" value="viz_trebuchet_states" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1252735317" List.ParentItemID="1252735317">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-1419212904" List.ParentItemID="-1419212904">
+					<group name="tier" List.ItemID="1368001591" List.ParentItemID="1368001591">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol\units\campaign\mon_great_trebuchet" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="9000849" />
+	<instance_reference name="parent_pbg" value="ebps\races\templar\units\siege\unit_trebuchet_4_cw_tem" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+</instance>

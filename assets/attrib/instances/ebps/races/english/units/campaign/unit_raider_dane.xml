@@ -1,0 +1,280 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-765163162" List.ParentItemID="-765163162">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_manatarms_two_hand" overrideParent="True" />
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="118682988" List.ParentItemID="118682988">
+			<float name="hitpoints" value="120" overrideParent="True" />
+			<template_reference name="armor_layout_option" value="options\ebpextensions\healthext\armor_layouts\armor_layout_uniform">
+				<float name="armor" value="1" overrideParent="True" />
+			</template_reference>
+			<enum_table name="armor_scaler_by_damage_type">
+				<float name="Melee" value="4" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-782585427" List.ParentItemID="-782585427">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\english" List.ItemID="1794973707" />
+				<instance_reference name="race_type" value="racebps\campaign\danes" List.ItemID="-2038263840" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1697644820" List.ParentItemID="1697644820">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="1781403471" List.ParentItemID="1781403471">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-955194656" List.ParentItemID="-955194656">
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\hre\melee\weapon_manatarms_2_2handaxe_hre" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\hre\weapons\wpn_melee_manatarms_2_2handaxe_hre" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="-471332549" List.ParentItemID="-471332549">
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_torch_weak" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="667584923" List.ParentItemID="667584923">
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\hre\melee\weapon_manatarms_3_2handaxe_charge_hre" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\hre\weapons\wpn_melee_manatarms_2_2handaxe_hre" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1590686263" List.ParentItemID="1590686263">
+			<list name="tier_group_list">
+				<list name="tier_group" overrideParent="True" List.ItemID="45968212" List.ParentItemID="45968212">
+					<group name="tier" List.ItemID="-607854166">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\campaign\unit_raider_dane" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+					<group name="tier" List.ItemID="1242624307">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\campaign\unit_raider_dane" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" overrideParent="True" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2022165" />
+	<instance_reference name="parent_pbg" value="ebps\races\english\units\unit_manatarms_2_eng" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-6299907" List.ParentItemID="-6299907">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_manatarms_two_hand" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-792172953" List.ParentItemID="-792172953">
+				<float name="hitpoints" value="120" overrideParent="True" />
+				<template_reference name="armor_layout_option" value="options\ebpextensions\healthext\armor_layouts\armor_layout_uniform">
+					<float name="armor" value="1" overrideParent="True" />
+				</template_reference>
+				<enum_table name="armor_scaler_by_damage_type">
+					<float name="Melee" value="4" overrideParent="True" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1104798827" List.ParentItemID="1104798827">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\english" List.ItemID="-1442934734" />
+					<instance_reference name="race_type" value="racebps\campaign\danes" List.ItemID="-1967123340" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="288926342" List.ParentItemID="288926342">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="-1042324492" List.ParentItemID="-1042324492">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="306288311" List.ParentItemID="306288311">
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\hre\melee\weapon_manatarms_2_2handaxe_hre" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\hre\weapons\wpn_melee_manatarms_2_2handaxe_hre" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="1265922142" List.ParentItemID="1265922142">
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_torch_weak" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-1536951353" List.ParentItemID="-1536951353">
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\hre\melee\weapon_manatarms_3_2handaxe_charge_hre" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\hre\weapons\wpn_melee_manatarms_2_2handaxe_hre" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="202880116" List.ParentItemID="202880116">
+				<list name="tier_group_list">
+					<list name="tier_group" overrideParent="True" List.ItemID="-1470980851" List.ParentItemID="-1470980851">
+						<group name="tier" List.ItemID="-1356426844">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\campaign\unit_raider_dane" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+						<group name="tier" List.ItemID="-1838252460">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\campaign\unit_raider_dane" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" overrideParent="True" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2022165" />
+		<instance_reference name="parent_pbg" value="ebps\races\english\units\unit_manatarms_2_eng" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-765163162" List.ParentItemID="-765163162">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_manatarms_two_hand" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="118682988" List.ParentItemID="118682988">
+				<float name="hitpoints" value="120" overrideParent="True" />
+				<template_reference name="armor_layout_option" value="options\ebpextensions\healthext\armor_layouts\armor_layout_uniform">
+					<float name="armor" value="1" overrideParent="True" />
+				</template_reference>
+				<enum_table name="armor_scaler_by_damage_type">
+					<float name="Melee" value="4" overrideParent="True" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-782585427" List.ParentItemID="-782585427">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\english" List.ItemID="232918891" />
+					<instance_reference name="race_type" value="racebps\campaign\danes" List.ItemID="-1241364164" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1697644820" List.ParentItemID="1697644820">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="1781403471" List.ParentItemID="1781403471">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-955194656" List.ParentItemID="-955194656">
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\hre\melee\weapon_manatarms_2_2handaxe_hre" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\hre\weapons\wpn_melee_manatarms_2_2handaxe_hre" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-471332549" List.ParentItemID="-471332549">
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_torch_weak" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="667584923" List.ParentItemID="667584923">
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\hre\melee\weapon_manatarms_3_2handaxe_charge_hre" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\hre\weapons\wpn_melee_manatarms_2_2handaxe_hre" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1590686263" List.ParentItemID="1590686263">
+				<list name="tier_group_list">
+					<list name="tier_group" overrideParent="True" List.ItemID="45968212" List.ParentItemID="45968212">
+						<group name="tier" List.ItemID="1599665264">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\campaign\unit_raider_dane" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="xp3_tier_unit_exposure_dca" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+						<group name="tier" List.ItemID="-253528622">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\campaign\unit_raider_dane" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="xp3_tier_unit_exposure_dca" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" overrideParent="True" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2022165" />
+		<instance_reference name="parent_pbg" value="ebps\races\english\units\unit_manatarms_2_eng" />
+	</variant>
+</instance>

@@ -1,0 +1,94 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1224369009" List.ParentItemID="1224369009">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="1702593007" List.ParentItemID="1702593007">
+			<list name="action_state_trees">
+				<group name="container" List.ItemID="-2128270272" List.ParentItemID="-2128270272">
+					<string name="state_tree" value="unit_action_apply\units\handcannon\audio\rus" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-1028637551" List.ParentItemID="-1028637551">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="food" value="0" overrideParent="True" />
+					<float name="gold" value="0" overrideParent="True" />
+					<float name="merc_byz" value="240" overrideParent="True" />
+				</enum_table>
+				<float name="time_seconds" value="90" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="746293570" List.ParentItemID="746293570">
+			<bool name="regeneration_disabled" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-78815547" List.ParentItemID="-78815547">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="military" List.ItemID="-667851110" />
+				<enum name="unit_type" value="infantry" List.ItemID="936866737" />
+				<enum name="unit_type" value="handcannon" List.ItemID="1323514948" />
+				<enum name="unit_type" value="gunpowder" List.ItemID="-1604254994" />
+				<enum name="unit_type" value="streltsy" List.ItemID="1619967822" />
+				<enum name="unit_type" value="ranged" List.ItemID="-1362304408" />
+				<enum name="unit_type" value="formational" List.ItemID="1618298709" />
+				<enum name="unit_type" value="human" List.ItemID="929581100" />
+				<enum name="unit_type" value="annihilation_condition" List.ItemID="89299528" />
+				<enum name="unit_type" value="included_by_military_hotkeys" List.ItemID="1989568401" />
+				<enum name="unit_type" value="mercenary_byz" List.ItemID="-370938357" />
+				<enum name="unit_type" value="ranged_infantry" List.ItemID="-1424201404" List.ParentItemID="1273077933" />
+			</list>
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\rus" List.ItemID="-1793129598" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1968019310" List.ParentItemID="1968019310">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="-878898247" List.ParentItemID="-878898247">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-464053615" List.ParentItemID="-464053615">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\rus\ranged\weapon_handcannon_4_rus" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\rus\weapons\wpn_range_handcannon_4_rus" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+			<template_reference name="kill_action_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="on_kill_byz" overrideParent="True" />
+			</template_reference>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="-1761061643" List.ParentItemID="-1761061643">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" overrideParent="True" List.ItemID="222671197">
+					<group name="tier" List.ItemID="-292765662">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\rus\units\tier4_handcannon_rus" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2104153" />
+	<instance_reference name="parent_pbg" value="ebps\races\rus\units\unit_handcannon_4_rus" />
+</instance>

@@ -1,0 +1,49 @@
+<instance version="4" description="Viz Object for worker Elephant" template="ebps">
+	<list name="extensions" removedIds="-598558363, -12445432, -1189022316, -638902394, -1860277336, -1514056965, 62279230, -159912905, -1602048664, 427541888, 1331738695, -867415763, -2140039910, 1621966410, -97316648, 1729822087, 1578952779, -2019497169">
+		<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="2015716676" List.ParentItemID="2015716676">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" overrideParent="True" List.ItemID="306470107">
+					<group name="tier" List.ItemID="1136751749">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate_ha_tug\units\tier2_worker_elephant_sul_ha_tug" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-2009320517" List.ParentItemID="-2009320517">
+			<float name="entity_scale" value="85" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1316572367" List.ParentItemID="-1316572367">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="annihilation_condition" List.ItemID="-2139246791" />
+				<enum name="unit_type" value="war_elephant" List.ItemID="117123201" />
+			</list>
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\sultanate_ha_tug" overrideParent="True" List.ItemID="1403924999" List.ParentItemID="1403924999" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_tree_ext" List.ItemID="1887272483" List.ParentItemID="1887272483">
+			<state_tree_node name="ActionTree_OpeningBranch" value="unit_entity" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-202132373" List.ParentItemID="-202132373">
+			<instance_reference name="schema" value="statemodel_schema\units\civilizations\sultanate_ha_tug\worker_elephant" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="9004552" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_war_elephant" />
+</instance>

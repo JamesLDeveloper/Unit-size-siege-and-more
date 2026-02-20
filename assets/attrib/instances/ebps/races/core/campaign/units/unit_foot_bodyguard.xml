@@ -1,0 +1,217 @@
+<instance version="6" description="English foot general's guard for the campaign." template="ebps">
+	<list name="extensions" comment="NOT USED, CANDIDATE FOR DELETE">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-765163162" List.ParentItemID="-765163162">
+			<bool name="browsable_in_editor" value="False" overrideParent="True" />
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="118682988" List.ParentItemID="118682988">
+			<float name="hitpoints" value="140" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-782585427" List.ParentItemID="-782585427">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="military" List.ItemID="-2019154298" />
+				<enum name="unit_type" value="infantry" List.ItemID="-341902902" />
+				<enum name="unit_type" value="armored" List.ItemID="1646132312" />
+				<enum name="unit_type" value="manatarms" List.ItemID="2125513706" />
+				<enum name="unit_type" value="human" List.ItemID="-1653825358" />
+				<enum name="unit_type" value="follower" List.ItemID="606907535" />
+				<enum name="unit_type" value="annihilation_condition" List.ItemID="-1074086618" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1697644820" List.ParentItemID="1697644820">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="1781403471" List.ParentItemID="1781403471">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-955194656" List.ParentItemID="-955194656">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_manatarms_3" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\english\weapons\wpn_melee_manatarms_3_eng" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="-471332549" List.ParentItemID="-471332549">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_torch" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\english\weapons\wpn_siege_torch_eng" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="667584923" List.ParentItemID="667584923">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_manatarms_3_charge" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\english\weapons\wpn_melee_manatarms_3_charge_eng" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+			<group name="idle_targeting">
+				<float name="idle_targeting_range" value="4" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="-559269079" List.ParentItemID="-559269079">
+			<enum_table name="speed_levels">
+				<float name="speed_level_0" value="2.5" overrideParent="True" />
+				<float name="speed_level_1" value="3.75" overrideParent="True" />
+				<float name="speed_level_2" value="5" overrideParent="True" />
+				<float name="speed_level_3" value="6.25" overrideParent="True" />
+				<float name="speed_level_4" value="6.25" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_tree_ext" List.ItemID="873184525" List.ParentItemID="873184525">
+			<state_tree_node name="ActionTree_OpeningBranch" value="entity_follower_guard" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="169239" />
+	<instance_reference name="parent_pbg" value="ebps\races\english\units\unit_manatarms_3_eng" />
+	<variant name="campaign">
+		<list name="extensions" comment="NOT USED, CANDIDATE FOR DELETE">
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-792172953" List.ParentItemID="-792172953">
+				<float name="hitpoints" value="140" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1104798827" List.ParentItemID="1104798827">
+				<list name="unit_type_list" overrideParent="True">
+					<enum name="unit_type" value="military" List.ItemID="796469300" />
+					<enum name="unit_type" value="infantry" List.ItemID="212059060" />
+					<enum name="unit_type" value="armored" List.ItemID="-136490689" />
+					<enum name="unit_type" value="manatarms" List.ItemID="-1418286696" />
+					<enum name="unit_type" value="human" List.ItemID="924657561" />
+					<enum name="unit_type" value="follower" List.ItemID="1267918111" />
+					<enum name="unit_type" value="annihilation_condition" List.ItemID="1304264705" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="288926342" List.ParentItemID="288926342">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="-1042324492" List.ParentItemID="-1042324492">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="306288311" List.ParentItemID="306288311">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_manatarms_3" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\english\weapons\wpn_melee_manatarms_3_eng" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="1265922142" List.ParentItemID="1265922142">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_torch" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\english\weapons\wpn_siege_torch_eng" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-1536951353" List.ParentItemID="-1536951353">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_manatarms_3_charge" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\english\weapons\wpn_melee_manatarms_3_charge_eng" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+				<group name="idle_targeting">
+					<float name="idle_targeting_range" value="4" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="-1608608001" List.ParentItemID="-1608608001">
+				<enum_table name="speed_levels">
+					<float name="speed_level_0" value="2.5" overrideParent="True" />
+					<float name="speed_level_1" value="3.75" overrideParent="True" />
+					<float name="speed_level_2" value="5" overrideParent="True" />
+					<float name="speed_level_3" value="6.25" overrideParent="True" />
+					<float name="speed_level_4" value="6.25" overrideParent="True" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\action_tree_ext" List.ItemID="-50891792" List.ParentItemID="-50891792">
+				<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_entity_follower_guard" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="169239" />
+		<instance_reference name="parent_pbg" value="ebps\races\english\units\unit_manatarms_3_eng" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions" comment="NOT USED, CANDIDATE FOR DELETE">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-765163162" List.ParentItemID="-765163162">
+				<bool name="browsable_in_editor" value="False" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="118682988" List.ParentItemID="118682988">
+				<float name="hitpoints" value="140" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-782585427" List.ParentItemID="-782585427">
+				<list name="unit_type_list" overrideParent="True">
+					<enum name="unit_type" value="military" List.ItemID="1428866508" />
+					<enum name="unit_type" value="infantry" List.ItemID="1542969353" />
+					<enum name="unit_type" value="armored" List.ItemID="1692104963" />
+					<enum name="unit_type" value="manatarms" List.ItemID="-115724478" />
+					<enum name="unit_type" value="human" List.ItemID="-2101650049" />
+					<enum name="unit_type" value="follower" List.ItemID="207292514" />
+					<enum name="unit_type" value="annihilation_condition" List.ItemID="-1496422638" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1697644820" List.ParentItemID="1697644820">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="1781403471" List.ParentItemID="1781403471">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-955194656" List.ParentItemID="-955194656">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_manatarms_3" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\english\weapons\wpn_melee_manatarms_3_eng" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-471332549" List.ParentItemID="-471332549">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_torch" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\english\weapons\wpn_siege_torch_eng" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="667584923" List.ParentItemID="667584923">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_manatarms_3_charge" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\english\weapons\wpn_melee_manatarms_3_charge_eng" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+				<group name="idle_targeting">
+					<float name="idle_targeting_range" value="4" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="-559269079" List.ParentItemID="-559269079">
+				<enum_table name="speed_levels">
+					<float name="speed_level_0" value="2.5" overrideParent="True" />
+					<float name="speed_level_1" value="3.75" overrideParent="True" />
+					<float name="speed_level_2" value="5" overrideParent="True" />
+					<float name="speed_level_3" value="6.25" overrideParent="True" />
+					<float name="speed_level_4" value="6.25" overrideParent="True" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\action_tree_ext" List.ItemID="873184525" List.ParentItemID="873184525">
+				<state_tree_node name="ActionTree_OpeningBranch" value="xp3_entity_follower_guard" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="169239" />
+		<instance_reference name="parent_pbg" value="ebps\races\english\units\unit_manatarms_3_eng" />
+	</variant>
+</instance>

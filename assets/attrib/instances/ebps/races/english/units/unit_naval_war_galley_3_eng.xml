@@ -1,0 +1,62 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_targeting_ext" List.ItemID="-1972678168" List.ParentItemID="-1972678168">
+			<bool name="allow_entity_scan_close_enemies" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="617548696" List.ParentItemID="617548696">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-474741001" List.ParentItemID="-474741001">
+					<group name="tier" List.ItemID="1389814532" List.ParentItemID="1389814532">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\tier2_naval_war_galley_eng" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="193923" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_war_galley_3" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1803349232" List.ParentItemID="1803349232">
+				<list name="unit_type_list">
+					<enum name="unit_type" value="naval_military" List.ItemID="-1592055325" List.ListAction="Append" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\entity_targeting_ext" List.ItemID="-714932306" List.ParentItemID="-714932306">
+				<bool name="allow_entity_scan_close_enemies" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-979393051" List.ParentItemID="-979393051">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="1125879778" List.ParentItemID="1125879778">
+						<group name="tier" List.ItemID="621522043" List.ParentItemID="621522043">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\tier2_naval_war_galley_eng" overrideParent="True" />
+						</group>
+						<group name="tier" List.ItemID="191819392" List.ParentItemID="191819392">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\tier2_naval_war_galley_bombard_eng" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="193923" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_war_galley_3" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_targeting_ext" List.ItemID="-1972678168" List.ParentItemID="-1972678168">
+				<bool name="allow_entity_scan_close_enemies" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="617548696" List.ParentItemID="617548696">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="-474741001" List.ParentItemID="-474741001">
+						<group name="tier" List.ItemID="1389814532" List.ParentItemID="1389814532">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\tier2_naval_war_galley_eng" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="193923" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_war_galley_3" />
+	</variant>
+</instance>

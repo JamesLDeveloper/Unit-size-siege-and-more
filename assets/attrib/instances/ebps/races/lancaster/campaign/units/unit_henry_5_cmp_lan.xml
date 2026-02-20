@@ -1,0 +1,12 @@
+<instance version="4" description="" template="ebps">
+	<uniqueid name="pbgid" value="9001928" />
+	<instance_reference name="parent_pbg" value="ebps\races\lancaster\units\unit_abbey_king_2_lan" />
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1307113881" List.ParentItemID="-1307113881">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-857548304" List.ParentItemID="-857548304">
+			<float name="hitpoints" value="350" overrideParent="True" />
+		</template_reference>
+	</list>
+</instance>

@@ -1,0 +1,38 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="267168923" List.ParentItemID="267168923">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_naval_transport_ship" overrideParent="True" />
+			<float name="entity_scale" value="70" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-92434801" List.ParentItemID="-92434801">
+			<list name="unit_type_list">
+				<enum name="unit_type" value="medium_ship" overrideParent="True" List.ItemID="-187851241" List.ParentItemID="-187851241" />
+			</list>
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\malian" overrideParent="True" List.ItemID="-2043083081" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="-2826050" List.ParentItemID="-2826050">
+			<enum name="snap_to_surface_type" value="Water" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\resource_gatherer_ext" List.ItemID="-151063231" List.ParentItemID="-151063231">
+			<list name="gather_types">
+				<group name="gather_target" comment="BERRY BUSH" List.ItemID="-993611447" List.ParentItemID="-993611447">
+				</group>
+				<group name="gather_target" comment="DEEP WATER FISH" List.ItemID="784624785" List.ParentItemID="784624785">
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1154132826" List.ParentItemID="1154132826">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-659887307" List.ParentItemID="-659887307">
+					<group name="tier" List.ItemID="2025676610" List.ParentItemID="2025676610">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\malian\units\tier2_naval_fishing_boat_mal" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2362829" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_fishing_boat_2" />
+</instance>

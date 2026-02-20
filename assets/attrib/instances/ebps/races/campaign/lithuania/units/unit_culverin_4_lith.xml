@@ -1,0 +1,49 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1564013" List.ParentItemID="-1564013">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1246076922" List.ParentItemID="1246076922">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="-1842440573" List.ParentItemID="-1842440573">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-336592328" List.ParentItemID="-336592328">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_culverin_4" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="" overrideParent="True" />
+								<string name="marker_name_parent" value="" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="191473" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_culverin_4" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1355822508" List.ParentItemID="1355822508">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="965577471" List.ParentItemID="965577471">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="658029315" List.ParentItemID="658029315">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_culverin_4" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="" overrideParent="True" />
+									<string name="marker_name_parent" value="" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="191473" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_culverin_4" />
+	</variant>
+</instance>

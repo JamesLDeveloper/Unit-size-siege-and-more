@@ -1,0 +1,40 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1087697983" List.ParentItemID="-1087697983">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_naval_medium_lateen" overrideParent="True" />
+			<bool name="browsable_in_editor" value="False" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="1168735287" List.ParentItemID="1168735287">
+			<list name="action_state_trees" overrideParent="True">
+				<group name="container" List.ItemID="175875329">
+					<string name="state_tree" value="unit_action_apply\units\naval_generic" />
+				</group>
+				<group name="container" List.ItemID="-1130852514">
+					<string name="state_tree" value="trader_resource_modifiers_abb" overrideParent="True" />
+				</group>
+				<group name="container" List.ItemID="-1234776684">
+					<string name="state_tree" value="naval_trader_modifiers" />
+				</group>
+				<group name="container" List.ItemID="1295922384">
+					<string name="state_tree" value="combat_ship_action_apply" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1446489815" List.ParentItemID="1446489815">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\abbasid_ha_01" overrideParent="True" List.ItemID="-794311642" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="2005299329" List.ParentItemID="2005299329">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="1868832800" List.ParentItemID="1868832800">
+					<group name="tier" List.ItemID="1601565728" List.ParentItemID="1601565728">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\abbasid\units\tier3_naval_trade_ship_abb" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="4920866" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_trade_ship_3" />
+</instance>

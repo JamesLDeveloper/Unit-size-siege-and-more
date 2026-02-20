@@ -1,0 +1,64 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-2078854337" List.ParentItemID="-2078854337">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-433665015" List.ParentItemID="-433665015">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign\normans" List.ItemID="1291852447" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="2081103240" List.ParentItemID="2081103240">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-1937759202" List.ParentItemID="-1937759202">
+					<group name="tier" List.ItemID="-1144010367" List.ParentItemID="-1144010367">
+						<instance_reference name="attachments" value="attachments\attachment_lists\races\english\units\unit_king_1_eng" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="1489804362" List.ParentItemID="1489804362">
+			<float name="number_of_standard_slots" value="-1" overrideParent="True" />
+			<state_tree_node name="production_item_completed_openingbranch" value="" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="639120" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_king_1" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1263966175" List.ParentItemID="1263966175">
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="402838840" List.ParentItemID="402838840">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign\normans" List.ItemID="-1305126051" />
+				</list>
+				<list name="unit_type_list">
+					<enum name="unit_type" value="xbox_support_quick_find" List.ItemID="537176653" List.ListAction="Append" />
+					<enum name="unit_type" value="find_non_siege_land_military" List.ItemID="-960897233" List.ListAction="Append" />
+					<enum name="unit_type" value="land_military" List.ItemID="-1901418287" List.ListAction="Append" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="789809030" List.ParentItemID="789809030">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="2072640789" List.ParentItemID="2072640789">
+						<group name="tier" List.ItemID="441065516" List.ParentItemID="441065516">
+							<instance_reference name="attachments" value="attachments\attachment_lists\races\english\units\unit_king_1_eng" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-1500690822" List.ListAction="Append">
+				<bool name="must_be_in_supply" value="False" />
+				<float name="number_of_standard_slots" value="-1" />
+				<list name="standard_upgrades">
+				</list>
+				<int name="max_queue_size_override" value="-1" />
+				<state_tree_node name="production_item_completed_openingbranch" value="" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="639120" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_king_1" />
+	</variant>
+</instance>

@@ -1,0 +1,30 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1356892678" List.ParentItemID="1356892678">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-788422057" List.ParentItemID="-788422057">
+			<float name="weapon_priority" value="100" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2044899" />
+	<instance_reference name="parent_pbg" value="ebps\races\english\units\campaign\unit_duke_william_cmp_eng" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="1631100682" List.ParentItemID="1631100682">
+				<float name="weapon_priority" value="100" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2044899" />
+		<instance_reference name="parent_pbg" value="ebps\races\english\units\campaign\unit_duke_william_cmp_eng" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-788422057" List.ParentItemID="-788422057">
+				<float name="weapon_priority" value="100" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2044899" />
+		<instance_reference name="parent_pbg" value="ebps\races\english\units\campaign\unit_duke_william_cmp_eng" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+	</variant>
+</instance>

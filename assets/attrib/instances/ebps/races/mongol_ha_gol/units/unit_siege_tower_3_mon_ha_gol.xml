@@ -1,0 +1,42 @@
+<instance version="4" description="Mongol castle age siege tower" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1015139908" List.ParentItemID="1015139908">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol\units\unit_siege_tower_3_mon" overrideParent="True" />
+			<bool name="browsable_in_editor" value="False" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1324899961" List.ParentItemID="-1324899961">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\mongol_ha_gol" overrideParent="True" List.ItemID="-336837168" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="1985133745" List.ParentItemID="1985133745">
+			<instance_reference name="on_construction_squad" value="sbps\races\mongol_ha_gol\unit_siege_tower_3_mon_ha_gol" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="-266315491" List.ParentItemID="-266315491">
+			<list name="requirement_table" overrideParent="True">
+				<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="-1996331773">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="0" />
+					<list name="requirements" overrideParent="True">
+						<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="-202405745">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<bool name="is_present" value="True" />
+							<int name="max_completed" value="100" />
+							<int name="min_completed" value="1" />
+							<instance_reference name="upgrade_name" value="upgrade\races\common\research\upgrade_siege_engineers" />
+							<bool name="include_queued" value="False" />
+							<group name="include_pbg_parenting">
+								<bool name="include_child_pbgs" value="False" />
+								<bool name="include_parent_pbgs" value="False" />
+							</group>
+							<bool name="include_completed" value="True" />
+						</template_reference>
+					</list>
+				</template_reference>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="8432239" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units_buildable\unit_siege_tower_3" />
+</instance>

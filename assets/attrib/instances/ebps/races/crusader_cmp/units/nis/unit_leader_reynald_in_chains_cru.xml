@@ -1,0 +1,69 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-765163162" List.ParentItemID="-765163162">
+			<float name="entity_scale" value="80" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-1466211397" List.ParentItemID="-1466211397">
+			<list name="action_state_trees">
+				<group name="container" List.ItemID="433640417" List.ParentItemID="433640417">
+					<string name="state_tree" value="unit_action_apply\units\manatarms" overrideParent="True" />
+				</group>
+				<group name="container" List.ItemID="-85064766" List.ListAction="Append">
+					<string name="state_tree" value="nis_reynald_cru" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-782585427" List.ParentItemID="-782585427">
+			<list name="unit_type_list" removedIds="1443036264, 1341356169, 1934469303, 476364420">
+				<enum name="unit_type" value="reynald_in_chains" List.ItemID="-758707750" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1697644820" List.ParentItemID="1697644820">
+			<list name="hardpoints" removedIds="1781403471">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="-559269079" List.ParentItemID="-559269079">
+			<enum_table name="speed_scaling_table">
+				<float name="default_speed" value="0.6" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\animation_action_tree_ext" List.ItemID="-799841580" List.ParentItemID="-799841580">
+			<state_tree_node name="ActionTree_OpeningBranch" value="nis_infantry" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2139654" />
+	<instance_reference name="parent_pbg" value="ebps\races\crusader_cmp\units\unit_leader_reynald_cru" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-1466211397" List.ParentItemID="-1466211397">
+				<list name="action_state_trees">
+					<group name="container" List.ItemID="433640417" List.ParentItemID="433640417">
+						<string name="state_tree" value="xp3_unit_action_apply\units\manatarms" overrideParent="True" />
+					</group>
+					<group name="container" List.ItemID="-427978901" List.ListAction="Append">
+						<string name="state_tree" value="xp3_nis_reynald_cru" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-782585427" List.ParentItemID="-782585427">
+				<list name="unit_type_list" removedIds="1443036264, 1341356169, 1934469303, 476364420">
+					<enum name="unit_type" value="reynald_in_chains" List.ItemID="-469368563" List.ListAction="Append" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1697644820" List.ParentItemID="1697644820">
+				<list name="hardpoints" removedIds="1781403471">
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="-559269079" List.ParentItemID="-559269079">
+				<enum_table name="speed_scaling_table">
+					<float name="default_speed" value="0.6" overrideParent="True" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\animation_action_tree_ext" List.ItemID="-799841580" List.ParentItemID="-799841580">
+				<state_tree_node name="ActionTree_OpeningBranch" value="xp3_nis_infantry" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2139654" />
+		<instance_reference name="parent_pbg" value="ebps\races\crusader_cmp\units\unit_leader_reynald_cru" />
+	</variant>
+</instance>

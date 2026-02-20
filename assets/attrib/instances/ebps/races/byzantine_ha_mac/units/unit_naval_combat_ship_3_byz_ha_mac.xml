@@ -1,0 +1,98 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1571357040" List.ParentItemID="1571357040">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_naval_large_wargalley" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="1754625343" List.ParentItemID="1754625343">
+			<list name="action_state_trees">
+				<group name="container" List.ItemID="357894802" List.ParentItemID="357894802">
+					<string name="state_tree" value="unit_action_apply\units\naval_generic" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="320707304" List.ParentItemID="320707304">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="food" value="100" overrideParent="True" />
+					<float name="gold" value="60" overrideParent="True" />
+				</enum_table>
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-1117275471" List.ParentItemID="-1117275471">
+			<float name="hitpoints" value="500" overrideParent="True" />
+			<state_tree_node name="death_action_tree" value="on_death_byzantine_ha_mac\update_value_to_statemodel" overrideParent="True" />
+			<enum_table name="armor_scaler_by_damage_type">
+				<float name="Ranged" value="4" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-347826796" List.ParentItemID="-347826796">
+			<list name="unit_type_list" removedIds="-592805555, 266115444">
+				<enum name="unit_type" value="dromon" List.ItemID="1690600762" List.ListAction="Append" />
+				<enum name="unit_type" value="naval_galleass" List.ItemID="-474486546" List.ListAction="Append" />
+			</list>
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\byzantine_ha_mac" List.ItemID="765100360" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-2021965485" List.ParentItemID="-2021965485">
+			<list name="hardpoints" overrideParent="True">
+				<group name="hardpoint" List.ItemID="-1603494383" List.ParentItemID="1886312333">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="1469817368" List.ParentItemID="827192862">
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\byzantine\ranged\weapon_dromon_flame_thrower_byz" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="" />
+								<string name="marker_name_parent" value="" />
+							</template_reference>
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="1.5" />
+								<float name="z" value="0" />
+							</group>
+							<enum name="type" value="default" />
+							<template_reference name="weapon_entity_attachment" value="">
+							</template_reference>
+						</group>
+					</list>
+					<float name="parent_hardpoint" value="-1" />
+					<bool name="receives_attack_commands" value="True" />
+					<string name="base_marker" value="" />
+					<list name="preferred_inventory_item_categories">
+					</list>
+					<list name="firing_offset_markers">
+					</list>
+					<string name="offhand_marker" value="" />
+					<bool name="initialize_weapons_on_creation" value="True" />
+				</group>
+			</list>
+			<template_reference name="kill_action_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="on_kill_byz" overrideParent="True" />
+			</template_reference>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="6978733" List.ParentItemID="6978733">
+			<enum_table name="speed_scaling_table">
+				<float name="default_speed" value="6.5" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\speech_ext" List.ItemID="1178351405" List.ParentItemID="1178351405">
+			<string name="speaker_code" value="warShip" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-564826070" List.ParentItemID="-564826070">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="628638250" List.ParentItemID="628638250">
+					<group name="tier" List.ItemID="1812081355" List.ParentItemID="1812081355">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\byzantine\units\tier2_naval_war_galley_byz" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="9000977" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_combat_ship_2" />
+</instance>

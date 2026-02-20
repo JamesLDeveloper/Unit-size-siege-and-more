@@ -1,0 +1,26 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-2021965485" List.ParentItemID="-2021965485">
+			<list name="hardpoints">
+				<group name="hardpoint" comment="Left Primary" List.ItemID="-653934340" List.ParentItemID="-653934340">
+				</group>
+				<group name="hardpoint" comment="Right Primary" List.ItemID="1627678101" List.ParentItemID="1627678101">
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-340053392" List.ParentItemID="-340053392">
+			<instance_reference name="schema" value="statemodel_schema\units\civilizations\ottoman\springald_ship_ott" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-564826070" List.ParentItemID="-564826070">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="628638250" List.ParentItemID="628638250">
+					<group name="tier" List.ItemID="1812081355" List.ParentItemID="1812081355">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ottoman\units\tier3_naval_combat_ship_ott" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2034644" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_combat_ship_2" />
+</instance>
