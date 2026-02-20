@@ -1,0 +1,40 @@
+<instance version="4" description="" template="army">
+	<uniqueid name="pbgid" value="2128956" />
+	<instance_reference name="parent_pbg" value="army\standard_mode\normal_chinese" />
+	<group name="army_bag">
+		<list name="starting_buildings">
+			<group name="starting_building" List.ItemID="-2001661904" List.ParentItemID="-2001661904">
+				<instance_reference name="building" value="ebps\races\mongol\buildings\building_town_center_dummy_start" overrideParent="True" />
+			</group>
+		</list>
+		<enum_table name="resource_starting_amount">
+			<float name="food" value="300" overrideParent="True" />
+			<float name="wood" value="200" overrideParent="True" />
+			<float name="gold" value="150" overrideParent="True" />
+		</enum_table>
+		<instance_reference name="starting_town" value="map_gen\town\map_gen_town\empirewars\empirewars_town_chinese" overrideParent="True" />
+		<list name="starting_units" overrideParent="True">
+			<instance_reference name="squad" value="sbps\races\chinese\unit_scout_1_chi" List.ItemID="1940673996" />
+			<instance_reference name="squad" value="sbps\races\chinese\unit_scout_1_chi" List.ItemID="-249467865" />
+		</list>
+		<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
+			<list name="spawn_positions" overrideParent="True">
+				<group name="position_offset" List.ItemID="572280499">
+					<float name="x" value="-15" overrideParent="True" />
+					<float name="y" value="-12" overrideParent="True" />
+				</group>
+				<group name="position_offset" List.ItemID="-514614424">
+					<float name="x" value="-10" overrideParent="True" />
+					<float name="y" value="-10" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<group name="race_population_cap_table">
+			<float name="base_personnel_cap" value="60" overrideParent="True" />
+			<float name="max_personnel_cap" value="400" overrideParent="True" />
+		</group>
+		<enum_table name="resource_max_cap">
+			<float name="popcap" value="400" overrideParent="True" />
+		</enum_table>
+	</group>
+</instance>

@@ -1,0 +1,50 @@
+<instance version="4" description="" template="army">
+	<uniqueid name="pbgid" value="2128959" />
+	<instance_reference name="parent_pbg" value="army\standard_mode\normal_malian" />
+	<group name="army_bag">
+		<list name="starting_buildings">
+			<group name="starting_building" List.ItemID="598265657" List.ParentItemID="598265657">
+				<instance_reference name="building" value="ebps\races\mongol\buildings\building_town_center_dummy_start" overrideParent="True" />
+			</group>
+		</list>
+		<enum_table name="resource_starting_amount">
+			<float name="food" value="300" overrideParent="True" />
+			<float name="wood" value="200" overrideParent="True" />
+			<float name="gold" value="150" overrideParent="True" />
+		</enum_table>
+		<instance_reference name="starting_town" value="map_gen\town\map_gen_town\empirewars\empirewars_town_malian" overrideParent="True" />
+		<list name="starting_units" overrideParent="True">
+			<instance_reference name="squad" value="sbps\races\malian\unit_scout_1_mal" List.ItemID="962811264" />
+			<instance_reference name="squad" value="sbps\races\malian\unit_scout_1_mal" List.ItemID="1080135262" />
+			<instance_reference name="squad" value="sbps\races\malian\animals\herdable_cattle_mal" List.ItemID="286826939" />
+			<instance_reference name="squad" value="sbps\races\malian\animals\herdable_cattle_mal" List.ItemID="-1542150351" />
+		</list>
+		<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
+			<list name="spawn_positions" overrideParent="True">
+				<group name="position_offset" overrideParent="True" List.ItemID="1441968590">
+					<float name="x" value="-10" />
+					<float name="y" value="-10" />
+				</group>
+				<group name="position_offset" List.ItemID="-1178511695">
+					<float name="x" value="-15" overrideParent="True" />
+					<float name="y" value="-12" overrideParent="True" />
+				</group>
+				<group name="position_offset" List.ItemID="679247307">
+					<float name="x" value="-6" overrideParent="True" />
+					<float name="y" value="-6" overrideParent="True" />
+				</group>
+				<group name="position_offset" List.ItemID="-1029619357">
+					<float name="x" value="-8" overrideParent="True" />
+					<float name="y" value="-8" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<group name="race_population_cap_table">
+			<float name="base_personnel_cap" value="60" overrideParent="True" />
+			<float name="max_personnel_cap" value="400" overrideParent="True" />
+		</group>
+		<enum_table name="resource_max_cap">
+			<float name="popcap" value="400" overrideParent="True" />
+		</enum_table>
+	</group>
+</instance>

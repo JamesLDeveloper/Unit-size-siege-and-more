@@ -1,0 +1,41 @@
+<instance version="4" description="" template="army">
+	<group name="army_bag">
+		<list name="starting_buildings">
+			<group name="starting_building" List.ItemID="-754466071" List.ParentItemID="-754466071">
+				<instance_reference name="building" value="ebps\races\mongol\buildings\building_town_center_dummy_start" overrideParent="True" />
+			</group>
+		</list>
+		<enum_table name="resource_starting_amount">
+			<float name="food" value="300" overrideParent="True" />
+			<float name="wood" value="200" overrideParent="True" />
+			<float name="stone" value="0" overrideParent="True" />
+			<float name="gold" value="150" overrideParent="True" />
+		</enum_table>
+		<list name="starting_units" overrideParent="True">
+			<instance_reference name="squad" value="sbps\races\japanese\unit_scout_1_jpn" List.ItemID="-158537869" />
+			<instance_reference name="squad" value="sbps\races\japanese\unit_scout_1_jpn" List.ItemID="-2141874630" />
+		</list>
+		<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
+			<list name="spawn_positions" overrideParent="True">
+				<group name="position_offset" overrideParent="True" List.ItemID="55294570">
+					<float name="x" value="-10" overrideParent="True" />
+					<float name="y" value="-10" />
+				</group>
+				<group name="position_offset" overrideParent="True" List.ItemID="-1462465043">
+					<float name="x" value="-15" overrideParent="True" />
+					<float name="y" value="-12" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<instance_reference name="starting_town" value="map_gen\town\map_gen_town\empirewars\empirewars_town_japanese" overrideParent="True" />
+		<group name="race_population_cap_table">
+			<float name="base_personnel_cap" value="60" overrideParent="True" />
+			<float name="max_personnel_cap" value="400" overrideParent="True" />
+		</group>
+		<enum_table name="resource_max_cap">
+			<float name="popcap" value="400" overrideParent="True" />
+		</enum_table>
+	</group>
+	<uniqueid name="pbgid" value="2134083" />
+	<instance_reference name="parent_pbg" value="army\standard_mode\normal_japanese" />
+</instance>

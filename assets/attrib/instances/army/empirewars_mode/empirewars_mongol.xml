@@ -1,0 +1,35 @@
+<instance version="4" description="" template="army">
+	<uniqueid name="pbgid" value="2128960" />
+	<instance_reference name="parent_pbg" value="army\standard_mode\normal_mongol" />
+	<group name="army_bag">
+		<enum_table name="resource_starting_amount">
+			<float name="food" value="300" overrideParent="True" />
+			<float name="wood" value="200" overrideParent="True" />
+			<float name="gold" value="150" overrideParent="True" />
+		</enum_table>
+		<instance_reference name="starting_town" value="map_gen\town\map_gen_town\empirewars\empirewars_town_mongol" overrideParent="True" />
+		<list name="starting_units" overrideParent="True">
+			<instance_reference name="squad" value="sbps\races\mongol\unit_khan_1_mon" overrideParent="True" List.ItemID="-596508699" />
+			<instance_reference name="squad" value="sbps\races\mongol\unit_scout_1_mon" List.ItemID="-1307872728" />
+		</list>
+		<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
+			<list name="spawn_positions" overrideParent="True">
+				<group name="position_offset" overrideParent="True" List.ItemID="227526200">
+					<float name="x" value="-10" />
+					<float name="y" value="-10" />
+				</group>
+				<group name="position_offset" overrideParent="True" List.ItemID="1629410230">
+					<float name="x" value="-15" overrideParent="True" />
+					<float name="y" value="-12" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<group name="race_population_cap_table">
+			<float name="base_personnel_cap" value="400" overrideParent="True" />
+			<float name="max_personnel_cap" value="400" overrideParent="True" />
+		</group>
+		<enum_table name="resource_max_cap">
+			<float name="popcap" value="400" overrideParent="True" />
+		</enum_table>
+	</group>
+</instance>

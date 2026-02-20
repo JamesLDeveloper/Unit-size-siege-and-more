@@ -1,0 +1,50 @@
+<instance version="4" description="" template="army">
+	<group name="army_bag">
+		<list name="starting_buildings">
+			<group name="starting_building" List.ItemID="-671048611" List.ParentItemID="-671048611">
+				<instance_reference name="building" value="ebps\races\mongol\buildings\building_town_center_dummy_start" overrideParent="True" />
+			</group>
+		</list>
+		<state_tree_node name="start_actions_statetree" value="civ_start\Rus" overrideParent="True" />
+		<group name="ui">
+			<file name="background_image" value="civ_flags\flag_rus" overrideParent="True" />
+			<int name="difficulty" value="2" overrideParent="True" />
+			<enum name="research_upgrade" value="rus_upgrade" overrideParent="True" />
+		</group>
+		<list name="starting_units" overrideParent="True">
+			<instance_reference name="squad" value="sbps\races\rus\unit_scout_1_rus" overrideParent="True" List.ItemID="-64785266" />
+			<instance_reference name="squad" value="sbps\races\rus\unit_scout_1_rus" List.ItemID="-835054715" />
+			<instance_reference name="squad" value="sbps\races\rus\unit_scout_1_rus" List.ItemID="-1991623976" />
+		</list>
+		<enum_table name="resource_starting_amount">
+			<float name="food" value="300" overrideParent="True" />
+			<float name="gold" value="150" overrideParent="True" />
+		</enum_table>
+		<instance_reference name="starting_town" value="map_gen\town\map_gen_town\empirewars\empirewars_town_rus" overrideParent="True" />
+		<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
+			<list name="spawn_positions" overrideParent="True">
+				<group name="position_offset" overrideParent="True" List.ItemID="2139131582">
+					<float name="x" value="-10" />
+					<float name="y" value="-10" />
+				</group>
+				<group name="position_offset" overrideParent="True" List.ItemID="734076844">
+					<float name="x" value="-15" overrideParent="True" />
+					<float name="y" value="-12" overrideParent="True" />
+				</group>
+				<group name="position_offset" overrideParent="True" List.ItemID="944930854">
+					<float name="x" value="-20" overrideParent="True" />
+					<float name="y" value="-10" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<group name="race_population_cap_table">
+			<float name="base_personnel_cap" value="60" overrideParent="True" />
+			<float name="max_personnel_cap" value="400" overrideParent="True" />
+		</group>
+		<enum_table name="resource_max_cap">
+			<float name="popcap" value="400" overrideParent="True" />
+		</enum_table>
+	</group>
+	<uniqueid name="pbgid" value="2128962" />
+	<instance_reference name="parent_pbg" value="army\standard_mode\normal_rus" />
+</instance>

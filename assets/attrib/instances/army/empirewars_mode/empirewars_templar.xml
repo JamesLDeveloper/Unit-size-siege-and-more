@@ -1,0 +1,60 @@
+<instance version="4" description="" template="army">
+	<uniqueid name="pbgid" value="9002417" />
+	<instance_reference name="parent_pbg" value="army\standard_mode\normal_templar" />
+	<group name="army_bag">
+		<list name="starting_buildings">
+			<group name="starting_building" List.ItemID="789991081" List.ParentItemID="789991081">
+				<instance_reference name="building" value="ebps\races\mongol\buildings\building_town_center_dummy_start" overrideParent="True" />
+			</group>
+		</list>
+		<enum_table name="resource_starting_amount">
+			<float name="food" value="300" overrideParent="True" />
+			<float name="wood" value="200" overrideParent="True" />
+			<float name="gold" value="150" overrideParent="True" />
+		</enum_table>
+		<instance_reference name="starting_town" value="map_gen\town\map_gen_town\empirewars\empirewars_town_templar" overrideParent="True" />
+		<list name="starting_units" overrideParent="True">
+			<instance_reference name="squad" value="sbps\races\templar\unit_scout_1_tem" overrideParent="True" List.ItemID="-179694012" />
+			<instance_reference name="squad" value="sbps\races\templar\unit_scout_1_tem" overrideParent="True" List.ItemID="377279696" />
+		</list>
+		<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
+			<list name="spawn_positions" overrideParent="True">
+				<group name="position_offset" overrideParent="True" List.ItemID="-1253121148">
+					<float name="x" value="-10" />
+					<float name="y" value="-10" />
+				</group>
+				<group name="position_offset" overrideParent="True" List.ItemID="-1290043580">
+					<float name="x" value="-15" overrideParent="True" />
+					<float name="y" value="-12" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<group name="ai_production_info">
+			<list name="unlocking_upgrade_list">
+				<group name="unlocking_upgrade_info" List.ItemID="-1078302907" List.ParentItemID="-1078302907">
+					<list name="upgraded_squads" removedIds="-704176820">
+						<instance_reference name="upgraded_squad" value="sbps\races\templar\unit_villager_1_tem" List.ItemID="1727155903" List.ListAction="Append" />
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info" List.ItemID="182698218" List.ParentItemID="182698218">
+					<list name="upgraded_squads" removedIds="-700314358">
+						<instance_reference name="upgraded_squad" value="sbps\races\templar\unit_villager_1_tem" overrideParent="True" List.ItemID="-1592442515" List.ListAction="Append" />
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info" List.ItemID="2126254011" List.ParentItemID="2126254011">
+					<list name="upgraded_squads" removedIds="1903571632">
+						<instance_reference name="upgraded_squad" value="sbps\races\templar\unit_villager_1_tem" overrideParent="True" List.ItemID="-1588187043" List.ListAction="Append" />
+					</list>
+				</group>
+			</list>
+		</group>
+		<state_tree_node name="start_actions_statetree" value="civ_start\Templar" overrideParent="True" />
+		<group name="race_population_cap_table">
+			<float name="base_personnel_cap" value="60" overrideParent="True" />
+			<float name="max_personnel_cap" value="400" overrideParent="True" />
+		</group>
+		<enum_table name="resource_max_cap">
+			<float name="popcap" value="400" overrideParent="True" />
+		</enum_table>
+	</group>
+</instance>

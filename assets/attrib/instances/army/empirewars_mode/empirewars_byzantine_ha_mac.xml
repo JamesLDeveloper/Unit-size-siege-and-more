@@ -1,0 +1,42 @@
+<instance version="4" description="" template="army">
+	<group name="army_bag">
+		<list name="starting_buildings">
+			<group name="starting_building" List.ItemID="584293871" List.ParentItemID="584293871">
+				<instance_reference name="building" value="ebps\races\mongol\buildings\building_town_center_dummy_start" overrideParent="True" />
+			</group>
+		</list>
+		<enum_table name="resource_starting_amount">
+			<float name="food" value="300" overrideParent="True" />
+			<float name="wood" value="200" overrideParent="True" />
+			<float name="stone" value="0" overrideParent="True" />
+			<float name="gold" value="150" overrideParent="True" />
+			<float name="merc_byz" value="150" overrideParent="True" />
+		</enum_table>
+		<list name="starting_units" overrideParent="True">
+			<instance_reference name="squad" value="sbps\races\byzantine_ha_mac\unit_scout_1_byz_ha_mac" overrideParent="True" List.ItemID="-1894754123" />
+			<instance_reference name="squad" value="sbps\races\byzantine_ha_mac\unit_scout_1_byz_ha_mac" overrideParent="True" List.ItemID="-143008971" />
+		</list>
+		<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
+			<list name="spawn_positions" overrideParent="True">
+				<group name="position_offset" List.ItemID="-462693843">
+					<float name="x" value="-10" overrideParent="True" />
+					<float name="y" value="-10" overrideParent="True" />
+				</group>
+				<group name="position_offset" List.ItemID="-1008646843">
+					<float name="x" value="-15" overrideParent="True" />
+					<float name="y" value="-12" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<instance_reference name="starting_town" value="map_gen\town\map_gen_town\empirewars\empirewars_town_byzantine_ha_mac" overrideParent="True" />
+		<group name="race_population_cap_table">
+			<float name="base_personnel_cap" value="60" overrideParent="True" />
+			<float name="max_personnel_cap" value="400" overrideParent="True" />
+		</group>
+		<enum_table name="resource_max_cap">
+			<float name="popcap" value="400" overrideParent="True" />
+		</enum_table>
+	</group>
+	<uniqueid name="pbgid" value="9001053" />
+	<instance_reference name="parent_pbg" value="army\standard_mode\normal_byzantine_ha_mac" />
+</instance>

@@ -1,0 +1,41 @@
+<instance version="4" description="" template="army">
+	<uniqueid name="pbgid" value="9000886" />
+	<instance_reference name="parent_pbg" value="army\standard_mode\normal_mongol_ha_gol" />
+	<group name="army_bag">
+		<enum_table name="resource_starting_amount">
+			<float name="food" value="300" overrideParent="True" />
+			<float name="wood" value="200" overrideParent="True" />
+			<float name="gold" value="150" overrideParent="True" />
+		</enum_table>
+		<instance_reference name="starting_town" value="map_gen\town\map_gen_town\empirewars\empirewars_town_mongol_ha_gol" overrideParent="True" />
+		<list name="starting_units" overrideParent="True">
+			<instance_reference name="squad" value="sbps\races\mongol_ha_gol\unit_scout_1_mon_ha_gol" overrideParent="True" List.ItemID="2008896136" />
+			<instance_reference name="squad" value="sbps\races\mongol_ha_gol\unit_scout_1_mon_ha_gol" overrideParent="True" List.ItemID="-1477818207" />
+		</list>
+		<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
+			<list name="spawn_positions" overrideParent="True">
+				<group name="position_offset" overrideParent="True" List.ItemID="-666588727">
+					<float name="x" value="-10" />
+					<float name="y" value="-10" />
+				</group>
+				<group name="position_offset" overrideParent="True" List.ItemID="-116451187">
+					<float name="x" value="-15" overrideParent="True" />
+					<float name="y" value="-12" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<list name="starting_buildings">
+			<group name="starting_building" List.ItemID="-1558390837" List.ParentItemID="-1558390837">
+				<instance_reference name="building" value="ebps\races\mongol\buildings\building_town_center_dummy_start" comment="This is a dummy &quot;building&quot; (entity) since leaving this null causes issues. It has no visuals." overrideParent="True" />
+			</group>
+		</list>
+		<state_tree_node name="start_actions_statetree" value="civ_start\Mongols" overrideParent="True" />
+		<group name="race_population_cap_table">
+			<float name="base_personnel_cap" value="400" overrideParent="True" />
+			<float name="max_personnel_cap" value="400" overrideParent="True" />
+		</group>
+		<enum_table name="resource_max_cap">
+			<float name="popcap" value="400" overrideParent="True" />
+		</enum_table>
+	</group>
+</instance>
