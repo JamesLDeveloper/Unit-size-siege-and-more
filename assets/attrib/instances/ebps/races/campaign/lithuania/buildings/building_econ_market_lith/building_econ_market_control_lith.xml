@@ -1,0 +1,80 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="95489877" List.ParentItemID="95489877">
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\campaign\lithuania" overrideParent="True" List.ItemID="-670076672" List.ParentItemID="-670076672" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="2041455427" List.ParentItemID="2041455427">
+			<list name="abilities" overrideParent="True">
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="1196537949" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_sell_food" List.ItemID="-535545838" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_sell_wood" List.ItemID="-88914730" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_sell_stone" List.ItemID="-873994373" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_buy_food" List.ItemID="135898529" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_buy_wood" List.ItemID="2076525599" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_buy_stone" List.ItemID="-1354936516" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="827068779" List.ParentItemID="827068779">
+			<state_tree_node name="production_item_completed_openingbranch" value="building_production_item_completed\Master\building_production_item_complete\building_production_item_complete_market" overrideParent="True" />
+			<instance_reference name="rally_pass_type" value="pass_types\vehicle" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="1209137471" List.ParentItemID="1209137471">
+			<list name="district_bonuses">
+				<template_reference name="district_bonus" value="district_bonus" List.ItemID="-1159204288" List.ParentItemID="-1159204288">
+					<uniqueid name="id" value="1073741847" />
+				</template_reference>
+				<template_reference name="district_bonus" value="district_bonus" List.ItemID="2001875212" List.ParentItemID="2001875212">
+					<uniqueid name="id" value="1073741848" />
+				</template_reference>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="183071" />
+	<instance_reference name="parent_pbg" value="ebps\races\hre\buildings\building_econ_market_hre\building_econ_market_control_hre" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-782232281" List.ParentItemID="-782232281">
+				<list name="race_type_list">
+					<instance_reference name="race_type" value="racebps\campaign\lithuania" overrideParent="True" List.ItemID="277337220" List.ParentItemID="277337220" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-594139099" List.ParentItemID="-594139099">
+				<list name="abilities" overrideParent="True">
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="789899369" />
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_sell_food" List.ItemID="-128419928" />
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_sell_wood" List.ItemID="-1176647330" />
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_sell_stone" List.ItemID="620269634" />
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_buy_food" List.ItemID="1219506800" />
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_buy_wood" List.ItemID="239453738" />
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_buy_stone" List.ItemID="2117704218" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="1232546365" List.ParentItemID="1232546365">
+				<instance_reference name="rally_pass_type" value="pass_types\vehicle" overrideParent="True" />
+				<list name="spawn_items">
+					<group name="spawn_item" List.ItemID="-1812725728" List.ParentItemID="-1812725728">
+						<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+							<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info" overrideParent="True">
+								<enum name="quick_commands_hotkey" value="x_quick_command_y" />
+								<int name="quick_commands_priority" value="5" />
+								<int name="quick_commands_slot_index" value="3" />
+								<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+							</template_reference>
+						</template_reference>
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="1865594759" List.ParentItemID="1865594759">
+				<list name="district_bonuses">
+					<template_reference name="district_bonus" value="district_bonus" List.ItemID="-264408795" List.ParentItemID="-264408795">
+						<uniqueid name="id" value="1073741849" />
+					</template_reference>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="183071" />
+		<instance_reference name="parent_pbg" value="ebps\races\hre\buildings\building_econ_market_hre\building_econ_market_control_hre" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+	</variant>
+</instance>

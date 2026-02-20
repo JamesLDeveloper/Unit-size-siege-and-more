@@ -1,0 +1,41 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1449050468" List.ParentItemID="1449050468">
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\campaign\novgorod" overrideParent="True" List.ItemID="-578306254" List.ParentItemID="-578306254" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="27741658" List.ParentItemID="27741658">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="stone" value="25" overrideParent="True" />
+				</enum_table>
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="302288400" List.ParentItemID="302288400">
+			<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary_fence_replacer">
+				<instance_reference name="blueprint_to_replace" value="ebps\races\campaign\novgorod\buildings\building_defense_wall_nov\building_defense_wall_nov" overrideParent="True" />
+			</template_reference>
+			<enum name="destructible_type" value="normal" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="188096" />
+	<instance_reference name="parent_pbg" value="ebps\races\rus\buildings\building_defense_wall_rus\building_defense_wall_gate_rus" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1790520439" List.ParentItemID="-1790520439">
+				<list name="race_type_list">
+					<instance_reference name="race_type" value="racebps\campaign\novgorod" overrideParent="True" List.ItemID="-170180061" List.ParentItemID="-170180061" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="-1699419502" List.ParentItemID="-1699419502">
+				<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary_fence_replacer">
+					<instance_reference name="blueprint_to_replace" value="ebps\races\campaign\novgorod\buildings\building_defense_wall_nov\building_defense_wall_nov" overrideParent="True" />
+				</template_reference>
+				<enum name="destructible_type" value="normal" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="188096" />
+		<instance_reference name="parent_pbg" value="ebps\races\rus\buildings\building_defense_wall_rus\building_defense_wall_gate_rus" />
+	</variant>
+</instance>

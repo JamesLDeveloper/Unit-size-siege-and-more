@@ -1,0 +1,44 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1100494298" List.ParentItemID="1100494298">
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\campaign\novgorod" overrideParent="True" List.ItemID="-1295726488" List.ParentItemID="-1295726488" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="1720698349" List.ParentItemID="1720698349">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="wood" value="12" overrideParent="True" />
+				</enum_table>
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="151295069" List.ParentItemID="151295069">
+			<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary_fence_replacer">
+				<instance_reference name="blueprint_to_replace" value="ebps\races\campaign\novgorod\buildings\building_defense_wall_nov\building_defense_palisade_nov" overrideParent="True" />
+			</template_reference>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="188091" />
+	<instance_reference name="parent_pbg" value="ebps\races\rus\buildings\building_defense_wall_rus\building_defense_palisade_gate_rus" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="2006275906" List.ParentItemID="2006275906">
+				<list name="race_type_list">
+					<instance_reference name="race_type" value="racebps\campaign\novgorod" overrideParent="True" List.ItemID="-719234096" List.ParentItemID="-719234096" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="180281573" List.ParentItemID="180281573">
+				<template_reference name="construction_health_option" value="options\ebpextensions\constructionext\construction_health_option">
+					<float name="initial_health" value="300" overrideParent="True" />
+				</template_reference>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="-1296191894" List.ParentItemID="-1296191894">
+				<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary_fence_replacer">
+					<instance_reference name="blueprint_to_replace" value="ebps\races\campaign\novgorod\buildings\building_defense_wall_nov\building_defense_palisade_nov" overrideParent="True" />
+				</template_reference>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="188091" />
+		<instance_reference name="parent_pbg" value="ebps\races\rus\buildings\building_defense_wall_rus\building_defense_palisade_gate_rus" />
+	</variant>
+</instance>

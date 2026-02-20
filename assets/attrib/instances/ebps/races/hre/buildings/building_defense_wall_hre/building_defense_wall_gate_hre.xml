@@ -1,0 +1,291 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1458620782" List.ParentItemID="1458620782">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\hre\buildings\building_defense_wall_hre\building_defense_wall_stone_gate_hre" overrideParent="True" />
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="1525051852" List.ParentItemID="1525051852">
+			<bool name="can_repair" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1449050468" List.ParentItemID="1449050468">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\hre" List.ItemID="-540334359" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="27741658" List.ParentItemID="27741658">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="stone" value="25" overrideParent="True" />
+				</enum_table>
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\burn_ext" List.ItemID="707587179" List.ParentItemID="707587179">
+			<float name="on_fire_threshold" value="59" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="302288400" List.ParentItemID="302288400">
+			<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary_fence_replacer">
+				<instance_reference name="blueprint_to_replace" value="ebps\races\hre\buildings\building_defense_wall_hre\building_defense_wall_hre" overrideParent="True" />
+			</template_reference>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-1807233198" List.ParentItemID="-1807233198">
+			<list name="abilities" overrideParent="True">
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="1150851164" />
+				<instance_reference name="ability" value="abilities\toggle_abilities\civ_core\core_gate_auto_toggle" List.ItemID="1794264546" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\road_ext" List.ItemID="-775534386" List.ListAction="Append">
+			<list name="roads">
+				<template_reference name="road" value="roads\road_properties" List.ItemID="-1926225459">
+					<instance_reference name="required_upgrade" value="upgrade\dev\ages\dark_age" />
+					<list name="curb_splines">
+					</list>
+					<list name="road_splines">
+						<template_reference name="road_spline" value="options\placement\spline\placement_spline_strip_option" List.ItemID="1670440382">
+							<int name="draw_sort_order" value="100000" />
+							<float name="end_fade" value="0.4" />
+							<float name="width" value="3.5" />
+							<int name="texture_tiling" value="512" />
+							<file name="texture_filename" value="civilizations\dirt\road_4m_dirt_trail_a" />
+						</template_reference>
+					</list>
+				</template_reference>
+				<template_reference name="road" value="roads\road_properties" List.ItemID="2044144483">
+					<instance_reference name="required_upgrade" value="upgrade\dev\ages\feudal_age" />
+					<list name="curb_splines">
+					</list>
+					<list name="road_splines">
+						<template_reference name="road_spline" value="options\placement\spline\placement_spline_strip_option" List.ItemID="1119877123">
+							<int name="draw_sort_order" value="100000" />
+							<float name="end_fade" value="0.4" />
+							<float name="width" value="3" />
+							<int name="texture_tiling" value="1" />
+							<file name="texture_filename" value="civilizations\roads\roads_eng_common_a_age_02_3m" />
+						</template_reference>
+					</list>
+				</template_reference>
+				<template_reference name="road" value="roads\road_properties" List.ItemID="303115939">
+					<instance_reference name="required_upgrade" value="upgrade\dev\ages\castle_age" />
+					<list name="curb_splines">
+					</list>
+					<list name="road_splines">
+						<template_reference name="road_spline" value="options\placement\spline\placement_spline_strip_option" List.ItemID="-1861011322">
+							<int name="draw_sort_order" value="100000" />
+							<float name="end_fade" value="0.2" />
+							<float name="width" value="3" />
+							<int name="texture_tiling" value="1" />
+							<file name="texture_filename" value="civilizations\roads\roads_eng_common_a_age_03_3m" />
+						</template_reference>
+					</list>
+				</template_reference>
+				<template_reference name="road" value="roads\road_properties" List.ItemID="-1869882386">
+					<instance_reference name="required_upgrade" value="upgrade\dev\ages\imperial_age" />
+					<list name="curb_splines">
+					</list>
+					<list name="road_splines">
+						<template_reference name="road_spline" value="options\placement\spline\placement_spline_strip_option" List.ItemID="1186129189">
+							<int name="draw_sort_order" value="100000" />
+							<float name="end_fade" value="0.2" />
+							<float name="width" value="3" />
+							<int name="texture_tiling" value="1" />
+							<file name="texture_filename" value="civilizations\roads\roads_eng_fishscale_a_age_04_3m" />
+						</template_reference>
+					</list>
+				</template_reference>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="134930" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_wall_gate" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-744130588" List.ParentItemID="-744130588">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\hre\buildings\building_defense_wall_hre\building_defense_wall_stone_gate_hre" overrideParent="True" />
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="1053681047" List.ParentItemID="1053681047">
+				<bool name="can_repair" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1790520439" List.ParentItemID="-1790520439">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\hre" List.ItemID="-769911502" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\burn_ext" List.ItemID="-1348644046" List.ParentItemID="-1348644046">
+				<float name="on_fire_threshold" value="59" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="-1699419502" List.ParentItemID="-1699419502">
+				<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary_fence_replacer">
+					<instance_reference name="blueprint_to_replace" value="ebps\races\hre\buildings\building_defense_wall_hre\building_defense_wall_hre" overrideParent="True" />
+				</template_reference>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="119144819" List.ParentItemID="119144819">
+				<list name="abilities" overrideParent="True">
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="1759478921" />
+					<instance_reference name="ability" value="abilities\toggle_abilities\civ_core\core_gate_auto_toggle" List.ItemID="1060476428" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\road_ext" List.ItemID="-4389693" List.ListAction="Append">
+				<list name="roads">
+					<template_reference name="road" value="roads\road_properties" List.ItemID="1615921795">
+						<instance_reference name="required_upgrade" value="upgrade\dev\ages\dark_age" />
+						<list name="curb_splines">
+						</list>
+						<list name="road_splines">
+							<template_reference name="road_spline" value="options\placement\spline\placement_spline_strip_option" List.ItemID="-824305714">
+								<int name="draw_sort_order" value="100000" />
+								<float name="end_fade" value="0.4" />
+								<float name="width" value="3.5" />
+								<int name="texture_tiling" value="512" />
+								<file name="texture_filename" value="civilizations\dirt\road_4m_dirt_trail_a" />
+							</template_reference>
+						</list>
+					</template_reference>
+					<template_reference name="road" value="roads\road_properties" List.ItemID="-6636232">
+						<instance_reference name="required_upgrade" value="upgrade\dev\ages\feudal_age" />
+						<list name="curb_splines">
+						</list>
+						<list name="road_splines">
+							<template_reference name="road_spline" value="options\placement\spline\placement_spline_strip_option" List.ItemID="2066914810">
+								<int name="draw_sort_order" value="100000" />
+								<float name="end_fade" value="0.4" />
+								<float name="width" value="3" />
+								<int name="texture_tiling" value="1" />
+								<file name="texture_filename" value="civilizations\roads\roads_eng_common_a_age_02_3m" />
+							</template_reference>
+						</list>
+					</template_reference>
+					<template_reference name="road" value="roads\road_properties" List.ItemID="1384169259">
+						<instance_reference name="required_upgrade" value="upgrade\dev\ages\castle_age" />
+						<list name="curb_splines">
+						</list>
+						<list name="road_splines">
+							<template_reference name="road_spline" value="options\placement\spline\placement_spline_strip_option" List.ItemID="1115569850">
+								<int name="draw_sort_order" value="100000" />
+								<float name="end_fade" value="0.2" />
+								<float name="width" value="3" />
+								<int name="texture_tiling" value="1" />
+								<file name="texture_filename" value="civilizations\roads\roads_eng_common_a_age_03_3m" />
+							</template_reference>
+						</list>
+					</template_reference>
+					<template_reference name="road" value="roads\road_properties" List.ItemID="-1535889890">
+						<instance_reference name="required_upgrade" value="upgrade\dev\ages\imperial_age" />
+						<list name="curb_splines">
+						</list>
+						<list name="road_splines">
+							<template_reference name="road_spline" value="options\placement\spline\placement_spline_strip_option" List.ItemID="-1472420789">
+								<int name="draw_sort_order" value="100000" />
+								<float name="end_fade" value="0.2" />
+								<float name="width" value="3" />
+								<int name="texture_tiling" value="1" />
+								<file name="texture_filename" value="civilizations\roads\roads_eng_fishscale_a_age_04_3m" />
+							</template_reference>
+						</list>
+					</template_reference>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="134930" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_wall_gate" />
+	</variant>
+	<variant name="hre_brawl">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1458620782" List.ParentItemID="1458620782">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\hre\buildings\building_defense_wall_hre\building_defense_wall_stone_gate_hre" overrideParent="True" />
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="1525051852" List.ParentItemID="1525051852">
+				<bool name="can_repair" value="True" overrideParent="True" />
+				<bool name="is_invincible" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1449050468" List.ParentItemID="1449050468">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\hre" List.ItemID="-172466906" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="1872466745" List.ParentItemID="1872466745">
+				<enum name="selection_type" value="no_select" overrideParent="True" />
+				<float name="minimap_icon_scale" value="0.3" overrideParent="True" />
+				<float name="minimap_icon_zoom_scale" value="1" overrideParent="True" />
+				<colour name="minimap_color" value="4288256409" overrideParent="True" />
+				<bool name="minimap_teamcolor" value="False" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\burn_ext" List.ItemID="707587179" List.ParentItemID="707587179">
+				<float name="on_fire_threshold" value="59" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="302288400" List.ParentItemID="302288400">
+				<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary_fence_replacer">
+					<instance_reference name="blueprint_to_replace" value="ebps\races\hre\buildings\building_defense_wall_hre\building_defense_wall_hre" overrideParent="True" />
+				</template_reference>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-1807233198" List.ParentItemID="-1807233198">
+				<list name="abilities" overrideParent="True">
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="-1873012812" />
+					<instance_reference name="ability" value="abilities\toggle_abilities\civ_core\core_gate_auto_toggle" List.ItemID="-160673241" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\road_ext" List.ItemID="-954565484" List.ListAction="Append">
+				<list name="roads">
+					<template_reference name="road" value="roads\road_properties" List.ItemID="1417207833">
+						<instance_reference name="required_upgrade" value="upgrade\dev\ages\dark_age" />
+						<list name="curb_splines">
+						</list>
+						<list name="road_splines">
+							<template_reference name="road_spline" value="options\placement\spline\placement_spline_strip_option" List.ItemID="1445228623">
+								<int name="draw_sort_order" value="100000" />
+								<float name="end_fade" value="0.4" />
+								<float name="width" value="3.5" />
+								<int name="texture_tiling" value="512" />
+								<file name="texture_filename" value="civilizations\dirt\road_4m_dirt_trail_a" />
+							</template_reference>
+						</list>
+					</template_reference>
+					<template_reference name="road" value="roads\road_properties" List.ItemID="-1011601563">
+						<instance_reference name="required_upgrade" value="upgrade\dev\ages\feudal_age" />
+						<list name="curb_splines">
+						</list>
+						<list name="road_splines">
+							<template_reference name="road_spline" value="options\placement\spline\placement_spline_strip_option" List.ItemID="1066483741">
+								<int name="draw_sort_order" value="100000" />
+								<float name="end_fade" value="0.4" />
+								<float name="width" value="3" />
+								<int name="texture_tiling" value="1" />
+								<file name="texture_filename" value="civilizations\roads\roads_eng_common_a_age_02_3m" />
+							</template_reference>
+						</list>
+					</template_reference>
+					<template_reference name="road" value="roads\road_properties" List.ItemID="1042065480">
+						<instance_reference name="required_upgrade" value="upgrade\dev\ages\castle_age" />
+						<list name="curb_splines">
+						</list>
+						<list name="road_splines">
+							<template_reference name="road_spline" value="options\placement\spline\placement_spline_strip_option" List.ItemID="935377317">
+								<int name="draw_sort_order" value="100000" />
+								<float name="end_fade" value="0.2" />
+								<float name="width" value="3" />
+								<int name="texture_tiling" value="1" />
+								<file name="texture_filename" value="civilizations\roads\roads_eng_common_a_age_03_3m" />
+							</template_reference>
+						</list>
+					</template_reference>
+					<template_reference name="road" value="roads\road_properties" List.ItemID="-727788045">
+						<instance_reference name="required_upgrade" value="upgrade\dev\ages\imperial_age" />
+						<list name="curb_splines">
+						</list>
+						<list name="road_splines">
+							<template_reference name="road_spline" value="options\placement\spline\placement_spline_strip_option" List.ItemID="2080696077">
+								<int name="draw_sort_order" value="100000" />
+								<float name="end_fade" value="0.2" />
+								<float name="width" value="3" />
+								<int name="texture_tiling" value="1" />
+								<file name="texture_filename" value="civilizations\roads\roads_eng_fishscale_a_age_04_3m" />
+							</template_reference>
+						</list>
+					</template_reference>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="134930" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_wall_gate" />
+	</variant>
+</instance>

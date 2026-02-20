@@ -1,0 +1,65 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1458620782" List.ParentItemID="1458620782">
+			<file name="alternate_sua" value="art\civilizations\chinese\structures\wonder_greatwall\wonder_greatwall" overrideParent="True" />
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\chinese\buildings\building_wonder_age4_great_wall_chi" overrideParent="True" />
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="1525051852" List.ParentItemID="1525051852">
+			<bool name="can_repair" value="True" overrideParent="True" />
+			<enum_table name="armor_scaler_by_damage_type">
+				<float name="Fire" value="0" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1449050468" List.ParentItemID="1449050468">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\chinese" List.ItemID="942042637" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="27741658" List.ParentItemID="27741658">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="stone" value="25" overrideParent="True" />
+				</enum_table>
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="1872466745" List.ParentItemID="1872466745">
+			<float name="decorator_height" value="12" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="302288400" List.ParentItemID="302288400">
+			<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary_fence_replacer">
+				<instance_reference name="blueprint_to_replace" value="ebps\races\campaign\chinese\buildings\building_defense_greatwall_chi\building_defense_greatwall_cmp_chi" overrideParent="True" />
+			</template_reference>
+			<bool name="replacement_refunded" value="False" overrideParent="True" />
+			<enum name="destructible_type" value="normal" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2039612" />
+	<instance_reference name="parent_pbg" value="ebps\races\chinese\buildings\building_defense_wall_chi\building_defense_wall_gate_chi" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-744130588" List.ParentItemID="-744130588">
+				<file name="alternate_sua" value="art\civilizations\chinese\structures\wonder_greatwall\wonder_greatwall" overrideParent="True" />
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\chinese\buildings\building_wonder_age4_great_wall_chi" overrideParent="True" />
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="1053681047" List.ParentItemID="1053681047">
+				<bool name="can_repair" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1790520439" List.ParentItemID="-1790520439">
+				<enum name="weapon_targeting" value="automatic" overrideParent="True" />
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\chinese" List.ItemID="1080373653" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="-1699419502" List.ParentItemID="-1699419502">
+				<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary_fence_replacer">
+					<instance_reference name="blueprint_to_replace" value="ebps\races\campaign\chinese\buildings\building_defense_greatwall_chi\building_defense_greatwall_cmp_chi" overrideParent="True" />
+				</template_reference>
+				<bool name="replacement_refunded" value="False" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2039612" />
+		<instance_reference name="parent_pbg" value="ebps\races\chinese\buildings\building_defense_wall_chi\building_defense_wall_gate_chi" />
+	</variant>
+</instance>

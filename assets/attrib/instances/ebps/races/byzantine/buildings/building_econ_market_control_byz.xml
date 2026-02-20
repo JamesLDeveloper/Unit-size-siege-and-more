@@ -1,0 +1,106 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1223074477" List.ParentItemID="1223074477">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-644933516" List.ParentItemID="-644933516">
+			<bool name="can_repair" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="-1214388998" List.ParentItemID="-1214388998">
+			<bool name="snap_to_construction_grid" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1741077949" List.ParentItemID="1741077949">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\byzantine" overrideParent="True" List.ItemID="576210877" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="-312184451" List.ParentItemID="-312184451">
+			<group name="on_construction_complete_state_tree_refs">
+				<string name="on_construction_complete_entity_state_tree_ref" value="field_stones_logic_byz\field_stones_large_byz" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="432168809" List.ParentItemID="432168809">
+			<list name="ui_extra_infos" overrideParent="True">
+				<template_reference name="ui_extra_info" value="info\ui_extra_info" List.ItemID="1914429137">
+					<file name="icon" value="influence_decorator" overrideParent="True" />
+					<locstring name="description" value="0" />
+					<template_reference name="description_formatter" value="ui_text_formatter" overrideParent="True">
+						<list name="formatter_arguments">
+							<int name="int_value" value="200" List.ItemID="1100868348" />
+						</list>
+						<locstring name="formatter" value="11248148" />
+					</template_reference>
+				</template_reference>
+			</list>
+			<group name="ui_codex_info">
+				<bool name="exclusive" value="False" overrideParent="True" />
+			</group>
+			<template_reference name="help_text_formatter" value="ui_text_formatter" overrideParent="True">
+				<list name="formatter_arguments">
+					<int name="int_value" value="20" overrideParent="True" List.ItemID="-1462573465" />
+				</list>
+				<locstring name="formatter" value="11258150" />
+			</template_reference>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="1163883269" List.ParentItemID="1163883269">
+			<list name="abilities" overrideParent="True">
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="80409869" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_sell_food" List.ItemID="-927066993" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_sell_wood" List.ItemID="186157230" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_sell_stone" List.ItemID="-1045273707" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_buy_food" List.ItemID="548689565" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_buy_wood" List.ItemID="1391820016" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_buy_stone" List.ItemID="-911432109" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_buy_merc_byz" List.ItemID="215191452" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_sell_merc_byz" List.ItemID="-1320045810" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_sell_food_bulk" List.ItemID="1487235668" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_sell_wood_bulk" List.ItemID="205458528" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_sell_stone_bulk" List.ItemID="1938675721" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_sell_merc_bulk_byz" List.ItemID="-612219148" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_buy_food_bulk" List.ItemID="-527058077" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_buy_wood_bulk" List.ItemID="151066193" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_buy_stone_bulk" List.ItemID="142341341" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_buy_merc_bulk_byz" List.ItemID="-1465840849" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="-1621200452" List.ParentItemID="-1621200452">
+			<list name="spawn_items">
+				<group name="spawn_item" List.ItemID="-528098989" List.ParentItemID="-528098989">
+					<instance_reference name="squad" value="sbps\races\byzantine\unit_trade_cart_byz" overrideParent="True" />
+					<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+						<template_reference name="command_card_info" value="ui_command_card_info" overrideParent="True">
+							<group name="ui_position">
+								<int name="ui_position_row" value="1" />
+								<int name="ui_position_column" value="1" />
+							</group>
+							<int name="command_card_priority" value="1" />
+						</template_reference>
+						<template_reference name="quick_commands_info" value="ui_quick_commands_info" overrideParent="True">
+							<int name="quick_commands_slot_index" value="0" />
+							<enum name="quick_commands_hotkey" value="x_quick_command_y" />
+							<int name="quick_commands_priority" value="1" />
+						</template_reference>
+						<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info" overrideParent="True">
+							<enum name="quick_commands_hotkey" value="x_quick_command_y" />
+							<int name="quick_commands_priority" value="5" />
+							<int name="quick_commands_slot_index" value="2" overrideParent="True" />
+							<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+						</template_reference>
+						<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+							<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" />
+							<int name="nominal_index" value="0" />
+							<int name="priority" value="0" />
+							<instance_reference name="linked" value="" />
+						</template_reference>
+					</template_reference>
+				</group>
+			</list>
+			<state_tree_node name="production_item_completed_openingbranch" value="building_production_item_completed\Master\building_production_item_complete" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-1112696249" List.ParentItemID="-1112696249">
+			<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\byzantine\market_byz" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2104738" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_econ_market" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+</instance>
