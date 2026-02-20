@@ -7,7 +7,9 @@
 			<d3p1:ExpandedPaths>
 				<d2p1:KeyValueOfstringArrayOfstringty7Ep6D1>
 					<d2p1:Key>AssetExplorerGeneric</d2p1:Key>
-					<d2p1:Value />
+					<d2p1:Value>
+						<d2p1:string>assets</d2p1:string>
+					</d2p1:Value>
 				</d2p1:KeyValueOfstringArrayOfstringty7Ep6D1>
 			</d3p1:ExpandedPaths>
 			<d3p1:Version>0</d3p1:Version>
@@ -19,6 +21,7 @@
 	</PluginSettings>
 	<RecentFiles>
 		<History xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+			<d3p1:string>C:\Users\XPS\OneDrive\Documents\Age of Empires iv files\Unit size seige and more\assets\mod.rdo</d3p1:string>
 			<d3p1:string>C:\Users\XPS\OneDrive\Documents\Age of Empires iv files\Unit size seige and more\assets\attrib\Unit size seige and more.xml</d3p1:string>
 		</History>
 	</RecentFiles>
