@@ -12,6 +12,21 @@
 			<list name="race_type_list" overrideParent="True">
 				<instance_reference name="race_type" value="racebps\byzantine_ha_mac" overrideParent="True" List.ItemID="-807234559" />
 			</list>
+			<list name="attack_target_restriction_on_victim">
+				<enum name="unit_type" value="animal" List.ItemID="-1488095206" List.ListAction="Append" />
+				<enum name="unit_type" value="land_military" List.ItemID="891006165" List.ListAction="Append" />
+				<enum name="unit_type" value="monk" List.ItemID="1937176027" List.ListAction="Append" />
+				<enum name="unit_type" value="naval_unit" List.ItemID="313516525" List.ListAction="Append" />
+				<enum name="unit_type" value="scout" List.ItemID="1025057823" List.ListAction="Append" />
+				<enum name="unit_type" value="ship" List.ItemID="43583618" List.ListAction="Append" />
+				<enum name="unit_type" value="trade_camel" List.ItemID="-738446070" List.ListAction="Append" />
+				<enum name="unit_type" value="trade_cart" List.ItemID="1697965068" List.ListAction="Append" />
+				<enum name="unit_type" value="trade_cart_rider" List.ItemID="-1273549672" List.ListAction="Append" />
+				<enum name="unit_type" value="trade_caravan" List.ItemID="1747388247" List.ListAction="Append" />
+				<enum name="unit_type" value="villager" List.ItemID="700620230" List.ListAction="Append" />
+				<enum name="unit_type" value="villager_militarized" List.ItemID="-1358218158" List.ListAction="Append" />
+				<enum name="unit_type" value="wolf" List.ItemID="826474318" List.ListAction="Append" />
+			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="670545336" List.ParentItemID="670545336">
 			<list name="hardpoints">

@@ -28,6 +28,21 @@
 			<list name="unit_type_list">
 				<enum name="unit_type" value="transport" List.ItemID="185421316" List.ListAction="Append" />
 			</list>
+			<list name="attack_target_restriction_on_victim">
+				<enum name="unit_type" value="animal" List.ItemID="1204446160" List.ListAction="Append" />
+				<enum name="unit_type" value="land_military" List.ItemID="-1058390526" List.ListAction="Append" />
+				<enum name="unit_type" value="monk" List.ItemID="-1433730759" List.ListAction="Append" />
+				<enum name="unit_type" value="naval_unit" List.ItemID="-2107696840" List.ListAction="Append" />
+				<enum name="unit_type" value="scout" List.ItemID="2072814800" List.ListAction="Append" />
+				<enum name="unit_type" value="ship" List.ItemID="-1008907345" List.ListAction="Append" />
+				<enum name="unit_type" value="trade_camel" List.ItemID="468775627" List.ListAction="Append" />
+				<enum name="unit_type" value="trade_cart" List.ItemID="745889050" List.ListAction="Append" />
+				<enum name="unit_type" value="trade_cart_rider" List.ItemID="-1766277238" List.ListAction="Append" />
+				<enum name="unit_type" value="trade_caravan" List.ItemID="1299400239" List.ListAction="Append" />
+				<enum name="unit_type" value="villager" List.ItemID="766278588" List.ListAction="Append" />
+				<enum name="unit_type" value="villager_militarized" List.ItemID="-1623193657" List.ListAction="Append" />
+				<enum name="unit_type" value="wolf" List.ItemID="1015346331" List.ListAction="Append" />
+			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="670545336" List.ParentItemID="670545336">
 			<list name="hardpoints">

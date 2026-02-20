@@ -225,6 +225,19 @@
 			<list name="attack_target_restriction_on_attacker">
 			</list>
 			<list name="attack_target_restriction_on_victim">
+				<enum name="unit_type" value="animal" List.ItemID="1638512232" />
+				<enum name="unit_type" value="land_military" List.ItemID="42867825" />
+				<enum name="unit_type" value="monk" List.ItemID="1022624692" />
+				<enum name="unit_type" value="naval_unit" List.ItemID="1275961411" />
+				<enum name="unit_type" value="scout" List.ItemID="1689814593" />
+				<enum name="unit_type" value="ship" List.ItemID="967018473" />
+				<enum name="unit_type" value="trade_camel" List.ItemID="931137909" />
+				<enum name="unit_type" value="trade_cart" List.ItemID="1938794365" />
+				<enum name="unit_type" value="trade_cart_rider" List.ItemID="1436875315" />
+				<enum name="unit_type" value="trade_caravan" List.ItemID="-1018292562" />
+				<enum name="unit_type" value="villager" List.ItemID="-1649990690" />
+				<enum name="unit_type" value="villager_militarized" List.ItemID="-1414379554" />
+				<enum name="unit_type" value="wolf" List.ItemID="-1820770840" />
 			</list>
 			<enum_table name="weapon_category_targeting_filter">
 				<bool name="1melee" value="True" />

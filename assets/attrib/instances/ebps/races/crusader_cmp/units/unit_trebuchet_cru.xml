@@ -8,6 +8,21 @@
 			<list name="race_type_list" overrideParent="True">
 				<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" List.ItemID="2108139378" />
 			</list>
+			<list name="attack_target_restriction_on_victim">
+				<enum name="unit_type" value="animal" List.ItemID="1491029220" List.ListAction="Append" />
+				<enum name="unit_type" value="land_military" List.ItemID="-986246847" List.ListAction="Append" />
+				<enum name="unit_type" value="monk" List.ItemID="20268041" List.ListAction="Append" />
+				<enum name="unit_type" value="naval_unit" List.ItemID="451151908" List.ListAction="Append" />
+				<enum name="unit_type" value="scout" List.ItemID="1488310123" List.ListAction="Append" />
+				<enum name="unit_type" value="ship" List.ItemID="-490872120" List.ListAction="Append" />
+				<enum name="unit_type" value="trade_camel" List.ItemID="-394481538" List.ListAction="Append" />
+				<enum name="unit_type" value="trade_cart" List.ItemID="266450630" List.ListAction="Append" />
+				<enum name="unit_type" value="trade_cart_rider" List.ItemID="469300863" List.ListAction="Append" />
+				<enum name="unit_type" value="trade_caravan" List.ItemID="451829419" List.ListAction="Append" />
+				<enum name="unit_type" value="villager" List.ItemID="874398064" List.ListAction="Append" />
+				<enum name="unit_type" value="villager_militarized" List.ItemID="-1051952008" List.ListAction="Append" />
+				<enum name="unit_type" value="wolf" List.ItemID="-1126333180" List.ListAction="Append" />
+			</list>
 		</template_reference>
 	</list>
 	<uniqueid name="pbgid" value="2089090" />
