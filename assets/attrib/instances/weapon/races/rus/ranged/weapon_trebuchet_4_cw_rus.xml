@@ -1,0 +1,19 @@
+<instance version="6" description="" template="weapon">
+	<uniqueid name="pbgid" value="133327" />
+	<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_trebuchet_4_counterweight" />
+	<group name="weapon_bag">
+		<group name="range">
+			<float name="max" value="76" overrideParent="True" />
+		</group>
+		<group name="setup">
+			<float name="duration" value="6" overrideParent="True" />
+		</group>
+		<group name="teardown">
+			<float name="duration" value="4" overrideParent="True" />
+		</group>
+	</group>
+	<variant name="campaign">
+		<uniqueid name="pbgid" value="133327" />
+		<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_trebuchet_4_counterweight" />
+	</variant>
+</instance>

@@ -1,0 +1,76 @@
+<instance version="4" description="" template="weapon">
+	<group name="weapon_bag">
+		<group name="burst" overrideParent="True">
+			<bool name="can_burst" value="True" overrideParent="True" />
+			<group name="duration">
+				<float name="max" value="0.125" overrideParent="True" />
+				<float name="min" value="0.125" overrideParent="True" />
+			</group>
+			<group name="incremental_target_table">
+				<float name="accuracy_multiplier" value="0" />
+				<group name="search_radius">
+					<float name="far" value="0" />
+					<float name="near" value="0" />
+					<float name="mid" value="0" />
+				</group>
+			</group>
+			<group name="rate_of_fire">
+				<float name="max" value="16" overrideParent="True" />
+				<float name="min" value="16" overrideParent="True" />
+			</group>
+			<group name="duration_multiplier">
+				<float name="near" value="1" />
+				<float name="far" value="1" />
+				<float name="mid" value="1" />
+			</group>
+			<group name="rate_of_fire_multiplier">
+				<float name="near" value="1" />
+				<float name="far" value="1" />
+				<float name="mid" value="1" />
+			</group>
+			<bool name="focus_fire" value="False" />
+			<bool name="convert_target_to_position_before_firing" value="False" />
+			<bool name="uninterruptible_burst_fire" value="False" />
+		</group>
+		<group name="moving">
+			<bool name="can_fire_while_moving" value="True" overrideParent="True" />
+		</group>
+		<group name="projectile">
+			<instance_reference name="projectile" value="ebps\projectiles\projectile_trebuchet_ship_flaming_tem" overrideParent="True" />
+		</group>
+		<group name="range">
+			<float name="max" value="76" overrideParent="True" />
+		</group>
+		<group name="scatter">
+			<template_reference name="area_scatter_option" value="options\weapon\area_scatter_option">
+				<template_reference name="area_info" value="options\area_info_options\circle_area_option">
+					<float name="outer_radius" value="3.5" overrideParent="True" />
+				</template_reference>
+			</template_reference>
+		</group>
+		<group name="setup">
+			<float name="duration" value="0" overrideParent="True" />
+		</group>
+		<group name="tracking" overrideParent="True">
+			<float name="fire_cone_angle" value="70" />
+			<group name="normal">
+				<float name="max_down" value="-10" />
+				<float name="max_left" value="-1" />
+				<float name="max_right" value="1" />
+				<float name="max_up" value="10" />
+				<float name="speed_horizontal" value="10000" />
+				<float name="speed_vertical" value="10000" />
+			</group>
+			<float name="pivot_end_time" value="0" />
+			<bool name="pivot_only" value="False" />
+			<float name="pivot_start_time" value="0" />
+			<float name="fire_cone_angle_vert" value="2" />
+		</group>
+		<enum name="default_attack_type" value="default" overrideParent="True" />
+		<group name="teardown">
+			<float name="duration" value="4" overrideParent="True" />
+		</group>
+	</group>
+	<uniqueid name="pbgid" value="9001205" />
+	<instance_reference name="parent_pbg" value="weapon\races\templar\ranged\weapon_trebuchet_4_cw_double_tem" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+</instance>

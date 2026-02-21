@@ -1,0 +1,57 @@
+<instance version="6" description="" template="weapon">
+	<group name="weapon_bag">
+		<group name="area_effect">
+			<template_reference name="area_info" value="options\area_info_options\circle_area_option">
+				<float name="outer_radius" value="6" overrideParent="True" />
+			</template_reference>
+		</group>
+		<string name="fx_munition_name" value="common\trebuchet_traction_improved" overrideParent="True" />
+		<group name="projectile">
+			<instance_reference name="projectile" value="ebps\races\campaign\normans\projectiles\projectile_trebuchet_improved_nrm" overrideParent="True" />
+		</group>
+		<group name="range">
+			<float name="max" value="65" overrideParent="True" />
+		</group>
+		<group name="teardown">
+			<float name="duration" value="2" overrideParent="True" />
+		</group>
+	</group>
+	<uniqueid name="pbgid" value="229034" />
+	<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_trebuchet_4_traction" />
+	<variant name="campaign">
+		<group name="weapon_bag">
+			<group name="area_effect">
+				<template_reference name="area_info" value="options\area_info_options\circle_area_option">
+					<float name="outer_radius" value="6" overrideParent="True" />
+				</template_reference>
+			</group>
+			<string name="fx_munition_name" value="common\trebuchet_traction_improved" overrideParent="True" />
+			<group name="projectile">
+				<instance_reference name="projectile" value="ebps\races\campaign\normans\projectiles\projectile_trebuchet_improved_nrm" overrideParent="True" />
+			</group>
+			<group name="range">
+				<float name="max" value="65" overrideParent="True" />
+			</group>
+		</group>
+		<uniqueid name="pbgid" value="229034" />
+		<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_trebuchet_4_traction" />
+	</variant>
+	<variant name="xp3">
+		<group name="weapon_bag">
+			<group name="area_effect">
+				<template_reference name="area_info" value="options\area_info_options\circle_area_option">
+					<float name="outer_radius" value="6" overrideParent="True" />
+				</template_reference>
+			</group>
+			<string name="fx_munition_name" value="common\trebuchet_traction_improved" overrideParent="True" />
+			<group name="projectile">
+				<instance_reference name="projectile" value="ebps\races\campaign\normans\projectiles\projectile_trebuchet_improved_nrm" overrideParent="True" />
+			</group>
+			<group name="range">
+				<float name="max" value="65" overrideParent="True" />
+			</group>
+		</group>
+		<uniqueid name="pbgid" value="229034" />
+		<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_trebuchet_4_traction" />
+	</variant>
+</instance>

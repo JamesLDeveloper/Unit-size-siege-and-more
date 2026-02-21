@@ -1,0 +1,42 @@
+<instance version="6" description="" template="weapon">
+	<group name="weapon_bag">
+		<group name="damage">
+			<list name="on_penetrated_state_trees" overrideParent="True">
+			</list>
+		</group>
+		<group name="range">
+			<float name="max" value="68" overrideParent="True" />
+		</group>
+		<group name="setup">
+			<float name="duration" value="4" overrideParent="True" />
+		</group>
+		<group name="teardown">
+			<float name="duration" value="2" overrideParent="True" />
+		</group>
+	</group>
+	<uniqueid name="pbgid" value="2033641" />
+	<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_trebuchet_4_traction" />
+	<variant name="campaign">
+		<group name="weapon_bag">
+			<group name="damage">
+				<list name="on_penetrated_state_trees" overrideParent="True">
+					<group name="container" List.ItemID="1256177213">
+						<string name="state_tree" value="campaignMod_extra_building_damage" overrideParent="True" />
+					</group>
+				</list>
+			</group>
+		</group>
+		<uniqueid name="pbgid" value="2033641" />
+		<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_trebuchet_4_traction" />
+	</variant>
+	<variant name="xp3">
+		<group name="weapon_bag">
+			<group name="damage">
+				<list name="on_penetrated_state_trees" overrideParent="True">
+				</list>
+			</group>
+		</group>
+		<uniqueid name="pbgid" value="2033641" />
+		<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_trebuchet_4_traction" />
+	</variant>
+</instance>

@@ -1,0 +1,31 @@
+<instance version="6" description="" template="weapon">
+	<group name="weapon_bag">
+		<string name="name" value="Siege Weapon - Greek Fire" overrideParent="True" />
+		<group name="projectile">
+			<instance_reference name="projectile" value="ebps\projectiles\projectile_trebuchet_counterweight_greek_fire" overrideParent="True" />
+		</group>
+		<string name="fx_munition_name" value="common\trebuchet_counterweight" overrideParent="True" />
+		<group name="range">
+			<float name="max" value="76" overrideParent="True" />
+		</group>
+		<group name="setup">
+			<float name="duration" value="8" overrideParent="True" />
+		</group>
+		<group name="teardown">
+			<float name="duration" value="8" overrideParent="True" />
+		</group>
+	</group>
+	<uniqueid name="pbgid" value="2117316" />
+	<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_trebuchet_4_counterweight" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+	<variant name="xp3">
+		<group name="weapon_bag">
+			<string name="name" value="Siege Weapon - Greek Fire" overrideParent="True" />
+			<group name="projectile">
+				<instance_reference name="projectile" value="ebps\projectiles\projectile_trebuchet_counterweight_greek_fire" overrideParent="True" />
+			</group>
+			<string name="fx_munition_name" value="common\trebuchet_greek_fire" overrideParent="True" />
+		</group>
+		<uniqueid name="pbgid" value="2117316" />
+		<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_trebuchet_4_counterweight" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+	</variant>
+</instance>

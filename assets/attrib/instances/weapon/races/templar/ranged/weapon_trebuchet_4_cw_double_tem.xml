@@ -1,0 +1,62 @@
+<instance version="4" description="" template="weapon">
+	<group name="weapon_bag">
+		<group name="burst" overrideParent="True">
+			<bool name="can_burst" value="True" overrideParent="True" />
+			<group name="duration">
+				<float name="max" value="0.125" overrideParent="True" />
+				<float name="min" value="0.125" overrideParent="True" />
+			</group>
+			<group name="incremental_target_table">
+				<float name="accuracy_multiplier" value="0" />
+				<group name="search_radius">
+					<float name="far" value="0" />
+					<float name="near" value="0" />
+					<float name="mid" value="0" />
+				</group>
+			</group>
+			<group name="rate_of_fire">
+				<float name="max" value="16" overrideParent="True" />
+				<float name="min" value="16" overrideParent="True" />
+			</group>
+			<group name="duration_multiplier">
+				<float name="near" value="1" />
+				<float name="far" value="1" />
+				<float name="mid" value="1" />
+			</group>
+			<group name="rate_of_fire_multiplier">
+				<float name="near" value="1" />
+				<float name="far" value="1" />
+				<float name="mid" value="1" />
+			</group>
+			<bool name="focus_fire" value="False" />
+			<bool name="convert_target_to_position_before_firing" value="False" />
+			<bool name="uninterruptible_burst_fire" value="False" />
+		</group>
+		<group name="damage">
+			<float name="max" value="25" comment="Don't forget bonus damage values." overrideParent="True" />
+			<float name="min" value="25" overrideParent="True" />
+		</group>
+		<group name="projectile">
+			<instance_reference name="projectile" value="ebps\projectiles\projectile_trebuchet_cw_flaming_tem" overrideParent="True" />
+		</group>
+		<list name="target_type_table">
+			<group name="target_unit_type_multipliers" List.ItemID="-1171101018" List.ParentItemID="-1171101018">
+				<float name="base_damage_modifier" value="200" overrideParent="True" />
+			</group>
+			<group name="target_unit_type_multipliers" List.ItemID="1866862469" List.ParentItemID="1866862469">
+				<float name="base_damage_modifier" value="100" overrideParent="True" />
+			</group>
+		</list>
+		<group name="range">
+			<float name="max" value="76" overrideParent="True" />
+		</group>
+		<group name="setup">
+			<float name="duration" value="6" overrideParent="True" />
+		</group>
+		<group name="teardown">
+			<float name="duration" value="4" overrideParent="True" />
+		</group>
+	</group>
+	<uniqueid name="pbgid" value="9001202" />
+	<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_trebuchet_4_counterweight" />
+</instance>

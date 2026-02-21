@@ -1,0 +1,22 @@
+<instance version="4" description="" template="weapon">
+	<group name="weapon_bag">
+		<group name="projectile">
+			<instance_reference name="projectile" value="ebps\projectiles\projectile_trebuchet_siege_flaming_tem" overrideParent="True" />
+		</group>
+		<group name="range">
+			<float name="max" value="84" overrideParent="True" />
+		</group>
+		<group name="fire">
+			<float name="wind_up" value="1.375" overrideParent="True" />
+			<float name="animation_impact_frame_time" value="1" overrideParent="True" />
+		</group>
+		<group name="setup">
+			<float name="duration" value="12" overrideParent="True" />
+		</group>
+		<group name="teardown">
+			<float name="duration" value="4" overrideParent="True" />
+		</group>
+	</group>
+	<uniqueid name="pbgid" value="9001199" />
+	<instance_reference name="parent_pbg" value="weapon\races\templar\ranged\weapon_trebuchet_4_cw_double_tem" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+</instance>

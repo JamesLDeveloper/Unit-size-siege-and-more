@@ -1,0 +1,41 @@
+<instance version="4" description="" template="weapon">
+	<group name="weapon_bag">
+		<group name="damage">
+			<list name="on_penetrated_state_trees" overrideParent="True">
+				<group name="container" List.ItemID="307253023">
+					<string name="state_tree" value="trebuchet_naptha_on_hit_mon_ha_gol" overrideParent="True" />
+				</group>
+			</list>
+			<float name="max" value="130" comment="Don't forget bonus damage values." overrideParent="True" />
+			<float name="min" value="130" overrideParent="True" />
+		</group>
+		<group name="projectile">
+			<instance_reference name="projectile" value="ebps\projectiles\projectile_trebuchet_traction_naptha_shot" overrideParent="True" />
+		</group>
+		<group name="area_effect">
+			<template_reference name="area_info" value="options\area_info_options\circle_area_option">
+				<float name="outer_radius" value="10" overrideParent="True" />
+			</template_reference>
+			<group name="damage">
+				<float name="far" value="0.25" overrideParent="True" />
+				<float name="mid" value="0.5" overrideParent="True" />
+			</group>
+			<group name="distance">
+				<float name="far" value="8" overrideParent="True" />
+				<float name="near" value="3" overrideParent="True" />
+				<float name="mid" value="6" overrideParent="True" />
+			</group>
+		</group>
+		<group name="range">
+			<float name="max" value="92" overrideParent="True" />
+		</group>
+		<group name="setup">
+			<float name="duration" value="4" overrideParent="True" />
+		</group>
+		<group name="teardown">
+			<float name="duration" value="2" overrideParent="True" />
+		</group>
+	</group>
+	<uniqueid name="pbgid" value="9001866" />
+	<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_trebuchet_4_traction" />
+</instance>
