@@ -14,6 +14,21 @@
 		<list name="starting_units" overrideParent="True">
 			<instance_reference name="squad" value="sbps\races\japanese\unit_scout_1_jpn" List.ItemID="-158537869" />
 			<instance_reference name="squad" value="sbps\races\japanese\unit_scout_1_jpn" List.ItemID="-2141874630" />
+			<instance_reference name="squad" value="sbps\races\japanese\unit_villager_1_jpn" overrideParent="True" List.ItemID="1945111652" />
+			<instance_reference name="squad" value="sbps\races\japanese\unit_villager_1_jpn" overrideParent="True" List.ItemID="2087039864" />
+			<instance_reference name="squad" value="sbps\races\japanese\unit_villager_1_jpn" overrideParent="True" List.ItemID="-1105844773" />
+			<instance_reference name="squad" value="sbps\races\japanese\unit_villager_1_jpn" overrideParent="True" List.ItemID="275514190" />
+			<instance_reference name="squad" value="sbps\races\japanese\unit_villager_1_jpn" overrideParent="True" List.ItemID="1169736705" />
+			<instance_reference name="squad" value="sbps\races\japanese\unit_villager_1_jpn" overrideParent="True" List.ItemID="1928830050" />
+			<instance_reference name="squad" value="sbps\races\japanese\unit_villager_1_jpn" overrideParent="True" List.ItemID="-1407097376" />
+			<instance_reference name="squad" value="sbps\races\japanese\unit_villager_1_jpn" overrideParent="True" List.ItemID="422987206" />
+			<instance_reference name="squad" value="sbps\races\japanese\unit_villager_1_jpn" overrideParent="True" List.ItemID="-368086043" />
+			<instance_reference name="squad" value="sbps\races\japanese\unit_villager_1_jpn" overrideParent="True" List.ItemID="-1449658004" />
+			<instance_reference name="squad" value="sbps\races\japanese\unit_villager_1_jpn" overrideParent="True" List.ItemID="-1215481454" />
+			<instance_reference name="squad" value="sbps\races\japanese\unit_villager_1_jpn" overrideParent="True" List.ItemID="344689374" />
+			<instance_reference name="squad" value="sbps\races\japanese\unit_villager_1_jpn" overrideParent="True" List.ItemID="21773952" />
+			<instance_reference name="squad" value="sbps\races\japanese\unit_villager_1_jpn" overrideParent="True" List.ItemID="766277466" />
+			<instance_reference name="squad" value="sbps\races\japanese\unit_villager_1_jpn" overrideParent="True" List.ItemID="1539140992" />
 		</list>
 		<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
 			<list name="spawn_positions" overrideParent="True">

@@ -16,6 +16,21 @@
 			<instance_reference name="squad" value="sbps\races\sultanate_ha_tug\unit_scout_1_sul_ha_tug" overrideParent="True" List.ItemID="116788793" />
 			<instance_reference name="squad" value="sbps\races\sultanate_ha_tug\unit_scout_1_sul_ha_tug" overrideParent="True" List.ItemID="-1222480068" />
 			<instance_reference name="squad" value="sbps\races\sultanate_ha_tug\unit_worker_elephant_2_sul_ha_tug" overrideParent="True" List.ItemID="-1968602573" />
+			<instance_reference name="squad" value="sbps\races\sultanate_ha_tug\unit_villager_1_sul_ha_tug" overrideParent="True" List.ItemID="-1605122254" />
+			<instance_reference name="squad" value="sbps\races\sultanate_ha_tug\unit_villager_1_sul_ha_tug" overrideParent="True" List.ItemID="1346352726" />
+			<instance_reference name="squad" value="sbps\races\sultanate_ha_tug\unit_villager_1_sul_ha_tug" overrideParent="True" List.ItemID="-28817978" />
+			<instance_reference name="squad" value="sbps\races\sultanate_ha_tug\unit_villager_1_sul_ha_tug" overrideParent="True" List.ItemID="-2047110593" />
+			<instance_reference name="squad" value="sbps\races\sultanate_ha_tug\unit_villager_1_sul_ha_tug" overrideParent="True" List.ItemID="2020850910" />
+			<instance_reference name="squad" value="sbps\races\sultanate_ha_tug\unit_villager_1_sul_ha_tug" overrideParent="True" List.ItemID="-352084787" />
+			<instance_reference name="squad" value="sbps\races\sultanate_ha_tug\unit_villager_1_sul_ha_tug" overrideParent="True" List.ItemID="-523252424" />
+			<instance_reference name="squad" value="sbps\races\sultanate_ha_tug\unit_villager_1_sul_ha_tug" overrideParent="True" List.ItemID="-570575342" />
+			<instance_reference name="squad" value="sbps\races\sultanate_ha_tug\unit_villager_1_sul_ha_tug" overrideParent="True" List.ItemID="-1483411774" />
+			<instance_reference name="squad" value="sbps\races\sultanate_ha_tug\unit_villager_1_sul_ha_tug" overrideParent="True" List.ItemID="-577688276" />
+			<instance_reference name="squad" value="sbps\races\sultanate_ha_tug\unit_villager_1_sul_ha_tug" overrideParent="True" List.ItemID="-515775664" />
+			<instance_reference name="squad" value="sbps\races\sultanate_ha_tug\unit_villager_1_sul_ha_tug" overrideParent="True" List.ItemID="-365534955" />
+			<instance_reference name="squad" value="sbps\races\sultanate_ha_tug\unit_villager_1_sul_ha_tug" overrideParent="True" List.ItemID="-870924581" />
+			<instance_reference name="squad" value="sbps\races\sultanate_ha_tug\unit_villager_1_sul_ha_tug" overrideParent="True" List.ItemID="372617638" />
+			<instance_reference name="squad" value="sbps\races\sultanate_ha_tug\unit_villager_1_sul_ha_tug" overrideParent="True" List.ItemID="28918619" />
 		</list>
 		<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
 			<list name="spawn_positions" overrideParent="True">

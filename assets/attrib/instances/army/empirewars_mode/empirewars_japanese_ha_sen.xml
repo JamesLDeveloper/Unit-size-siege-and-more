@@ -14,6 +14,21 @@
 		<list name="starting_units" overrideParent="True">
 			<instance_reference name="squad" value="sbps\races\japanese_ha_sen\unit_scout_1_jpn_ha_sen" overrideParent="True" List.ItemID="-2050035269" />
 			<instance_reference name="squad" value="sbps\races\japanese_ha_sen\unit_scout_1_jpn_ha_sen" overrideParent="True" List.ItemID="620639339" />
+			<instance_reference name="squad" value="sbps\races\japanese_ha_sen\unit_villager_1_jpn_ha_sen" overrideParent="True" List.ItemID="-876964316" />
+			<instance_reference name="squad" value="sbps\races\japanese_ha_sen\unit_villager_1_jpn_ha_sen" overrideParent="True" List.ItemID="37010569" />
+			<instance_reference name="squad" value="sbps\races\japanese_ha_sen\unit_villager_1_jpn_ha_sen" overrideParent="True" List.ItemID="-1018579626" />
+			<instance_reference name="squad" value="sbps\races\japanese_ha_sen\unit_villager_1_jpn_ha_sen" overrideParent="True" List.ItemID="1501995905" />
+			<instance_reference name="squad" value="sbps\races\japanese_ha_sen\unit_villager_1_jpn_ha_sen" overrideParent="True" List.ItemID="-1751714820" />
+			<instance_reference name="squad" value="sbps\races\japanese_ha_sen\unit_villager_1_jpn_ha_sen" overrideParent="True" List.ItemID="-843621424" />
+			<instance_reference name="squad" value="sbps\races\japanese_ha_sen\unit_villager_1_jpn_ha_sen" overrideParent="True" List.ItemID="183482050" />
+			<instance_reference name="squad" value="sbps\races\japanese_ha_sen\unit_villager_1_jpn_ha_sen" overrideParent="True" List.ItemID="1965760276" />
+			<instance_reference name="squad" value="sbps\races\japanese_ha_sen\unit_villager_1_jpn_ha_sen" overrideParent="True" List.ItemID="-1678478380" />
+			<instance_reference name="squad" value="sbps\races\japanese_ha_sen\unit_villager_1_jpn_ha_sen" overrideParent="True" List.ItemID="-39318554" />
+			<instance_reference name="squad" value="sbps\races\japanese_ha_sen\unit_villager_1_jpn_ha_sen" overrideParent="True" List.ItemID="-492484137" />
+			<instance_reference name="squad" value="sbps\races\japanese_ha_sen\unit_villager_1_jpn_ha_sen" overrideParent="True" List.ItemID="-2007992182" />
+			<instance_reference name="squad" value="sbps\races\japanese_ha_sen\unit_villager_1_jpn_ha_sen" overrideParent="True" List.ItemID="901962605" />
+			<instance_reference name="squad" value="sbps\races\japanese_ha_sen\unit_villager_1_jpn_ha_sen" overrideParent="True" List.ItemID="270183592" />
+			<instance_reference name="squad" value="sbps\races\japanese_ha_sen\unit_villager_1_jpn_ha_sen" overrideParent="True" List.ItemID="1761404627" />
 		</list>
 		<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
 			<list name="spawn_positions" overrideParent="True">

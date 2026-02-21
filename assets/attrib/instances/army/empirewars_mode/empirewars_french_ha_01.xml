@@ -13,6 +13,21 @@
 		<list name="starting_units" overrideParent="True">
 			<instance_reference name="squad" value="sbps\races\french_ha_01\unit_scout_1_fre_ha_01" List.ItemID="1096418411" />
 			<instance_reference name="squad" value="sbps\races\french_ha_01\unit_scout_1_fre_ha_01" List.ItemID="122729423" />
+			<instance_reference name="squad" value="sbps\races\french_ha_01\unit_villager_1_fre_ha_01" overrideParent="True" List.ItemID="1565293220" />
+			<instance_reference name="squad" value="sbps\races\french_ha_01\unit_villager_1_fre_ha_01" overrideParent="True" List.ItemID="1317302613" />
+			<instance_reference name="squad" value="sbps\races\french_ha_01\unit_villager_1_fre_ha_01" overrideParent="True" List.ItemID="595328478" />
+			<instance_reference name="squad" value="sbps\races\french_ha_01\unit_villager_1_fre_ha_01" overrideParent="True" List.ItemID="-1325197396" />
+			<instance_reference name="squad" value="sbps\races\french_ha_01\unit_villager_1_fre_ha_01" overrideParent="True" List.ItemID="690653436" />
+			<instance_reference name="squad" value="sbps\races\french_ha_01\unit_villager_1_fre_ha_01" overrideParent="True" List.ItemID="1392793919" />
+			<instance_reference name="squad" value="sbps\races\french_ha_01\unit_villager_1_fre_ha_01" overrideParent="True" List.ItemID="-2044236692" />
+			<instance_reference name="squad" value="sbps\races\french_ha_01\unit_villager_1_fre_ha_01" overrideParent="True" List.ItemID="-1184803754" />
+			<instance_reference name="squad" value="sbps\races\french_ha_01\unit_villager_1_fre_ha_01" overrideParent="True" List.ItemID="537380237" />
+			<instance_reference name="squad" value="sbps\races\french_ha_01\unit_villager_1_fre_ha_01" overrideParent="True" List.ItemID="-1095553639" />
+			<instance_reference name="squad" value="sbps\races\french_ha_01\unit_villager_1_fre_ha_01" overrideParent="True" List.ItemID="-1444673462" />
+			<instance_reference name="squad" value="sbps\races\french_ha_01\unit_villager_1_fre_ha_01" overrideParent="True" List.ItemID="-83956466" />
+			<instance_reference name="squad" value="sbps\races\french_ha_01\unit_villager_1_fre_ha_01" overrideParent="True" List.ItemID="-9808434" />
+			<instance_reference name="squad" value="sbps\races\french_ha_01\unit_villager_1_fre_ha_01" overrideParent="True" List.ItemID="-709268029" />
+			<instance_reference name="squad" value="sbps\races\french_ha_01\unit_villager_1_fre_ha_01" overrideParent="True" List.ItemID="-657885794" />
 		</list>
 		<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
 			<list name="spawn_positions" overrideParent="True">

@@ -12,6 +12,21 @@
 		<list name="starting_units" overrideParent="True">
 			<instance_reference name="squad" value="sbps\races\abbasid_ha_01\unit_scout_1_abb_ha_01" List.ItemID="764156138" />
 			<instance_reference name="squad" value="sbps\races\abbasid_ha_01\unit_scout_1_abb_ha_01" List.ItemID="-1226936719" />
+			<instance_reference name="squad" value="sbps\races\abbasid_ha_01\unit_villager_1_abb_ha_01" List.ItemID="992455962" />
+			<instance_reference name="squad" value="sbps\races\abbasid_ha_01\unit_villager_1_abb_ha_01" List.ItemID="2012324824" />
+			<instance_reference name="squad" value="sbps\races\abbasid_ha_01\unit_villager_1_abb_ha_01" List.ItemID="422987504" />
+			<instance_reference name="squad" value="sbps\races\abbasid_ha_01\unit_villager_1_abb_ha_01" List.ItemID="-1765152135" />
+			<instance_reference name="squad" value="sbps\races\abbasid_ha_01\unit_villager_1_abb_ha_01" List.ItemID="115038574" />
+			<instance_reference name="squad" value="sbps\races\abbasid_ha_01\unit_villager_1_abb_ha_01" List.ItemID="89163683" />
+			<instance_reference name="squad" value="sbps\races\abbasid_ha_01\unit_villager_1_abb_ha_01" List.ItemID="1325017870" />
+			<instance_reference name="squad" value="sbps\races\abbasid_ha_01\unit_villager_1_abb_ha_01" List.ItemID="-1297468703" />
+			<instance_reference name="squad" value="sbps\races\abbasid_ha_01\unit_villager_1_abb_ha_01" List.ItemID="316316167" />
+			<instance_reference name="squad" value="sbps\races\abbasid_ha_01\unit_villager_1_abb_ha_01" List.ItemID="-1776765082" />
+			<instance_reference name="squad" value="sbps\races\abbasid_ha_01\unit_villager_1_abb_ha_01" List.ItemID="1870120474" />
+			<instance_reference name="squad" value="sbps\races\abbasid_ha_01\unit_villager_1_abb_ha_01" List.ItemID="401714400" />
+			<instance_reference name="squad" value="sbps\races\abbasid_ha_01\unit_villager_1_abb_ha_01" List.ItemID="-596277295" />
+			<instance_reference name="squad" value="sbps\races\abbasid_ha_01\unit_villager_1_abb_ha_01" List.ItemID="1059663148" />
+			<instance_reference name="squad" value="sbps\races\abbasid_ha_01\unit_villager_1_abb_ha_01" List.ItemID="938024013" />
 		</list>
 		<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
 			<list name="spawn_positions" overrideParent="True">

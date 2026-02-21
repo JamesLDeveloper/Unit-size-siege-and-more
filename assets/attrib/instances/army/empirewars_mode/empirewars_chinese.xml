@@ -16,6 +16,21 @@
 		<list name="starting_units" overrideParent="True">
 			<instance_reference name="squad" value="sbps\races\chinese\unit_scout_1_chi" List.ItemID="1940673996" />
 			<instance_reference name="squad" value="sbps\races\chinese\unit_scout_1_chi" List.ItemID="-249467865" />
+			<instance_reference name="squad" value="sbps\races\chinese\unit_villager_1_chi" overrideParent="True" List.ItemID="-130645779" />
+			<instance_reference name="squad" value="sbps\races\chinese\unit_villager_1_chi" overrideParent="True" List.ItemID="1651252948" />
+			<instance_reference name="squad" value="sbps\races\chinese\unit_villager_1_chi" overrideParent="True" List.ItemID="1246603950" />
+			<instance_reference name="squad" value="sbps\races\chinese\unit_villager_1_chi" overrideParent="True" List.ItemID="1315138991" />
+			<instance_reference name="squad" value="sbps\races\chinese\unit_villager_1_chi" overrideParent="True" List.ItemID="223921586" />
+			<instance_reference name="squad" value="sbps\races\chinese\unit_villager_1_chi" overrideParent="True" List.ItemID="-514190349" />
+			<instance_reference name="squad" value="sbps\races\chinese\unit_villager_1_chi" overrideParent="True" List.ItemID="1199851641" />
+			<instance_reference name="squad" value="sbps\races\chinese\unit_villager_1_chi" overrideParent="True" List.ItemID="1423144110" />
+			<instance_reference name="squad" value="sbps\races\chinese\unit_villager_1_chi" overrideParent="True" List.ItemID="1889604316" />
+			<instance_reference name="squad" value="sbps\races\chinese\unit_villager_1_chi" overrideParent="True" List.ItemID="-331377927" />
+			<instance_reference name="squad" value="sbps\races\chinese\unit_villager_1_chi" overrideParent="True" List.ItemID="-116892413" />
+			<instance_reference name="squad" value="sbps\races\chinese\unit_villager_1_chi" overrideParent="True" List.ItemID="-417227271" />
+			<instance_reference name="squad" value="sbps\races\chinese\unit_villager_1_chi" overrideParent="True" List.ItemID="1599859213" />
+			<instance_reference name="squad" value="sbps\races\chinese\unit_villager_1_chi" overrideParent="True" List.ItemID="-1188624" />
+			<instance_reference name="squad" value="sbps\races\chinese\unit_villager_1_chi" overrideParent="True" List.ItemID="1412093678" />
 		</list>
 		<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
 			<list name="spawn_positions" overrideParent="True">

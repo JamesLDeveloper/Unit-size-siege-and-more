@@ -23,6 +23,11 @@
 			<instance_reference name="squad" value="sbps\races\english\unit_villager_1_eng" List.ItemID="-1121502750" />
 			<instance_reference name="squad" value="sbps\races\english\unit_villager_1_eng" List.ItemID="260708710" />
 			<instance_reference name="squad" value="sbps\races\english\unit_villager_1_eng" List.ItemID="-1443964451" />
+			<instance_reference name="squad" value="sbps\races\english\unit_villager_1_eng" List.ItemID="-346722964" />
+			<instance_reference name="squad" value="sbps\races\english\unit_villager_1_eng" List.ItemID="-1984060942" />
+			<instance_reference name="squad" value="sbps\races\english\unit_villager_1_eng" List.ItemID="-609639758" />
+			<instance_reference name="squad" value="sbps\races\english\unit_villager_1_eng" List.ItemID="651322328" />
+			<instance_reference name="squad" value="sbps\races\english\unit_villager_1_eng" List.ItemID="37288278" />
 		</list>
 		<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
 			<list name="spawn_positions" overrideParent="True">

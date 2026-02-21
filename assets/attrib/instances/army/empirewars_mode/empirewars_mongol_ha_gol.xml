@@ -11,6 +11,21 @@
 		<list name="starting_units" overrideParent="True">
 			<instance_reference name="squad" value="sbps\races\mongol_ha_gol\unit_scout_1_mon_ha_gol" overrideParent="True" List.ItemID="2008896136" />
 			<instance_reference name="squad" value="sbps\races\mongol_ha_gol\unit_scout_1_mon_ha_gol" overrideParent="True" List.ItemID="-1477818207" />
+			<instance_reference name="squad" value="sbps\races\mongol_ha_gol\unit_villager_1_mon_ha_gol" overrideParent="True" List.ItemID="246798568" />
+			<instance_reference name="squad" value="sbps\races\mongol_ha_gol\unit_villager_1_mon_ha_gol" overrideParent="True" List.ItemID="-722544338" />
+			<instance_reference name="squad" value="sbps\races\mongol_ha_gol\unit_villager_1_mon_ha_gol" overrideParent="True" List.ItemID="-868104953" />
+			<instance_reference name="squad" value="sbps\races\mongol_ha_gol\unit_villager_1_mon_ha_gol" overrideParent="True" List.ItemID="-718636914" />
+			<instance_reference name="squad" value="sbps\races\mongol_ha_gol\unit_villager_1_mon_ha_gol" overrideParent="True" List.ItemID="-1476679503" />
+			<instance_reference name="squad" value="sbps\races\mongol_ha_gol\unit_villager_1_mon_ha_gol" overrideParent="True" List.ItemID="-2101740717" />
+			<instance_reference name="squad" value="sbps\races\mongol_ha_gol\unit_villager_1_mon_ha_gol" overrideParent="True" List.ItemID="-618742616" />
+			<instance_reference name="squad" value="sbps\races\mongol_ha_gol\unit_villager_1_mon_ha_gol" overrideParent="True" List.ItemID="368222503" />
+			<instance_reference name="squad" value="sbps\races\mongol_ha_gol\unit_villager_1_mon_ha_gol" overrideParent="True" List.ItemID="365521460" />
+			<instance_reference name="squad" value="sbps\races\mongol_ha_gol\unit_villager_1_mon_ha_gol" overrideParent="True" List.ItemID="-921603699" />
+			<instance_reference name="squad" value="sbps\races\mongol_ha_gol\unit_villager_1_mon_ha_gol" overrideParent="True" List.ItemID="-844917493" />
+			<instance_reference name="squad" value="sbps\races\mongol_ha_gol\unit_villager_1_mon_ha_gol" overrideParent="True" List.ItemID="1250515713" />
+			<instance_reference name="squad" value="sbps\races\mongol_ha_gol\unit_villager_1_mon_ha_gol" overrideParent="True" List.ItemID="86776474" />
+			<instance_reference name="squad" value="sbps\races\mongol_ha_gol\unit_villager_1_mon_ha_gol" overrideParent="True" List.ItemID="-1844570339" />
+			<instance_reference name="squad" value="sbps\races\mongol_ha_gol\unit_villager_1_mon_ha_gol" overrideParent="True" List.ItemID="-295818737" />
 		</list>
 		<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
 			<list name="spawn_positions" overrideParent="True">

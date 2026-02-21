@@ -15,6 +15,21 @@
 			<instance_reference name="squad" value="sbps\races\rus\unit_scout_1_rus" overrideParent="True" List.ItemID="-64785266" />
 			<instance_reference name="squad" value="sbps\races\rus\unit_scout_1_rus" List.ItemID="-835054715" />
 			<instance_reference name="squad" value="sbps\races\rus\unit_scout_1_rus" List.ItemID="-1991623976" />
+			<instance_reference name="squad" value="sbps\races\rus\unit_villager_1_rus" overrideParent="True" List.ItemID="981294936" />
+			<instance_reference name="squad" value="sbps\races\rus\unit_villager_1_rus" overrideParent="True" List.ItemID="1284690577" />
+			<instance_reference name="squad" value="sbps\races\rus\unit_villager_1_rus" overrideParent="True" List.ItemID="-142355125" />
+			<instance_reference name="squad" value="sbps\races\rus\unit_villager_1_rus" overrideParent="True" List.ItemID="78154060" />
+			<instance_reference name="squad" value="sbps\races\rus\unit_villager_1_rus" overrideParent="True" List.ItemID="2135043638" />
+			<instance_reference name="squad" value="sbps\races\rus\unit_villager_1_rus" overrideParent="True" List.ItemID="-1985795259" />
+			<instance_reference name="squad" value="sbps\races\rus\unit_villager_1_rus" overrideParent="True" List.ItemID="-513539697" />
+			<instance_reference name="squad" value="sbps\races\rus\unit_villager_1_rus" overrideParent="True" List.ItemID="716297435" />
+			<instance_reference name="squad" value="sbps\races\rus\unit_villager_1_rus" overrideParent="True" List.ItemID="-1281814058" />
+			<instance_reference name="squad" value="sbps\races\rus\unit_villager_1_rus" overrideParent="True" List.ItemID="766147663" />
+			<instance_reference name="squad" value="sbps\races\rus\unit_villager_1_rus" overrideParent="True" List.ItemID="-1467422013" />
+			<instance_reference name="squad" value="sbps\races\rus\unit_villager_1_rus" overrideParent="True" List.ItemID="552446300" />
+			<instance_reference name="squad" value="sbps\races\rus\unit_villager_1_rus" overrideParent="True" List.ItemID="-1393821727" />
+			<instance_reference name="squad" value="sbps\races\rus\unit_villager_1_rus" overrideParent="True" List.ItemID="-2082215073" />
+			<instance_reference name="squad" value="sbps\races\rus\unit_villager_1_rus" overrideParent="True" List.ItemID="-2093287581" />
 		</list>
 		<enum_table name="resource_starting_amount">
 			<float name="food" value="300" overrideParent="True" />

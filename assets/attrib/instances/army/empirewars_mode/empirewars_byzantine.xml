@@ -15,6 +15,21 @@
 		<list name="starting_units" overrideParent="True">
 			<instance_reference name="squad" value="sbps\races\byzantine\unit_scout_1_byz" List.ItemID="-834288568" />
 			<instance_reference name="squad" value="sbps\races\byzantine\unit_scout_1_byz" List.ItemID="-1711658868" />
+			<instance_reference name="squad" value="sbps\races\byzantine\unit_villager_1_byz" overrideParent="True" List.ItemID="-1167266953" />
+			<instance_reference name="squad" value="sbps\races\byzantine\unit_villager_1_byz" overrideParent="True" List.ItemID="-899211454" />
+			<instance_reference name="squad" value="sbps\races\byzantine\unit_villager_1_byz" overrideParent="True" List.ItemID="-1499323833" />
+			<instance_reference name="squad" value="sbps\races\byzantine\unit_villager_1_byz" overrideParent="True" List.ItemID="1421017452" />
+			<instance_reference name="squad" value="sbps\races\byzantine\unit_villager_1_byz" overrideParent="True" List.ItemID="691845170" />
+			<instance_reference name="squad" value="sbps\races\byzantine\unit_villager_1_byz" overrideParent="True" List.ItemID="-1719502745" />
+			<instance_reference name="squad" value="sbps\races\byzantine\unit_villager_1_byz" overrideParent="True" List.ItemID="179243970" />
+			<instance_reference name="squad" value="sbps\races\byzantine\unit_villager_1_byz" overrideParent="True" List.ItemID="-629303152" />
+			<instance_reference name="squad" value="sbps\races\byzantine\unit_villager_1_byz" overrideParent="True" List.ItemID="782322033" />
+			<instance_reference name="squad" value="sbps\races\byzantine\unit_villager_1_byz" overrideParent="True" List.ItemID="1338668388" />
+			<instance_reference name="squad" value="sbps\races\byzantine\unit_villager_1_byz" overrideParent="True" List.ItemID="355100664" />
+			<instance_reference name="squad" value="sbps\races\byzantine\unit_villager_1_byz" overrideParent="True" List.ItemID="-31914957" />
+			<instance_reference name="squad" value="sbps\races\byzantine\unit_villager_1_byz" overrideParent="True" List.ItemID="-2010407986" />
+			<instance_reference name="squad" value="sbps\races\byzantine\unit_villager_1_byz" overrideParent="True" List.ItemID="-567216262" />
+			<instance_reference name="squad" value="sbps\races\byzantine\unit_villager_1_byz" overrideParent="True" List.ItemID="-527297130" />
 		</list>
 		<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
 			<list name="spawn_positions" overrideParent="True">

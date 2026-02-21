@@ -15,6 +15,21 @@
 		<list name="starting_units" overrideParent="True">
 			<instance_reference name="squad" value="sbps\races\abbasid\unit_scout_1_abb" List.ItemID="820511293" />
 			<instance_reference name="squad" value="sbps\races\abbasid\unit_scout_1_abb" List.ItemID="2081607875" />
+			<instance_reference name="squad" value="sbps\races\abbasid\unit_villager_1_abb" List.ItemID="-1125319541" />
+			<instance_reference name="squad" value="sbps\races\abbasid\unit_villager_1_abb" List.ItemID="972174410" />
+			<instance_reference name="squad" value="sbps\races\abbasid\unit_villager_1_abb" List.ItemID="-1838228074" />
+			<instance_reference name="squad" value="sbps\races\abbasid\unit_villager_1_abb" List.ItemID="-689977090" />
+			<instance_reference name="squad" value="sbps\races\abbasid\unit_villager_1_abb" List.ItemID="-149493347" />
+			<instance_reference name="squad" value="sbps\races\abbasid\unit_villager_1_abb" List.ItemID="-91529564" />
+			<instance_reference name="squad" value="sbps\races\abbasid\unit_villager_1_abb" List.ItemID="671219817" />
+			<instance_reference name="squad" value="sbps\races\abbasid\unit_villager_1_abb" List.ItemID="484886715" />
+			<instance_reference name="squad" value="sbps\races\abbasid\unit_villager_1_abb" List.ItemID="-1105100286" />
+			<instance_reference name="squad" value="sbps\races\abbasid\unit_villager_1_abb" List.ItemID="1940159210" />
+			<instance_reference name="squad" value="sbps\races\abbasid\unit_villager_1_abb" List.ItemID="-2102170428" />
+			<instance_reference name="squad" value="sbps\races\abbasid\unit_villager_1_abb" List.ItemID="-1691542881" />
+			<instance_reference name="squad" value="sbps\races\abbasid\unit_villager_1_abb" List.ItemID="-2023031957" />
+			<instance_reference name="squad" value="sbps\races\abbasid\unit_villager_1_abb" List.ItemID="-659804296" />
+			<instance_reference name="squad" value="sbps\races\abbasid\unit_villager_1_abb" List.ItemID="1577276146" />
 		</list>
 		<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
 			<list name="spawn_positions" overrideParent="True">

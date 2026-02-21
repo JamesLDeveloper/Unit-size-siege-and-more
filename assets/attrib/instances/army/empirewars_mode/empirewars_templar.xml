@@ -16,6 +16,21 @@
 		<list name="starting_units" overrideParent="True">
 			<instance_reference name="squad" value="sbps\races\templar\unit_scout_1_tem" overrideParent="True" List.ItemID="-179694012" />
 			<instance_reference name="squad" value="sbps\races\templar\unit_scout_1_tem" overrideParent="True" List.ItemID="377279696" />
+			<instance_reference name="squad" value="sbps\races\templar\unit_villager_1_tem" overrideParent="True" List.ItemID="1098864905" />
+			<instance_reference name="squad" value="sbps\races\templar\unit_villager_1_tem" overrideParent="True" List.ItemID="401092527" />
+			<instance_reference name="squad" value="sbps\races\templar\unit_villager_1_tem" overrideParent="True" List.ItemID="-430738245" />
+			<instance_reference name="squad" value="sbps\races\templar\unit_villager_1_tem" overrideParent="True" List.ItemID="-81243508" />
+			<instance_reference name="squad" value="sbps\races\templar\unit_villager_1_tem" overrideParent="True" List.ItemID="537791181" />
+			<instance_reference name="squad" value="sbps\races\templar\unit_villager_1_tem" overrideParent="True" List.ItemID="1678884911" />
+			<instance_reference name="squad" value="sbps\races\templar\unit_villager_1_tem" overrideParent="True" List.ItemID="-1229491681" />
+			<instance_reference name="squad" value="sbps\races\templar\unit_villager_1_tem" overrideParent="True" List.ItemID="-1864415950" />
+			<instance_reference name="squad" value="sbps\races\templar\unit_villager_1_tem" overrideParent="True" List.ItemID="-230066709" />
+			<instance_reference name="squad" value="sbps\races\templar\unit_villager_1_tem" overrideParent="True" List.ItemID="1549887850" />
+			<instance_reference name="squad" value="sbps\races\templar\unit_villager_1_tem" overrideParent="True" List.ItemID="-1183130530" />
+			<instance_reference name="squad" value="sbps\races\templar\unit_villager_1_tem" overrideParent="True" List.ItemID="1683684900" />
+			<instance_reference name="squad" value="sbps\races\templar\unit_villager_1_tem" overrideParent="True" List.ItemID="-648749775" />
+			<instance_reference name="squad" value="sbps\races\templar\unit_villager_1_tem" overrideParent="True" List.ItemID="-1222689134" />
+			<instance_reference name="squad" value="sbps\races\templar\unit_villager_1_tem" overrideParent="True" List.ItemID="1895232235" />
 		</list>
 		<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
 			<list name="spawn_positions" overrideParent="True">

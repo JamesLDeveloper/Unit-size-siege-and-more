@@ -15,6 +15,21 @@
 		<list name="starting_units" overrideParent="True">
 			<instance_reference name="squad" value="sbps\races\byzantine_ha_mac\unit_scout_1_byz_ha_mac" overrideParent="True" List.ItemID="-1894754123" />
 			<instance_reference name="squad" value="sbps\races\byzantine_ha_mac\unit_scout_1_byz_ha_mac" overrideParent="True" List.ItemID="-143008971" />
+			<instance_reference name="squad" value="sbps\races\byzantine_ha_mac\unit_villager_1_byz_ha_mac" overrideParent="True" List.ItemID="-66950193" />
+			<instance_reference name="squad" value="sbps\races\byzantine_ha_mac\unit_villager_1_byz_ha_mac" overrideParent="True" List.ItemID="-1917721650" />
+			<instance_reference name="squad" value="sbps\races\byzantine_ha_mac\unit_villager_1_byz_ha_mac" overrideParent="True" List.ItemID="-177886924" />
+			<instance_reference name="squad" value="sbps\races\byzantine_ha_mac\unit_villager_1_byz_ha_mac" overrideParent="True" List.ItemID="819752486" />
+			<instance_reference name="squad" value="sbps\races\byzantine_ha_mac\unit_villager_1_byz_ha_mac" overrideParent="True" List.ItemID="-970356314" />
+			<instance_reference name="squad" value="sbps\races\byzantine_ha_mac\unit_villager_1_byz_ha_mac" overrideParent="True" List.ItemID="-1572927224" />
+			<instance_reference name="squad" value="sbps\races\byzantine_ha_mac\unit_villager_1_byz_ha_mac" overrideParent="True" List.ItemID="2123116744" />
+			<instance_reference name="squad" value="sbps\races\byzantine_ha_mac\unit_villager_1_byz_ha_mac" overrideParent="True" List.ItemID="2121262404" />
+			<instance_reference name="squad" value="sbps\races\byzantine_ha_mac\unit_villager_1_byz_ha_mac" overrideParent="True" List.ItemID="1893074410" />
+			<instance_reference name="squad" value="sbps\races\byzantine_ha_mac\unit_villager_1_byz_ha_mac" overrideParent="True" List.ItemID="-2036987745" />
+			<instance_reference name="squad" value="sbps\races\byzantine_ha_mac\unit_villager_1_byz_ha_mac" overrideParent="True" List.ItemID="1211803587" />
+			<instance_reference name="squad" value="sbps\races\byzantine_ha_mac\unit_villager_1_byz_ha_mac" overrideParent="True" List.ItemID="-332917986" />
+			<instance_reference name="squad" value="sbps\races\byzantine_ha_mac\unit_villager_1_byz_ha_mac" overrideParent="True" List.ItemID="220148298" />
+			<instance_reference name="squad" value="sbps\races\byzantine_ha_mac\unit_villager_1_byz_ha_mac" overrideParent="True" List.ItemID="395424694" />
+			<instance_reference name="squad" value="sbps\races\byzantine_ha_mac\unit_villager_1_byz_ha_mac" overrideParent="True" List.ItemID="-199236487" />
 		</list>
 		<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
 			<list name="spawn_positions" overrideParent="True">

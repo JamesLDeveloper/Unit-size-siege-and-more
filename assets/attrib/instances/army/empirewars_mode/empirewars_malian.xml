@@ -18,6 +18,21 @@
 			<instance_reference name="squad" value="sbps\races\malian\unit_scout_1_mal" List.ItemID="1080135262" />
 			<instance_reference name="squad" value="sbps\races\malian\animals\herdable_cattle_mal" List.ItemID="286826939" />
 			<instance_reference name="squad" value="sbps\races\malian\animals\herdable_cattle_mal" List.ItemID="-1542150351" />
+			<instance_reference name="squad" value="sbps\races\malian\unit_villager_1_mal" overrideParent="True" List.ItemID="476499798" />
+			<instance_reference name="squad" value="sbps\races\malian\unit_villager_1_mal" overrideParent="True" List.ItemID="519264428" />
+			<instance_reference name="squad" value="sbps\races\malian\unit_villager_1_mal" overrideParent="True" List.ItemID="-198443092" />
+			<instance_reference name="squad" value="sbps\races\malian\unit_villager_1_mal" overrideParent="True" List.ItemID="-1930114997" />
+			<instance_reference name="squad" value="sbps\races\malian\unit_villager_1_mal" overrideParent="True" List.ItemID="-1851147649" />
+			<instance_reference name="squad" value="sbps\races\malian\unit_villager_1_mal" overrideParent="True" List.ItemID="1989584423" />
+			<instance_reference name="squad" value="sbps\races\malian\unit_villager_1_mal" overrideParent="True" List.ItemID="-624173658" />
+			<instance_reference name="squad" value="sbps\races\malian\unit_villager_1_mal" overrideParent="True" List.ItemID="68801667" />
+			<instance_reference name="squad" value="sbps\races\malian\unit_villager_1_mal" overrideParent="True" List.ItemID="-889864942" />
+			<instance_reference name="squad" value="sbps\races\malian\unit_villager_1_mal" overrideParent="True" List.ItemID="1499572246" />
+			<instance_reference name="squad" value="sbps\races\malian\unit_villager_1_mal" overrideParent="True" List.ItemID="1604020093" />
+			<instance_reference name="squad" value="sbps\races\malian\unit_villager_1_mal" overrideParent="True" List.ItemID="942891552" />
+			<instance_reference name="squad" value="sbps\races\malian\unit_villager_1_mal" overrideParent="True" List.ItemID="-982865638" />
+			<instance_reference name="squad" value="sbps\races\malian\unit_villager_1_mal" overrideParent="True" List.ItemID="-1046407133" />
+			<instance_reference name="squad" value="sbps\races\malian\unit_villager_1_mal" overrideParent="True" List.ItemID="-277212414" />
 		</list>
 		<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
 			<list name="spawn_positions" overrideParent="True">

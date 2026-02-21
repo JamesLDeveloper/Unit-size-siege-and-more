@@ -13,6 +13,21 @@
 		<list name="starting_units" overrideParent="True">
 			<instance_reference name="squad" value="sbps\races\chinese_ha_01\unit_scout_1_chi_ha_01" List.ItemID="-2037248702" />
 			<instance_reference name="squad" value="sbps\races\chinese_ha_01\unit_scout_1_chi_ha_01" List.ItemID="-1548697003" />
+			<instance_reference name="squad" value="sbps\races\chinese_ha_01\unit_villager_1_chi_ha_01" overrideParent="True" List.ItemID="680500507" />
+			<instance_reference name="squad" value="sbps\races\chinese_ha_01\unit_villager_1_chi_ha_01" overrideParent="True" List.ItemID="-484844370" />
+			<instance_reference name="squad" value="sbps\races\chinese_ha_01\unit_villager_1_chi_ha_01" overrideParent="True" List.ItemID="1588133121" />
+			<instance_reference name="squad" value="sbps\races\chinese_ha_01\unit_villager_1_chi_ha_01" overrideParent="True" List.ItemID="1533722609" />
+			<instance_reference name="squad" value="sbps\races\chinese_ha_01\unit_villager_1_chi_ha_01" overrideParent="True" List.ItemID="687085732" />
+			<instance_reference name="squad" value="sbps\races\chinese_ha_01\unit_villager_1_chi_ha_01" overrideParent="True" List.ItemID="662633615" />
+			<instance_reference name="squad" value="sbps\races\chinese_ha_01\unit_villager_1_chi_ha_01" overrideParent="True" List.ItemID="-1179168385" />
+			<instance_reference name="squad" value="sbps\races\chinese_ha_01\unit_villager_1_chi_ha_01" overrideParent="True" List.ItemID="-1590850765" />
+			<instance_reference name="squad" value="sbps\races\chinese_ha_01\unit_villager_1_chi_ha_01" overrideParent="True" List.ItemID="-1753533579" />
+			<instance_reference name="squad" value="sbps\races\chinese_ha_01\unit_villager_1_chi_ha_01" overrideParent="True" List.ItemID="-2092943179" />
+			<instance_reference name="squad" value="sbps\races\chinese_ha_01\unit_villager_1_chi_ha_01" overrideParent="True" List.ItemID="1095976524" />
+			<instance_reference name="squad" value="sbps\races\chinese_ha_01\unit_villager_1_chi_ha_01" overrideParent="True" List.ItemID="-1220986702" />
+			<instance_reference name="squad" value="sbps\races\chinese_ha_01\unit_villager_1_chi_ha_01" overrideParent="True" List.ItemID="-894037317" />
+			<instance_reference name="squad" value="sbps\races\chinese_ha_01\unit_villager_1_chi_ha_01" overrideParent="True" List.ItemID="-543549213" />
+			<instance_reference name="squad" value="sbps\races\chinese_ha_01\unit_villager_1_chi_ha_01" overrideParent="True" List.ItemID="1676791564" />
 		</list>
 		<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
 			<list name="spawn_positions" overrideParent="True">

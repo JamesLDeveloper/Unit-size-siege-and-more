@@ -15,6 +15,21 @@
 		<list name="starting_units" overrideParent="True">
 			<instance_reference name="squad" value="sbps\races\sultanate\unit_scout_1_sul" overrideParent="True" List.ItemID="-760480991" />
 			<instance_reference name="squad" value="sbps\races\sultanate\unit_scout_1_sul" List.ItemID="-1991372455" />
+			<instance_reference name="squad" value="sbps\races\sultanate\unit_villager_1_sul" overrideParent="True" List.ItemID="1617504690" />
+			<instance_reference name="squad" value="sbps\races\sultanate\unit_villager_1_sul" overrideParent="True" List.ItemID="279439276" />
+			<instance_reference name="squad" value="sbps\races\sultanate\unit_villager_1_sul" overrideParent="True" List.ItemID="1573770281" />
+			<instance_reference name="squad" value="sbps\races\sultanate\unit_villager_1_sul" overrideParent="True" List.ItemID="-1016675874" />
+			<instance_reference name="squad" value="sbps\races\sultanate\unit_villager_1_sul" overrideParent="True" List.ItemID="-1528849275" />
+			<instance_reference name="squad" value="sbps\races\sultanate\unit_villager_1_sul" overrideParent="True" List.ItemID="1538406806" />
+			<instance_reference name="squad" value="sbps\races\sultanate\unit_villager_1_sul" overrideParent="True" List.ItemID="1195719271" />
+			<instance_reference name="squad" value="sbps\races\sultanate\unit_villager_1_sul" overrideParent="True" List.ItemID="-789466395" />
+			<instance_reference name="squad" value="sbps\races\sultanate\unit_villager_1_sul" overrideParent="True" List.ItemID="-1969059648" />
+			<instance_reference name="squad" value="sbps\races\sultanate\unit_villager_1_sul" overrideParent="True" List.ItemID="1728690766" />
+			<instance_reference name="squad" value="sbps\races\sultanate\unit_villager_1_sul" overrideParent="True" List.ItemID="400162368" />
+			<instance_reference name="squad" value="sbps\races\sultanate\unit_villager_1_sul" overrideParent="True" List.ItemID="1995952608" />
+			<instance_reference name="squad" value="sbps\races\sultanate\unit_villager_1_sul" overrideParent="True" List.ItemID="1904369229" />
+			<instance_reference name="squad" value="sbps\races\sultanate\unit_villager_1_sul" overrideParent="True" List.ItemID="-1799034670" />
+			<instance_reference name="squad" value="sbps\races\sultanate\unit_villager_1_sul" overrideParent="True" List.ItemID="1663531725" />
 		</list>
 		<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
 			<list name="spawn_positions" overrideParent="True">

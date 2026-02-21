@@ -16,6 +16,21 @@
 		<list name="starting_units" overrideParent="True">
 			<instance_reference name="squad" value="sbps\races\french\unit_scout_1_fre" List.ItemID="-1804563855" />
 			<instance_reference name="squad" value="sbps\races\french\unit_scout_1_fre" List.ItemID="2112652908" />
+			<instance_reference name="squad" value="sbps\races\french\unit_villager_1_fre" overrideParent="True" List.ItemID="-276586660" />
+			<instance_reference name="squad" value="sbps\races\french\unit_villager_1_fre" overrideParent="True" List.ItemID="299384053" />
+			<instance_reference name="squad" value="sbps\races\french\unit_villager_1_fre" overrideParent="True" List.ItemID="785857746" />
+			<instance_reference name="squad" value="sbps\races\french\unit_villager_1_fre" overrideParent="True" List.ItemID="-2032552946" />
+			<instance_reference name="squad" value="sbps\races\french\unit_villager_1_fre" overrideParent="True" List.ItemID="2045561114" />
+			<instance_reference name="squad" value="sbps\races\french\unit_villager_1_fre" overrideParent="True" List.ItemID="-722254558" />
+			<instance_reference name="squad" value="sbps\races\french\unit_villager_1_fre" overrideParent="True" List.ItemID="-1565497939" />
+			<instance_reference name="squad" value="sbps\races\french\unit_villager_1_fre" overrideParent="True" List.ItemID="1557444271" />
+			<instance_reference name="squad" value="sbps\races\french\unit_villager_1_fre" overrideParent="True" List.ItemID="-256536570" />
+			<instance_reference name="squad" value="sbps\races\french\unit_villager_1_fre" overrideParent="True" List.ItemID="-1503659" />
+			<instance_reference name="squad" value="sbps\races\french\unit_villager_1_fre" overrideParent="True" List.ItemID="-206076332" />
+			<instance_reference name="squad" value="sbps\races\french\unit_villager_1_fre" overrideParent="True" List.ItemID="1482320940" />
+			<instance_reference name="squad" value="sbps\races\french\unit_villager_1_fre" overrideParent="True" List.ItemID="1480845254" />
+			<instance_reference name="squad" value="sbps\races\french\unit_villager_1_fre" overrideParent="True" List.ItemID="-1582596964" />
+			<instance_reference name="squad" value="sbps\races\french\unit_villager_1_fre" overrideParent="True" List.ItemID="-1097655012" />
 		</list>
 		<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
 			<list name="spawn_positions" overrideParent="True">

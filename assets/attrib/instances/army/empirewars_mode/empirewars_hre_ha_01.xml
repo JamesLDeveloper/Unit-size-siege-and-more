@@ -13,6 +13,21 @@
 		<list name="starting_units" overrideParent="True">
 			<instance_reference name="squad" value="sbps\races\hre_ha_01\unit_scout_1_hre_ha_01" overrideParent="True" List.ItemID="-192300291" />
 			<instance_reference name="squad" value="sbps\races\hre_ha_01\unit_scout_1_hre_ha_01" List.ItemID="997002062" />
+			<instance_reference name="squad" value="sbps\races\hre_ha_01\unit_villager_1_hre_ha_01" overrideParent="True" List.ItemID="-1065402878" />
+			<instance_reference name="squad" value="sbps\races\hre_ha_01\unit_villager_1_hre_ha_01" overrideParent="True" List.ItemID="734082700" />
+			<instance_reference name="squad" value="sbps\races\hre_ha_01\unit_villager_1_hre_ha_01" overrideParent="True" List.ItemID="-147218096" />
+			<instance_reference name="squad" value="sbps\races\hre_ha_01\unit_villager_1_hre_ha_01" overrideParent="True" List.ItemID="-850286913" />
+			<instance_reference name="squad" value="sbps\races\hre_ha_01\unit_villager_1_hre_ha_01" overrideParent="True" List.ItemID="323757210" />
+			<instance_reference name="squad" value="sbps\races\hre_ha_01\unit_villager_1_hre_ha_01" overrideParent="True" List.ItemID="-1659156802" />
+			<instance_reference name="squad" value="sbps\races\hre_ha_01\unit_villager_1_hre_ha_01" overrideParent="True" List.ItemID="-2009439241" />
+			<instance_reference name="squad" value="sbps\races\hre_ha_01\unit_villager_1_hre_ha_01" overrideParent="True" List.ItemID="-2047386524" />
+			<instance_reference name="squad" value="sbps\races\hre_ha_01\unit_villager_1_hre_ha_01" overrideParent="True" List.ItemID="-1141174658" />
+			<instance_reference name="squad" value="sbps\races\hre_ha_01\unit_villager_1_hre_ha_01" overrideParent="True" List.ItemID="-745470522" />
+			<instance_reference name="squad" value="sbps\races\hre_ha_01\unit_villager_1_hre_ha_01" overrideParent="True" List.ItemID="1174794712" />
+			<instance_reference name="squad" value="sbps\races\hre_ha_01\unit_villager_1_hre_ha_01" overrideParent="True" List.ItemID="1692821090" />
+			<instance_reference name="squad" value="sbps\races\hre_ha_01\unit_villager_1_hre_ha_01" overrideParent="True" List.ItemID="1452103830" />
+			<instance_reference name="squad" value="sbps\races\hre_ha_01\unit_villager_1_hre_ha_01" overrideParent="True" List.ItemID="1021478919" />
+			<instance_reference name="squad" value="sbps\races\hre_ha_01\unit_villager_1_hre_ha_01" overrideParent="True" List.ItemID="795430527" />
 		</list>
 		<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
 			<list name="spawn_positions" overrideParent="True">
