@@ -64,6 +64,10 @@
 				</template_reference>
 			</list>
 		</template_reference>
+		<template_reference name="exts" value="ebpextensions\hold_ext" List.ItemID="-1301307975" List.ParentItemID="-1301307975">
+			<float name="num_slots" value="8" overrideParent="True" />
+			<float name="num_squad_slots" value="8" overrideParent="True" />
+		</template_reference>
 		<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="190341173" List.ParentItemID="190341173">
 			<list name="tier_group_list" overrideParent="True">
 				<list name="tier_group" overrideParent="True" List.ItemID="-1219586993">

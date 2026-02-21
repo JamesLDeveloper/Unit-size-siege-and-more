@@ -25,6 +25,10 @@
 			<list name="requirement_table" removedIds="487091217">
 			</list>
 		</template_reference>
+		<template_reference name="exts" value="ebpextensions\hold_ext" List.ItemID="-1301307975" List.ParentItemID="-1301307975">
+			<float name="num_slots" value="8" overrideParent="True" />
+			<float name="num_squad_slots" value="8" overrideParent="True" />
+		</template_reference>
 	</list>
 	<uniqueid name="pbgid" value="2118868" />
 	<instance_reference name="parent_pbg" value="ebps\races\core\units_buildable\unit_ram_3" />

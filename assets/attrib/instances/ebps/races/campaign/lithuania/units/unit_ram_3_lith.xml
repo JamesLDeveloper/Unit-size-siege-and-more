@@ -31,6 +31,10 @@
 		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="1982550370" List.ParentItemID="1982550370">
 			<instance_reference name="on_construction_squad" value="sbps\races\campaign\lithuania\unit_ram_3_lith" overrideParent="True" />
 		</template_reference>
+		<template_reference name="exts" value="ebpextensions\hold_ext" List.ItemID="-1301307975" List.ParentItemID="-1301307975">
+			<float name="num_slots" value="8" overrideParent="True" />
+			<float name="num_squad_slots" value="8" overrideParent="True" />
+		</template_reference>
 		<template_reference name="exts" value="ebpextensions\burn_ext" List.ItemID="-1096755450" List.ListAction="Append">
 			<float name="on_fire_damage_per_sec" value="2" />
 			<float name="on_fire_decay_amount_per_sec" value="-0.05" />

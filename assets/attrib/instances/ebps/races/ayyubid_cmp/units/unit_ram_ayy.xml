@@ -16,6 +16,8 @@
 			<list name="acceptable_types">
 				<enum name="acceptable_type" value="hold_spy" List.ItemID="-1875238224" List.ListAction="Append" />
 			</list>
+			<float name="num_slots" value="8" overrideParent="True" />
+			<float name="num_squad_slots" value="8" overrideParent="True" />
 		</template_reference>
 	</list>
 	<uniqueid name="pbgid" value="2101193" />

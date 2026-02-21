@@ -42,6 +42,8 @@
 			<template_reference name="on_loaded_squad_action_tree" value="state_tree_reference_info">
 				<state_tree_node name="ActionTree_OpeningBranch" value="siege_crew_hold_event_ott\siege_crew_hold_bonus" overrideParent="True" />
 			</template_reference>
+			<float name="num_slots" value="8" overrideParent="True" />
+			<float name="num_squad_slots" value="8" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="190341173" List.ParentItemID="190341173">
 			<list name="tier_group_list" overrideParent="True">

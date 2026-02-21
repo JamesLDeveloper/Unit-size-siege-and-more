@@ -31,6 +31,10 @@
 		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="1982550370" List.ParentItemID="1982550370">
 			<instance_reference name="on_construction_squad" value="sbps\races\campaign\novgorod\unit_ram_3_nov" overrideParent="True" />
 		</template_reference>
+		<template_reference name="exts" value="ebpextensions\hold_ext" List.ItemID="-1301307975" List.ParentItemID="-1301307975">
+			<float name="num_slots" value="8" overrideParent="True" />
+			<float name="num_squad_slots" value="8" overrideParent="True" />
+		</template_reference>
 	</list>
 	<uniqueid name="pbgid" value="187954" />
 	<instance_reference name="parent_pbg" value="ebps\races\rus\units\unit_ram_3_rus" />

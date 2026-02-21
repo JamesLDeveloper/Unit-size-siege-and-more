@@ -629,8 +629,8 @@
 			<state_tree_node name="requirement_statetree" value="" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\hold_ext" List.ItemID="-1417381530">
-			<float name="num_slots" value="20" />
-			<float name="num_squad_slots" value="20" />
+			<float name="num_slots" value="10" />
+			<float name="num_squad_slots" value="10" />
 			<list name="acceptable_types">
 				<enum name="acceptable_type" value="hold_infantry" List.ItemID="275895969" />
 				<enum name="acceptable_type" value="hold_villager" List.ItemID="723573679" />

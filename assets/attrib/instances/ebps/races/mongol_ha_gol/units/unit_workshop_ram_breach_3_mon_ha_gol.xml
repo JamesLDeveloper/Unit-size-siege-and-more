@@ -1045,6 +1045,8 @@
 				<state_tree_node name="ActionTree_OpeningBranch" value="building_hold_events\garrison_beachhead_ram" overrideParent="True" />
 			</template_reference>
 			<bool name="on_loaded_squad_action_tree_reapply_on_bp_conversion" value="True" overrideParent="True" />
+			<float name="num_slots" value="8" overrideParent="True" />
+			<float name="num_squad_slots" value="8" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_tree_ext" List.ItemID="1064459060" List.ParentItemID="1064459060">
 			<state_tree_node name="ActionTree_OpeningBranch" value="unit_beachhead_entity" overrideParent="True" />
