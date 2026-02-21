@@ -1,0 +1,169 @@
+<instance version="6" description="" template="sbps">
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_blueprint_ext" List.ItemID="-2056667985" List.ParentItemID="-2056667985">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_ui_ext" List.ItemID="1925476448" List.ParentItemID="1925476448">
+			<list name="race_list">
+				<group name="race_data" List.ItemID="-922416631" List.ParentItemID="-922416631">
+					<group name="info">
+						<group name="ui_codex_info">
+							<group name="ui_position">
+								<int name="ui_position_column" value="1" overrideParent="True" />
+								<int name="ui_position_row" value="3" overrideParent="True" />
+							</group>
+						</group>
+					</group>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="266232443" List.ParentItemID="266232443">
+			<list name="unit_list">
+				<group name="loadout_data" List.ItemID="-943024454" List.ParentItemID="-943024454">
+					<instance_reference name="type" value="ebps\races\mongol\units\unit_cannon_4_mon" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext" List.ItemID="1849331471" List.ParentItemID="1849331471">
+			<list name="requirement_table" comment="Requires Imperial age, Tech army, chemistry upgrade&#xD;&#xA;" overrideParent="True">
+				<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="1435414884">
+					<enum name="reason" value="usage" overrideParent="True" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="True" />
+					<int name="max_completed" value="100" />
+					<int name="min_completed" value="1" />
+					<instance_reference name="upgrade_name" value="upgrade\dev\ages\imperial_age" overrideParent="True" />
+					<bool name="include_queued" value="False" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="1705528073" List.ParentItemID="1705528073">
+			<list name="squad_race_type_list" overrideParent="True">
+				<instance_reference name="squad_race_type" value="racebps\mongol" List.ItemID="468508173" />
+			</list>
+			<list name="squad_type_list" removedIds="1022550475, -1055083727">
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_speech_ext" List.ItemID="1724141248" List.ParentItemID="1724141248">
+			<group name="squad_speech_parameters">
+				<string name="squad_name_code" value="cannon" overrideParent="True" />
+			</group>
+			<list name="age_mapping">
+				<int name="age_number" value="3" overrideParent="True" List.ItemID="1427327782" List.ParentItemID="1427327782" />
+				<int name="age_number" value="3" overrideParent="True" List.ItemID="840543520" List.ParentItemID="840543520" />
+				<int name="age_number" value="3" overrideParent="True" List.ItemID="-1632628980" List.ParentItemID="-1632628980" />
+				<int name="age_number" value="3" overrideParent="True" List.ItemID="406492979" List.ParentItemID="406492979" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_formation_group_ext" List.ItemID="-803261674" List.ParentItemID="-803261674">
+			<instance_reference name="default_formation_group_spot_generator" value="formation_group_spot_generator\land\land_box_fill_spot_generator" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="165177" />
+	<instance_reference name="parent_pbg" value="sbps\races\core\unit_cannon_4" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="583053693" List.ParentItemID="583053693">
+				<list name="unit_list">
+					<group name="loadout_data" List.ItemID="2033209589" List.ParentItemID="2033209589">
+						<instance_reference name="type" value="ebps\races\mongol\units\unit_cannon_4_mon" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext" List.ItemID="-1349946078" List.ParentItemID="-1349946078">
+				<list name="requirement_table" comment="Requires Imperial age, Tech army, chemistry upgrade&#xD;&#xA;" overrideParent="True">
+					<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="315031844">
+						<enum name="reason" value="usage" overrideParent="True" />
+						<locstring name="ui_name" value="0" />
+						<bool name="is_present" value="True" />
+						<int name="max_completed" value="100" />
+						<int name="min_completed" value="1" />
+						<instance_reference name="upgrade_name" value="upgrade\dev\ages\imperial_age" overrideParent="True" />
+						<bool name="include_queued" value="False" />
+						<group name="include_pbg_parenting">
+							<bool name="include_child_pbgs" value="False" />
+							<bool name="include_parent_pbgs" value="False" />
+						</group>
+						<bool name="include_completed" value="True" />
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="-364142368" List.ParentItemID="-364142368">
+				<list name="squad_race_type_list" overrideParent="True">
+					<instance_reference name="squad_race_type" value="racebps\mongol" List.ItemID="-1718334762" />
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_speech_ext" List.ItemID="-201852944" List.ParentItemID="-201852944">
+				<list name="age_mapping">
+					<int name="age_number" value="3" overrideParent="True" List.ItemID="29644817" List.ParentItemID="29644817" />
+					<int name="age_number" value="3" overrideParent="True" List.ItemID="541643861" List.ParentItemID="541643861" />
+					<int name="age_number" value="3" overrideParent="True" List.ItemID="-1282468469" List.ParentItemID="-1282468469" />
+					<int name="age_number" value="3" overrideParent="True" List.ItemID="749461074" List.ParentItemID="749461074" />
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_formation_group_ext" List.ItemID="1863434579" List.ParentItemID="1863434579">
+				<instance_reference name="default_formation_group_spot_generator" value="formation_group_spot_generator\land\land_box_fill_spot_generator" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="165177" />
+		<instance_reference name="parent_pbg" value="sbps\races\core\unit_cannon_4" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="squadexts" value="sbpextensions\squad_blueprint_ext" List.ItemID="-2056667985" List.ParentItemID="-2056667985">
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="266232443" List.ParentItemID="266232443">
+				<list name="unit_list">
+					<group name="loadout_data" List.ItemID="-943024454" List.ParentItemID="-943024454">
+						<instance_reference name="type" value="ebps\races\mongol\units\unit_cannon_4_mon" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext" List.ItemID="1849331471" List.ParentItemID="1849331471">
+				<list name="requirement_table" comment="Requires Imperial age, Tech army, chemistry upgrade&#xD;&#xA;" overrideParent="True">
+					<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="745177834">
+						<enum name="reason" value="usage" overrideParent="True" />
+						<locstring name="ui_name" value="0" />
+						<bool name="is_present" value="True" />
+						<int name="max_completed" value="100" />
+						<int name="min_completed" value="1" />
+						<instance_reference name="upgrade_name" value="upgrade\dev\ages\imperial_age" overrideParent="True" />
+						<bool name="include_queued" value="False" />
+						<group name="include_pbg_parenting">
+							<bool name="include_child_pbgs" value="False" />
+							<bool name="include_parent_pbgs" value="False" />
+						</group>
+						<bool name="include_completed" value="True" />
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="1705528073" List.ParentItemID="1705528073">
+				<list name="squad_race_type_list" overrideParent="True">
+					<instance_reference name="squad_race_type" value="racebps\mongol" List.ItemID="-121660531" />
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_speech_ext" List.ItemID="1724141248" List.ParentItemID="1724141248">
+				<group name="squad_speech_parameters">
+					<string name="squad_name_code" value="cannon" overrideParent="True" />
+				</group>
+				<list name="age_mapping">
+					<int name="age_number" value="3" overrideParent="True" List.ItemID="1427327782" List.ParentItemID="1427327782" />
+					<int name="age_number" value="3" overrideParent="True" List.ItemID="840543520" List.ParentItemID="840543520" />
+					<int name="age_number" value="3" overrideParent="True" List.ItemID="-1632628980" List.ParentItemID="-1632628980" />
+					<int name="age_number" value="3" overrideParent="True" List.ItemID="406492979" List.ParentItemID="406492979" />
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_formation_group_ext" List.ItemID="-803261674" List.ParentItemID="-803261674">
+				<instance_reference name="default_formation_group_spot_generator" value="formation_group_spot_generator\land\land_box_fill_spot_generator" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="165177" />
+		<instance_reference name="parent_pbg" value="sbps\races\core\unit_cannon_4" />
+	</variant>
+</instance>

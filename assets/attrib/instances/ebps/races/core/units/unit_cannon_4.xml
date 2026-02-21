@@ -49,9 +49,9 @@
 					<float name="popcap" value="0" />
 					<float name="command" value="0" />
 					<float name="food" value="0" />
-					<float name="wood" value="300" />
+					<float name="wood" value="325" overrideParent="True" />
 					<float name="stone" value="0" />
-					<float name="gold" value="600" />
+					<float name="gold" value="625" overrideParent="True" />
 					<float name="militia_hre" value="0" />
 					<float name="merc_byz" value="0" />
 				</enum_table>

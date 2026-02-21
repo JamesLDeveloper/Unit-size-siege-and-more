@@ -10,6 +10,14 @@
 				<instance_reference name="ability" value="abilities\always_on_abilities\ottoman\mehter_formation_ott" List.ItemID="359641055" />
 			</list>
 		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-112040889" List.ParentItemID="-112040889">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="wood" value="325" overrideParent="True" />
+					<float name="gold" value="625" overrideParent="True" />
+				</enum_table>
+			</group>
+		</template_reference>
 		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1247090283" List.ParentItemID="1247090283">
 			<list name="hardpoints">
 				<group name="hardpoint" List.ItemID="392243222" List.ParentItemID="392243222">

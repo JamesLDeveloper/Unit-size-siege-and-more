@@ -5,6 +5,14 @@
 			<bool name="browsable_in_editor" value="True" overrideParent="True" />
 			<float name="entity_scale" value="80" overrideParent="True" />
 		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-112040889" List.ParentItemID="-112040889">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="wood" value="325" overrideParent="True" />
+					<float name="gold" value="625" overrideParent="True" />
+				</enum_table>
+			</group>
+		</template_reference>
 		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-2097533964" List.ParentItemID="-2097533964">
 			<list name="race_type_list" overrideParent="True">
 				<instance_reference name="race_type" value="racebps\malian" List.ItemID="1851247733" />

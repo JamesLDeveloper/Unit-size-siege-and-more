@@ -1,0 +1,40 @@
+<instance version="4" description="" template="sbps">
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_blueprint_ext" List.ItemID="-2056667985" List.ParentItemID="-2056667985">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="266232443" List.ParentItemID="266232443">
+			<list name="unit_list">
+				<group name="loadout_data" List.ItemID="-943024454" List.ParentItemID="-943024454">
+					<instance_reference name="type" value="ebps\races\rogue\units\siege\unit_cannon_rogue" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext" List.ItemID="1849331471" List.ParentItemID="1849331471">
+			<list name="requirement_table" comment="Requires Imperial age, Tech army, chemistry upgrade&#xD;&#xA;">
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_ability_ext" List.ItemID="-1426284358" List.ParentItemID="-1426284358">
+			<list name="abilities">
+				<instance_reference name="ability" value="abilities\always_on_abilities\hre\inspired_infantry_hre" List.ItemID="-253744694" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="1705528073" List.ParentItemID="1705528073">
+			<list name="squad_race_type_list" overrideParent="True">
+				<instance_reference name="squad_race_type" value="racebps\hre" List.ItemID="824689389" />
+			</list>
+			<list name="squad_type_list" removedIds="-1055083727, 1022550475">
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_speech_ext" List.ItemID="1724141248" List.ParentItemID="1724141248">
+			<group name="squad_speech_parameters">
+				<string name="squad_name_code" value="cannon" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_formation_group_ext" List.ItemID="-803261674" List.ParentItemID="-803261674">
+			<instance_reference name="default_formation_group_spot_generator" value="formation_group_spot_generator\land\land_box_fill_spot_generator" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="9003139" />
+	<instance_reference name="parent_pbg" value="sbps\races\core\unit_cannon_4" />
+</instance>

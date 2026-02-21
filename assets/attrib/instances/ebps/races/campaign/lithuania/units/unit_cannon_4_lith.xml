@@ -3,6 +3,14 @@
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="378232643" List.ParentItemID="378232643">
 			<float name="entity_scale" value="80" overrideParent="True" />
 		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-112040889" List.ParentItemID="-112040889">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="wood" value="325" overrideParent="True" />
+					<float name="gold" value="625" overrideParent="True" />
+				</enum_table>
+			</group>
+		</template_reference>
 		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1247090283" List.ParentItemID="1247090283">
 			<list name="hardpoints">
 				<group name="hardpoint" List.ItemID="392243222" List.ParentItemID="392243222">
