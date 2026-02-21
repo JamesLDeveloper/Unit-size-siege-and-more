@@ -8,7 +8,11 @@
 				<d2p1:KeyValueOfstringArrayOfstringty7Ep6D1>
 					<d2p1:Key>AssetExplorerGeneric</d2p1:Key>
 					<d2p1:Value>
-						<d2p1:string>assets</d2p1:string>
+						<d2p1:string>assets\attrib\instances\army</d2p1:string>
+						<d2p1:string>assets\attrib\instances\ebps\races</d2p1:string>
+						<d2p1:string>assets\attrib\instances\sbps</d2p1:string>
+						<d2p1:string>assets\attrib\instances\weapon</d2p1:string>
+						<d2p1:string>assets\locdb</d2p1:string>
 					</d2p1:Value>
 				</d2p1:KeyValueOfstringArrayOfstringty7Ep6D1>
 			</d3p1:ExpandedPaths>
