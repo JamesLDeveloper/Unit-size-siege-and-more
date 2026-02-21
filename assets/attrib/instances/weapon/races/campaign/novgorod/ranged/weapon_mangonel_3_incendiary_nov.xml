@@ -1,0 +1,17 @@
+<instance version="6" description="" template="weapon">
+	<uniqueid name="pbgid" value="187951" />
+	<instance_reference name="parent_pbg" value="weapon\races\rus\ranged\weapon_mangonel_3_incendiary_rus" />
+	<variant name="campaign">
+		<group name="weapon_bag">
+			<group name="scatter">
+				<template_reference name="area_scatter_option" value="options\weapon\area_scatter_option">
+					<template_reference name="area_info" value="options\area_info_options\pie_area_option">
+						<float name="outer_radius" value="7" overrideParent="True" />
+					</template_reference>
+				</template_reference>
+			</group>
+		</group>
+		<uniqueid name="pbgid" value="187951" />
+		<instance_reference name="parent_pbg" value="weapon\races\rus\ranged\weapon_mangonel_3_incendiary_rus" />
+	</variant>
+</instance>

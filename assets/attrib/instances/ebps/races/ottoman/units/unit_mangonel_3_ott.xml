@@ -56,7 +56,7 @@
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-582767811" List.ParentItemID="-582767811">
-			<instance_reference name="schema" value="statemodel_schema\units\civilizations\ottoman\mangonel_ott" overrideParent="True" />
+			<instance_reference name="schema" value="statemodel_schema\units\siege_weapon_no_setup" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="35385129" List.ParentItemID="35385129">
 			<list name="tier_group_list">

@@ -1,0 +1,51 @@
+<instance version="4" description="" template="weapon">
+	<group name="weapon_bag">
+		<group name="area_effect">
+			<group name="distance">
+				<float name="near" value="0.8" overrideParent="True" />
+				<float name="mid" value="0.65" overrideParent="True" />
+			</group>
+		</group>
+		<group name="burst">
+			<group name="duration">
+				<float name="max" value="0.25" overrideParent="True" />
+				<float name="min" value="0.25" overrideParent="True" />
+			</group>
+			<group name="rate_of_fire">
+				<float name="max" value="36" overrideParent="True" />
+				<float name="min" value="36" overrideParent="True" />
+			</group>
+		</group>
+		<group name="damage">
+			<float name="max" value="20" overrideParent="True" />
+			<float name="min" value="20" overrideParent="True" />
+		</group>
+		<group name="fire">
+			<float name="wind_down" value="3.5" overrideParent="True" />
+		</group>
+		<group name="range">
+			<float name="max" value="36" overrideParent="True" />
+		</group>
+		<group name="reload">
+			<group name="duration">
+				<float name="max" value="4.5" overrideParent="True" />
+				<float name="min" value="4.5" overrideParent="True" />
+			</group>
+		</group>
+		<group name="scatter">
+			<template_reference name="area_scatter_option" value="options\weapon\area_scatter_option">
+				<template_reference name="area_info" value="options\area_info_options\circle_area_option">
+					<float name="outer_radius" value="6" overrideParent="True" />
+				</template_reference>
+			</template_reference>
+		</group>
+		<group name="tracking">
+			<group name="normal">
+				<float name="speed_horizontal" value="10000" overrideParent="True" />
+				<float name="speed_vertical" value="10000" overrideParent="True" />
+			</group>
+		</group>
+	</group>
+	<uniqueid name="pbgid" value="9003119" />
+	<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_mangonel_3" />
+</instance>

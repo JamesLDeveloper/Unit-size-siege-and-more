@@ -1,0 +1,42 @@
+<instance version="6" description="" template="weapon">
+	<group name="weapon_bag">
+		<string name="fx_munition_name" value="common\mangonel_improved" overrideParent="True" />
+		<group name="projectile">
+			<instance_reference name="projectile" value="ebps\races\english\projectiles\projectile_mangonel_improved_eng" overrideParent="True" />
+		</group>
+		<group name="aim">
+			<group name="fire_aim_time">
+				<float name="max" value="1" overrideParent="True" />
+				<float name="min" value="1" overrideParent="True" />
+			</group>
+		</group>
+		<group name="tracking">
+			<group name="normal">
+				<float name="speed_horizontal" value="10000" overrideParent="True" />
+				<float name="speed_vertical" value="10000" overrideParent="True" />
+			</group>
+		</group>
+	</group>
+	<uniqueid name="pbgid" value="178782" />
+	<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_mangonel_3" />
+	<variant name="campaign">
+		<group name="weapon_bag">
+			<string name="fx_munition_name" value="common\mangonel_improved" overrideParent="True" />
+			<group name="projectile">
+				<instance_reference name="projectile" value="ebps\races\english\projectiles\projectile_mangonel_improved_eng" overrideParent="True" />
+			</group>
+		</group>
+		<uniqueid name="pbgid" value="178782" />
+		<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_mangonel_3" />
+	</variant>
+	<variant name="xp3">
+		<group name="weapon_bag">
+			<string name="fx_munition_name" value="common\mangonel_improved" overrideParent="True" />
+			<group name="projectile">
+				<instance_reference name="projectile" value="ebps\races\english\projectiles\projectile_mangonel_improved_eng" overrideParent="True" />
+			</group>
+		</group>
+		<uniqueid name="pbgid" value="178782" />
+		<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_mangonel_3" />
+	</variant>
+</instance>

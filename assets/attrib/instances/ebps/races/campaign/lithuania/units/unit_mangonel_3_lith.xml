@@ -35,7 +35,7 @@
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-582767811" List.ParentItemID="-582767811">
-			<instance_reference name="schema" value="statemodel_schema\units\siege_weapon" overrideParent="True" />
+			<instance_reference name="schema" value="statemodel_schema\units\siege_weapon_no_setup" overrideParent="True" />
 		</template_reference>
 	</list>
 	<uniqueid name="pbgid" value="183004" />

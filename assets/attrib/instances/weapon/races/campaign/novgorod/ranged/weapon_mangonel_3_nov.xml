@@ -1,0 +1,8 @@
+<instance version="6" description="" template="weapon">
+	<uniqueid name="pbgid" value="187950" />
+	<instance_reference name="parent_pbg" value="weapon\races\rus\ranged\weapon_mangonel_3_rus" />
+	<variant name="campaign">
+		<uniqueid name="pbgid" value="187950" />
+		<instance_reference name="parent_pbg" value="weapon\races\rus\ranged\weapon_mangonel_3_rus" />
+	</variant>
+</instance>

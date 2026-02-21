@@ -647,7 +647,7 @@
 			</enum_table>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-1700705953">
-			<instance_reference name="schema" value="statemodel_schema\units\siege\siege_mangonel" overrideParent="True" />
+			<instance_reference name="schema" value="statemodel_schema\units\siege_weapon_no_setup" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-1217542867">
 			<list name="tier_group_list">

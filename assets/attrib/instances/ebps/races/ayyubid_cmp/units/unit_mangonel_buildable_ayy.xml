@@ -9,6 +9,9 @@
 				<instance_reference name="race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="-1861603368" />
 			</list>
 		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-582767811" List.ParentItemID="-582767811">
+			<instance_reference name="schema" value="statemodel_schema\units\siege_weapon_no_setup" overrideParent="True" />
+		</template_reference>
 		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="1375566189" List.ParentItemID="1375566189">
 			<instance_reference name="on_construction_squad" value="sbps\races\ayyubid_cmp\unit_mangonel_buildable_ayy" overrideParent="True" />
 		</template_reference>

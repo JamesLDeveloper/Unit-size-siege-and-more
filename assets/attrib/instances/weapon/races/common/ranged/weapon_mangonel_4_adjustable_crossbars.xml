@@ -1,0 +1,39 @@
+<instance version="4" description="" template="weapon">
+	<group name="weapon_bag">
+		<group name="area_effect">
+			<template_reference name="area_info" value="options\area_info_options\circle_area_option">
+				<float name="outer_radius" value="2.65" overrideParent="True" />
+			</template_reference>
+		</group>
+		<group name="burst">
+			<group name="rate_of_fire">
+				<float name="max" value="32" overrideParent="True" />
+				<float name="min" value="32" overrideParent="True" />
+			</group>
+		</group>
+		<group name="scatter">
+			<template_reference name="area_scatter_option" value="options\weapon\area_scatter_option">
+				<template_reference name="area_info" value="options\area_info_options\circle_area_option">
+					<float name="outer_radius" value="3.5" overrideParent="True" />
+				</template_reference>
+			</template_reference>
+		</group>
+		<group name="range">
+			<float name="max" value="36" overrideParent="True" />
+		</group>
+		<group name="aim">
+			<group name="fire_aim_time">
+				<float name="max" value="1" overrideParent="True" />
+				<float name="min" value="1" overrideParent="True" />
+			</group>
+		</group>
+		<group name="tracking">
+			<group name="normal">
+				<float name="speed_horizontal" value="10000" overrideParent="True" />
+				<float name="speed_vertical" value="10000" overrideParent="True" />
+			</group>
+		</group>
+	</group>
+	<uniqueid name="pbgid" value="9000717" />
+	<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_mangonel_3" mod="e2ef01ea17d74b04949857ca0a246ab4" />
+</instance>

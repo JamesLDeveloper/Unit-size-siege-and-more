@@ -8,6 +8,9 @@
 				<enum name="unit_type" value="elite" List.ItemID="-175587962" List.ListAction="Append" />
 			</list>
 		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-582767811" List.ParentItemID="-582767811">
+			<instance_reference name="schema" value="statemodel_schema\units\siege_weapon_no_setup" overrideParent="True" />
+		</template_reference>
 	</list>
 	<uniqueid name="pbgid" value="206823" />
 	<instance_reference name="parent_pbg" value="ebps\races\chinese\units\unit_mangonel_3_chi" />

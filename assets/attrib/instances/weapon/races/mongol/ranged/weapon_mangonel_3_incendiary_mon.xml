@@ -1,0 +1,50 @@
+<instance version="6" description="" template="weapon">
+	<group name="weapon_bag">
+		<group name="damage">
+			<list name="on_penetrated_state_trees" overrideParent="True">
+			</list>
+		</group>
+		<group name="aim">
+			<group name="fire_aim_time">
+				<float name="max" value="1.25" overrideParent="True" />
+				<float name="min" value="1.25" overrideParent="True" />
+			</group>
+		</group>
+		<group name="tracking">
+			<group name="normal">
+				<float name="speed_horizontal" value="10000" overrideParent="True" />
+				<float name="speed_vertical" value="10000" overrideParent="True" />
+			</group>
+			<float name="pivot_end_time" value="0" overrideParent="True" />
+		</group>
+	</group>
+	<uniqueid name="pbgid" value="136319" />
+	<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_mangonel_3_incendiary" />
+	<variant name="campaign">
+		<group name="weapon_bag">
+			<group name="damage">
+				<list name="on_penetrated_state_trees" overrideParent="True">
+				</list>
+			</group>
+			<group name="scatter">
+				<template_reference name="area_scatter_option" value="options\weapon\area_scatter_option">
+					<template_reference name="area_info" value="options\area_info_options\pie_area_option">
+						<float name="outer_radius" value="7" overrideParent="True" />
+					</template_reference>
+				</template_reference>
+			</group>
+		</group>
+		<uniqueid name="pbgid" value="136319" />
+		<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_mangonel_3_incendiary" />
+	</variant>
+	<variant name="xp3">
+		<group name="weapon_bag">
+			<group name="damage">
+				<list name="on_penetrated_state_trees" overrideParent="True">
+				</list>
+			</group>
+		</group>
+		<uniqueid name="pbgid" value="136319" />
+		<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_mangonel_3_incendiary" />
+	</variant>
+</instance>

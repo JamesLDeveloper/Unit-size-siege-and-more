@@ -22,7 +22,7 @@
 					<list name="weapon_table" removedIds="1706561604, 2082400903">
 						<group name="weapon" List.ItemID="237902918" List.ParentItemID="237902918">
 							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
-								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\rogue\weapon_mangonel_rogue" overrideParent="True" />
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\rogue\weapon_mangonel_rogue" mod="e2ef01ea17d74b04949857ca0a246ab4" overrideParent="True" />
 							</template_reference>
 						</group>
 					</list>
@@ -31,6 +31,9 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\animation_action_tree_ext" List.ItemID="78760080" List.ParentItemID="78760080">
 			<string name="default_animation" value="setup\idle_teardown" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-582767811" List.ParentItemID="-582767811">
+			<instance_reference name="schema" value="statemodel_schema\units\siege_weapon_no_setup" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="35385129" List.ParentItemID="35385129">
 			<list name="tier_group_list">

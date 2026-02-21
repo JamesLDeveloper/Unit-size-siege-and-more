@@ -9,6 +9,9 @@
 				<instance_reference name="race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="1491103327" List.ParentItemID="1491103327" />
 			</list>
 		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-582767811" List.ParentItemID="-582767811">
+			<instance_reference name="schema" value="statemodel_schema\units\siege_weapon_no_setup" overrideParent="True" />
+		</template_reference>
 	</list>
 	<uniqueid name="pbgid" value="2103388" />
 	<instance_reference name="parent_pbg" value="ebps\races\abbasid\units\unit_mangonel_3_abb" />

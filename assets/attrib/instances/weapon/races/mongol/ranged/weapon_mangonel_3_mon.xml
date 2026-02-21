@@ -1,0 +1,46 @@
+<instance version="6" description="" template="weapon">
+	<group name="weapon_bag">
+		<group name="damage">
+			<list name="on_penetrated_state_trees" overrideParent="True">
+			</list>
+		</group>
+		<group name="aim">
+			<group name="fire_aim_time">
+				<float name="max" value="1" overrideParent="True" />
+				<float name="min" value="1" overrideParent="True" />
+			</group>
+		</group>
+		<group name="tracking">
+			<group name="normal">
+				<float name="max_up" value="90" overrideParent="True" />
+				<float name="speed_horizontal" value="10000" overrideParent="True" />
+				<float name="speed_vertical" value="10000" overrideParent="True" />
+			</group>
+		</group>
+	</group>
+	<uniqueid name="pbgid" value="2033635" />
+	<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_mangonel_3" />
+	<variant name="campaign">
+		<group name="weapon_bag">
+			<group name="damage">
+				<list name="on_penetrated_state_trees" overrideParent="True">
+					<group name="container" List.ItemID="1514219361">
+						<string name="state_tree" value="campaignMod_extra_building_damage" overrideParent="True" />
+					</group>
+				</list>
+			</group>
+		</group>
+		<uniqueid name="pbgid" value="2033635" />
+		<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_mangonel_3" />
+	</variant>
+	<variant name="xp3">
+		<group name="weapon_bag">
+			<group name="damage">
+				<list name="on_penetrated_state_trees" overrideParent="True">
+				</list>
+			</group>
+		</group>
+		<uniqueid name="pbgid" value="2033635" />
+		<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_mangonel_3" />
+	</variant>
+</instance>
