@@ -8,10 +8,10 @@
     </LayoutAnchorablePaneGroup>
     <LayoutPanel Orientation="Vertical">
       <LayoutDocumentPane>
-        <LayoutDocument Title="ebps" IsSelected="True" IsLastFocusedDocument="True" ContentId="Category|ebps" LastActivationTimeStamp="02/20/2026 23:36:46" />
+        <LayoutDocument Title="ebps" ContentId="Category|ebps" LastActivationTimeStamp="02/21/2026 00:13:05" />
         <LayoutDocument Title="mod.rdo" ContentId="Reflect|Essence.Editor.ReflectEditor.Controls.DefaultReflectControlActivator|0xF2DA2D34B3AF90A6" LastActivationTimeStamp="02/20/2026 23:25:06" />
         <LayoutDocument Title="template" ContentId="Category|template" LastActivationTimeStamp="02/20/2026 21:35:12" />
-        <LayoutDocument Title="weapon" ContentId="Category|weapon" LastActivationTimeStamp="02/20/2026 23:33:19" />
+        <LayoutDocument Title="weapon" IsSelected="True" IsLastFocusedDocument="True" ContentId="Category|weapon" LastActivationTimeStamp="02/21/2026 00:15:30" />
       </LayoutDocumentPane>
       <LayoutAnchorablePane Id="1b84d0aa-3fd1-4781-909d-fa3e4b760d6d" Name="anchorablesPane" DockHeight="300">
         <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Output" IsSelected="True" ContentId="Output" LastActivationTimeStamp="02/20/2026 21:14:25" />
