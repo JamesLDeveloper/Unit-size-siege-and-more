@@ -9,6 +9,9 @@
 				<instance_reference name="ability" value="abilities\always_on_abilities\ottoman\mehter_formation_ott" List.ItemID="1559095488" />
 			</list>
 		</template_reference>
+		<template_reference name="exts" value="ebpextensions\population_ext" List.ItemID="1610633927" List.ParentItemID="1610633927">
+			<float name="personnel_pop" value="2" overrideParent="True" />
+		</template_reference>
 		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="125879439" List.ParentItemID="125879439">
 			<list name="race_type_list" overrideParent="True">
 				<instance_reference name="race_type" value="racebps\ottoman" overrideParent="True" List.ItemID="-2091977133" />

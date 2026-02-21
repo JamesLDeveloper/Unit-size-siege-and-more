@@ -9,6 +9,9 @@
 				<instance_reference name="ability" value="abilities\always_on_abilities\abbasid_ha_01\passives\golden_age_bonus_1_abb_ha_01" overrideParent="True" List.ItemID="1407466238" />
 			</list>
 		</template_reference>
+		<template_reference name="exts" value="ebpextensions\population_ext" List.ItemID="1610633927" List.ParentItemID="1610633927">
+			<float name="personnel_pop" value="2" overrideParent="True" />
+		</template_reference>
 		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="125879439" List.ParentItemID="125879439">
 			<list name="unit_type_list" overrideParent="True">
 				<enum name="unit_type" value="villager" List.ItemID="1357469422" />

@@ -19,6 +19,9 @@
 		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="440395020" List.ParentItemID="440395020">
 			<float name="hitpoints" value="50" overrideParent="True" />
 		</template_reference>
+		<template_reference name="exts" value="ebpextensions\population_ext" List.ItemID="1610633927" List.ParentItemID="1610633927">
+			<float name="personnel_pop" value="2" overrideParent="True" />
+		</template_reference>
 		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="125879439" List.ParentItemID="125879439">
 			<list name="race_type_list" overrideParent="True">
 				<instance_reference name="race_type" value="racebps\templar" List.ItemID="-1840062599" />

@@ -10,6 +10,9 @@
 		<template_reference name="exts" value="ebpextensions\hit_object_ext" List.ItemID="-1344123118" List.ParentItemID="-1344123118">
 			<instance_reference name="hit_material" value="hit_material\leather" overrideParent="True" />
 		</template_reference>
+		<template_reference name="exts" value="ebpextensions\population_ext" List.ItemID="1610633927" List.ParentItemID="1610633927">
+			<float name="personnel_pop" value="2" overrideParent="True" />
+		</template_reference>
 		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="125879439" List.ParentItemID="125879439">
 			<list name="race_type_list" overrideParent="True">
 				<instance_reference name="race_type" value="racebps\japanese" overrideParent="True" List.ItemID="358402910" />
