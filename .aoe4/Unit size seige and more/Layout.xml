@@ -8,12 +8,8 @@
     </LayoutAnchorablePaneGroup>
     <LayoutPanel Orientation="Vertical">
       <LayoutDocumentPane>
-        <LayoutDocument Title="ebps" ContentId="Category|ebps" LastActivationTimeStamp="02/21/2026 13:32:55" />
-        <LayoutDocument Title="mod.rdo" ContentId="Reflect|Essence.Editor.ReflectEditor.Controls.DefaultReflectControlActivator|0xF2DA2D34B3AF90A6" LastActivationTimeStamp="02/21/2026 14:07:57" />
-        <LayoutDocument Title="template" ContentId="Category|template" LastActivationTimeStamp="02/20/2026 21:35:12" />
-        <LayoutDocument Title="weapon" ContentId="Category|weapon" LastActivationTimeStamp="02/21/2026 13:20:10" />
-        <LayoutDocument Title="sbps" ContentId="Category|sbps" LastActivationTimeStamp="02/21/2026 13:24:28" />
-        <LayoutDocument Title="army" IsSelected="True" IsLastFocusedDocument="True" ContentId="Category|army" LastActivationTimeStamp="02/21/2026 14:17:13" />
+        <LayoutDocument Title="mod.rdo" ContentId="Reflect|Essence.Editor.ReflectEditor.Controls.DefaultReflectControlActivator|0xF2DA2D34B3AF90A6" LastActivationTimeStamp="03/06/2026 19:57:32" />
+        <LayoutDocument Title="ebps" IsSelected="True" IsLastFocusedDocument="True" ContentId="Category|ebps" LastActivationTimeStamp="03/06/2026 20:05:19" />
       </LayoutDocumentPane>
       <LayoutAnchorablePane Id="1b84d0aa-3fd1-4781-909d-fa3e4b760d6d" Name="anchorablesPane" DockHeight="300">
         <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Output" IsSelected="True" ContentId="Output" LastActivationTimeStamp="02/20/2026 21:14:25" />
@@ -41,7 +37,7 @@
   <BottomSide />
   <FloatingWindows />
   <Hidden>
-    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Transformation" IsSelected="True" ContentId="ScenarioEditor.Transformation" FloatingLeft="200" FloatingTop="200" FloatingWidth="250" FloatingHeight="300" LastActivationTimeStamp="02/20/2026 16:27:44" PreviousContainerId="78c06263-eb86-40c1-8abf-6d89a3781df0" PreviousContainerIndex="0" />
-    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Painter" IsSelected="True" ContentId="ScenarioEditor.Painter" FloatingLeft="200" FloatingTop="200" FloatingWidth="300" FloatingHeight="800" LastActivationTimeStamp="02/20/2026 16:27:44" PreviousContainerId="803a141d-cc1a-4fb2-88ae-2270dd8652b4" PreviousContainerIndex="1" />
+    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Transformation" IsSelected="True" ContentId="ScenarioEditor.Transformation" FloatingLeft="200" FloatingTop="200" FloatingWidth="250" FloatingHeight="300" LastActivationTimeStamp="03/06/2026 19:57:32" PreviousContainerId="78c06263-eb86-40c1-8abf-6d89a3781df0" PreviousContainerIndex="0" />
+    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Painter" IsSelected="True" ContentId="ScenarioEditor.Painter" FloatingLeft="200" FloatingTop="200" FloatingWidth="300" FloatingHeight="800" LastActivationTimeStamp="03/06/2026 19:57:32" PreviousContainerId="803a141d-cc1a-4fb2-88ae-2270dd8652b4" PreviousContainerIndex="1" />
   </Hidden>
 </LayoutRoot>
