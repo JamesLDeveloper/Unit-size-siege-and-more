@@ -1,0 +1,24 @@
+<instance version="4" description="" template="army">
+	<uniqueid name="pbgid" value="9001152" />
+	<instance_reference name="parent_pbg" value="army\standard_mode\normal_english" />
+	<group name="army_bag">
+		<list name="upgrades">
+			<instance_reference name="upgrade" value="upgrade\dev\rogue\boons\upgrade_roulette" List.ItemID="-333476667" List.ListAction="Append" />
+			<instance_reference name="upgrade" value="upgrade\dev\rogue\boons\golden_parachute" List.ItemID="-2135732085" List.ListAction="Append" />
+			<instance_reference name="upgrade" value="upgrade\dev\rogue\boons\cache_converters" List.ItemID="-1817690892" List.ListAction="Append" />
+			<instance_reference name="upgrade" value="upgrade\dev\rogue\boons\sticks_and_stones" List.ItemID="-1360336509" List.ListAction="Append" />
+			<instance_reference name="upgrade" value="upgrade\dev\rogue\boons\fruits_of_labor" List.ItemID="1822547432" List.ListAction="Append" />
+		</list>
+		<list name="abilities">
+			<instance_reference name="ability" value="abilities\timed_abilities\rogue\panic_button_rogue" List.ItemID="1839622821" List.ListAction="Append" />
+			<instance_reference name="ability" value="abilities\timed_abilities\rogue\divine_smite_rogue" List.ItemID="412307543" List.ListAction="Append" />
+			<instance_reference name="ability" value="abilities\timed_abilities\rogue\training_dummies_rogue" List.ItemID="1981291362" List.ListAction="Append" />
+			<instance_reference name="ability" value="abilities\timed_abilities\rogue\mobilization_rogue" List.ItemID="1133337564" List.ListAction="Append" />
+			<instance_reference name="ability" value="abilities\timed_abilities\rogue\boggy_ground_target_rogue" List.ItemID="-236822371" List.ListAction="Append" />
+			<instance_reference name="ability" value="abilities\timed_abilities\rogue\growth_fund_rogue" List.ItemID="1934215333" List.ListAction="Append" />
+			<instance_reference name="ability" value="abilities\timed_abilities\rogue\supremacy_rogue" List.ItemID="4259392" List.ListAction="Append" />
+			<instance_reference name="ability" value="abilities\always_on_abilities\rogue\conqueror_mode_info_rogue" List.ItemID="44884711" List.ListAction="Append" />
+		</list>
+		<instance_reference name="starting_town" value="map_gen\town\map_gen_town\empirewars\empirewars_town_english" overrideParent="True" />
+	</group>
+</instance>
