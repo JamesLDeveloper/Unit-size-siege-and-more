@@ -9,7 +9,13 @@
 					<d2p1:Key>AssetExplorerGeneric</d2p1:Key>
 					<d2p1:Value>
 						<d2p1:string>assets\attrib\instances\army</d2p1:string>
-						<d2p1:string>assets\attrib\instances\ebps\races</d2p1:string>
+						<d2p1:string>assets\attrib\instances\ebps\races\abbasid\buildings</d2p1:string>
+						<d2p1:string>assets\attrib\instances\ebps\races\templar\buildings\walls</d2p1:string>
+						<d2p1:string>assets\attrib\instances\ebps\races\templar\units\commanderie\iifeudal</d2p1:string>
+						<d2p1:string>assets\attrib\instances\ebps\races\templar\units\commanderie\iiicastle</d2p1:string>
+						<d2p1:string>assets\attrib\instances\ebps\races\templar\units\commanderie\ivimperial</d2p1:string>
+						<d2p1:string>assets\attrib\instances\ebps\races\templar\units\naval</d2p1:string>
+						<d2p1:string>assets\attrib\instances\ebps\races\templar\units\siege</d2p1:string>
 						<d2p1:string>assets\attrib\instances\sbps</d2p1:string>
 						<d2p1:string>assets\attrib\instances\weapon</d2p1:string>
 						<d2p1:string>assets\locdb</d2p1:string>
@@ -25,6 +31,7 @@
 	</PluginSettings>
 	<RecentFiles>
 		<History xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+			<d3p1:string>C:\Users\XPS\OneDrive\Documents\Age of Empires iv files\Unit size seige and more\assets\attrib\instances\ebps\races\templar\units\siege\viz_fortress_trebuchet_tem.xml</d3p1:string>
 			<d3p1:string>C:\Users\XPS\OneDrive\Documents\Age of Empires iv files\Unit size seige and more\assets\mod.rdo</d3p1:string>
 			<d3p1:string>C:\Users\XPS\OneDrive\Documents\Age of Empires iv files\Unit size seige and more\assets\attrib\Unit size seige and more.xml</d3p1:string>
 		</History>
