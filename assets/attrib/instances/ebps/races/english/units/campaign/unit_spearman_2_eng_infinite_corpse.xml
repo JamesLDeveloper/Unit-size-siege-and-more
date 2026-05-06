@@ -80,7 +80,7 @@
 						</template_reference>
 						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\races\english\units\upgrade_unit_spearman_3_eng" />
 						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\races\english\units\unit_spearman_3_eng" />
-						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\english\unit_spearman_3_eng" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\english\unit_spearman_3_eng" mod="e2ef01ea17d74b04949857ca0a246ab4" />
 						<string name="tier_attachment_action" value="" />
 						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
 							<bool name="reissue_commands" value="False" />
@@ -99,7 +99,7 @@
 						</template_reference>
 						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\races\english\units\upgrade_unit_spearman_4_eng" />
 						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\races\english\units\unit_spearman_4_eng" />
-						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\english\unit_spearman_4_eng" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\english\unit_spearman_4_eng" mod="e2ef01ea17d74b04949857ca0a246ab4" />
 						<string name="tier_attachment_action" value="" />
 						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
 							<bool name="reissue_commands" value="False" />
@@ -195,7 +195,7 @@
 							</template_reference>
 							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\races\english\units\upgrade_unit_spearman_3_eng" />
 							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\races\english\units\unit_spearman_3_eng" />
-							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\english\unit_spearman_3_eng" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\english\unit_spearman_3_eng" mod="e2ef01ea17d74b04949857ca0a246ab4" />
 							<string name="tier_attachment_action" value="" />
 							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
 								<bool name="reissue_commands" value="False" />
@@ -214,7 +214,7 @@
 							</template_reference>
 							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\races\english\units\upgrade_unit_spearman_4_eng" />
 							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\races\english\units\unit_spearman_4_eng" />
-							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\english\unit_spearman_4_eng" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\english\unit_spearman_4_eng" mod="e2ef01ea17d74b04949857ca0a246ab4" />
 							<string name="tier_attachment_action" value="" />
 							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
 								<bool name="reissue_commands" value="False" />
@@ -311,7 +311,7 @@
 							</template_reference>
 							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\races\english\units\upgrade_unit_spearman_3_eng" />
 							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\races\english\units\unit_spearman_3_eng" />
-							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\english\unit_spearman_3_eng" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\english\unit_spearman_3_eng" mod="e2ef01ea17d74b04949857ca0a246ab4" />
 							<string name="tier_attachment_action" value="" />
 							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
 								<bool name="reissue_commands" value="False" />
@@ -330,7 +330,7 @@
 							</template_reference>
 							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\races\english\units\upgrade_unit_spearman_4_eng" />
 							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\races\english\units\unit_spearman_4_eng" />
-							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\english\unit_spearman_4_eng" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\english\unit_spearman_4_eng" mod="e2ef01ea17d74b04949857ca0a246ab4" />
 							<string name="tier_attachment_action" value="" />
 							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
 								<bool name="reissue_commands" value="False" />

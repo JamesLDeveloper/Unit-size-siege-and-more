@@ -135,7 +135,7 @@
 					<instance_reference name="unlocked_ability" value="" />
 					<instance_reference name="unlocked_building" value="" />
 					<list name="upgraded_squads">
-						<instance_reference name="upgraded_squad" value="sbps\races\english\unit_spearman_2_eng" List.ItemID="1963275225" />
+						<instance_reference name="upgraded_squad" value="sbps\races\english\unit_spearman_2_eng" mod="e2ef01ea17d74b04949857ca0a246ab4" List.ItemID="1963275225" />
 						<instance_reference name="upgraded_squad" value="sbps\races\core\unit_spearman_2" List.ItemID="-514550654" />
 					</list>
 				</group>
@@ -144,7 +144,7 @@
 					<instance_reference name="unlocked_ability" value="" />
 					<instance_reference name="unlocked_building" value="" />
 					<list name="upgraded_squads">
-						<instance_reference name="upgraded_squad" value="sbps\races\english\unit_spearman_3_eng" List.ItemID="-737519783" />
+						<instance_reference name="upgraded_squad" value="sbps\races\english\unit_spearman_3_eng" mod="e2ef01ea17d74b04949857ca0a246ab4" List.ItemID="-737519783" />
 						<instance_reference name="upgraded_squad" value="sbps\races\core\unit_spearman_3" List.ItemID="-145174955" />
 					</list>
 				</group>

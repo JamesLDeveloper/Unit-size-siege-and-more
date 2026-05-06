@@ -135,7 +135,7 @@
 					<instance_reference name="unlocked_ability" value="" />
 					<instance_reference name="unlocked_building" value="" />
 					<list name="upgraded_squads">
-						<instance_reference name="upgraded_squad" value="sbps\races\english\unit_spearman_2_eng" List.ItemID="-1078520081" />
+						<instance_reference name="upgraded_squad" value="sbps\races\english\unit_spearman_2_eng" mod="e2ef01ea17d74b04949857ca0a246ab4" List.ItemID="-1078520081" />
 						<instance_reference name="upgraded_squad" value="sbps\races\core\unit_spearman_2" List.ItemID="95855697" />
 					</list>
 				</group>
@@ -144,7 +144,7 @@
 					<instance_reference name="unlocked_ability" value="" />
 					<instance_reference name="unlocked_building" value="" />
 					<list name="upgraded_squads">
-						<instance_reference name="upgraded_squad" value="sbps\races\english\unit_spearman_3_eng" List.ItemID="-1103200325" />
+						<instance_reference name="upgraded_squad" value="sbps\races\english\unit_spearman_3_eng" mod="e2ef01ea17d74b04949857ca0a246ab4" List.ItemID="-1103200325" />
 						<instance_reference name="upgraded_squad" value="sbps\races\core\unit_spearman_3" List.ItemID="-1417994040" />
 					</list>
 				</group>
@@ -547,7 +547,7 @@
 						<instance_reference name="unlocked_ability" value="" />
 						<instance_reference name="unlocked_building" value="" />
 						<list name="upgraded_squads">
-							<instance_reference name="upgraded_squad" value="sbps\races\english\unit_spearman_2_eng" List.ItemID="-1225525954" />
+							<instance_reference name="upgraded_squad" value="sbps\races\english\unit_spearman_2_eng" mod="e2ef01ea17d74b04949857ca0a246ab4" List.ItemID="-1225525954" />
 							<instance_reference name="upgraded_squad" value="sbps\races\core\unit_spearman_2" List.ItemID="-805121765" />
 						</list>
 					</group>
@@ -556,7 +556,7 @@
 						<instance_reference name="unlocked_ability" value="" />
 						<instance_reference name="unlocked_building" value="" />
 						<list name="upgraded_squads">
-							<instance_reference name="upgraded_squad" value="sbps\races\english\unit_spearman_3_eng" List.ItemID="1643144730" />
+							<instance_reference name="upgraded_squad" value="sbps\races\english\unit_spearman_3_eng" mod="e2ef01ea17d74b04949857ca0a246ab4" List.ItemID="1643144730" />
 							<instance_reference name="upgraded_squad" value="sbps\races\core\unit_spearman_3" List.ItemID="1766288204" />
 						</list>
 					</group>
